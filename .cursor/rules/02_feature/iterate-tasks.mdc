@@ -8,18 +8,19 @@ description:
 globs: 
 alwaysApply: false
 ---
+
 # Rule: Task List Management and Iteration for Feature Implementation
 
 ## Goal
 
-To guide an AI assistant in managing and iterating on a task list (in Markdown format) derived from a Product Requirements Document (PRD). The AI must track progress on completing a feature implementation by:
+To guide an AI assistant in managing and iterating on a task list (in Markdown format) derived from either a Product Requirements Document (PRD) **or** from the foundational MVP task list (`15_create_mvp_tasks.mdc`). The AI must track progress on completing a feature or foundational implementation by:
 
 - Carefully following task dependencies,
 - Marking progress accurately,
 - Consulting relevant documentation to ensure alignment and quality,
 - And pausing for user approval before proceeding to the next task.
 
-This approach supports controlled, transparent, and well-coordinated feature development.
+This approach supports controlled, transparent, and well-coordinated product development.
 
 ---
 
@@ -55,7 +56,8 @@ This approach supports controlled, transparent, and well-coordinated feature dev
 
 Before starting or continuing any sub-task, the AI must:
 
-- **Review the full context of all relevant documentation** to ensure implementation aligns with the overall product and technical vision. Key docs include:
+- **Review the full context of all relevant documentation** to ensure implementation aligns with the overall product and technical vision. This applies equally to PRD-driven features and foundational MVP setup. Key docs include:
+
   - **Product Brief:** for feature goals, business context, and user needs.
   - **Architecture & System Design:** for system constraints, data flows, and technology stacks.
   - **User Flows:** to ensure feature workflows integrate smoothly with user interactions.
@@ -87,12 +89,9 @@ When managing and completing task lists, the AI must:
 ## Summary
 
 - Work sequentially, one sub-task at a time.
-- Keep documentation context always in mind.
+- Keep documentation context always in mind — for both MVP scaffolding and PRD-based feature development.
 - Keep task lists and file references current.
 - Pause and seek user approval after every sub-task.
 - Maintain clear communication about progress and changes.
 
 This ensures a controlled, well-aligned, and traceable development process consistent with the overall product vision.
-
-
-
