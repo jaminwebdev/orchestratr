@@ -1,0 +1,99 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating a Product Brief
+
+## Goal
+
+To guide an AI assistant in creating a detailed Product Brief in Markdown format, based on an initial user prompt. The product brief should be clear, actionable, and suitable for a junior developer to understand the application from top to bottom. 
+
+The generated product brief will be referenced in subsequent documentation such as the features document, user stories and user flows, ux and design considerations, content strategy, architecture and design systems, and more. 
+
+## Process
+
+1.  **Receive Initial Prompt:** The user provides a brief description or request for a new app idea.
+2.  **Ask Clarifying Questions:** Before writing the product brief, the AI *must* ask clarifying questions to gather sufficient detail. The goal is to understand the "what" and "why" of the app, not necessarily the "how" (which the developer will figure out).
+3.  **Generate Product Brief:** Based on the initial prompt and the user's answers to the clarifying questions, generate a product brief using the structure outlined below.
+4.  **Save Product Brief:** Save the generated document as `master-product-brief.md` inside the `/docs` directory.
+
+## Clarifying Questions (Examples)
+
+The AI should adapt its questions based on the prompt, but here are some common areas to explore:
+
+🧭 Vision & Purpose
+  What is the core idea behind the app?
+  What problem does it solve?
+  What is the unique value proposition (UVP)?
+  Why now? What makes this app relevant at this time?
+  What are the long-term goals for this product?
+
+🎯 Target Audience
+  Who is the primary target user?
+  Are there secondary or tertiary user personas?
+  What are their demographics (age, location, occupation)?
+  What are their behaviors, needs, and pain points?
+  How tech-savvy are they?
+  What devices or platforms do they typically use?
+
+📲 Platforms & Devices
+  Will this be a mobile app, web app, or both?
+  Native, hybrid, or progressive web app?
+  Which platforms should be supported (iOS, Android, desktop browsers)?
+  Should the experience differ across platforms?
+
+🔍 Market & Competitors
+  Who are your main competitors?
+  What do they do well? Where do they fall short?
+  What sets your app apart from theirs?
+  Are there indirect competitors or alternative solutions?
+
+⚙️ Features & Functionality
+  What are the core features (MVP)?
+  What additional features are planned post-launch?
+  Are there any must-have integrations (e.g., Stripe, Google login, Calendly)?
+  How should users interact with the app (key flows)?
+  Are there user roles/permissions (admin, editor, viewer)?
+  Are there collaborative or real-time features?
+
+🧪 User Experience & Interface
+  What are key use cases or user stories?
+  What should the user journey look like from onboarding to goal completion?
+  What tone, look, or feel should the app convey?
+
+💸 Monetization & Pricing
+  Is the app free, freemium, subscription-based, or pay-once?
+  Will there be in-app purchases or ads?
+  How will billing and payments be handled?
+  Will there be a trial period or free tier?
+
+🛠️ Technical Considerations
+  What tech stack will be used (frontend, backend, database)?
+  Are there any architectural constraints (monolith vs microservices)?
+  Will you need real-time capabilities?
+  Are there 3rd party APIs, SDKs, or tools to integrate?
+  Will offline mode or synchronization be required?
+  How will versioning, updates, and rollbacks be handled?
+
+
+## Product Brief's Target Audience
+
+Assume the primary reader of the product brief is a **junior developer**. Therefore, requirements should be explicit, unambiguous, and avoid jargon where possible. Provide enough detail for them to understand the feature's purpose and core logic.
+
+## Output
+
+*   **Format:** Markdown (`.md`)
+*   **Location:** `/docs/`
+*   **Filename:** `master-product-brief.md`
+
+## Final instructions
+
+1. Do NOT start implementing the product brief
+2. Make sure to ask the user clarifying questions
+3. Take the user's answers to the clarifying questions and improve the product brief - dive deeper where necessary. 

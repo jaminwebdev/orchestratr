@@ -1,0 +1,77 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Creating a Features Document
+
+## Goal
+
+To help an AI assistant generate a clear, prioritized Features Document in Markdown format. This document should outline all core and secondary product features based on the Product Brief, Market Analysis, and User Personas.
+
+Each feature should include a short description and rationale, and be understandable by junior developers and designers. The features will inform user stories, flows, wireframes, architecture, and testing plans in later stages.
+
+## Process
+
+1. **Reference Existing Docs:** Review the following documents in `/docs/`:
+   - `master-product-brief.md`
+   - `market-analysis.md`
+   - `user-personas.md`
+2. **Ask for Missing Context (If Needed):** If the product brief is vague about core functionality or prioritization, ask the user to clarify.
+3. **Organize Features by Type & Priority:** Group features as **MVP**, **Post-MVP**, and optionally **Nice-to-Have** or **Future**. Organize logically (e.g. onboarding, dashboard, admin tools).
+4. **Save Document:** Save the final features doc as `features.md` inside the `/docs/` directory.
+
+## Clarifying Questions (Examples)
+
+🧱 **Core Functionality**
+- What are the *must-have* features for the app to function?
+- What is the minimal set of features that deliver value to users?
+- Are there features specific to certain user roles?
+
+🌱 **Post-MVP or Growth Features**
+- What features would you like to include once the core product is stable?
+- What improvements or extensions could increase engagement or revenue?
+
+🔄 **User Actions & Flows**
+- What can users do in the app (create, edit, share, export)?
+- Are there key workflows or interactive steps we should support?
+
+🔐 **Access & Permissions**
+- Are there user roles (e.g. admin, collaborator, viewer)?
+- Should features be gated or limited by role or plan?
+
+📦 **Integrations & External Services**
+- Should the product integrate with any external tools or APIs?
+- Are login providers (Google, Apple, etc.) or payment processors required?
+
+📊 **Dashboards, Data, or Analytics**
+- Does the user need visibility into data or activity?
+- Will there be reporting or insights?
+
+🤝 **Collaboration & Communication**
+- Is the product single-user or multi-user?
+- Should it support real-time updates, notifications, messaging, or comments?
+
+## Feature Description Tips
+
+Each feature should include:
+- **Feature Name**
+- **Description** – what it does and why it matters
+- **Target User Role(s)**
+- **Priority** – MVP, Post-MVP, Nice-to-Have
+- *(Optional)* Technical considerations or dependencies
+
+Use bullet points or tables for clarity when needed.
+
+## Output
+
+* **Format:** Markdown (`.md`)
+* **Location:** `/docs/`
+* **Filename:** `features.md`
+
+## Final Instructions
+
+1. Do NOT generate the feature list immediately.
+2. Review previous documentation and prompt the user for missing detail.
+3. Offer to generate a structured, prioritized list of features informed by the product vision, users, and business needs.
+4. Ensure features are descriptive enough for junior developers and designers to reference without ambiguity.

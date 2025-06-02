@@ -1,0 +1,67 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Creating a Market Analysis Document
+
+## Goal
+
+To guide an AI assistant in creating a clear, actionable Market Analysis document in Markdown format, based on the previously completed Product Brief. The Market Analysis should help validate the product's opportunity, competitive landscape, and positioning strategy.
+
+This document will support future decisions around feature prioritization, product strategy, and go-to-market planning. It should be comprehensible to product managers, designers, and developers.
+
+## Process
+
+1. **Reference the Product Brief:** Begin with the existing `master-product-brief.md` in the `/docs` folder.
+2. **Ask Follow-up Questions (if needed):** If critical market details are missing (e.g. competitors, trends, pricing models), prompt the user for more information.
+3. **Generate Market Analysis:** Use the structure below to compile a comprehensive overview of the product’s market landscape.
+4. **Save Document:** Save the final document as `market-analysis.md` in the `/docs` directory.
+
+## Key Questions to Explore
+
+📈 **Market Landscape**
+- What industry or sector does this product target?
+- Is the market growing, shrinking, or shifting in any notable ways?
+- What current trends (technological, behavioral, economic) are influencing this market?
+- What’s the estimated market size (TAM, SAM, SOM)?
+
+🎯 **Target Segments**
+- What niches or subgroups exist within this market?
+- Which segments will be prioritized initially?
+- Are there underserved or overlooked audiences?
+
+⚔️ **Competitive Analysis**
+- Who are the direct and indirect competitors?
+- What do those competitors do well?
+- What are their weaknesses or gaps?
+- How is pricing structured for similar products?
+- What user complaints or frustrations exist in competitor offerings?
+
+🏅 **Positioning & Differentiation**
+- What makes this product unique?
+- What specific value or experience does it offer that others don’t?
+- Is this a cost leader, premium offering, or niche solution?
+
+🧠 **Strategic Insights**
+- Are there barriers to entry (e.g., tech complexity, regulation)?
+- Are there network effects or viral loops?
+- What risks or assumptions need to be validated?
+
+## Output
+
+* **Format:** Markdown (`.md`)
+* **Location:** `/docs/`
+* **Filename:** `market-analysis.md`
+
+## Final Instructions
+
+1. Do NOT generate the Market Analysis immediately.
+2. First, review the product brief and ask the user for any missing market/competitor info.
+
+3. Use their responses to create a thoughtful, research-backed analysis that informs future decisions.

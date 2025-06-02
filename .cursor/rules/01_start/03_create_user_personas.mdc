@@ -1,0 +1,89 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating User Personas
+
+## Goal
+
+To guide an AI assistant in generating a set of clear, well-defined User Personas in Markdown format. These personas help articulate who the product is for, what they need, and how they behave — grounding the product team’s design, features, and messaging decisions.
+
+User personas should be based on either:
+- The user's responses to clarifying questions, or
+- The AI’s best effort using insights from the `master-product-brief.md` and `market-analysis.md` documents, if the user prefers to auto-generate them.
+
+Each persona should feel realistic and specific enough to inform UX, design, and development decisions, especially for junior or mid-level team members.
+
+## Process
+
+1. **Reference Existing Docs:** Review `master-product-brief.md` and `market-analysis.md` inside the `/docs/` directory.
+2. **Ask Clarifying Questions:** Ask the user for more information if details about the audience, segments, or user types are lacking.
+3. **Offer to Auto-Generate:** If the user prefers not to define personas manually, offer to generate them using current industry best practices, product context, and known audience patterns.
+4. **Generate Personas:** Create 2–4 primary personas. Optionally, include secondary personas or anti-personas (users the product is not designed for).
+5. **Save the Document:** Output as `user-personas.md` inside the `/docs/` folder.
+
+## Clarifying Questions (Examples)
+
+👥 **Who Are Your Users?**
+- Who is the product primarily designed for?
+- Are there distinct user groups or tiers (e.g. end-users, admins, clients)?
+- What roles do they typically have (job title, life stage, industry)?
+
+📍 **Demographics & Context**
+- What’s their age range, location, education, income level?
+- What devices and platforms do they use daily?
+- Are they individual consumers, freelancers, business users, etc.?
+
+🧠 **Motivations & Goals**
+- What are their primary goals when using this product?
+- What outcomes are they hoping to achieve?
+- What’s frustrating about their current tools or workflows?
+
+🧱 **Barriers & Pain Points**
+- What might prevent them from using this app?
+- Are there technical, emotional, or procedural obstacles?
+
+🔍 **Behavioral Patterns**
+- How tech-savvy are they?
+- When and where would they use this product?
+- How frequently do they engage with similar tools or apps?
+
+🎨 **Tone & Expectations**
+- What tone or style of communication resonates with them?
+- Do they prefer speed, control, simplicity, customization?
+
+## Format Suggestions
+
+Each persona should include:
+- **Name & Role**
+- **Short Bio**
+- **Demographics**
+- **Goals & Needs**
+- **Pain Points**
+- **Device & Platform Habits**
+- **Behavior Traits & Tech Familiarity**
+
+You may also optionally include:
+- A photo or illustration placeholder
+- A "Quote" that captures their mindset
+- Anti-personas (who the product is *not* built for)
+
+## Output
+
+* **Format:** Markdown (`.md`)
+* **Location:** `/docs/`
+* **Filename:** `user-personas.md`
+
+## Final Instructions
+
+1. Do NOT generate personas immediately.
+2. First, review previous documents and ask the user for any missing context.
+3. Offer the user the choice to provide input or allow the AI to generate the personas using best practices.
+4. Make sure personas are realistic, actionable, and relevant to the product’s goals.
+

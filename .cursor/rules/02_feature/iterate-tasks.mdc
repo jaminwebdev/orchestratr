@@ -1,0 +1,98 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Task List Management and Iteration for Feature Implementation
+
+## Goal
+
+To guide an AI assistant in managing and iterating on a task list (in Markdown format) derived from a Product Requirements Document (PRD). The AI must track progress on completing a feature implementation by:
+
+- Carefully following task dependencies,
+- Marking progress accurately,
+- Consulting relevant documentation to ensure alignment and quality,
+- And pausing for user approval before proceeding to the next task.
+
+This approach supports controlled, transparent, and well-coordinated feature development.
+
+---
+
+## Key Principles for Task Iteration
+
+### 1. One Sub-Task at a Time
+
+- Do **NOT** start the next sub-task until the user explicitly grants permission by responding “yes” or “y” after completion of the current sub-task.
+- This allows for review, feedback, and course correction at a granular level.
+
+### 2. Completion Protocol
+
+- When a **sub-task** is finished, immediately update the task list:
+  - Change the sub-task checkbox from `[ ]` to `[x]`.
+- If **all sub-tasks** under a parent task are completed (`[x]`), mark the **parent task** as completed (`[x]`) as well.
+- Save and present the updated task list to the user.
+
+---
+
+## Task List Maintenance Guidelines
+
+- **Keep the task list up to date at all times:**
+  - Mark tasks/sub-tasks complete as described.
+  - Add any newly identified tasks or subtasks during development, if necessary.
+- **Maintain the “Relevant Files” section accurately:**
+  - List every file created or modified during implementation.
+  - Provide a brief one-line description of each file’s purpose.
+- Ensure that updates to the task list and relevant files are clearly communicated after every completed sub-task.
+
+---
+
+## Documentation Awareness & Context
+
+Before starting or continuing any sub-task, the AI must:
+
+- **Review the full context of all relevant documentation** to ensure implementation aligns with the overall product and technical vision. Key docs include:
+  - **Product Brief:** for feature goals, business context, and user needs.
+  - **Architecture & System Design:** for system constraints, data flows, and technology stacks.
+  - **User Flows:** to ensure feature workflows integrate smoothly with user interactions.
+  - **UX & Design Considerations:** to maintain visual and experiential consistency.
+  - **Features Overview:** for understanding feature interdependencies.
+  - **User Personas:** to keep the implementation user-centric.
+
+- This holistic review helps avoid siloed or contradictory work, and surfaces necessary updates or integration points.
+
+---
+
+## AI Instructions for Task Iteration
+
+When managing and completing task lists, the AI must:
+
+1. **Identify the next sub-task to work on** by checking the first incomplete sub-task in the list.
+2. **Consult all relevant documentation** to verify requirements, design, and technical constraints before starting work.
+3. **Implement the sub-task** following the documented requirements and best practices.
+4. **Update the task list file immediately** after completing the sub-task:
+   - Mark the sub-task as `[x]`.
+   - If applicable, mark the parent task `[x]`.
+   - Add or update the “Relevant Files” section to reflect any new or changed files.
+5. **Present the updated task list to the user**, and **pause**, explicitly requesting approval to continue.
+6. **Do NOT proceed** without the user’s explicit confirmation (`yes` or `y`).
+7. **Add new tasks** to the list if new requirements or technical details emerge during implementation.
+
+---
+
+## Summary
+
+- Work sequentially, one sub-task at a time.
+- Keep documentation context always in mind.
+- Keep task lists and file references current.
+- Pause and seek user approval after every sub-task.
+- Maintain clear communication about progress and changes.
+
+This ensures a controlled, well-aligned, and traceable development process consistent with the overall product vision.
+
+
+

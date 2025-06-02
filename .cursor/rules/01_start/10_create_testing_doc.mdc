@@ -1,0 +1,105 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating Testing & QA Strategy Document
+
+## Goal
+
+To guide an AI assistant in creating a detailed **Testing & QA Strategy** document that outlines how the product will be tested to ensure reliability, functionality, performance, and usability before and after release.
+
+The strategy should be actionable by QA engineers, developers, and product managers to maintain quality standards throughout the product lifecycle.
+
+## Process
+
+1. **Reference Previous Docs:**
+   - `master-product-brief.md`
+   - `features.md`
+   - `architecture-design-patterns.md`
+   - `user-flows.md`
+   - `security-compliance-plan.md`
+
+2. **Ask Clarifying Questions (if needed):**
+   - What types of testing are critical (unit, integration, end-to-end, load)?
+   - Are there specific regulatory requirements for testing (e.g., HIPAA validation)?
+   - What environments are needed for testing (dev, staging, production mirrors)?
+   - Will automated testing frameworks be used, and which ones?
+   - Who will own test creation, execution, and reporting?
+   - How will bugs be tracked and triaged?
+   - What is the target test coverage?
+
+3. **Generate the Testing & QA Strategy Document** using the structure below.
+
+## Recommended Document Structure
+
+### ✅ Testing Scope & Objectives
+- What parts of the app will be tested (features, integrations, UI, performance)?
+- Testing goals: bug detection, regression prevention, performance benchmarks
+
+### 🧪 Types of Testing
+- Unit testing (component-level logic)
+- Integration testing (service and API interactions)
+- End-to-end (E2E) testing (user flows and scenarios)
+- Performance and load testing
+- Security testing (penetration tests, vulnerability scans)
+- Usability testing (feedback from target users)
+- Accessibility testing (WCAG compliance)
+
+### ⚙️ Test Automation Strategy
+- Frameworks and tools (e.g., Jest, Cypress, Selenium, Playwright)
+- Automated vs manual test balance
+- Continuous integration (CI) setup for automated tests
+- Test data management and mocking strategies
+
+### 🔄 Test Environments
+- Environments used (development, staging, pre-prod, production)
+- Data seeding and environment parity considerations
+- Rollback and hotfix capabilities
+
+### 🧑‍🤝‍🧑 Roles & Responsibilities
+- QA engineers, developers, product managers involvement
+- Bug reporting and triaging process
+- Criteria for test case approval and release readiness
+
+### 📊 Metrics & Reporting
+- Test coverage targets (code and functional)
+- Bug trends and severity tracking
+- Pass/fail rates and build health monitoring
+- Regression tracking and release notes
+
+### 🚧 Handling Edge Cases & Flaky Tests
+- Strategies for intermittent or environment-specific failures
+- Test isolation and reproducibility
+- Approaches to test maintenance and refactoring
+
+### 🔍 Compliance & Audit Testing (if applicable)
+- Validation for regulatory standards (e.g., HIPAA, PCI-DSS)
+- Documentation of test results for audits
+
+## Clarifying Questions (Examples)
+
+- What level of automated testing do you want to implement?
+- Which testing frameworks or tools do you prefer or require?
+- Will you perform load or performance testing?
+- Do you require specific regulatory or accessibility testing?
+- How do you plan to handle bug reporting and tracking?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `testing-qa-strategy.md`
+
+## Final Instructions
+
+1. Do NOT generate the document until testing priorities and tool preferences are clear.
+2. Ask about automation, environments, and team roles early.
+3. Be thorough in defining test types, responsibilities, and coverage goals.
+4. Include sections on flaky test handling and compliance if relevant.
+

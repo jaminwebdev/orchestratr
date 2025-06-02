@@ -1,0 +1,102 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating Performance & Optimization Plan
+
+## Goal
+
+To guide an AI assistant in creating a detailed **Performance & Optimization Plan** that outlines strategies for achieving fast load times, smooth interactions, efficient backend processing, and overall system responsiveness.
+
+This document will help developers and engineers understand performance goals, bottlenecks, and optimization tactics across the stack.
+
+## Process
+
+1. **Reference Previous Docs:**
+   - `master-product-brief.md`
+   - `features.md`
+   - `architecture-design-patterns.md`
+   - `testing-qa-strategy.md`
+   - `analytics-success-metrics.md`
+
+2. **Ask Clarifying Questions (if needed):**
+   - What are the target performance goals (e.g., page load under 2 seconds, API response under 200 ms)?
+   - Are there specific pain points or performance bottlenecks anticipated?
+   - Which platforms and devices are priority for optimization?
+   - Will the app use server-side rendering, static generation, or client-side rendering?
+   - What caching strategies are preferred or required?
+   - Is backend scaling or database tuning a concern?
+   - Are there third-party integrations that impact performance?
+   - What tooling or monitoring will be used to track performance?
+
+3. **Generate the Performance & Optimization Plan** using the structure below.
+
+## Recommended Document Structure
+
+### ⚡ Performance Goals & Metrics
+- Target load times (first paint, interactive, full load)
+- API response time targets
+- Frame rates and animation smoothness
+- Performance budgets and SLAs
+
+### 🛠️ Frontend Optimization Strategies
+- Critical rendering path optimization
+- Lazy loading and code splitting
+- Image optimization (formats, sizes, CDN usage)
+- Minimizing JavaScript and CSS bundle size
+- Service workers and offline capabilities
+- Client-side caching (localStorage, IndexedDB)
+
+### 🔄 Backend Optimization Strategies
+- Database indexing and query optimization
+- Caching layers (Redis, Memcached)
+- Load balancing and autoscaling policies
+- Efficient API design (pagination, compression)
+- Asynchronous processing and queuing (e.g., background jobs)
+- Monitoring and alerting on backend performance
+
+### 🌍 Network & Infrastructure
+- CDN usage and geographic distribution
+- TLS session resumption and HTTP/2 or HTTP/3 support
+- DNS and connection optimizations
+- Throttling and rate limiting considerations
+
+### 🔧 Tooling & Monitoring
+- Performance monitoring tools (Lighthouse, WebPageTest, New Relic)
+- Real user monitoring (RUM) setup
+- Synthetic testing and benchmarks
+- Alerting on performance degradations
+
+### 🚧 Handling Edge Cases & Degradation
+- Graceful degradation strategies on slow networks/devices
+- Fallbacks for failed resource loads
+- Prioritization of critical vs non-critical content
+
+## Clarifying Questions (Examples)
+
+- What are your target load times and responsiveness goals?
+- Which platforms/devices require the highest performance priority?
+- Are you planning server-side rendering or static generation?
+- What caching layers and strategies are preferred?
+- Will you monitor real user performance in production?
+- Are there specific backend bottlenecks you anticipate?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `performance-optimization-plan.md`
+
+## Final Instructions
+
+1. Do NOT generate the document until performance goals and bottlenecks are clear.
+2. Ask about frontend rendering strategy, caching preferences, and backend scaling.
+3. Include detailed strategies across frontend, backend, and infrastructure.
+4. Emphasize monitoring and handling edge cases for degraded environments.
+

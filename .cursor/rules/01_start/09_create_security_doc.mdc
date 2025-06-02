@@ -1,0 +1,107 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating Security & Compliance Plan
+
+## Goal
+
+To guide an AI assistant in generating a **Security & Compliance Plan** that outlines how user data, infrastructure, and access controls are protected, and what legal/regulatory standards the product must meet.
+
+This plan helps the development team integrate security into the product from the beginning, rather than treating it as an afterthought. It should be actionable for engineers, auditable for stakeholders, and aligned with industry best practices.
+
+## Process
+
+1. **Reference Previous Docs:**
+   - `master-product-brief.md`
+   - `features.md`
+   - `architecture-design-patterns.md`
+   - `user-personas.md` (especially for identifying threat vectors)
+
+2. **Ask Clarifying Questions (if needed):**
+   - Will you store personally identifiable information (PII)?
+   - Are you targeting specific regulated industries (e.g., finance, health, education)?
+   - Will payments be processed directly or through third parties?
+   - Is the app subject to GDPR, CCPA, HIPAA, or other regional laws?
+   - Will there be user roles and permission-based access?
+
+3. **Generate the Security & Compliance Plan** using the structure below.
+
+## Recommended Document Structure
+
+### 🔐 Authentication & Authorization
+- Sign-in method (password, OAuth, passkeys)
+- Role-based access control (RBAC)
+- Session management and token expiration
+- Multi-factor authentication (MFA)
+- Password storage strategy (hashing with bcrypt/argon2, salting)
+
+### 🔎 Data Privacy & Classification
+- What data is collected and why
+- Classification levels (PII, sensitive, non-sensitive)
+- Retention/deletion policy
+- End-user consent management (cookie banners, opt-in forms)
+
+### 🔒 Encryption & Transmission
+- TLS everywhere (HTTPS enforced)
+- Encryption at rest (what’s encrypted and how)
+- Key management strategy
+- Secure transmission of secrets and tokens
+
+### 🧰 Application Security
+- Input validation and sanitization
+- Rate limiting and abuse detection
+- Protection against OWASP Top 10 (XSS, CSRF, SQLi, etc.)
+- File upload restrictions (MIME checks, virus scanning)
+
+### 🧾 Compliance Standards & Regulations
+- Applicable laws: GDPR, CCPA, HIPAA, COPPA, etc.
+- Data Subject Rights (access, erasure, portability)
+- Third-party compliance (e.g., Stripe PCI-DSS, Firebase security standards)
+
+### 🌍 Infrastructure & DevSecOps
+- Secrets management (e.g., environment variables, Vault, Doppler)
+- CI/CD security (linting, dependency scans, approval gates)
+- Production access control (SSH access, audit trails)
+- Regular patching and updates
+
+### 🧪 Monitoring, Detection, and Response
+- Logging strategy for access, failures, and edge cases
+- Real-time alerts for suspicious behavior
+- Incident response plan and escalation path
+- Data breach notification policies
+
+### 🚧 Threat Modeling & Risk Mitigation
+- Potential attack surfaces (e.g., login, API endpoints, admin panels)
+- Internal threat vectors (misuse by staff/admins)
+- Mitigation plans for high-risk components
+- Plans for disaster recovery and business continuity
+
+## Clarifying Questions (Examples)
+
+- Will your users store sensitive personal or financial data?
+- Are there roles or permissions that affect what data users can see/edit?
+- Are you operating in regions with strict data laws (EU, California)?
+- What is your plan for logging and detecting unauthorized behavior?
+- Do you need legal counsel or third-party audits?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `security-compliance-plan.md`
+
+## Final Instructions
+
+1. Do NOT generate the security document until sensitive data types and user access patterns are clarified.
+2. Ask about regulatory exposure and industry-specific needs.
+3. Include both technical practices and legal considerations.
+4. Be detailed in describing encryption, input validation, and permissions.
+5. Include a section on **threat modeling and risk mitigation**. This is required.
+

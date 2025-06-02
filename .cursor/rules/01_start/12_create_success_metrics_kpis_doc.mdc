@@ -1,0 +1,91 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating Analytics & Success Metrics Document
+
+## Goal
+
+To guide an AI assistant in creating an **Analytics & Success Metrics** document that defines which metrics, KPIs, and data collection strategies will be used to measure product performance, user behavior, and business impact.
+
+This document should enable product owners, analysts, and developers to track progress and make data-driven decisions.
+
+## Process
+
+1. **Reference Previous Docs:**
+   - `master-product-brief.md`
+   - `features.md`
+   - `user-personas.md`
+   - `testing-qa-strategy.md`
+
+2. **Ask Clarifying Questions (if needed):**
+   - What are your primary business goals (e.g., user acquisition, engagement, retention, revenue)?
+   - Which user actions or events are most important to track?
+   - Are there existing analytics platforms you want to use (e.g., Google Analytics, Mixpanel, Amplitude)?
+   - What are the key performance indicators (KPIs) for success?
+   - Do you want to track funnels, cohorts, or custom segments?
+   - How frequently should reports be generated and reviewed?
+
+3. **Generate the Analytics & Success Metrics Document** using the structure below.
+
+## Recommended Document Structure
+
+### 🎯 Business Goals & Objectives
+- Primary goals (growth, retention, revenue, satisfaction)
+- How analytics tie into product strategy
+
+### 📊 Key Metrics & KPIs
+- Acquisition metrics (e.g., new users, sign-ups)
+- Activation metrics (e.g., onboarding completion)
+- Engagement metrics (e.g., daily/weekly active users, session length)
+- Retention and churn rates
+- Revenue metrics (e.g., ARPU, LTV, conversion rates)
+- Performance metrics (e.g., load time, error rates)
+
+### 🔍 Event Tracking & Data Collection
+- Key user events to track (page views, clicks, purchases)
+- User properties and segmentation
+- Custom event definitions and attributes
+- Data collection methods (client-side, server-side)
+
+### 🛠️ Tools & Integrations
+- Analytics platforms and SDKs
+- Tag management (Google Tag Manager or alternatives)
+- Data privacy and compliance considerations (cookie consent, GDPR)
+
+### 📅 Reporting & Dashboards
+- Frequency of reporting (real-time, daily, weekly)
+- Dashboards and visualization tools
+- Alerting on anomalies or KPI drops
+
+### 🔄 Experimentation & A/B Testing
+- Plans for running experiments
+- Metrics to evaluate success in tests
+
+## Clarifying Questions (Examples)
+
+- What are the most important user behaviors to track?
+- Do you have preferred analytics tools or platforms?
+- How will you measure product/feature success quantitatively?
+- Will you track revenue or monetization-related KPIs?
+- What frequency and format of reporting do you want?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `analytics-success-metrics.md`
+
+## Final Instructions
+
+1. Do NOT generate the document until goals and metrics preferences are clear.
+2. Ask about tool choices, reporting needs, and critical KPIs.
+3. Include details on event tracking and compliance.
+4. Be explicit about how metrics align with business objectives.
+

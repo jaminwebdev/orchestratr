@@ -1,0 +1,99 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating Content Strategy Document
+
+## Goal
+
+To guide an AI assistant in generating a **Content Strategy** document that outlines how content will be created, structured, delivered, and maintained across the product.
+
+This document ensures that product copy, microcopy, help content, marketing messaging, and other written/visual content are consistent, purposeful, and aligned with both user goals and brand voice.
+
+## Process
+
+1. **Reference Previous Docs:** Pull insights from:
+   - `master-product-brief.md`
+   - `user-personas.md`
+   - `features.md`
+   - `ux-design-considerations.md`
+   - `user-flows.md`
+
+2. **Ask Clarifying Questions (if needed):**
+   - What tone and style should be used across the app?
+   - Are there specific content types the app relies on (e.g., blog posts, product descriptions, help docs, tooltips)?
+   - Will content be user-generated, admin-authored, or AI-generated?
+   - How frequently will content need to be updated?
+   - Should SEO or accessibility considerations be factored in?
+   - Are there language, localization, or translation needs?
+
+3. **Generate the Content Strategy Document** using the structure below.
+
+## Recommended Document Structure
+
+### 🧭 Purpose & Content Goals
+- What content is needed to help users succeed?
+- How does content support the product’s primary goals (onboarding, engagement, conversion, retention)?
+- Will content educate, persuade, reassure, or entertain?
+
+### ✍️ Tone, Voice, and Style
+- Adjectives that describe the voice (e.g., clear, confident, playful, instructional)
+- Notes on vocabulary level, formality, and consistency
+- Grammar/stylistic preferences (e.g. Oxford comma, sentence casing)
+- Any "do/don’t" guidelines for brand-aligned writing
+
+### 🗂️ Content Types & Sources
+- UI microcopy (buttons, errors, success states)
+- Help/support content (tooltips, FAQs, onboarding)
+- System messages (notifications, alerts)
+- User-generated vs platform-generated content
+- Blog, documentation, newsletters, etc.
+
+### 📍 Content Placement & Flows
+- Where in the app does content appear (and when)?
+- Are certain flows content-heavy (e.g. onboarding, checkout, feature tutorials)?
+- Notes on contextual help or progressive disclosure
+
+### 🌍 Localization & Accessibility
+- Will the app support multiple languages?
+- Any accessibility standards (e.g., alt text, screen reader support)?
+- Reading level targets?
+
+### 🔄 Content Maintenance & Governance
+- Who writes and approves content?
+- How often is content reviewed or updated?
+- Is there a versioning or revision history system?
+
+### 🔍 SEO or External Strategy (if applicable)
+- Will content appear in public-facing areas (blogs, landing pages)?
+- Are keywords, metadata, or schema markup required?
+- Will there be a publishing calendar or growth-focused content plan?
+
+## Clarifying Questions (Examples)
+
+- What type of writing tone should your product maintain (formal, casual, techy, helpful)?
+- Are there specific flows or areas in the app where content will play a critical role?
+- Do you want content to educate, persuade, or simply direct users?
+- Will your content team maintain this over time, or is it more static?
+- Will this app need to support multiple languages?
+- Are there external-facing content needs (marketing, SEO)?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `content-strategy.md`
+
+## Final Instructions
+
+1. Do NOT generate the content strategy until user preferences are clear.
+2. Ask clarifying questions about tone, flow, localization, and update frequency.
+3. Ensure the document gives both high-level philosophy and practical, actionable rules.
+4. Be specific enough that a UX writer or frontend engineer could use it to write production-ready copy.
+

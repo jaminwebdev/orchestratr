@@ -1,0 +1,90 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating UX & Design Considerations
+
+## Goal
+
+To guide an AI assistant in generating a **UX & Design Considerations** document that outlines the visual direction, interaction principles, emotional tone, and branding guidance for the product.
+
+This document should serve as a creative brief for designers and frontend developers, summarizing the design language, usability goals, emotional tone, and accessibility principles that should guide the interface design process.
+
+## Process
+
+1. **Reference Previous Docs:** Use the following as context:
+   - `master-product-brief.md`
+   - `user-personas.md`
+   - `features.md`
+   - `user-flows.md`
+
+2. **Ask Clarifying Questions (if needed):**
+   - If visual tone, branding, or design inspirations are not already discussed, prompt the user to describe or upload examples.
+   - Ask for adjectives that describe the product’s personality (e.g. playful, professional, elegant).
+   - Confirm color palette preferences, typography styles, and branding constraints (if any).
+
+3. **Generate UX & Design Considerations:** Based on user input and existing docs, structure the output into the following sections:
+
+## Recommended Document Structure
+
+### 🎨 Visual Direction
+- Key adjectives that describe the brand or product’s personality (e.g. clean, vibrant, minimalist)
+- Desired look and feel (e.g. soft edges vs sharp, light vs dark theme, skeuomorphic vs flat)
+- Color palette suggestions or constraints
+- Typography preferences or guidelines
+- Preferred use of imagery, iconography, or illustrations
+
+### 🧠 UX Principles
+- Core usability priorities (e.g. speed, simplicity, predictability)
+- Any accessibility considerations (e.g. WCAG, screen reader support)
+- Interaction style (e.g. gesture-based, form-heavy, voice commands)
+- Animation/microinteraction philosophy (subtle feedback, expressive, none)
+
+### 📱 Platform-Specific Guidelines
+- Should the experience differ between mobile and desktop?
+- Responsive design strategy (breakpoints, stacking, collapsible menus)
+- Any native platform conventions to follow (iOS/Android/Material/etc.)
+
+### 🪄 Tone and Emotion
+- What feelings should the UI evoke (e.g. trust, excitement, calm)?
+- Should the tone be formal or conversational?
+- Voice/personality of the UI copy (if relevant)
+
+### 🧭 UX Priorities by Feature or Flow
+- Notes on UX decisions for specific features (e.g. onboarding should feel warm and fast; checkout should minimize friction)
+- Areas where simplicity or speed are most critical
+- Role-specific UX needs (e.g. admins vs end users)
+
+### 🖼️ Design Inspirations (optional)
+- References to apps, websites, or brands the user likes
+- Links to screenshots, Dribbble, Behance, Figma, etc.
+
+## Clarifying Questions (Examples)
+
+- What are 3–5 adjectives that describe your desired brand feel?
+- Are there specific apps or websites you admire from a design perspective?
+- Do you have a logo, color palette, or typeface already?
+- Do you want a light mode, dark mode, or both?
+- Should the app feel more corporate or more creative/playful?
+- What are the most important emotional reactions you want users to feel?
+- Do you want animations or microinteractions?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `ux-design-considerations.md`
+
+## Final Instructions
+
+1. Do NOT generate the document immediately.
+2. Ask the user for branding guidance, adjectives, and style references if not already covered.
+3. Organize the design guidance into clear sections for visual style, UX goals, tone, and platform-specific notes.
+4. Be descriptive enough that a designer could begin creating mockups based on the content alone.
+

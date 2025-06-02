@@ -1,0 +1,90 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating Post-MVP Growth & Iteration Plan Document
+
+## Goal
+
+To guide an AI assistant in creating a clear **Post-MVP Growth & Iteration Plan** that outlines strategies for product improvement, scaling, and feature expansion after the Minimum Viable Product launch.
+
+This plan should enable the product and engineering teams to prioritize enhancements, gather feedback, and iteratively grow the product in alignment with user needs and business goals.
+
+## Process
+
+1. **Reference Previous Docs:**
+   - `master-product-brief.md`
+   - `features.md`
+   - `analytics-success-metrics.md`
+   - `user-personas.md`
+   - `testing-qa-strategy.md`
+
+2. **Ask Clarifying Questions (if needed):**
+   - What are the key user feedback channels post-launch?
+   - How will feature requests be prioritized and validated?
+   - What metrics will guide iteration priorities?
+   - Are there plans for new user segments or markets?
+   - What is the cadence for releases and updates?
+   - How will technical debt and refactoring be handled?
+   - Are there marketing or growth initiatives planned (e.g., SEO, partnerships)?
+
+3. **Generate the Post-MVP Growth & Iteration Plan** using the structure below.
+
+## Recommended Document Structure
+
+### 🚀 Growth Goals & Metrics
+- User acquisition, engagement, retention targets
+- Revenue and monetization growth goals
+- Expansion into new markets or segments
+
+### 📣 User Feedback & Validation
+- Channels for collecting feedback (surveys, support, analytics)
+- Process for validating and prioritizing feature requests
+- Beta testing and early access programs
+
+### 🔄 Iteration & Release Cadence
+- Frequency and scope of releases (minor updates, major versions)
+- Agile methodologies and sprint planning
+- Rollback and hotfix procedures
+
+### 🛠️ Technical Maintenance
+- Handling technical debt and codebase improvements
+- Refactoring plans
+- Infrastructure scaling and optimization
+
+### 📈 Marketing & Growth Initiatives
+- SEO, content marketing, and social media plans
+- Partnerships, integrations, and collaborations
+- Paid acquisition and advertising strategies
+
+### 🎯 Success Measurement
+- KPIs and OKRs for growth and iteration success
+- Data-driven decision making frameworks
+
+## Clarifying Questions (Examples)
+
+- How will you collect and prioritize user feedback after MVP?
+- What metrics will guide your iteration focus?
+- What is your planned release cadence post-launch?
+- Do you have marketing or growth plans tied to product updates?
+- How will you address technical debt over time?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `post-mvp-growth-iteration-plan.md`
+
+## Final Instructions
+
+1. Do NOT generate the document until iteration and growth goals are clear.
+2. Ask about feedback loops, release frequency, and growth initiatives.
+3. Include strategies for user validation, technical maintenance, and marketing.
+4. Align the plan with metrics and success criteria for measurable impact.
+

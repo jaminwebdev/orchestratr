@@ -1,0 +1,102 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Creating User Flow Diagrams
+
+## Goal
+
+To help an AI assistant generate clear, useful **User Flow Diagrams** and/or structured Markdown-based flow representations that illustrate how users move through the application to complete key tasks.
+
+These user flows should visualize the steps, decisions, and possible branches that occur as users interact with core features. They will be used as a foundation for UI/UX design, wireframing, testing, and architecture.
+
+## Process
+
+1. **Reference Existing Docs:** Review the following documents in `/docs/`:
+   - `master-product-brief.md`
+   - `user-personas.md`
+   - `features.md`
+
+2. **Ask for Clarification (if needed):**
+   - If specific flows were not defined in the product brief or features doc, ask the user which flows are most important to visualize (e.g. onboarding, search, payment, sharing).
+   - Confirm whether flows should be high-level or detailed, and whether diagrams or structured outlines are preferred.
+
+3. **Identify Key Flows:**
+   - Based on user goals and product features, identify the 3–6 most critical user flows to illustrate. These should represent end-to-end paths that a user takes to accomplish a goal.
+
+4. **Generate Structured Flows:** For each flow:
+   - Use a diagram-friendly syntax like **Mermaid** (preferred) or an indented **Markdown outline**.
+   - Include decision points, branches, system interactions, and completion steps.
+   - Add annotations or notes where necessary.
+
+5. **Save Document:**
+   - Save the final output as `user-flows.md` inside the `/docs/` directory.
+   - Clearly separate each flow by name with its own section.
+
+## Clarifying Questions (Examples)
+
+### 🧭 What Flows Should Be Visualized?
+- What are the most important user goals or tasks?
+- What flows should be supported during the first user session?
+- Are there any admin, guest, or multi-user flows?
+
+### 📐 Scope & Detail
+- Should these flows be high-level, mid-fidelity, or granular?
+- Should we include edge cases or error branches?
+- Are there mobile-specific differences?
+
+### 🎯 Goal Completion
+- What defines the "end" of a successful flow?
+- What happens when users abandon or fail to complete a step?
+
+## Flow Format Options
+
+### ✅ Mermaid Syntax (Recommended)
+
+```mermaid
+flowchart TD
+    Start[User visits homepage]
+    Start --> SignUp[Clicks “Sign Up”]
+    SignUp --> EnterDetails[Enters email & password]
+    EnterDetails --> ConfirmEmail[Confirms email]
+    ConfirmEmail --> Onboarding[Onboarding screen]
+    Onboarding --> Dashboard[Redirected to dashboard]
+```
+
+## Markdown Outline Format
+
+New User Signup Flow:
+
+1. User visits homepage
+2. Clicks “Sign Up”
+3. Enters email and password
+4. Confirms email via verification link
+5. Completes onboarding checklist
+6. Arrives at dashboard
+
+Each flow should include:
+
+- Flow Name
+- Start and End Points
+- Steps and Decisions
+- Branching Conditions (if any)
+- Relevant User Role(s)
+
+## Output
+* **Format:** Markdown (`.md`)
+* **Location:** `/docs/`
+* **Filename:** `user-flows.md`
+
+## Final Instructions
+1. Do NOT generate the flows immediately.
+2. Ask the user which flows to include (or propose default suggestions based on previous docs).
+3. Confirm the preferred format (Mermaid, Markdown outline, or both).
+4. Ensure each flow is clearly labeled and understandable by both designers and developers.
+5. Use consistent formatting to allow future reuse in wireframes, prototyping, or system design.
+

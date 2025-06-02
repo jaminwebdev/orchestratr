@@ -1,0 +1,91 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating Risk & Contingency Plan Document
+
+## Goal
+
+To guide an AI assistant in creating a comprehensive **Risk & Contingency Plan** document that identifies potential risks, assesses their impact and likelihood, and outlines mitigation and response strategies to minimize disruptions during product development and operation.
+
+This document should help stakeholders proactively prepare for uncertainties and ensure business continuity.
+
+## Process
+
+1. **Reference Previous Docs:**
+   - `master-product-brief.md`
+   - `architecture-design-patterns.md`
+   - `testing-qa-strategy.md`
+   - `performance-optimization-plan.md`
+   - `security-compliance-plan.md`
+
+2. **Ask Clarifying Questions (if needed):**
+   - What are the main categories of risk relevant to your product (technical, operational, market, legal, security)?
+   - Which risks have you already encountered or foresee as most critical?
+   - What mitigation strategies are currently planned or in place?
+   - What is the escalation and communication plan for incidents?
+   - Are there backup or failover systems?
+   - How will you monitor and update the risk plan over time?
+
+3. **Generate the Risk & Contingency Plan** using the structure below.
+
+## Recommended Document Structure
+
+### ⚠️ Risk Identification
+- List of potential risks by category:
+  - Technical (e.g., system failures, bugs)
+  - Operational (e.g., staffing, process failures)
+  - Market (e.g., competition, demand shifts)
+  - Security (e.g., data breaches, compliance issues)
+  - Legal & Regulatory (e.g., licensing, GDPR)
+  - External (e.g., supply chain, natural disasters)
+
+### 🔍 Risk Assessment
+- Impact analysis (high/medium/low)
+- Likelihood/probability ratings
+- Risk prioritization matrix
+
+### 🛡️ Risk Mitigation Strategies
+- Preventative measures
+- Design and architectural safeguards
+- Testing and quality assurance
+- Security controls
+
+### 🚨 Contingency & Response Plans
+- Incident response procedures
+- Communication and escalation workflows
+- Backup, recovery, and failover plans
+- Roles and responsibilities during incidents
+
+### 🔄 Monitoring & Review
+- Regular risk assessments and updates
+- Tools and processes for tracking risks
+- Lessons learned and continuous improvement
+
+## Clarifying Questions (Examples)
+
+- What are your biggest technical risks and how do you plan to mitigate them?
+- How prepared are you for security breaches or data loss?
+- What is your incident response and communication plan?
+- Do you have backup and disaster recovery procedures?
+- How often will you revisit and update the risk plan?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `risk-contingency-plan.md`
+
+## Final Instructions
+
+1. Do NOT generate the document until risk categories and mitigation preferences are clear.
+2. Ask detailed questions about risks, responses, and backup plans.
+3. Provide actionable, prioritized risk management strategies.
+4. Emphasize continuous monitoring and incident readiness.
+

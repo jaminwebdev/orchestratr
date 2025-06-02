@@ -1,0 +1,115 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description:
+globs:
+alwaysApply: false
+---
+# Rule: Generating Architecture & System Design Patterns Document
+
+## Goal
+
+To guide an AI assistant in creating an **Architecture & System Design Patterns** document that outlines how the application will be structured technically. This includes system components, data flow, API boundaries, storage, authentication, deployment infrastructure, and known edge cases.
+
+The document should be suitable for senior developers and tech leads to review, while also being clear enough for mid-level engineers to implement.
+
+## Process
+
+1. **Reference Previous Docs:**
+   - `master-product-brief.md`
+   - `features.md`
+   - `user-flows.md`
+   - `ux-design-considerations.md`
+   - `content-strategy.md`
+
+2. **Ask Clarifying Questions (if needed):**
+   - What frontend and backend tech stacks are being considered?
+   - Are there hosting or scaling requirements (e.g. global reach, high concurrency)?
+   - Will there be third-party integrations (auth, payments, analytics)?
+   - Are there real-time or offline requirements?
+   - What is the expected data size and frequency of updates?
+   - Are microservices or a monolith architecture preferred?
+
+3. **Generate the Architecture & System Design Document** using the structure below.
+
+## Recommended Document Structure
+
+### 🧱 System Overview
+- A high-level summary of the architecture (frontend, backend, database, APIs)
+- Monolith vs microservices explanation (if applicable)
+- Preferred stack (e.g., SvelteKit + Supabase, React + Node, Django + PostgreSQL)
+- Overview diagram (if visual generation is enabled)
+
+### 🔁 Core Services & Responsibilities
+- Auth service
+- API gateway / routing
+- Business logic layer
+- Database structure
+- Background jobs, queues, or schedulers
+- External integrations (e.g. Stripe, SendGrid, Firebase)
+
+### 📡 Data Flow & APIs
+- How data moves between frontend and backend
+- REST vs GraphQL (or other protocols)
+- Key APIs (CRUD endpoints, authentication, file uploads)
+- Data validation strategies (e.g., Zod, JSON Schema, Prisma validators)
+
+### 🛡️ Security & Compliance
+- Authentication (email/password, social login, SSO, OAuth)
+- Authorization model (roles, permissions)
+- Rate limiting, input validation, CSRF/XSS/SQLi protection
+- GDPR, CCPA, HIPAA compliance (if relevant)
+- Encryption of data at rest and in transit
+
+### 🌐 Hosting & Infrastructure
+- Cloud provider(s) (e.g., Vercel, Netlify, AWS, Supabase)
+- Serverless vs traditional deployment
+- CDN and edge logic
+- Deployment strategy (CI/CD pipelines, blue/green deployment, rollback)
+
+### 📈 Scalability & Performance
+- Caching strategy (e.g., Redis, CDN, browser cache)
+- Horizontal vs vertical scaling
+- Database indexing and optimization
+- Bottlenecks and performance considerations
+
+### 🧪 Edge Cases & Failure Modes
+- Handling race conditions, API timeouts, and retries
+- Graceful degradation or offline support
+- Rate limiting and abuse prevention
+- What happens if third-party services go down?
+- How are corrupted/incomplete data states handled?
+- Session expiry, reauthentication, and refresh tokens
+
+### 🔍 Observability & Debugging
+- Logging (where, what, and how)
+- Error tracking (e.g., Sentry)
+- Monitoring (e.g., Prometheus, Datadog)
+- Audit trails or usage logs
+
+## Clarifying Questions (Examples)
+
+- What frameworks and services are you planning to use on the frontend/backend?
+- Are you using a serverless platform or provisioning your own servers?
+- What are the most important performance goals?
+- Will the app have real-time functionality (chat, live updates)?
+- What edge cases are you most concerned about?
+- Do you need audit logs or versioning of user data?
+- What scale (in terms of users, API requests, data) are you expecting to reach?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `architecture-design-patterns.md`
+
+## Final Instructions
+
+1. Do NOT generate the architecture document until the stack, data needs, and user flow volume are clear.
+2. Ask clarifying questions around scale, real-time features, hosting model, and failure scenarios.
+3. Be precise and technical, but always structure content in clear, sectioned Markdown.
+4. Include a section on **edge cases and failure modes**. This is non-optional.
+
