@@ -3,11 +3,7 @@ description:
 globs: 
 alwaysApply: false
 ---
----
-description:
-globs:
-alwaysApply: false
----
+
 # Rule: Generating Architecture & System Design Patterns Document
 
 ## Goal

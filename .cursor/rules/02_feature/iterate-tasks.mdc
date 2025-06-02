@@ -3,12 +3,6 @@ description:
 globs: 
 alwaysApply: false
 ---
----
-description: 
-globs: 
-alwaysApply: false
----
-
 # Rule: Task List Management and Iteration for Feature Implementation
 
 ## Goal

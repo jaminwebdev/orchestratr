@@ -3,11 +3,6 @@ description:
 globs: 
 alwaysApply: false
 ---
----
-description:
-globs:
-alwaysApply: false
----
 # Rule: Generating Security & Compliance Plan
 
 ## Goal

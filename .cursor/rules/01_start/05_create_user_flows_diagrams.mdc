@@ -3,11 +3,6 @@ description:
 globs: 
 alwaysApply: false
 ---
----
-description:
-globs:
-alwaysApply: false
----
 # Rule: Creating User Flow Diagrams
 
 ## Goal

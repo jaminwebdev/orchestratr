@@ -3,11 +3,6 @@ description:
 globs: 
 alwaysApply: false
 ---
----
-description:
-globs:
-alwaysApply: false
----
 # Rule: Generating Risk & Contingency Plan Document
 
 ## Goal
