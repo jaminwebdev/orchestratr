@@ -1,0 +1,132 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating High-Converting Web Copy
+
+## Goal
+
+To guide an AI assistant in crafting compelling, persuasive, and conversion-focused web page copy in Markdown format. The copy should adhere to best practices for web writing, including using power words, maintaining a conversational tone, and applying established persuasive writing formulas like AIDA and PAS. The generated copy should be clear, engaging, and designed to achieve specific page goals.
+
+## Process
+
+1. **Receive Initial Prompt:** The user provides a brief description or request for web page copy.
+    
+2. **Ask Clarifying Questions:** Before writing any copy, the AI _must_ ask clarifying questions to gather sufficient detail about the page's purpose, target audience, and structure. The goal is to understand the "who," "what," and "why" of the page to craft effective copy.
+    
+3. **Identify Key Persuasive Elements:** Based on user input, identify opportunities to integrate:
+    
+    - **Power Words:** Words that evoke emotion and drive action.
+    - **Conversational Tone:** Writing as if speaking directly to the user.
+    - **Benefit-Oriented Language:** Focusing on what the user gains, not just features.
+    - **Urgency & Scarcity (where appropriate):** Creating a sense of immediate need.
+    - **Social Proof:** Leveraging testimonials, reviews, or numbers (e.g., "join thousands of satisfied users").
+    - **Emotional Triggers:** Appealing to aspirations, fears, desires, or pain points.
+4. **Determine Copywriting Formulas:** Decide which persuasive formulas (AIDA, PAS) are most appropriate for different sections or the overall page, and consciously apply them.
+    
+    - **AIDA (Attention, Interest, Desire, Action):**
+        - **Attention:** Grab the reader's immediate focus.
+        - **Interest:** Engage them with relevant information.
+        - **Desire:** Make them want your offering.
+        - **Action:** Tell them what to do next.
+    - **PAS (Problem, Agitate, Solution):**
+        - **Problem:** Identify a pain point or challenge the user faces.
+        - **Agitate:** Emphasize the negative consequences of that problem.
+        - **Solution:** Present your offering as the clear resolution.
+5. **Generate Web Page Copy:** Based on the initial prompt, user answers to clarifying questions, and identified persuasive elements and formulas, generate the web page copy using the structure outlined below.
+    
+6. **Suggest Enhancements:** Provide recommendations for further optimizing the copy, such as A/B testing suggestions, calls for additional visual elements, or specific SEO keyword integrations.
+    
+7. **Save Copy:** Save the generated document as `copy-[page-name].md` inside the `/content/web-pages` directory.
+    
+
+## Clarifying Questions
+
+The AI should adapt its questions based on the prompt, but here are the mandatory questions to explore:
+
+- **Primary Page Goal:** "What's the **primary goal** of this page? (e.g., lead generation, product sale, information dissemination, sign-up, download)"
+- **Secondary Page Goal (Optional):** "Is there a **secondary goal** for this page?"
+- **User Persona:** "Please describe the **primary user persona** for this page in the format: [Name] is a [occupation/descriptor], that wants [thing/service/product], so he/she can [outcome]." (Example: _Sarah is a small business owner, that wants to streamline her invoicing process, so she can save time and reduce errors._)
+- **Page Outline/Wireframe:** "Can you provide a general **outline or wireframe** of the page structure in text format, or share a screenshot of the wireframe?"
+- **Key Message/Unique Selling Proposition:** "What is the single most important message you want to convey on this page? What makes your offering unique or better than alternatives?"
+- **Call to Action (CTA):** "What specific action do you want users to take on this page? What should the primary Call to Action (CTA) button say?"
+- **Tone & Voice:** "What kind of tone and voice should the copy convey? (e.g., friendly, authoritative, inspiring, humorous, professional)"
+- **Target Audience Pain Points/Desires:** "What are the main pain points or desires of your target audience that this page should address?"
+- **Objections/Concerns:** "What potential objections or concerns might users have that the copy needs to overcome?"
+- **Supporting Evidence:** "Do you have any testimonials, statistics, awards, or other social proof that can be included?"
+- **Keywords:** "Are there any specific keywords or phrases that should be naturally integrated for SEO purposes?"
+- **Competitors:** "Who are your main competitors, and how does your offering differ from theirs?"
+
+## Web Page Copy Structure
+
+The generated web page copy should include the following sections, adapting their presence and order based on the user's outline and the chosen copywriting formulas:
+
+1. **Headline (H1):**
+    
+    - **Purpose:** Grab attention, state the core benefit, and pique curiosity.
+    - **Characteristics:** Clear, concise, benefit-driven, includes power words.
+    - _Example:_ "Unlock Your Potential: Master New Skills Today!"
+2. **Sub-Headline (H2):**
+    
+    - **Purpose:** Elaborate on the headline, provide more detail, and set expectations.
+    - **Characteristics:** Supports H1, adds intrigue, often conversational.
+3. **Introduction/Hook (Applying AIDA - Attention & Interest; or PAS - Problem & Agitate):**
+    
+    - **Purpose:** Engage the reader immediately, introduce the problem they face, or present an intriguing scenario.
+    - **Characteristics:** Empathetic, relatable, asks questions, highlights pain points or aspirations.
+    - _Example (PAS):_ "Tired of juggling endless tasks and missing deadlines? We get it. The pressure to perform can feel overwhelming..."
+4. **Body Copy - Problem/Agitation/Solution (PAS) or Desire (AIDA):**
+    
+    - **Purpose:** Deepen the connection with the reader, elaborate on the problem, introduce the solution (your offering), and build desire.
+    - **Characteristics:**
+        - **Problem/Agitation:** Uses vivid language to describe the negative impact of the problem.
+        - **Solution:** Clearly positions your product/service as the answer, focusing on **benefits** over features. Use active voice.
+        - **Desire:** Paints a picture of the positive future the user will experience, leveraging emotional triggers.
+    - _Example (AIDA - Desire):_ "Imagine a world where your daily tasks are effortlessly organized, freeing you to focus on what truly matters. Our intuitive platform makes that a reality."
+5. **Features & Benefits Section:**
+    
+    - **Purpose:** Detail specific functionalities and, crucially, translate them into clear user benefits.
+    - **Characteristics:** Use bullet points for readability. For each feature, explicitly state "which means you can..." or "so you can..."
+    - _Example:_
+        - **Feature:** Integrated CRM
+        - **Benefit:** _...which means you can effortlessly manage customer interactions and never miss a follow-up._
+6. **Social Proof/Credibility:**
+    
+    - **Purpose:** Build trust and alleviate skepticism.
+    - **Characteristics:** Include testimonials, case studies, statistics, awards, press mentions, or user counts. Integrate them naturally.
+    - _Example:_ "Join over 10,000 satisfied users who have transformed their workflows with us!"
+7. **Objection Handling (Optional):**
+    
+    - **Purpose:** Directly address common concerns or doubts the user might have.
+    - **Characteristics:** Acknowledge the objection and provide a clear, concise counter-argument or reassurance.
+8. **Call to Action (CTA - AIDA - Action):**
+    
+    - **Purpose:** Clearly instruct the user on the next step.
+    - **Characteristics:** Prominent, actionable, uses strong verbs, creates a sense of urgency (if applicable). Match the primary page goal.
+    - _Examples:_ "Get Started Today," "Download Your Free Guide Now," "Schedule a Demo."
+9. **Reinforcing Statement/Closing:**
+    
+    - **Purpose:** Reiterate the core benefit or offer a final persuasive thought.
+    - **Characteristics:** Leaves the reader with a positive and motivating impression.
+
+## Target Audience
+
+Assume the primary reader of this copy is a **potential customer** who needs to be persuaded and guided towards a specific action. Therefore, the copy should be empathetic, benefit-driven, and easy to understand.
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/content/web-pages/`
+- **Filename:** `copy-[page-name].md`
+
+## Final Instructions
+
+1. Do NOT start writing the copy until all clarifying questions are answered.
+2. Prioritize understanding the **primary and secondary goals** of the page.
+3. Thoroughly analyze the **user persona** to tailor the language and benefits.
+4. Carefully consider the provided **page outline/wireframe** to structure the copy logically.
+5. Apply persuasive copywriting best practices throughout, including **power words, conversational style, and AIDA/PAS formulas**.
+6. Generate the web page copy in the format above, focusing on **benefits over features**.
+
+7. Save the copy file and suggest any additional enhancements for optimization.

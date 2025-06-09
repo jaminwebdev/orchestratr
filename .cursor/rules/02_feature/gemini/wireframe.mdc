@@ -1,0 +1,221 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating a Web Page Wireframe
+
+## Goal
+
+To guide an AI assistant in creating a structural wireframe for a web page, either as a textual outline or a simplified visual sketch, based on user input. The wireframe should adhere to fundamental design principles such as Gestalt principles, visual hierarchy, and optimal CTA placement. It should also incorporate research-backed best practices for various page types, ensuring an effective and user-centered design.
+
+## Process
+
+1. **Receive Initial Prompt:** The user provides a brief description or request for a web page wireframe.
+    
+2. **Ask Clarifying Questions:** Before creating the wireframe, the AI _must_ ask clarifying questions to gather sufficient detail about the page's purpose, target audience, and desired output format.
+    
+3. **Determine Output Format:** Confirm with the user whether they prefer a text-based outline with descriptions or a conceptual visual sketch (mockup).
+    
+4. **Analyze User Needs & Goals:** Based on the user's input, identify the core problem statement, user persona, and page objectives. This information is crucial for designing a user-centric wireframe.
+    
+5. **Research Best Practices & Patterns:** Based on the **primary page goal** and **page type** (e.g., e-commerce product page, blog post, landing page, "About Us" page, contact form), research and identify industry-standard wireframe structures, common eye-tracking patterns (F-pattern for text-heavy, Z-pattern for visually driven), and design conventions for optimal user experience and conversions. If specific research for the given niche/page type isn't readily available, rely on general UX/UI best practices.
+    
+6. **Apply Design Principles:** Consciously apply the following principles to the wireframe:
+    
+    - **Gestalt Principles:**
+        - **Proximity:** Group related elements together (e.g., a form field and its label, navigation items, content blocks). Use whitespace to define distinct sections.
+        - **Similarity:** Use consistent visual cues (e.g., same size for clickable elements of similar function, similar placeholder shapes for images).
+        - **Continuity:** Guide the user's eye along a logical path (e.g., through clear vertical flow, consistent alignment).
+        - **Closure:** Allow for implied shapes or groups, reducing visual clutter where appropriate.
+        - **Figure-Ground:** Clearly distinguish foreground elements (e.g., content, CTAs) from the background.
+        - **Focal Point:** Use size, contrast, or isolation to draw attention to key elements, especially primary CTAs.
+    - **Visual Hierarchy:** Establish a clear order of importance for elements through:
+        - **Size:** Larger elements draw more attention (e.g., headline vs. body text, primary CTA).
+        - **Placement:** Important elements "above the fold" and in natural eye-tracking paths (F-pattern, Z-pattern).
+        - **Contrast:** Use varying shades of gray (in wireframes) or different line weights to emphasize elements.
+        - **Whitespace:** Use ample whitespace around important elements to make them stand out.
+        - **Typography (simulated):** Indicate different text weights (bold, regular) and sizes for headings, subheadings, and body copy.
+    - **Emphasis on CTAs:**
+        - **Prominence:** Make primary CTAs visually distinct (e.g., larger block, central placement, dedicated space).
+        - **Repetition:** Consider repeating primary CTAs at strategic points after sufficient information has been presented.
+        - **Clarity:** The CTA text should be direct and action-oriented.
+        - **Thumb-friendliness (for mobile):** Ensure interactive elements (buttons, links) are large enough for easy tapping.
+7. **Generate Wireframe:** Based on the gathered information, research, and applied principles, create the wireframe.
+    
+    - **For Text-based:** Provide a sequential list of sections with descriptive placeholders for content and elements.
+    - **For Sketch/Mockup:** Describe the visual layout using simple shapes, blocks, and textual labels for elements. Focus on structure, placement, and hierarchy, not final aesthetics.
+8. **Suggest Considerations:** Provide additional recommendations for the next steps in the design process (e.g., adding high-fidelity details, conducting user testing, implementing responsive design considerations).
+    
+9. **Save Wireframe:** Save the generated document as `wireframe-[page-name].[md/txt]` inside the `/design/wireframes` directory.
+    
+
+## Clarifying Questions
+
+The AI should adapt its questions based on the prompt, but here are the mandatory questions to explore:
+
+- **Page Name/Title:** "What is the name or title of this page?"
+- **Primary Objective:** "What is the **primary objective** of this page? (e.g., collect user emails, sell a specific product, provide information about a service, allow users to sign up for an account)"
+- **Secondary Goal (Optional):** "Is there a **secondary goal** for this page?"
+- **Target User Persona:** "Please describe the **primary user persona** for this page in the format: [Name] is a [characteristics/descriptor] who needs [user need] because [why/insight]." (Example: _Drew is a pet owner in a small town who needs to find and schedule a dog walker because they work the night shift._)
+- **Current State:** "Is this a brand new page, or is it a redesign/update of an existing page? If existing, what are its current strengths and weaknesses?"
+- **Key Content/Information:** "What are the essential pieces of content or information that _must_ be present on this page?"
+- **Call to Action (CTA):** "What is the desired **primary Call to Action (CTA)**? (e.g., 'Sign Up Now', 'Buy This Product', 'Learn More'). Are there any secondary CTAs?"
+- **Input Method Preference:** "Would you prefer the wireframe as a **text file with sections listed sequentially** or as a **conceptual sketch/mockup description**?"
+- **Any Existing Components/Patterns:** "Are there any existing design system components, navigation patterns, or visual elements from other parts of the website/application that should be consistent here?"
+- **Reference Pages (Optional):** "Do you have any examples of pages (competitors, inspirations) that you like the structure or flow of?"
+- **Mobile-First or Desktop-First:** "Should this wireframe prioritize a **mobile-first** approach (designing for smaller screens first) or a **desktop-first** approach?"
+
+## Wireframe Structure (Examples - adapted based on user choice)
+
+### A. Text-Based Wireframe Example
+
+```
+# Wireframe: [Page Name]
+
+## Page Objective(s):
+- Primary: [Primary Objective]
+- Secondary: [Secondary Objective (if any)]
+
+## User Persona:
+[Name] is a [characteristics/descriptor] who needs [user need] because [why/insight].
+
+## Key Elements & Layout (Sequential Flow):
+
+---
+
+### Section 1: Hero / Above-the-Fold (Attention/Problem)
+* **Headline (H1):** [Primary page headline, large text]. Emphasis via size.
+* **Sub-headline (H2):** [Supporting statement, slightly smaller text].
+* **Image/Video Placeholder:** [Large, prominent visual relevant to page objective].
+* **Primary CTA Button:** [Prominent, clear action verb, e.g., "GET STARTED"]. Emphasized by size, contrast, and isolation.
+* **Optional Secondary CTA/Learn More Link:** [Smaller, less emphasized]. Proximity to primary CTA.
+
+---
+
+### Section 2: Problem/Benefit Introduction (Interest/Agitate)
+* **Heading (H2):** [Problem statement or key benefit, e.g., "Facing X Problem?"]
+* **Paragraph(s):** [Elaborate on the problem or introduce the core solution/benefit. Conversational tone.]
+* **Small supporting icons/illustrations:** [Grouped via Proximity to related text.]
+
+---
+
+### Section 3: Value Proposition / How It Works (Desire/Solution)
+* **Heading (H2):** [How the solution works or main value, e.g., "Our Solution: The Easy Way to Y"]
+* **Feature/Benefit Blocks (3-4):**
+    * **Block A:** [Icon/small image] + **Sub-heading** [Feature Name] + **Paragraph** [Benefit of Feature].
+    * **Block B:** [Icon/small image] + **Sub-heading** [Feature Name] + **Paragraph** [Benefit of Feature].
+    * **Block C:** [Icon/small image] + **Sub-heading** [Feature Name] + **Paragraph** [Benefit of Feature].
+    * *Principle Applied:* Proximity (icon, heading, paragraph are grouped); Similarity (consistent block structure); Visual Hierarchy (headings bolder).
+* **Optional Secondary CTA Button:** [Reiterates primary CTA or offers related action, e.g., "See All Features"].
+
+---
+
+### Section 4: Social Proof / Trust Indicators
+* **Heading (H3):** [e.g., "What Our Users Say," "Trusted by Thousands"]
+* **Testimonial Block(s):** [Quote Placeholder] + [Attribution (Name, Title/Company)]. Grouped via Proximity.
+* **Trust Badges/Logos Placeholder:** [e.g., "As Seen On...", "Awards"]. Organized for visual flow and hierarchy.
+
+---
+
+### Section 5: Reinforce & Final Call to Action (Action)
+* **Heading (H2):** [Summarize key benefit, e.g., "Ready to Transform Your Workflow?"]
+* **Brief Paragraph:** [Final persuasive statement, reiterating main value.]
+* **Large, Prominent Primary CTA Button:** [Final call to action, e.g., "START YOUR FREE TRIAL"]. Highly emphasized using size, contrast, and ample whitespace. This is a focal point.
+* **Optional Small Text:** [e.g., "No credit card required."] Proximity to CTA.
+
+---
+
+### Section 6: Footer
+* **Navigation Links:** [Grouped logically via Proximity: e.g., About, Contact, Privacy, Terms].
+* **Social Media Icons:** [Grouped via Proximity].
+* **Copyright Information.**
+
+```
+
+### B. Conceptual Sketch/Mockup Description Example
+
+```
+# Wireframe Sketch: [Page Name]
+
+## Page Objective(s):
+- Primary: [Primary Objective]
+- Secondary: [Secondary Objective (if any)]
+
+## User Persona:
+[Name] is a [characteristics/descriptor] who needs [user need] because [why/insight].
+
+## Visual Layout Description:
+
+---
+
+### **[Screen 1: Above-the-Fold View (Mobile-first consideration: prioritized content)]**
+
+* **Top Bar (Global Nav):**
+    * [LOGO - top left]
+    * [HAMBURGER MENU ICON - top right] (For mobile)
+    * [DESKTOP NAV LINKS - right (for desktop view, will appear on larger screen)]
+* **Hero Section (Large, central):**
+    * [OVERSIZED RECTANGLE for main headline (H1)] - Represents largest text, focal point.
+    * [SLIGHTLY SMALLER RECTANGLE for sub-headline (H2)] - Below H1, guides eye.
+    * [LARGE SQUARE/RECTANGLE for Hero Image/Video] - Central, prominent.
+    * [**PRIMARY CTA BUTTON (large, bold outline)**] - Centered, below headlines/image. This button is *isolated* with significant whitespace around it to emphasize it.
+    * [Small text placeholder below CTA: "e.g., No credit card needed"] - Grouped with CTA (Proximity).
+
+---
+
+### **[Screen 2: Scrolling Down - Problem/Benefit]**
+
+* **Section Title (H2):** [MEDIUM-SIZED RECTANGLE for "Problem/Benefit Header"]
+* **Body Content Block:** [MULTIPLE SMALLER RECTANGLES/LINES for paragraph text] - Text flows, organized for readability.
+* **3 Feature Blocks (aligned horizontally for desktop, stacked vertically for mobile):**
+    * [SMALL CIRCLE (Icon)] + [SMALL RECTANGLE (Feature Title)] + [SHORT TEXT BLOCK (Feature Benefit)]
+    * [SMALL CIRCLE (Icon)] + [SMALL RECTANGLE (Feature Title)] + [SHORT TEXT BLOCK (Feature Benefit)]
+    * [SMALL CIRCLE (Icon)] + [SMALL RECTANGLE (Feature Title)] + [SHORT TEXT BLOCK (Feature Benefit)]
+    * *Visuals:* Elements within each block are close together (Proximity). All three blocks share a consistent structure (Similarity).
+
+---
+
+### **[Screen 3: Scrolling Further - Trust/Social Proof]**
+
+* **Section Title (H3):** [SMALL RECTANGLE for "Testimonial Header"]
+* **Testimonial Card(s):**
+    * [QUOTE BLOCK (text)]
+    * [SMALL CIRCLE (Avatar)] + [SMALL RECTANGLE (Name)]
+    * *Visuals:* Quotes and attribution are grouped (Proximity).
+* **Logos/Trust Badges Strip:** [HORIZONTAL ROW of SMALLER SQUARES/RECTANGLES representing company logos/awards] - Organized visually using Continuity/Alignment.
+
+---
+
+### **[Screen 4: Bottom of Page - Final CTA & Footer]**
+
+* **Re-engagement Section:**
+    * [MEDIUM RECTANGLE for "Final Persuasive Header (H2)"]
+    * [SHORT TEXT BLOCK for concluding statement]
+    * [**PRIMARY CTA BUTTON (large, bold outline)**] - Again, highly prominent, isolated with whitespace. This is a clear focal point.
+* **Footer:**
+    * [SMALLER RECTANGLES/LINES for Nav Links (grouped logically)] - Proximity.
+    * [SMALLER CIRCLES for Social Media Icons (grouped)] - Proximity.
+    * [TINY TEXT BLOCK for Copyright Info]
+
+```
+
+## Target Audience
+
+The primary recipient of this wireframe is a **UX/UI Designer, Front-End Developer, or Stakeholder** who needs a clear structural guide for the page. The wireframe should be explicit about content placement, hierarchy, and user flow, while remaining high-level in terms of aesthetics.
+
+## Output
+
+- **Format:** Markdown (`.md`) or Plain Text (`.txt`) based on user choice.
+- **Location:** `/design/wireframes/`
+- **Filename:** `wireframe-[page-name].[md/txt]`
+
+## Final Instructions
+
+1. Do NOT start generating the wireframe until all clarifying questions are answered.
+2. Prioritize understanding the **primary objective, user persona, and desired output format.**
+3. **Research best practices** for the identified page type and apply them to the wireframe structure.
+4. Consciously apply **Gestalt principles, visual hierarchy, and CTA emphasis** throughout the wireframe, making these decisions explicit in the descriptive text/sketch.
+5. Generate the wireframe in the chosen format, ensuring clarity and focus on **structure and flow**.
+
+6. Save the wireframe file and suggest further design steps.

@@ -1,0 +1,116 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating High-Converting Web Page Copy
+
+## Goal
+
+To guide an AI assistant in creating compelling, conversion-focused web page copy in Markdown format, based on an initial user prompt. The copy should be persuasive, engaging, and tailored to the target audience, following best practices in web copywriting—including power words, conversational tone, and proven formulas like PAS (Problem, Agitate, Solution) and AIDA (Attention, Interest, Desire, Action).
+
+The generated copy must align with the business’s brand voice, support the page’s primary and secondary goals, and be structured for clarity, scannability, and maximum impact.
+
+## Process
+
+1. **Receive Initial Prompt:** The user provides a brief description of the web page, its purpose, and any relevant context.
+2. **Ask Clarifying Questions:** Before writing the copy, the AI _must_ ask clarifying questions to gather sufficient detail about the target audience, goals, desired tone, and structure. The goal is to understand the “who,” “what,” and “why” behind the page.
+3. **Request Persona and Goals:** Specifically ask for the primary user persona in the form:  
+    `[Name] is a [occupation/descriptor], that wants [thing/service/product], so he/she can [outcome].`  
+    Also, ask for the primary and (optionally) secondary goal(s) of the page.
+4. **Request Page Outline or Wireframe:** Ask for a general outline or wireframe of the page in text format, or a screenshot of the wireframe if available.
+5. **Reference Existing Brand/Content Guidelines:** Review or request any available brand voice, style guide, or previous high-performing copy to ensure consistency.
+6. **Identify Key Messages and Value Propositions:** Clarify the main benefits, differentiators, and calls-to-action (CTAs) that should be emphasized.
+7. **Generate Copy:** Based on the gathered information, generate web copy using the structure and best practices outlined below.
+8. **Suggest Improvements:** Provide recommendations for improving the page’s structure, messaging, or conversion potential, if applicable.
+9. **Save Copy:** Save the generated copy as copy-[page-name].md inside the /web-copy directory.
+
+## Clarifying Questions (Examples)
+
+The AI should adapt its questions based on the prompt, but here are common areas to explore:
+
+- **User Persona:**  
+    “Who is the primary audience for this page? Please provide a persona in the format:  
+    [Name] is a [occupation/descriptor], that wants [thing/service/product], so he/she can [outcome].”
+- **Primary & Secondary Goals:**  
+    “What is the main goal of this page (e.g., get signups, sell a product, educate, etc.)? Is there a secondary goal?”
+- **Desired Action:**  
+    “What action do you want the visitor to take after reading this page?”
+- **Page Outline/Wireframe:**  
+    “Can you provide a general outline or wireframe of the page in text format, or a screenshot?”
+- **Brand Voice & Tone:**  
+    “Should the copy be formal, friendly, witty, authoritative, etc.? Are there any specific words or phrases to use or avoid?”
+- **Key Benefits & Differentiators:**  
+    “What are the top 3–5 benefits or unique selling points to highlight?”
+- **Objections & Concerns:**  
+    “What common objections or concerns might visitors have? How should we address them?”
+- **Competitors:**  
+    “Are there any competitors or reference pages you admire?”
+- **SEO Keywords (Optional):**  
+    “Are there specific keywords or phrases to include for SEO?”
+- **Visual Elements:**  
+    “Are there any images, videos, or graphics that should be referenced or described in the copy?”
+- **Legal/Compliance:**  
+    “Are there disclaimers or compliance statements required?”
+
+## Web Copy Structure
+
+The generated copy should include the following sections (adapt as appropriate for the page type):
+
+1. **Headline:**  
+    A strong, benefit-driven headline that grabs attention (AIDA: Attention).
+2. **Subheadline:**  
+    A supporting line that reinforces the main promise or value.
+3. **Hero Section:**  
+    A concise summary of the offer, with a clear call-to-action (CTA).
+4. **Problem Statement (PAS: Problem):**  
+    Identify the visitor’s pain point or challenge.
+5. **Agitation (PAS: Agitate):**  
+    Amplify the problem—describe its impact or consequences.
+6. **Solution (PAS: Solution):**  
+    Present the product/service as the ideal solution.
+7. **Key Benefits/Features:**  
+    Bullet points or short paragraphs highlighting main benefits and differentiators. Use power words and emotional triggers.
+8. **Social Proof:**  
+    Testimonials, reviews, trust badges, or statistics to build credibility.
+9. **Objection Handling:**  
+    Address common concerns or questions (e.g., FAQs, guarantees).
+10. **Secondary CTAs:**  
+    Additional calls-to-action for users not ready to convert (e.g., learn more, download a guide).
+11. **Closing Argument:**  
+    Reinforce the main value proposition and encourage action.
+12. **Footer/Legal (Optional):**  
+    Any required disclaimers or compliance notes.
+
+## Best Practices Checklist
+
+- Use **conversational, natural language**—write as if speaking directly to the user.
+- Incorporate **power words** and **emotional triggers** (e.g., “effortless,” “guaranteed,” “exclusive”).
+- Keep sentences and paragraphs short for **scannability**.
+- Use **active voice** and **second person (“you”)**.
+- Break up content with **headings, bullets, and bold text** for readability.
+- Place **primary CTA above the fold** and repeat as appropriate.
+- Use **AIDA** and/or **PAS** frameworks to structure persuasive flow.
+- Address **objections** and **build trust** with social proof.
+- Align with **brand voice** and **target audience**.
+- Optimize for **SEO** if keywords are provided.
+
+## Target Audience
+
+Assume the primary reader is a **potential customer or user** with limited time and attention. The copy should be clear, persuasive, and easy to scan, driving them toward the desired action.
+
+## Output
+
+- **Format:** Markdown (.md)
+- **Location:** /web-copy/
+- **Filename:** copy-[page-name].md
+
+## Final Instructions
+
+1. Do NOT start writing copy until all clarifying questions are answered.
+2. Ask for the user persona, page goals, and outline/wireframe.
+3. Reference any existing brand or content guidelines.
+4. Identify and suggest improvements for messaging or structure.
+5. Generate web copy in the format above, applying all best practices.
+
+6. Save the copy file and flag any recommended changes to page structure, design, or messaging for further review.
