@@ -1,0 +1,278 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating a Product Requirements Document (PRD)
+
+## Goal
+
+To guide an AI assistant in creating a detailed, actionable Product Requirements Document (PRD) in Markdown format that serves as the definitive source of truth for feature development. The PRD should be clear enough for a junior developer to understand and implement, comprehensive enough to prevent scope creep, and aligned with business objectives and user needs.
+
+The PRD must also align with and reference existing key project documentation and should highlight any necessary updates or additions to those documents as part of the feature development lifecycle.
+
+## Process
+
+1. **Receive Initial Prompt:** The user provides a brief description or request for a new feature or functionality.
+
+2. **Validate Problem-Solution Fit:** Ensure the proposed feature addresses a real user problem and aligns with business objectives before proceeding.
+
+3. **Ask Clarifying Questions:** Before writing the PRD, the AI *must* ask comprehensive clarifying questions to gather sufficient detail. The goal is to understand the "what," "why," and "who" of the feature, not necessarily the "how" (which the developer will figure out).
+
+4. **Reference Existing Documentation:** Review relevant existing docs to ensure the PRD aligns with:
+   - Product Brief (`master-product-brief.md`)
+   - Features Document (`features.md`)
+   - User Personas (`user-personas.md`)
+   - User Flows (`user-flows.md`)
+   - Architecture & System Design (`architecture-design-patterns.md`)
+   - UX & Design Considerations (`ux-design-considerations.md`)
+   - API Documentation (`api-specs.md`)
+   - Security & Compliance Requirements (`security-requirements.md`)
+
+5. **Assess Impact & Effort:** Evaluate the feature's complexity, development effort, and potential impact on existing systems.
+
+6. **Identify Document Updates:** Determine if the new feature requires updates or additions to existing documentation.
+
+7. **Generate PRD:** Create a comprehensive PRD using the structure outlined below.
+
+8. **Validate Completeness:** Ensure all sections are complete and requirements are testable.
+
+9. **Suggest Updates:** Provide recommendations for updates to relevant existing documentation.
+
+10. **Save PRD:** Save the document as `prd-[feature-name].md` in the `/tasks` directory.
+
+## Clarifying Questions Framework
+
+The AI should systematically explore these areas, adapting questions based on the feature type and complexity:
+
+### Problem Definition & Business Context
+* **Core Problem:** "What specific problem does this feature solve for users? Can you quantify the pain point?"
+* **Business Justification:** "How does this feature align with business objectives? What's the expected ROI or business impact?"
+* **Urgency/Priority:** "What's the priority level of this feature? Are there external deadlines or dependencies?"
+* **Market Context:** "How do competitors handle this problem? Is this a differentiator or table stakes?"
+
+### User Context & Personas
+* **Primary Users:** "Who is the primary user of this feature? Can you describe their role, goals, and context?"
+* **Secondary Users:** "Are there other user types who will interact with this feature?"
+* **User Journey:** "Where in the user journey does this feature fit? What do users do before and after?"
+* **Usage Patterns:** "How frequently will this feature be used? Peak usage times or scenarios?"
+* **Device/Context:** "What devices or environments will users primarily use this feature in?"
+
+### Functional Requirements Deep-Dive
+* **Core Functionality:** "What are the essential actions users must be able to perform?"
+* **User Stories:** "Can you provide detailed user stories in the format: As a [user type], I want to [action] so that [benefit]?"
+* **Input/Output:** "What information goes into this feature, and what comes out?"
+* **Workflow:** "What's the step-by-step process a user follows?"
+* **Permissions:** "Who can access this feature? Are there different permission levels?"
+
+### Technical & Integration Considerations
+* **Dependencies:** "Does this feature depend on other features, external APIs, or third-party services?"
+* **Data Requirements:** "What data does this feature need? Where does it come from? How is it stored?"
+* **Performance:** "Are there specific performance requirements? Expected load or volume?"
+* **Integration Points:** "How does this feature integrate with existing systems?"
+* **Platform Compatibility:** "Does this need to work across multiple platforms (web, mobile, API)?"
+
+### Quality & Risk Assessment
+* **Acceptance Criteria:** "What specific criteria must be met for this feature to be considered complete?"
+* **Edge Cases:** "What unusual scenarios or error conditions should we consider?"
+* **Security:** "Are there security implications or requirements?"
+* **Compliance:** "Are there regulatory or compliance considerations?"
+* **Rollback Plan:** "If something goes wrong, how can this feature be disabled or rolled back?"
+
+### Success Measurement
+* **Success Metrics:** "How will you measure if this feature is successful? What specific KPIs?"
+* **Analytics:** "What user behavior should we track? What events should we log?"
+* **Testing Strategy:** "How should this feature be tested? Are there specific scenarios to validate?"
+
+## Enhanced PRD Structure
+
+### 1. Executive Summary
+* Feature name and one-sentence description
+* Primary business objective and expected impact
+* Target completion timeline
+* Resource requirements (development time estimate)
+
+### 2. Problem Statement
+* Detailed description of the user problem
+* Current workarounds or pain points
+* Quantified impact (if available)
+* Supporting research or user feedback
+
+### 3. Solution Overview
+* High-level solution approach
+* Key benefits and value proposition
+* How this solution addresses the problem
+* Alternative solutions considered (and why rejected)
+
+### 4. User Context
+* Primary and secondary user personas
+* User journey integration points
+* Usage scenarios and frequency
+* Device and environment considerations
+
+### 5. Functional Requirements
+* Numbered, testable requirements using "The system must..." format
+* Organized by user flow or functional area
+* Include input validation and business rules
+* Cross-reference related user stories
+
+### 6. User Stories & Acceptance Criteria
+* Detailed user stories with clear acceptance criteria
+* Edge case scenarios
+* Error handling requirements
+* Success/failure states
+
+### 7. Non-Functional Requirements
+* Performance requirements (load time, throughput, etc.)
+* Security requirements
+* Accessibility standards
+* Browser/device compatibility
+* Scalability considerations
+
+### 8. Non-Goals (Out of Scope)
+* Explicitly state what this feature will NOT include
+* Future enhancements that are intentionally deferred
+* Related problems that won't be solved
+
+### 9. Design Considerations
+* UI/UX requirements and constraints
+* Existing design system components to use
+* New design patterns needed
+* Responsive design considerations
+* Accessibility requirements
+
+### 10. Technical Considerations
+* Integration requirements and dependencies
+* Data model changes needed
+* API specifications (if applicable)
+* Third-party service requirements
+* Migration or backward compatibility needs
+
+### 11. Security & Compliance
+* Authentication and authorization requirements
+* Data privacy considerations
+* Regulatory compliance needs
+* Security testing requirements
+
+### 12. Success Metrics & Analytics
+* Key performance indicators (KPIs)
+* Analytics events to track
+* A/B testing opportunities
+* Success criteria timeline
+
+### 13. Testing Strategy
+* Unit testing requirements
+* Integration testing scenarios
+* User acceptance testing criteria
+* Performance testing benchmarks
+* Security testing requirements
+
+### 14. Risk Assessment & Mitigation
+* Technical risks and mitigation strategies
+* Business risks and contingency plans
+* Dependencies that could cause delays
+* Rollback and disaster recovery plans
+
+### 15. Implementation Phases (if applicable)
+* Phase breakdown for complex features
+* MVP vs. full feature scope
+* Incremental delivery milestones
+
+### 16. Related Documentation Updates
+* Specific updates needed to existing docs
+* New documentation that must be created
+* Training materials needed
+
+### 17. Open Questions & Assumptions
+* Unresolved questions that need answers
+* Assumptions made during planning
+* Decisions pending stakeholder input
+
+### 18. Appendix
+* Supporting research or data
+* Wireframes or mockups
+* Technical diagrams
+* Competitive analysis
+
+## Quality Assurance Checklist
+
+Before finalizing the PRD, ensure:
+
+### Completeness
+- [ ] All requirements are specific and testable
+- [ ] Success criteria are measurable
+- [ ] Edge cases are documented
+- [ ] Dependencies are identified
+- [ ] Non-goals are explicitly stated
+
+### Clarity
+- [ ] Language is clear and jargon-free
+- [ ] Requirements avoid implementation details
+- [ ] User stories follow proper format
+- [ ] Acceptance criteria are unambiguous
+
+### Feasibility
+- [ ] Technical constraints are considered
+- [ ] Resource requirements are realistic
+- [ ] Timeline expectations are set
+- [ ] Risk factors are identified
+
+## Target Audience Considerations
+
+### Primary Audience: Junior Developer
+* Use clear, explicit language without technical jargon
+* Provide sufficient context for business decisions
+* Include examples where helpful
+* Avoid assuming domain knowledge
+
+### Secondary Audiences
+* **Product Manager:** Clear success metrics and business rationale
+* **Designer:** UI/UX requirements and constraints
+* **QA Engineer:** Testable requirements and edge cases
+* **DevOps:** Performance and scalability requirements
+* **Legal/Compliance:** Security and regulatory requirements
+
+## Output Requirements
+
+### Format Specifications
+* **Format:** Markdown (`.md`)
+* **Location:** `/tasks/`
+* **Filename:** `prd-[feature-name]-[date].md`
+* **Version Control:** Include version number and change log
+
+### Documentation Standards
+* Use consistent heading structure
+* Include table of contents for complex PRDs
+* Cross-reference related requirements
+* Use numbered requirements for easy reference
+* Include revision history
+
+## Final Instructions
+
+### Pre-Writing Validation
+1. **Verify Problem Clarity:** Ensure the problem is well-defined and validated
+2. **Confirm Business Alignment:** Validate feature aligns with business objectives
+3. **Check Resource Availability:** Confirm development resources and timeline are realistic
+
+### Writing Process
+4. **Ask Comprehensive Questions:** Don't skip the clarifying questions phase
+5. **Reference Existing Documentation:** Ensure alignment with current architecture and decisions
+6. **Write for the Audience:** Keep junior developer as primary reader
+7. **Be Specific and Testable:** Every requirement should be verifiable
+
+### Post-Writing Validation
+8. **Review for Completeness:** Use the quality assurance checklist
+9. **Validate Technical Feasibility:** Ensure requirements are technically possible
+10. **Confirm Stakeholder Alignment:** Verify all stakeholder needs are addressed
+11. **Plan Documentation Updates:** Identify and prioritize related documentation changes
+12. **Set Review Schedule:** Establish when and how the PRD will be reviewed and updated
+
+### Critical Success Factors
+* **No Ambiguity:** Every requirement should have only one interpretation
+* **Testable Requirements:** Each requirement should be verifiable through testing
+* **Complete User Context:** Include full user journey and persona information
+* **Clear Success Definition:** Measurable criteria for feature completion and success
+* **Risk Awareness:** Identify and plan for potential issues before they occur
+
+
+Remember: A great PRD prevents problems before they occur, enables efficient development, and ensures the final feature truly solves the user's problem while meeting business objectives.

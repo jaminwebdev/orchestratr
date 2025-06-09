@@ -1,0 +1,106 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Task List Management and Iteration for Feature Implementation
+
+### Goal
+
+To guide an AI assistant in managing and iterating on a task list (in Markdown format) derived from either a Product Requirements Document (PRD) **or** from the foundational MVP task list (`15_create_mvp_tasks.mdc`). The AI must track progress on completing a feature or foundational implementation by:
+
+-   Carefully following task dependencies.
+-   Marking progress accurately and transparently.
+-   **Proactively identifying and proposing necessary adjustments, dependencies, or new tasks.**
+-   Consulting relevant documentation to ensure alignment and quality.
+-   And pausing for user approval before proceeding to the next task or confirming a proposed change.
+
+This approach supports controlled, transparent, and well-coordinated product development, minimizing errors and maximizing alignment.
+
+---
+
+## Key Principles for Task Iteration
+
+### 1. Granular Execution & User Approval
+
+-   Do **NOT** start the next sub-task until the user explicitly grants permission by responding “yes” or “y” after the completion of the current sub-task.
+-   This allows for real-time review, feedback, and course correction at a granular level.
+-   Similarly, if a new task or change is proposed, await explicit user approval.
+
+### 2. Completion & Status Protocol
+
+-   When a **sub-task** is finished, immediately update its status in the task list:
+    -   Change the sub-task checkbox from `[ ]` to `[x]`.
+-   If **all sub-tasks** under a parent task are completed (`[x]`), mark the **parent task** as completed (`[x]`) as well.
+-   **Save and present the updated task list to the user immediately after any status change.**
+
+---
+
+## Task List Maintenance & Evolution Guidelines
+
+-   **Maintain the task list accurately and perpetually up to date:**
+    -   Mark tasks/sub-tasks complete as described in the Completion Protocol.
+    -   **Propose any newly identified tasks or sub-tasks** if requirements or technical details emerge during development. *Do not add them directly without user approval.*
+    -   **Propose modifications to existing tasks** if they are found to be unclear, incorrect, or scope changes occur.
+-   **Maintain the “Relevant Files” section accurately:**
+    -   List every file created or modified during implementation, including test files.
+    -   Provide a brief, one-line description of each file’s purpose.
+    -   Ensure updates to this section are clearly communicated.
+-   **Communicate all changes (status updates, proposed additions/modifications, file updates) clearly and concisely after every interaction point.**
+
+---
+
+## Documentation & Contextual Awareness
+
+Before starting or continuing any sub-task, or proposing any changes, the AI *must*:
+
+-   **Conduct a comprehensive review of all relevant documentation** to ensure implementation aligns with the overall product vision, technical architecture, and user experience. This applies equally to PRD-driven features and foundational MVP setup. Key docs include:
+    -   **Product Brief (`master-product-brief.md`):** For feature goals, business context, and user needs.
+    -   **Architecture & System Design (`architecture-design-patterns.md`):** For system constraints, data flows, and technology stacks.
+    -   **User Flows (`user-flows.md`):** To ensure feature workflows integrate smoothly with user interactions.
+    -   **UX & Design Considerations (`ux-design-considerations.md`):** To maintain visual and experiential consistency.
+    -   **Features Overview (`features.md`):** For understanding feature interdependencies and impact.
+    -   **User Personas (`user-personas.md`):** To keep the implementation user-centric.
+-   This holistic review helps avoid siloed or contradictory work, proactively surfaces necessary updates or integration points, and informs intelligent task breakdown or modification proposals.
+
+---
+
+## AI Instructions for Task Iteration
+
+When managing and completing task lists, the AI must follow this precise flow:
+
+1.  **Identify the next sub-task to work on:** Find the first incomplete sub-task in the list.
+2.  **Pre-computation & Contextualization:**
+    * **Consult all relevant documentation** (as per "Documentation & Contextual Awareness") to verify requirements, design, and technical constraints pertinent to the identified sub-task.
+    * **Proactively assess:** Are there any immediate dependencies, potential roadblocks, or emerging requirements for this sub-task? Does it necessitate a change to the PRD or other documentation?
+3.  **Propose Changes (if applicable):**
+    * If new requirements, technical complexities, or necessary documentation updates are identified, **pause and propose these to the user *before* attempting the sub-task.**
+    * Clearly articulate the proposed addition/modification/documentation update and *why* it's necessary.
+    * Await user explicit approval (`yes` or `y`) to proceed with the proposed change (or to disregard it).
+    * If approved, update the task list or relevant documentation as necessary, then present the updated state and return to Step 1 or 2 (depending on whether the proposed change affected the current sub-task).
+4.  **Execute Sub-Task:**
+    * Implement the identified sub-task following the documented requirements and best practices.
+    * **Crucially, simulate the action as if performing it, but *do not actually execute code or write files without explicit user permission in a separate, dedicated "Write Code" rule.** This rule is for task management, not code execution.
+5.  **Post-Execution Update & Presentation:**
+    * **Update the task list file immediately** after simulating the sub-task's completion:
+        -   Mark the sub-task as `[x]`.
+        -   If applicable, mark the parent task `[x]`.
+        -   Add or update the “Relevant Files” section to reflect any new or changed files that *would have been* created/modified.
+    * **Present the updated task list to the user**, clearly highlighting the completed task and any changes to the "Relevant Files" section.
+6.  **Pause for User Approval to Continue:**
+    * Explicitly ask the user for approval to proceed to the *next* sub-task.
+    * **Do NOT proceed** without the user’s explicit confirmation (`yes` or `y`).
+
+---
+
+## Summary
+
+-   Work sequentially, one sub-task at a time.
+-   Keep documentation context always in mind — for both MVP scaffolding and PRD-based feature development.
+-   **Proactively identify and propose any needed task list adjustments or documentation updates to the user.**
+-   Keep task lists and file references current and communicate changes transparently.
+-   Pause and seek user explicit approval after every sub-task *and* after any proposed changes.
+-   Maintain clear communication about progress and changes.
+
+This ensures a controlled, well-aligned, traceable, and adaptable development process consistent with the overall product vision, enabling the AI to be a more proactive and intelligent assistant.
+

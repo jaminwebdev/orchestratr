@@ -1,0 +1,147 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: PRD Generation
+
+### Goal
+
+To guide an AI assistant in creating a detailed Product Requirements Document (PRD) in Markdown format, based on an initial user prompt. The PRD should be clear, actionable, and suitable for a junior developer to understand and implement the feature.
+
+The PRD must also align with and reference existing key project documentation (product brief, architecture, user flows, etc.) and should highlight any necessary updates or additions to those documents as part of the feature development lifecycle.
+
+---
+
+### Process
+
+1.  **Receive Initial Prompt:** The user provides a brief description or request for a new feature or functionality.
+
+2.  **Ask Clarifying Questions Strategically:** Before writing the PRD, the AI *must* ask clarifying questions to gather sufficient detail. Prioritize questions that clarify the **"what"** and **"why"** of the feature (user problem, goals, core functionality, target users, high-level user stories, and acceptance criteria). Avoid getting into implementation "how" details at this stage. Iteratively ask questions until a solid foundation for the PRD is established.
+
+3.  **Reference and Synthesize Existing Documentation:** Review relevant existing documents to ensure the PRD aligns with and builds upon:
+    * Product Brief (`master-product-brief.md`)
+    * Features Document (`features.md`)
+    * User Personas (`user-personas.md`)
+    * User Flows (`user-flows.md`)
+    * Architecture & System Design (`architecture-design-patterns.md`)
+    * UX & Design Considerations (`ux-design-considerations.md`)
+    * Actively synthesize information from these documents to enrich the PRD content and identify potential conflicts or redundancies.
+
+4.  **Identify and Prioritize Document Updates:** Determine if the new feature requires updates or additions to the referenced documents (e.g., new user flows, architecture changes, updated personas). Prioritize critical updates necessary for the feature's development and long-term documentation accuracy.
+
+5.  **Generate Draft PRD:** Based on the initial prompt, user answers to clarifying questions, and synthesized information from referenced documents, generate a comprehensive draft PRD using the outlined structure. Focus on clarity, conciseness, and explicitness for a junior developer audience.
+
+6.  **Review and Refine PRD:** Internally review the generated PRD against the clarifying questions asked and the referenced documentation. Ensure all sections are adequately populated and consistent. Check for any ambiguities or areas requiring further detail. *Self-correct where possible.*
+
+7.  **Suggest and Document Updates to Existing Docs:** Explicitly list recommendations for updates to relevant existing documentation based on the new feature (e.g., "Update `architecture-design-patterns.md` to include new module X," "Add new user flow diagram for feature Y to `user-flows.md`"). Clearly articulate *why* these updates are needed.
+
+8.  **Save PRD:** Save the generated document as `prd-[feature-name].md` inside the `/tasks` directory. Ensure `[feature-name]` is a descriptive and URL-friendly slug derived from the PRD's title.
+
+---
+
+### Clarifying Questions (Examples)
+
+The AI should adapt its questions based on the prompt, but here are some common areas to explore. Prioritize questions that directly inform the core sections of the PRD.
+
+* **Problem/Goal:** "What primary problem does this feature solve for our users, and what is the overarching business goal?"
+* **Target User:** "Who is the specific primary user segment for this feature, and how does it fit into their existing workflow?"
+* **Core Functionality & User Stories:** "Could you describe the essential actions a user needs to perform with this feature? Please provide 2-3 key user stories to illustrate usage (e.g., 'As a [type of user], I want to [perform an action] so that [benefit].')."
+* **Acceptance Criteria:** "What are the most critical criteria that define successful implementation and user satisfaction for this feature?"
+* **Scope & Non-Goals:** "What are the absolute must-haves for the initial release, and what specific functionalities are explicitly *out of scope* for this version?"
+* **Data & System Interactions:** "What primary data does this feature consume or produce, and how does it interact with existing systems or APIs?"
+* **User Experience (if applicable):** "Are there any existing design guidelines, mockups, or specific UI/UX expectations for this feature?"
+* **Success Metrics:** "How will we measure the success of this feature post-launch? (e.g., 'Increase X by Y%', 'Reduce Z by W%')."
+* **Dependencies/Constraints:** "Are there any known dependencies on other teams, features, or significant technical constraints?"
+
+---
+
+### PRD Structure
+
+The generated PRD should include the following sections. Ensure all sections are populated with relevant information, even if it's "N/A" or "To Be Determined" with a clear note.
+
+1.  **Introduction/Overview:**
+    * Briefly describe the feature.
+    * Clearly state the primary problem it solves.
+    * Articulate the overarching goal.
+
+2.  **Goals:**
+    * List specific, measurable, achievable, relevant, and time-bound (SMART) objectives for this feature.
+    * Example: "Increase user retention by 5% within Q3 by simplifying the onboarding process."
+
+3.  **User Stories:**
+    * Detail user narratives describing feature usage from the user's perspective.
+    * Focus on **who**, **what**, and **why**.
+    * Example: "As a new user, I want to easily connect my social media accounts so that I can quickly share my achievements."
+
+4.  **Functional Requirements:**
+    * List discrete, testable functionalities the feature *must* have.
+    * Use clear, unambiguous language. Number these requirements for easy referencing.
+    * Example: "1.0 The system must allow users to upload a profile picture of up to 5MB."
+    * Example: "1.1 The system must validate the uploaded file type (JPG, PNG, GIF)."
+
+5.  **Non-Goals (Out of Scope):**
+    * Clearly state what this feature will *not* include in the current iteration to manage scope and expectations.
+    * Example: "This feature will not include real-time image processing or advanced photo editing tools."
+
+6.  **Design Considerations (Optional but Recommended):**
+    * Link to existing mockups or wireframes.
+    * Describe key UI/UX requirements or principles.
+    * Mention relevant components or design system elements to be used.
+
+7.  **Technical Considerations (Optional but Recommended):**
+    * Highlight any known technical constraints, significant dependencies, or suggested architectural patterns.
+    * Example: "Should leverage existing authentication module."
+    * Example: "Requires integration with third-party payment gateway X."
+
+8.  **Acceptance Criteria:**
+    * Provide clear, testable criteria defining when the feature can be considered "done" and ready for release.
+    * Align these with the user stories and functional requirements.
+    * Example: "The user can successfully upload, view, and replace their profile picture without errors."
+    * Example: "Profile picture changes are reflected across all relevant user interfaces within 5 seconds."
+
+9.  **Success Metrics:**
+    * How will the success of this feature be measured after deployment?
+    * Link directly to the stated goals.
+    * Example: "Profile picture upload completion rate of >90%."
+    * Example: "Reduction in 'how to change profile' support tickets by 15%."
+
+10. **Edge Cases & Error Handling:**
+    * Describe potential edge cases, abnormal scenarios, and how the system should gracefully behave.
+    * Example: "What happens if a user uploads an unsupported file type? (System should display an error message and reject the upload)."
+    * Example: "How is a network disconnection during upload handled? (System should notify the user and allow retry)."
+
+11. **Related Documentation Updates:**
+    * List *specific* suggested updates or additions needed for existing documentation based on this new feature.
+    * Be precise: "Update `architecture-design-patterns.md` to add a new diagram for the Profile Service API."
+    * "Add a new user flow for 'Profile Picture Management' to `user-flows.md`."
+
+12. **Open Questions:**
+    * List any remaining questions or areas needing further clarification from the product owner or stakeholders.
+    * This section acknowledges incompleteness and prompts further discussion.
+
+---
+
+### Target Audience
+
+Assume the primary reader of the PRD is a **junior developer**. Therefore, requirements should be explicit, unambiguous, and avoid jargon where possible. Provide enough detail for them to understand the feature's purpose, core logic, and technical implications at a high level.
+
+---
+
+### Output
+
+* **Format:** Markdown (`.md`)
+* **Location:** `/tasks/`
+* **Filename:** `prd-[feature-name].md` (where `[feature-name]` is a sanitized, hyphenated version of the feature title)
+
+---
+
+### Final Instructions
+
+1.  Do NOT start implementing the feature.
+2.  Ask clarifying questions until you have enough detail to create a robust PRD. Prioritize questions that directly inform the core sections.
+3.  Reference and synthesize existing project documentation (`master-product-brief.md`, `features.md`, `user-personas.md`, `user-flows.md`, `architecture-design-patterns.md`, `ux-design-considerations.md`) to ensure alignment and enrich the PRD.
+4.  Identify and clearly suggest any necessary updates to these existing documents based on the new feature. Be specific about *what* needs updating and *why*.
+5.  Generate the PRD strictly following the outlined structure, ensuring all sections are populated.
+
+6.  Save the generated PRD file and clearly flag the suggested documentation updates for further review or automated processing.

@@ -1,0 +1,117 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating a Task List from a PRD
+
+## Goal
+
+To guide an AI assistant in creating a detailed, step-by-step task list in Markdown format based on an existing Product Requirements Document (PRD). The task list should provide clear, actionable guidance for a developer to implement the feature effectively.
+
+The task list should also ensure alignment with existing key project documentation — such as the product brief, architecture & system design, user flows, and UX/design considerations — by referencing these docs and flagging any potential dependencies or required updates.
+
+---
+
+### Process
+
+1.  **Receive PRD Reference:** The user provides the filename or path of the specific PRD document to analyze.
+
+2.  **Comprehensive PRD Analysis:** The AI will thoroughly read and analyze all sections of the PRD, paying close attention to:
+    * **Functional Requirements:** What the system *must* do.
+    * **User Stories:** How users will interact with the feature and what benefits they gain.
+    * **Acceptance Criteria:** The conditions for successful completion.
+    * **Technical Considerations:** Any known technical constraints, dependencies, or architectural suggestions.
+    * **Success Metrics:** How the feature's effectiveness will be measured.
+    * **Non-Goals:** What the feature explicitly *will not* include to manage scope.
+
+3.  **Cross-Reference and Contextualize with Existing Docs:** Systematically consult key existing documentation to ensure the task plan aligns with the broader product vision and system architecture. While doing so, actively identify potential **dependencies** (e.g., this task relies on another team's API, or a specific existing module) and necessary **documentation updates** (e.g., this feature requires a new entry in `features.md`). Relevant docs include:
+    * Product Brief (`master-product-brief.md`)
+    * Architecture & System Design (`architecture-design-patterns.md`)
+    * User Flows (`user-flows.md`)
+    * UX & Design Considerations (`ux-design-considerations.md`)
+    * Features Overview (`features.md`)
+    * User Personas (`user-personas.md`)
+
+4.  **Phase 1 - Generate Parent Tasks (High-Level Plan):** Based on the PRD analysis and cross-referencing, create 4–6 high-level, overarching tasks. These parent tasks should represent distinct, major phases or components of the feature's implementation. Present these to the user without sub-tasks, along with a summary of identified dependencies and potential documentation updates.
+
+5.  **User Confirmation for Parent Tasks:** Pause and ask the user to review the parent tasks. Prompt with:
+    > "I've outlined the high-level tasks for this feature, along with any initial dependencies and documentation update suggestions. Please review them. Are you ready to proceed with generating the detailed sub-tasks? Respond with 'Go' to continue."
+
+6.  **Phase 2 - Generate Detailed Sub-Tasks:** Upon receiving user confirmation ("Go"), break down each parent task into a logical sequence of smaller, highly actionable sub-tasks. Each sub-task should be specific enough for a junior developer to understand and execute. Ensure sub-tasks cover:
+    * Frontend development (UI components, state management, user interaction).
+    * Backend development (API endpoints, database interactions, business logic).
+    * Data handling (schema changes, data migration if applicable).
+    * Integration points (API calls, third-party services).
+    * Error handling.
+    * **Testing (unit, integration, and potentially end-to-end tests for critical paths).**
+
+7.  **Identify Relevant Files and Testing Strategy:** Based on the PRD and the detailed task breakdown, identify the most likely files or modules to be created or modified. For each identified code file, explicitly suggest a corresponding test file. Include a brief explanation of the file's purpose. Ensure the suggested file structure aligns with common project conventions (e.g., tests alongside components).
+
+8.  **Compile Final Task List Output:** Combine all generated content into a single Markdown document: parent tasks, their detailed sub-tasks, the list of relevant files (with their test files), and any identified dependencies or suggested documentation updates.
+
+9.  **Save Task List:** Save the completed task list document as `tasks-[prd-file-name].md` in the `/tasks/` directory, where `[prd-file-name]` is the base name of the PRD file (e.g., `tasks-prd-user-profile-editing.md`).
+
+---
+
+### Output Format
+
+The generated task list *must* follow this structure:
+
+```markdown
+## Dependencies & Documentation Updates
+
+* **Dependencies:**
+    * [List any external dependencies, e.g., "Requires API `X` from Team Y to be ready."]
+    * [List any internal module dependencies, e.g., "Relies on the `AuthModule` for user authentication."]
+* **Suggested Documentation Updates:**
+    * `[doc-name.md]` - [Brief reason for update, e.g., "Add new feature overview."]
+    * `[another-doc.md]` - [Brief reason for update, e.g., "Update architecture diagram with new service."]
+
+---
+
+## Relevant Files
+
+-   `path/to/potential/file1.ts` - Brief description of why this file is relevant (e.g., Contains the main component for this feature).
+-   `path/to/file1.test.ts` - Unit tests for `file1.ts`.
+-   `path/to/another/file.tsx` - Brief description (e.g., API route handler for data submission).
+-   `path/to/another/file.test.tsx` - Unit tests for `another/file.tsx`.
+-   `lib/utils/helpers.ts` - Brief description (e.g., Utility functions needed for calculations).
+-   `lib/utils/helpers.test.ts` - Unit tests for `helpers.ts`.
+
+### Notes
+
+-   Unit tests should typically be placed alongside the code files they are testing (e.g., `MyComponent.tsx` and `MyComponent.test.tsx` in the same directory).
+-   Use `npx jest [optional/path/to/test/file]` to run tests. Running without a path executes all tests found by the Jest configuration.
+
+---
+
+## Tasks
+
+-   [ ] 1.0 Parent Task Title: [Brief summary from PRD]
+    -   [ ] 1.1 Implement [Specific sub-task related to frontend/UI]
+    -   [ ] 1.2 Develop [Specific sub-task related to backend/API]
+    -   [ ] 1.3 Create [Specific sub-task for data handling/persistence]
+    -   [ ] 1.4 Write comprehensive unit tests for [Component/Module name]
+    -   [ ] 1.5 Document [Specific aspect, e.g., API usage, new component]
+-   [ ] 2.0 Parent Task Title: [Brief summary from PRD]
+    -   [ ] 2.1 [Sub-task description 2.1]
+    -   [ ] 2.2 [Sub-task description 2.2]
+-   [ ] 3.0 Parent Task Title: [Brief summary from PRD]
+    -   [ ] 3.1 [Sub-task description 3.1]
+```
+
+---
+
+### Interaction Model
+
+After generating parent tasks, pause and await user confirmation to proceed with sub-task generation.
+
+This ensures the high-level plan aligns with user expectations before expanding into detailed implementation steps.
+
+---
+
+### Target Audience
+
+Assume the primary reader of the task list is a **junior developer**. Tasks should be explicit, actionable, and avoid unnecessary jargon. Include enough context for the developer to understand how the tasks connect to the feature goals and broader system. Emphasize that all functional requirements and acceptance criteria from the PRD must be covered by the generated tasks and their sub-tasks.
+
