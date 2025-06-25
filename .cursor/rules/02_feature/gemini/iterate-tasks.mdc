@@ -7,7 +7,7 @@ alwaysApply: false
 
 ### Goal
 
-To guide an AI assistant in managing and iterating on a task list (in Markdown format) derived from either a Product Requirements Document (PRD) **or** from the foundational MVP task list (`15_create_mvp_tasks.mdc`). The AI must track progress on completing a feature or foundational implementation by:
+To guide an AI assistant in managing and iterating on a task list (in Markdown format) derived from either a Product Requirements Document (PRD) **or** from the foundational MVP task list (`/tasks/tasks-create-mvp.md`). The AI must track progress on completing a feature or foundational implementation by:
 
 -   Carefully following task dependencies.
 -   Marking progress accurately and transparently.
