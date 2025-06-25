@@ -1,0 +1,354 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating Comprehensive User Personas
+
+## Goal
+
+To guide an AI assistant in creating detailed, research-based User Personas in Markdown format that serve as the foundational user representation for all product development decisions. These personas should synthesize insights from the `master-product-brief.md` and `market-analysis.md` documents to create actionable user archetypes that inform UX design, feature prioritization, content strategy, marketing messaging, and development decisions.
+
+User personas should be grounded in real user research and market insights, providing sufficient depth and specificity to guide decision-making across all team roles - from designers and developers to product managers and marketers. Each persona should feel like a real person with authentic motivations, behaviors, and constraints.
+
+## Process
+
+1. **Comprehensive Document Review:** Thoroughly analyze existing documentation in the `/docs/` directory:
+   - Review `master-product-brief.md` for target audience definitions, user needs, and product goals
+   - Extract user insights from `market-analysis.md` including customer segments, behavior patterns, and market research
+   - Identify gaps between documented user assumptions and detailed persona requirements
+
+2. **User Research Synthesis:** Compile and analyze all available user research data:
+   - Customer interviews and surveys
+   - Market research findings
+   - Competitive user analysis
+   - Behavioral analytics data
+   - Support ticket patterns
+
+3. **Strategic Persona Planning:** Determine persona strategy:
+   - Primary personas (2-3 core user types that drive 80% of product decisions)
+   - Secondary personas (important but less frequent user types)
+   - Anti-personas (users the product should NOT target)
+   - Persona relationships and interactions
+
+4. **Structured User Discovery:** Conduct comprehensive user research through targeted questions
+5. **Persona Development:** Create detailed, evidence-based personas using the enhanced framework
+6. **Cross-Reference Validation:** Ensure personas align with and enhance insights from previous documentation
+7. **Quality Assurance Review:** Validate personas for completeness, actionability, and strategic alignment
+8. **Save Document:** Output as `user-personas.md` in the `/docs/` folder with proper versioning
+
+## Enhanced User Discovery Framework
+
+### 👥 User Identity & Context
+- **Core Demographics:** Age, gender, location, education, income, family situation
+- **Professional Context:** Job title, industry, company size, seniority level, career stage
+- **Life Stage:** Career phase, family situation, major life priorities and constraints
+- **Social Context:** Community involvement, social media usage, peer influences
+- **Cultural Context:** Cultural background, values, communication preferences
+- **Accessibility Needs:** Physical, cognitive, or technological accessibility requirements
+
+### 🎯 Goals & Motivations
+- **Primary Goals:** What are they trying to accomplish with this product?
+- **Secondary Goals:** What additional outcomes do they hope to achieve?
+- **Success Metrics:** How do they measure success in achieving their goals?
+- **Motivation Drivers:** What drives them to seek solutions (pain, opportunity, compliance)?
+- **Goal Prioritization:** How do they prioritize competing goals and objectives?
+- **External Pressures:** What external factors influence their goals (boss, family, regulations)?
+
+### 🧠 Behavioral Patterns & Preferences
+- **Decision-Making Style:** Analytical, intuitive, collaborative, or autonomous?
+- **Information Processing:** How do they prefer to consume and process information?
+- **Learning Style:** How do they prefer to learn new tools and processes?
+- **Communication Preferences:** Email, phone, chat, in-person, video calls?
+- **Work Patterns:** Structured vs. flexible, planned vs. spontaneous
+- **Risk Tolerance:** Conservative, moderate, or aggressive risk-taker?
+- **Change Adoption:** Early adopter, early majority, late majority, or laggard?
+
+### 📱 Technology Usage & Digital Behavior
+- **Device Ecosystem:** Primary devices (desktop, mobile, tablet) and operating systems
+- **App Usage Patterns:** How many apps do they actively use? How do they discover new ones?
+- **Digital Literacy:** Comfort level with technology and learning new tools
+- **Platform Preferences:** Preferred platforms, browsers, and digital environments
+- **Integration Needs:** What tools must integrate with their existing workflow?
+- **Security Awareness:** How security-conscious are they? What are their concerns?
+- **Offline/Online Balance:** How much of their work/life is digital vs. offline?
+
+### 🔍 Current Workflows & Pain Points
+- **Current Process:** How do they currently accomplish their goals without this product?
+- **Workflow Context:** Where does this product fit in their broader workflow?
+- **Tool Stack:** What tools do they currently use? What works well/poorly?
+- **Pain Point Severity:** Which frustrations are most critical to solve?
+- **Workaround Behaviors:** How do they currently work around limitations?
+- **Time Constraints:** What time pressures do they face?
+- **Resource Limitations:** What budget, skill, or authority constraints do they have?
+
+### 🏢 Organizational & Social Context
+- **Decision-Making Authority:** Do they make purchasing decisions? Who else is involved?
+- **Team Dynamics:** Do they work alone or in teams? What's their role?
+- **Organizational Culture:** Formal vs. informal, hierarchical vs. flat
+- **Budget Constraints:** What budget limitations or approval processes exist?
+- **Stakeholder Influences:** Who else influences their tool choices?
+- **Success Accountability:** How is their success measured by others?
+
+### 💰 Economic & Value Considerations
+- **Price Sensitivity:** How price-sensitive are they? What's their budget range?
+- **Value Perception:** What do they consider valuable enough to pay for?
+- **ROI Expectations:** How do they calculate return on investment?
+- **Cost Justification:** How do they justify spending to themselves or others?
+- **Payment Preferences:** How do they prefer to pay (monthly, annual, one-time)?
+- **Free vs. Paid:** What would they expect in a free tier vs. paid tier?
+
+### 🎨 Design & Experience Preferences
+- **Aesthetic Preferences:** Visual style preferences (clean, bold, minimal, detailed)
+- **Interaction Preferences:** How do they prefer to interact with interfaces?
+- **Complexity Tolerance:** Do they prefer simple tools or feature-rich solutions?
+- **Customization Needs:** How much do they want to customize their experience?
+- **Learning Curve Tolerance:** How much time will they invest in learning?
+- **Error Recovery:** How do they respond to mistakes or confusion?
+
+### 📊 Usage Patterns & Scenarios
+- **Usage Frequency:** Daily, weekly, monthly, or situational usage?
+- **Usage Duration:** Quick tasks or extended work sessions?
+- **Usage Context:** Office, home, mobile, public spaces?
+- **Peak Usage Times:** When are they most/least likely to use the product?
+- **Seasonal Patterns:** Are there seasonal variations in their needs?
+- **Crisis vs. Routine:** How do their needs change in crisis vs. normal situations?
+
+### 🔄 Customer Journey Insights
+- **Awareness Stage:** How do they discover new solutions?
+- **Consideration Stage:** How do they evaluate options?
+- **Decision Stage:** What factors drive their final decision?
+- **Onboarding Preferences:** How do they prefer to get started with new tools?
+- **Adoption Process:** How do they typically adopt and integrate new solutions?
+- **Retention Factors:** What keeps them engaged long-term?
+- **Advocacy Behavior:** Do they recommend tools to others? How?
+
+## Comprehensive Persona Structure
+
+Each persona should follow this detailed framework:
+
+```markdown
+# User Personas
+
+## Persona Development Methodology
+- Research sources and methods
+- Sample size and validation approach
+- Confidence level and assumptions
+- Last updated date and review schedule
+
+## Primary Personas
+
+### [Persona Name] - [Role/Archetype]
+
+#### Overview
+- **Photo/Avatar:** [Description or placeholder]
+- **Tagline:** [One-sentence summary of who they are]
+- **Quote:** "[Authentic quote that captures their mindset]"
+
+#### Demographics & Context
+- **Age:** [Age range]
+- **Location:** [Geographic context]
+- **Education:** [Educational background]
+- **Income:** [Income range if relevant]
+- **Family Situation:** [Family context]
+- **Professional Role:** [Job title and context]
+- **Industry/Sector:** [Industry context]
+- **Company Size:** [If applicable]
+- **Career Stage:** [Early, mid, senior career]
+
+#### Goals & Motivations
+- **Primary Goals:** 
+  - [Specific goal 1 with context]
+  - [Specific goal 2 with context]
+- **Secondary Goals:**
+  - [Supporting goal 1]
+  - [Supporting goal 2]
+- **Success Metrics:** [How they measure success]
+- **Motivation Drivers:** [What drives them to seek solutions]
+- **External Pressures:** [Stakeholder or environmental pressures]
+
+#### Pain Points & Challenges
+- **Critical Pain Points:**
+  - [High-impact frustration 1 with context]
+  - [High-impact frustration 2 with context]
+- **Secondary Frustrations:**
+  - [Lower-impact issue 1]
+  - [Lower-impact issue 2]
+- **Barriers to Success:** [What prevents them from achieving goals]
+- **Current Workarounds:** [How they currently manage limitations]
+
+#### Behavioral Characteristics
+- **Decision-Making Style:** [How they make decisions]
+- **Communication Preferences:** [Preferred communication methods]
+- **Learning Style:** [How they prefer to learn]
+- **Risk Tolerance:** [Attitude toward risk and change]
+- **Work Style:** [Structured vs. flexible approach]
+- **Information Processing:** [How they consume information]
+
+#### Technology Profile
+- **Primary Devices:** [Main devices used]
+- **Operating Systems:** [OS preferences]
+- **Browser Preferences:** [If relevant]
+- **Digital Literacy Level:** [Comfort with technology]
+- **App Usage Patterns:** [How they discover and use apps]
+- **Current Tool Stack:** [Existing tools they use]
+- **Integration Requirements:** [Must-have integrations]
+- **Security Concerns:** [Security awareness and concerns]
+
+#### Usage Context & Scenarios
+- **Primary Use Cases:**
+  - [Detailed scenario 1]
+  - [Detailed scenario 2]
+- **Usage Frequency:** [How often they would use the product]
+- **Usage Duration:** [Typical session length]
+- **Usage Environment:** [Where they use the product]
+- **Peak Usage Times:** [When most likely to use]
+- **Seasonal Variations:** [Any seasonal patterns]
+
+#### Economic Considerations
+- **Budget Range:** [Spending capability/authority]
+- **Price Sensitivity:** [Attitude toward pricing]
+- **Value Perception:** [What they consider valuable]
+- **ROI Expectations:** [How they calculate value]
+- **Decision-Making Authority:** [Who makes purchasing decisions]
+- **Budget Approval Process:** [If applicable]
+
+#### Customer Journey
+- **Awareness:** [How they discover solutions]
+- **Research Process:** [How they evaluate options]
+- **Decision Criteria:** [Key factors in decision-making]
+- **Onboarding Preferences:** [How they prefer to get started]
+- **Adoption Timeline:** [How quickly they adopt new tools]
+- **Success Factors:** [What leads to successful adoption]
+
+#### Design Preferences
+- **Aesthetic Preferences:** [Visual style preferences]
+- **Complexity Tolerance:** [Simple vs. feature-rich preference]
+- **Customization Needs:** [Desire for personalization]
+- **Interaction Preferences:** [Preferred interaction patterns]
+- **Content Preferences:** [How they prefer information presented]
+
+#### Relationship to Product
+- **Primary Value Received:** [Main benefit they get from product]
+- **Feature Priorities:** [Most important features for them]
+- **Success Scenario:** [What success looks like for them]
+- **Potential Objections:** [Concerns they might have]
+- **Competitive Alternatives:** [What else they might consider]
+
+## Secondary Personas
+
+[Same structure as primary personas, but more concise]
+
+## Anti-Personas
+
+### [Anti-Persona Name]
+- **Description:** [Who they are]
+- **Why Not a Target:** [Why product isn't designed for them]
+- **Risk of Inclusion:** [What problems would arise if we tried to serve them]
+- **How to Avoid:** [How to ensure we don't accidentally target them]
+
+## Persona Relationships & Interactions
+
+### Multi-User Scenarios
+- [How different personas interact with each other]
+- [Collaborative use cases]
+- [Hierarchical relationships]
+
+### Decision-Making Units
+- [Who influences purchasing decisions]
+- [How different personas affect each other's choices]
+
+## Validation & Research Notes
+
+### Research Sources
+- [List of research sources used]
+- [Sample sizes and methodologies]
+- [Date of research and relevance]
+
+### Assumptions & Limitations
+- [Key assumptions made]
+- [Areas where more research is needed]
+- [Confidence levels for different insights]
+
+### Validation Plan
+- [How personas will be validated]
+- [Success metrics for persona accuracy]
+- [Update schedule and triggers]
+```
+
+## Quality Assurance Framework
+
+### Persona Completeness Checks
+- [ ] Each persona has sufficient detail to guide design decisions
+- [ ] Behavioral patterns are specific and actionable
+- [ ] Pain points are clearly articulated with context
+- [ ] Technology usage patterns are detailed and current
+- [ ] Economic considerations are realistic and specific
+- [ ] Usage scenarios are concrete and detailed
+
+### Strategic Alignment Checks
+- [ ] Personas align with target audiences defined in product brief
+- [ ] Market segments from market analysis are represented
+- [ ] Persona priorities match business objectives
+- [ ] Competitive insights inform persona development
+- [ ] Personas support product positioning strategy
+
+### Actionability Checks
+- [ ] Personas provide clear guidance for feature prioritization
+- [ ] Design preferences are specific enough to inform UI/UX decisions
+- [ ] Content strategy implications are clear
+- [ ] Marketing message alignment is evident
+- [ ] Development complexity considerations are included
+
+### Research Quality Checks
+- [ ] Personas are based on actual research data when available
+- [ ] Assumptions are clearly distinguished from validated insights
+- [ ] Sources are credible and current
+- [ ] Sample sizes are appropriate for confidence levels
+- [ ] Biases and limitations are acknowledged
+
+## Integration with Existing Documentation
+
+### Product Brief Alignment
+- Validate target audience assumptions from `master-product-brief.md`
+- Confirm user needs and pain points identified in product brief
+- Ensure persona goals align with product value propositions
+- Reference specific sections of product brief that informed persona development
+
+### Market Analysis Integration
+- Incorporate customer segment insights from `market-analysis.md`
+- Validate persona characteristics against market research findings
+- Ensure personas reflect competitive landscape insights
+- Align persona economic considerations with market pricing analysis
+
+### Documentation Cross-References
+- Explicitly cite relevant sections from previous documents
+- Highlight where personas confirm or challenge previous assumptions
+- Identify areas where personas provide new insights not captured elsewhere
+- Create clear linkages for future document development
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `user-personas.md`
+- **Length:** Comprehensive but focused (typically 15-25 pages)
+- **Audience:** All team members - designers, developers, product managers, marketers
+- **Dependencies:** Built upon `master-product-brief.md` and `market-analysis.md`
+- **Version Control:** Include creation date, version number, and update schedule
+
+## Final Instructions
+
+1. **DO NOT** generate personas immediately upon receiving this request
+2. **DO** first thoroughly review existing documentation in `/docs/` folder:
+   - Extract user insights from `master-product-brief.md`
+   - Incorporate customer research from `market-analysis.md`
+   - Identify any conflicts or gaps between documents
+3. **DO** ask specific, targeted questions to fill critical information gaps
+4. **DO** offer the user choice between providing detailed input or allowing research-based generation
+5. **DO** ensure personas are grounded in real research and market insights, not assumptions
+6. **DO** create personas that are specific enough to drive concrete product decisions
+7. **DO** validate that personas support and enhance the product strategy outlined in previous documents
+8. **DO** reference specific insights from `master-product-brief.md` and `market-analysis.md` when developing personas
+
+9. **DO** highlight any new insights or contradictions that emerge from persona development

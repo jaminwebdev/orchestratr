@@ -1,0 +1,302 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating Security & Compliance Plan
+
+## Goal
+
+To guide an AI assistant in generating a comprehensive **Security & Compliance Plan** that establishes a robust security posture covering data protection, infrastructure security, access controls, regulatory compliance, and incident response. This plan ensures security is integrated throughout the entire product lifecycle, from development to deployment and ongoing operations.
+
+The document should provide actionable security controls for engineering teams, auditable compliance frameworks for stakeholders, risk assessment methodologies for leadership, and measurable security metrics for continuous improvement. It must align with industry best practices, regulatory requirements, and modern threat landscapes.
+
+## Process
+
+1. **Reference Previous Docs (MANDATORY):**
+   - `master-product-brief.md` - For business context, target market, and regulatory exposure
+   - `features.md` - For understanding data flows, user interactions, and attack surfaces
+   - `architecture-design-patterns.md` - For technical security implementation details and infrastructure security
+   - `user-personas.md` - For identifying user behavior patterns and potential threat vectors
+   - `market-analysis.md` - For understanding competitive security standards and industry expectations
+   - `user-flows.md` - For mapping security controls to user journeys and identifying vulnerable touchpoints
+   - `ux-design-considerations.md` - For balancing security with usability requirements
+   - `content-strategy.md` - For content security policies and user-generated content risks
+
+2. **Data & Privacy Assessment Questions:**
+   - What types of personally identifiable information (PII) will be collected, processed, and stored?
+   - Will you handle special categories of data (health, financial, biometric, children's data)?
+   - What is the data retention strategy and legal basis for processing?
+   - How will user consent be obtained, managed, and withdrawn?
+   - What third-party data processors will have access to user data?
+
+3. **Regulatory & Compliance Landscape:**
+   - What geographic regions will the product serve (EU, California, other jurisdictions)?
+   - Are you targeting regulated industries (healthcare, finance, education, government)?
+   - Will payments be processed directly or through compliant third parties?
+   - Are there industry-specific standards (PCI-DSS, HIPAA, SOX, FedRAMP)?
+   - What are the data residency and cross-border transfer requirements?
+
+4. **Authentication & Access Control Requirements:**
+   - What user roles and permission levels are required?
+   - Will there be administrative access or privileged user accounts?
+   - Are there enterprise SSO or federation requirements?
+   - What authentication methods are acceptable to users and regulators?
+   - How will account recovery and password reset be handled securely?
+
+5. **Threat Landscape & Risk Assessment:**
+   - What are the most valuable assets and likely attack targets?
+   - Who are the potential threat actors (external hackers, insiders, competitors)?
+   - What would be the business impact of different types of security incidents?
+   - Are there known vulnerabilities in the chosen technology stack?
+   - What are the reputational and financial risks of security failures?
+
+6. **Infrastructure & Operational Security:**
+   - How will secrets and credentials be managed across environments?
+   - What is the production access control and change management process?
+   - How will security be integrated into the CI/CD pipeline?
+   - What monitoring and alerting capabilities are needed for security events?
+   - How will security patches and updates be managed?
+
+7. **Generate the Security & Compliance Plan** using the comprehensive structure below.
+
+## Recommended Document Structure
+
+### 🔐 Identity & Access Management (IAM)
+- **Authentication Architecture**: Multi-factor authentication, passwordless options, biometric authentication
+- **Identity Providers**: Internal vs external identity providers, SSO integration, social login security
+- **Password Policy & Management**: Complexity requirements, breach detection, credential stuffing protection
+- **Session Management**: Secure session tokens, session timeout policies, concurrent session handling
+- **Role-Based Access Control (RBAC)**: Permission models, privilege escalation prevention, least privilege principle
+- **Attribute-Based Access Control (ABAC)**: Dynamic permissions, context-aware access, fine-grained authorization
+- **Account Lifecycle Management**: User provisioning, deprovisioning, dormant account handling
+- **Privileged Access Management**: Admin account security, elevated privileges, access reviews
+
+### 🔎 Data Protection & Privacy Engineering
+- **Data Classification Framework**: Public, internal, confidential, restricted data categories
+- **Data Inventory & Mapping**: Data sources, processing purposes, data flows, cross-border transfers
+- **Privacy by Design Implementation**: Data minimization, purpose limitation, consent management
+- **Data Subject Rights Management**: Access, rectification, erasure, portability, objection rights
+- **Consent Management Platform**: Granular consent, withdrawal mechanisms, consent records
+- **Data Retention & Disposal**: Automated deletion, secure data destruction, legal hold procedures
+- **Data Loss Prevention (DLP)**: Content scanning, data classification, egress monitoring
+- **Privacy Impact Assessments**: Risk evaluation, mitigation measures, ongoing monitoring
+
+### 🔒 Cryptography & Key Management
+- **Encryption Standards**: AES-256, RSA-4096, ECC, post-quantum cryptography readiness
+- **Encryption at Rest**: Database encryption, file system encryption, backup encryption
+- **Encryption in Transit**: TLS 1.3, certificate management, HSTS, certificate pinning
+- **Key Management Strategy**: Key generation, rotation, escrow, hardware security modules (HSM)
+- **Cryptographic Protocols**: Perfect forward secrecy, key derivation functions, secure random generation
+- **Digital Signatures**: Code signing, document integrity, non-repudiation
+- **Secrets Management**: Environment variables, secret rotation, zero-trust secret access
+- **Cryptographic Agility**: Algorithm flexibility, migration strategies, crypto-agility planning
+
+### 🧰 Application Security Controls
+- **Secure Development Lifecycle (SDLC)**: Security requirements, threat modeling, secure coding guidelines
+- **Input Validation & Sanitization**: Server-side validation, parameterized queries, output encoding
+- **OWASP Top 10 Protection**: Comprehensive mitigation strategies for current OWASP risks
+- **API Security**: OAuth 2.0/OpenID Connect, rate limiting, API versioning security, GraphQL security
+- **Content Security Policy (CSP)**: XSS prevention, resource loading restrictions, nonce implementation
+- **Cross-Site Request Forgery (CSRF)**: Token-based protection, SameSite cookies, double-submit cookies
+- **File Upload Security**: MIME type validation, virus scanning, sandboxing, size limitations
+- **Error Handling**: Secure error messages, information disclosure prevention, logging sensitive errors
+- **Security Headers**: HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy
+- **Dependency Management**: Vulnerability scanning, license compliance, supply chain security
+
+### 🧾 Regulatory Compliance & Legal Framework
+- **General Data Protection Regulation (GDPR)**: Lawful basis, consent, data subject rights, DPO requirements
+- **California Consumer Privacy Act (CCPA/CPRA)**: Consumer rights, opt-out mechanisms, third-party sharing
+- **Health Insurance Portability and Accountability Act (HIPAA)**: PHI protection, BAAs, minimum necessary
+- **Payment Card Industry Data Security Standard (PCI-DSS)**: Cardholder data protection, network security
+- **Children's Online Privacy Protection Act (COPPA)**: Age verification, parental consent, data collection limits
+- **Sector-Specific Regulations**: Financial services, healthcare, education, government requirements
+- **International Data Transfers**: Standard contractual clauses, adequacy decisions, binding corporate rules
+- **Data Breach Notification**: Regulatory timelines, notification templates, communication strategies
+- **Compliance Monitoring**: Regular assessments, audit trails, compliance reporting
+- **Legal Risk Assessment**: Liability exposure, insurance requirements, legal counsel engagement
+
+### 🌍 Infrastructure & Cloud Security
+- **Cloud Security Architecture**: Shared responsibility model, cloud-native security controls
+- **Network Security**: VPC design, network segmentation, firewall rules, DDoS protection
+- **Container Security**: Image scanning, runtime protection, secrets injection, least privilege containers
+- **Serverless Security**: Function isolation, event-driven security, cold start considerations
+- **Infrastructure as Code (IaC) Security**: Template scanning, policy as code, drift detection
+- **Secrets Management Platform**: Centralized secret storage, automatic rotation, audit logging
+- **Backup & Recovery Security**: Encrypted backups, air-gapped storage, recovery testing
+- **Endpoint Security**: Device management, mobile application security, BYOD policies
+- **Third-Party Risk Management**: Vendor assessments, SLA security requirements, supply chain security
+
+### 🔧 DevSecOps & Secure Development
+- **Security in CI/CD Pipeline**: Static analysis, dynamic testing, dependency scanning, infrastructure scanning
+- **Code Security Reviews**: Automated and manual code review, security champions program
+- **Security Testing Strategy**: SAST, DAST, IAST, penetration testing, red team exercises
+- **Vulnerability Management**: Scanning schedules, risk prioritization, patch management, zero-day response
+- **Security Metrics & KPIs**: Vulnerability remediation times, security test coverage, incident response times
+- **Security Training**: Developer security training, security awareness, phishing simulation
+- **Threat Intelligence Integration**: Threat feeds, indicators of compromise, attack pattern analysis
+- **Security Automation**: Automated remediation, security orchestration, incident response automation
+
+### 🧪 Security Monitoring & Incident Response
+- **Security Information and Event Management (SIEM)**: Log aggregation, correlation rules, threat detection
+- **Security Orchestration, Automation and Response (SOAR)**: Incident response automation, playbook execution
+- **Intrusion Detection/Prevention Systems (IDS/IPS)**: Network monitoring, anomaly detection, automated blocking
+- **User and Entity Behavior Analytics (UEBA)**: Baseline behavior, anomaly detection, insider threat detection
+- **Security Incident Classification**: Severity levels, escalation procedures, communication protocols
+- **Incident Response Team**: Roles and responsibilities, on-call procedures, external resources
+- **Digital Forensics Capabilities**: Evidence collection, chain of custody, forensic analysis tools
+- **Business Continuity Planning**: Disaster recovery, alternative processing sites, essential functions
+- **Post-Incident Activities**: Lessons learned, process improvements, stakeholder communication
+- **Threat Hunting**: Proactive threat detection, hypothesis-driven investigations, threat intelligence application
+
+### 🚧 Comprehensive Threat Modeling & Risk Management
+- **Asset Identification & Valuation**: Critical assets, data classification, business impact assessment
+- **Threat Actor Profiling**: Nation-states, cybercriminals, hacktivists, insider threats, competitors
+- **Attack Surface Analysis**: External-facing services, API endpoints, user interfaces, administrative access
+- **Threat Modeling Methodologies**: STRIDE, PASTA, OCTAVE, FAIR risk quantification
+- **Common Attack Scenarios**: 
+  - Authentication bypass and credential stuffing attacks
+  - SQL injection and NoSQL injection attacks
+  - Cross-site scripting (XSS) and cross-site request forgery (CSRF)
+  - API abuse and rate limiting bypass
+  - Privilege escalation and lateral movement
+  - Data exfiltration and ransomware attacks
+  - Supply chain and third-party compromise
+  - Social engineering and phishing attacks
+  - Denial of service and resource exhaustion
+  - Mobile application security risks
+- **Risk Assessment Matrix**: Likelihood vs impact, risk tolerance, risk treatment strategies
+- **Compensating Controls**: Alternative security measures, defense in depth, security layers
+- **Risk Monitoring & Review**: Continuous risk assessment, threat landscape changes, control effectiveness
+
+### 🎯 Security Governance & Risk Management
+- **Security Program Management**: Security strategy, governance structure, executive reporting
+- **Risk Management Framework**: Risk identification, assessment, treatment, monitoring
+- **Security Policy Development**: Acceptable use policies, incident response policies, data handling policies
+- **Security Awareness Program**: Employee training, phishing simulation, security culture
+- **Third-Party Risk Management**: Vendor risk assessments, contract security requirements, ongoing monitoring
+- **Security Metrics & Reporting**: KPIs, dashboards, executive reporting, trend analysis
+- **Audit & Compliance Management**: Internal audits, external assessments, certification maintenance
+- **Business Continuity & Disaster Recovery**: Recovery objectives, alternative sites, testing procedures
+
+### 📊 Security Metrics & Continuous Improvement
+- **Key Performance Indicators (KPIs)**:
+  - Mean time to detect (MTTD) security incidents
+  - Mean time to respond (MTTR) to security incidents
+  - Vulnerability remediation times by severity
+  - Security training completion rates
+  - Percentage of code covered by security testing
+  - Number of security incidents by category
+  - Third-party security assessment scores
+- **Maturity Assessment**: Security maturity model, capability gaps, improvement roadmap
+- **Benchmarking**: Industry comparisons, best practice adoption, peer analysis
+- **Security Return on Investment**: Cost-benefit analysis, risk reduction quantification
+- **Continuous Monitoring**: Real-time security posture, automated compliance checking
+- **Security Program Evolution**: Technology changes, threat landscape evolution, business growth impact
+
+### 🔍 Specialized Security Considerations
+- **Mobile Application Security**: OWASP Mobile Top 10, app store security, mobile device management
+- **Internet of Things (IoT) Security**: Device authentication, firmware updates, communication security
+- **Artificial Intelligence & Machine Learning Security**: Model security, training data protection, adversarial attacks
+- **Blockchain & Cryptocurrency Security**: Smart contract security, wallet security, consensus mechanisms
+- **Quantum Computing Preparedness**: Post-quantum cryptography, migration planning, timeline considerations
+- **Emerging Technology Risk**: New technology adoption, pilot project security, innovation vs security balance
+
+## Enhanced Clarifying Questions
+
+### Data & Privacy Assessment
+- What specific types of personal data will be collected, including any special categories?
+- How will data be used beyond the primary service functionality?
+- What is the legal basis for processing under GDPR or other privacy laws?
+- Will there be automated decision-making or profiling of users?
+- How will user consent be obtained and managed throughout the data lifecycle?
+- What data sharing agreements exist with third parties or partners?
+- Are there any plans for cross-border data transfers?
+
+### Regulatory & Compliance Requirements
+- Which geographic regions and jurisdictions will the service operate in?
+- Are there industry-specific regulations that apply (healthcare, finance, education)?
+- What are the data residency and localization requirements?
+- Are there government or enterprise customers with specific security requirements?
+- What compliance certifications or attestations are required or beneficial?
+- Are there any planned regulatory changes that could impact the service?
+
+### Technical Security Architecture
+- What is the current security maturity level of the development team?
+- Are there existing security tools and processes in place?
+- What is the budget allocated for security tools and services?
+- How will security be integrated into the existing development workflow?
+- What are the performance and usability constraints for security controls?
+- Are there plans for security automation and orchestration?
+
+### Risk & Threat Landscape
+- What would be the business impact of different types of security incidents?
+- Who are the most likely threat actors targeting the business or industry?
+- What are the most valuable assets that need protection?
+- Are there known threats or vulnerabilities in the current technology stack?
+- What is the organization's risk tolerance and appetite?
+- How will security risks be communicated to business stakeholders?
+
+### Operational Security
+- How will security incidents be detected, responded to, and recovered from?
+- What logging and monitoring capabilities are currently in place?
+- How will security patches and updates be managed across environments?
+- What is the process for managing privileged access and administrative accounts?
+- How will security be maintained as the system scales and evolves?
+- What external security services or consultants are being considered?
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `security-compliance-plan.md`
+- **Length:** Comprehensive document (typically 5000-8000 words for thorough coverage)
+- **Structure:** Clear sections with actionable subsections and specific implementation guidance
+- **Cross-references:** Link to relevant sections in `architecture-design-patterns.md`, `features.md`, and other `/docs/` files
+- **Technical Depth:** Balance between high-level strategy and implementation details
+
+## Final Instructions & Quality Gates
+
+1. **Prerequisites Check:** Do NOT generate the security document until you have clear understanding of:
+   - Data types and sensitivity levels being processed
+   - Regulatory landscape and compliance requirements
+   - User access patterns and authentication needs
+   - Infrastructure architecture and technology stack
+   - Business risk tolerance and security budget
+   - Threat landscape and potential attack vectors
+
+2. **Mandatory Assessment Areas:**
+   - Data classification and handling requirements
+   - Regulatory compliance obligations and timelines
+   - Authentication and authorization complexity
+   - Third-party integrations and dependencies
+   - Incident response and business continuity needs
+   - Security monitoring and detection capabilities
+
+3. **Documentation Standards:**
+   - Use clear, actionable language suitable for both technical and business stakeholders
+   - Include specific technology recommendations with rationale
+   - Provide implementation timelines and priorities
+   - Cross-reference relevant architectural decisions and constraints
+   - Include compliance mapping and audit trail requirements
+
+4. **Completeness Requirements:**
+   - **Threat modeling and risk mitigation section is mandatory and must be comprehensive**
+   - Include both preventive and detective security controls
+   - Address security throughout the entire software development lifecycle
+   - Provide measurable security metrics and success criteria
+   - Include incident response procedures and business continuity planning
+   - Cover emerging threats and future security considerations
+
+5. **Review Checklist:**
+   - [ ] All previous documents from `/docs/` have been appropriately referenced
+   - [ ] Data protection requirements align with privacy regulations
+   - [ ] Security controls are mapped to identified threats and risks
+   - [ ] Compliance requirements are specific and actionable
+   - [ ] Incident response procedures are detailed and tested
+   - [ ] Security metrics and monitoring strategies are defined
+   - [ ] Technical security controls integrate with the overall architecture
+   - [ ] Business continuity and disaster recovery plans are included
+   - [ ] Third-party security requirements and assessments are covered
+
+   - [ ] Security governance and program management structure is defined

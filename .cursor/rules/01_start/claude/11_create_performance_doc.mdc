@@ -1,0 +1,312 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating Performance & Optimization Plan
+
+## Goal
+
+To guide an AI assistant in creating a comprehensive **Performance & Optimization Plan** that establishes performance standards, identifies optimization opportunities, and provides actionable strategies for achieving exceptional user experience through fast load times, smooth interactions, efficient backend processing, and optimal system responsiveness across all platforms and network conditions.
+
+This document serves as the definitive guide for developers, engineers, and stakeholders to understand performance requirements, anticipate bottlenecks, implement optimization tactics, and maintain performance standards throughout the product lifecycle.
+
+## Process
+
+1. **Reference Previous Docs:**
+   - `/docs/master-product-brief.md` - For performance requirements, target audience, and business constraints
+   - `/docs/features.md` - To understand feature complexity and performance implications
+   - `/docs/architecture-design-patterns.md` - For system architecture and scalability considerations
+   - `/docs/testing-qa-strategy.md` - To align performance testing with overall QA approach
+   - `/docs/analytics-success-metrics.md` - For performance KPIs and measurement alignment
+   - `/docs/user-personas.md` - To understand user contexts, devices, and network conditions
+   - `/docs/user-flows-diagrams.md` - To identify critical user paths requiring optimization
+   - `/docs/ux-design-doc.md` - For UI complexity and interaction performance requirements
+
+2. **Ask Comprehensive Clarifying Questions:**
+
+   **Performance Targets & Context:**
+   - What are specific performance goals (Core Web Vitals: LCP <2.5s, FID <100ms, CLS <0.1)?
+   - What are API response time SLAs (target: <200ms, acceptable: <500ms, critical: <1s)?
+   - What percentile targets are required (50th, 90th, 95th, 99th percentile)?
+   - Are there regulatory or compliance performance requirements?
+   - What performance budgets need to be established (JS bundle size, image sizes)?
+
+   **Technical Architecture:**
+   - What rendering strategy will be used (SSR, SSG, SPA, hybrid)?
+   - What frontend framework/technology stack requires optimization?
+   - What backend services and database technologies are involved?
+   - Are microservices or monolithic architecture patterns being used?
+   - What third-party services and APIs will impact performance?
+
+   **User Context & Constraints:**
+   - What device types and capabilities must be supported (mobile, desktop, tablets)?
+   - What network conditions are expected (3G, 4G, WiFi, offline scenarios)?
+   - What geographic regions require optimization considerations?
+   - Are there accessibility performance requirements?
+   - What browser support matrix affects optimization strategies?
+
+   **Infrastructure & Scaling:**
+   - What cloud providers and services are being used?
+   - What CDN strategy is planned or available?
+   - What auto-scaling and load balancing requirements exist?
+   - Are there cost constraints affecting optimization approaches?
+   - What monitoring and observability tools are available or preferred?
+
+   **Business Context:**
+   - What performance-related business metrics are critical (conversion, engagement)?
+   - Are there peak usage periods requiring special optimization?
+   - What competitive performance benchmarks should be considered?
+   - Are there internationalization performance considerations?
+
+3. **Generate the Performance & Optimization Plan** using the comprehensive structure below.
+
+## Recommended Document Structure
+
+### 🎯 Executive Summary & Performance Vision
+- Performance mission statement aligned with business goals
+- Key performance pillars and principles
+- Performance impact on user experience and business metrics
+- Stakeholder responsibilities and ownership model
+
+### 📊 Performance Goals & Success Metrics
+**Core Web Vitals & User Experience Metrics:**
+- Largest Contentful Paint (LCP) targets and thresholds
+- First Input Delay (FID) / Interaction to Next Paint (INP) requirements
+- Cumulative Layout Shift (CLS) acceptable ranges
+- Time to First Byte (TTFB) benchmarks
+- First Contentful Paint (FCP) and Time to Interactive (TTI) goals
+
+**Technical Performance Metrics:**
+- API response time SLAs (average, 95th percentile, 99th percentile)
+- Database query performance thresholds
+- Memory usage and CPU utilization limits
+- Network payload size budgets
+- Cache hit ratio targets
+- Error rate and availability SLAs
+
+**Business Performance Metrics:**
+- Page abandonment rate thresholds
+- Conversion rate correlation with performance
+- User engagement metrics tied to performance
+- Revenue impact measurement frameworks
+
+### 🌐 Frontend Optimization Strategies
+
+**Critical Rendering Path Optimization:**
+- HTML structure optimization for fast parsing
+- Critical CSS identification and inlining strategies
+- JavaScript loading priorities and execution timing
+- Resource hints implementation (dns-prefetch, preconnect, preload, prefetch)
+- Progressive enhancement principles and implementation
+
+**Code Splitting & Lazy Loading:**
+- Route-based code splitting strategies
+- Component-level lazy loading patterns
+- Dynamic import optimization
+- Tree-shaking and dead code elimination
+- Bundle analysis and optimization workflows
+
+**Asset Optimization:**
+- Image optimization strategies (WebP, AVIF, responsive images)
+- Video optimization and adaptive streaming
+- Font loading optimization (font-display, subsetting)
+- Icon and graphic optimization (SVG, icon fonts vs SVG sprites)
+- Asset compression and minification workflows
+
+**JavaScript & CSS Optimization:**
+- Bundle size budgets and monitoring
+- Runtime performance optimization patterns
+- CSS optimization (unused CSS removal, critical path CSS)
+- Third-party script optimization and loading strategies
+- Web Workers for heavy computational tasks
+
+**Caching & Storage Strategies:**
+- Browser caching policies and cache busting strategies
+- Service Worker implementation for offline capabilities
+- Application-level caching (localStorage, sessionStorage, IndexedDB)
+- HTTP caching headers optimization
+- Progressive Web App (PWA) caching strategies
+
+### ⚙️ Backend Optimization Strategies
+
+**Database Optimization:**
+- Query optimization and indexing strategies
+- Database connection pooling and management
+- Read replica utilization and load distribution
+- Database partitioning and sharding considerations
+- Query monitoring and slow query identification
+
+**API Design & Optimization:**
+- RESTful API best practices for performance
+- GraphQL optimization strategies (N+1 problem, DataLoader)
+- Pagination strategies and implementation
+- Response compression (gzip, brotli)
+- API versioning impact on performance
+- Rate limiting and throttling implementation
+
+**Caching Layers:**
+- Application-level caching strategies
+- Redis/Memcached implementation patterns
+- CDN caching policies and cache invalidation
+- Database query result caching
+- Session and user data caching optimization
+
+**Asynchronous Processing:**
+- Background job processing optimization
+- Message queue implementation and tuning
+- Event-driven architecture performance patterns
+- Batch processing optimization strategies
+- Real-time data processing considerations
+
+**Server & Infrastructure Optimization:**
+- Server configuration tuning (CPU, memory, I/O)
+- Load balancing strategies and health checks
+- Auto-scaling policies and triggers
+- Container optimization (Docker, Kubernetes)
+- Serverless optimization patterns
+
+### 🌍 Network & Infrastructure Optimization
+
+**Content Delivery Network (CDN):**
+- CDN selection criteria and implementation
+- Geographic distribution strategies
+- Cache policies and TTL optimization
+- Edge computing opportunities
+- CDN monitoring and performance analysis
+
+**Network Protocol Optimization:**
+- HTTP/2 and HTTP/3 implementation benefits
+- TLS optimization (session resumption, OCSP stapling)
+- DNS optimization (DNS-over-HTTPS, DNS prefetching)
+- Connection management and keep-alive strategies
+- Compression algorithms and trade-offs
+
+**Global Performance Considerations:**
+- Multi-region deployment strategies
+- Latency optimization for global users
+- Regional compliance and performance requirements
+- Cross-border data transfer optimization
+- Edge caching and regional failover strategies
+
+### 🔧 Monitoring, Tooling & Observability
+
+**Performance Monitoring Stack:**
+- Real User Monitoring (RUM) implementation and analysis
+- Synthetic monitoring setup and alerting
+- Core Web Vitals tracking and reporting
+- Performance budget enforcement automation
+- Continuous performance testing integration
+
+**Development & Testing Tools:**
+- Lighthouse CI integration and automation
+- WebPageTest integration for detailed analysis
+- Performance profiling tools and workflows
+- Load testing strategies and tools
+- Performance regression detection systems
+
+**Production Monitoring:**
+- Application Performance Monitoring (APM) setup
+- Infrastructure monitoring and alerting
+- Database performance monitoring
+- Third-party service performance tracking
+- User experience monitoring and feedback loops
+
+**Alerting & Incident Response:**
+- Performance degradation alert thresholds
+- Escalation procedures for performance incidents
+- Performance incident post-mortem processes
+- Performance SLA violation procedures
+- Automated performance remediation where possible
+
+### 🚧 Edge Cases & Degradation Strategies
+
+**Network Condition Adaptations:**
+- Slow network detection and adaptation strategies
+- Offline-first design patterns and implementation
+- Progressive enhancement for limited connectivity
+- Data usage optimization for mobile users
+- Adaptive content delivery based on connection quality
+
+**Device & Browser Limitations:**
+- Low-powered device optimization strategies
+- Memory-constrained environment adaptations
+- Older browser performance considerations
+- Progressive enhancement and graceful degradation
+- Touch and interaction performance optimization
+
+**Error Handling & Recovery:**
+- Resource loading failure fallbacks
+- API timeout and retry strategies
+- Performance degradation recovery procedures
+- Circuit breaker patterns for external dependencies
+- User communication during performance issues
+
+**Scale & Traffic Management:**
+- Traffic spike handling and auto-scaling
+- Performance under high load scenarios
+- Database failover and performance impact
+- CDN failover and performance implications
+- Capacity planning and performance projections
+
+### 📈 Performance Culture & Governance
+
+**Team Responsibilities:**
+- Performance champion roles and responsibilities
+- Developer performance training and guidelines
+- Performance review processes in development workflow
+- Performance impact assessment for new features
+- Cross-team performance collaboration frameworks
+
+**Continuous Improvement:**
+- Performance optimization roadmap and prioritization
+- Regular performance audits and assessments
+- Performance benchmarking against competitors
+- User feedback integration into performance planning
+- Technology upgrade impact on performance
+
+## Clarifying Questions (Examples)
+
+**Performance Context & Goals:**
+- What specific Core Web Vitals targets are required for your user base?
+- Are there industry benchmarks or competitor performance standards to meet?
+- What performance-related business metrics (conversion, engagement) are most critical?
+- Do you have regulatory or compliance performance requirements?
+
+**Technical Architecture & Constraints:**
+- What rendering strategy aligns with your performance goals (SSR/SSG/SPA)?
+- What are your technology stack constraints that affect optimization approaches?
+- Are there third-party integrations that may impact performance significantly?
+- What existing infrastructure or tooling constraints should be considered?
+
+**User Experience & Context:**
+- What device types and network conditions represent your primary user base?
+- Are there specific user flows or features that require prioritized optimization?
+- What accessibility performance requirements need to be maintained?
+- Are there geographic regions with specific performance challenges?
+
+**Resources & Implementation:**
+- What monitoring and analytics tools are available or preferred?
+- What development team capacity exists for performance optimization?
+- Are there budget constraints affecting infrastructure or tooling choices?
+- What timeline exists for implementing performance optimizations?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `performance-optimization-plan.md`
+
+## Final Instructions
+
+1. **DO NOT generate the document** until performance goals, technical context, and user requirements are clearly understood
+2. **Reference previous documentation** from `/docs/` to ensure alignment with architecture, features, and user needs
+3. **Ask comprehensive clarifying questions** about performance targets, technical constraints, and user context
+4. **Include detailed, actionable strategies** across all layers of the application stack
+5. **Emphasize monitoring and measurement** to ensure performance goals are achieved and maintained
+6. **Address edge cases and degradation scenarios** to ensure robust performance under various conditions
+7. **Establish performance culture and governance** to maintain optimization efforts long-term
+8. **Provide specific, measurable targets** rather than vague performance aspirations
+9. **Consider business impact and user experience** in all optimization recommendations
+
+10. **Ensure scalability and maintainability** of performance optimization strategies

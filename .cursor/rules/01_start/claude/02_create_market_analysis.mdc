@@ -1,0 +1,276 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Creating a Comprehensive Market Analysis Document
+
+## Goal
+
+To guide an AI assistant in creating a detailed, strategic Market Analysis document in Markdown format that builds upon the previously completed Product Brief (`master-product-brief.md`). The Market Analysis should provide deep insights into market opportunity, competitive dynamics, positioning strategy, and market entry approach.
+
+This document will serve as a critical foundation for strategic decision-making across feature prioritization, product roadmap planning, pricing strategy, go-to-market execution, and investment decisions. It should be accessible to stakeholders at all levels - from product managers and designers to developers, executives, and potential investors.
+
+## Process
+
+1. **Analyze Existing Documentation:** Thoroughly review the `master-product-brief.md` in the `/docs` folder to understand the product vision, target audience, and initial market assumptions.
+2. **Identify Knowledge Gaps:** Compare the product brief against the comprehensive market analysis requirements to identify missing information.
+3. **Conduct Structured Market Discovery:** Use the enhanced question framework below to gather detailed market intelligence.
+4. **Cross-Reference and Validate:** Ensure market findings align with and enhance the product strategy outlined in the product brief.
+5. **Generate Comprehensive Market Analysis:** Create a detailed analysis using the enhanced structure below.
+6. **Quality Assurance Review:** Ensure the analysis is actionable, evidence-based, and strategically sound.
+7. **Save Document:** Save the final document as `market-analysis.md` in the `/docs` directory.
+
+## Enhanced Market Discovery Questions
+
+### 📊 Market Landscape & Dynamics
+- **Market Definition:** How would you define the specific market category this product operates in?
+- **Market Size & Growth:** What's the Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM)?
+- **Growth Trajectory:** Is this market growing, mature, declining, or experiencing transformation?
+- **Market Drivers:** What macro trends (technological, social, economic, regulatory) are driving market changes?
+- **Market Barriers:** What structural barriers exist for new entrants (capital, regulation, network effects)?
+- **Value Chain Analysis:** How does value flow through this market ecosystem?
+- **Seasonality & Cycles:** Are there seasonal patterns or business cycles that affect this market?
+
+### 🎯 Market Segmentation & Targeting
+- **Segmentation Criteria:** How can this market be segmented (demographic, psychographic, behavioral, geographic)?
+- **Segment Attractiveness:** Which segments offer the best opportunity in terms of size, growth, and accessibility?
+- **Underserved Segments:** Are there segments that are poorly served by current solutions?
+- **Segment Evolution:** How are customer segments changing or emerging?
+- **Cross-Segment Opportunities:** Are there opportunities to serve multiple segments with one solution?
+- **Customer Journey Mapping:** How do different segments discover, evaluate, and purchase solutions?
+
+### ⚔️ Competitive Intelligence & Analysis
+- **Competitive Landscape Mapping:** Who are the direct, indirect, and substitute competitors?
+- **Market Share Distribution:** How is market share distributed among key players?
+- **Competitive Positioning:** How do competitors position themselves (price, features, brand)?
+- **Competitive Strengths & Weaknesses:** What are each competitor's key advantages and vulnerabilities?
+- **Product Feature Comparison:** How do competitor products compare feature-by-feature?
+- **Pricing Strategy Analysis:** What pricing models, tiers, and strategies do competitors use?
+- **Go-to-Market Analysis:** How do competitors acquire, onboard, and retain customers?
+- **Customer Satisfaction Analysis:** What do customers love/hate about competitor solutions?
+- **Competitive Moats:** What sustainable competitive advantages do key players have?
+- **Emerging Competitors:** Are there new entrants or adjacent players entering the market?
+
+### 💰 Market Economics & Pricing
+- **Price Sensitivity Analysis:** How price-sensitive are customers in this market?
+- **Value-Based Pricing Opportunities:** What value metrics drive pricing decisions?
+- **Pricing Model Evolution:** How are pricing models changing in this market?
+- **Customer Lifetime Value (CLV):** What's the typical CLV for customers in this market?
+- **Customer Acquisition Cost (CAC):** What does it typically cost to acquire customers?
+- **Unit Economics:** What are the typical unit economics for solutions in this market?
+- **Payment Terms & Billing:** What payment terms and billing cycles are standard?
+
+### 🚀 Market Entry & Growth Strategy
+- **Market Entry Barriers:** What challenges exist for new market entrants?
+- **Distribution Channels:** What channels do customers use to discover and purchase solutions?
+- **Partnership Ecosystem:** What partnerships are critical for market success?
+- **Customer Acquisition Strategies:** What acquisition strategies work best in this market?
+- **Viral Coefficients:** Are there opportunities for viral or network-driven growth?
+- **Market Timing:** What makes now the right time to enter this market?
+- **Geographic Considerations:** Are there regional differences in market dynamics?
+
+### 📈 Trend Analysis & Future Outlook
+- **Technology Trends:** What emerging technologies are disrupting this market?
+- **Regulatory Changes:** What regulatory changes could impact the market?
+- **Demographic Shifts:** How are changing demographics affecting market demand?
+- **Behavioral Changes:** How are customer behaviors and expectations evolving?
+- **Economic Factors:** How do economic conditions affect this market?
+- **Industry Convergence:** Are there adjacent industries converging with this market?
+- **Future Scenarios:** What are the most likely future scenarios for this market?
+
+### 🎭 Customer Behavior & Psychology
+- **Decision-Making Process:** How do customers make purchasing decisions in this market?
+- **Buying Influences:** Who influences purchasing decisions (users, buyers, decision-makers)?
+- **Adoption Patterns:** How do customers typically adopt new solutions?
+- **Switching Costs:** What prevents customers from switching between solutions?
+- **Brand Loyalty:** How important is brand loyalty in this market?
+- **Social Proof:** How important are reviews, testimonials, and social proof?
+
+### 🔍 Market Intelligence Sources
+- **Primary Research:** What primary research has been conducted or should be conducted?
+- **Secondary Research:** What industry reports, studies, or data sources are available?
+- **Expert Insights:** What industry experts or advisors can provide market insights?
+- **Customer Feedback:** What direct customer feedback or surveys are available?
+- **Competitor Intelligence:** What competitive intelligence sources are available?
+
+## Comprehensive Market Analysis Structure
+
+The generated market analysis should follow this detailed structure:
+
+```markdown
+# Market Analysis: [Product Name]
+
+## Executive Summary
+- Market opportunity overview
+- Key competitive insights
+- Strategic positioning recommendations
+- Critical success factors
+
+## Market Overview
+### Market Definition and Scope
+### Market Size and Growth Projections
+- Total Addressable Market (TAM)
+- Serviceable Addressable Market (SAM)
+- Serviceable Obtainable Market (SOM)
+### Market Maturity and Lifecycle Stage
+### Key Market Drivers and Trends
+
+## Market Segmentation Analysis
+### Segmentation Framework
+### Primary Target Segments
+- Segment characteristics
+- Size and growth potential
+- Accessibility and competition
+### Secondary Opportunity Segments
+### Segment Prioritization Matrix
+
+## Competitive Landscape
+### Competitive Ecosystem Map
+### Direct Competitor Analysis
+- Company profiles
+- Product offerings
+- Pricing strategies
+- Market positioning
+- Strengths and weaknesses
+### Indirect Competitor Analysis
+### Substitute Solutions Analysis
+### Competitive Positioning Map
+### Market Share Analysis
+### Competitive Gaps and Opportunities
+
+## Customer Analysis
+### Customer Journey Mapping
+### Buying Process Analysis
+### Decision-Making Criteria
+### Price Sensitivity Analysis
+### Customer Satisfaction Analysis
+### Unmet Needs Assessment
+
+## Market Economics
+### Pricing Landscape Analysis
+### Value Chain Analysis
+### Unit Economics Benchmarks
+### Customer Acquisition Cost (CAC) Analysis
+### Customer Lifetime Value (CLV) Analysis
+### Revenue Model Opportunities
+
+## Market Entry Strategy
+### Go-to-Market Channel Analysis
+### Partnership Ecosystem Assessment
+### Market Entry Barriers and Challenges
+### Competitive Response Scenarios
+### Market Timing Analysis
+### Geographic Market Considerations
+
+## Trend Analysis and Future Outlook
+### Technology Disruption Assessment
+### Regulatory Impact Analysis
+### Demographic and Social Trends
+### Economic Factors and Scenarios
+### Market Evolution Predictions
+### Emerging Opportunities and Threats
+
+## Strategic Positioning
+### Unique Value Proposition Validation
+### Competitive Differentiation Strategy
+### Brand Positioning Recommendations
+### Market Positioning Map
+### Messaging Framework Foundations
+
+## Risk Assessment
+### Market Risks
+### Competitive Risks
+### Technology Risks
+### Regulatory Risks
+### Economic Risks
+### Risk Mitigation Strategies
+
+## Strategic Recommendations
+### Market Entry Recommendations
+### Competitive Strategy
+### Product Strategy Implications
+### Pricing Strategy Recommendations
+### Go-to-Market Strategy Inputs
+### Investment and Resource Allocation
+
+## Success Metrics and KPIs
+### Market Penetration Metrics
+### Competitive Performance Metrics
+### Customer Acquisition Metrics
+### Market Share Targets
+### Monitoring and Tracking Plan
+
+## Supporting Data and Appendices
+### Market Research Sources
+### Competitive Intelligence Sources
+### Customer Research Data
+### Market Sizing Methodology
+### Assumptions and Limitations
+```
+
+## Quality Assurance Framework
+
+### Data Quality Checks
+- [ ] Market size estimates are from credible sources with clear methodology
+- [ ] Competitive analysis includes both direct and indirect competitors
+- [ ] Customer insights are based on actual research or validated assumptions
+- [ ] Pricing analysis reflects current market conditions
+- [ ] Trend analysis is supported by reliable data sources
+
+### Strategic Alignment Checks
+- [ ] Market analysis aligns with product brief vision and objectives
+- [ ] Target segments match those identified in the product brief
+- [ ] Competitive positioning supports the unique value proposition
+- [ ] Market entry strategy aligns with business model and resources
+- [ ] Success metrics connect to overall product KPIs
+
+### Actionability Checks
+- [ ] Recommendations are specific and actionable
+- [ ] Strategic implications are clearly articulated
+- [ ] Next steps are identified for each major finding
+- [ ] Decision criteria are provided for key strategic choices
+- [ ] Resource requirements are identified
+
+## Best Practices for Market Analysis
+
+1. **Triangulate Data Sources:** Use multiple sources to validate key market insights
+2. **Focus on Actionable Insights:** Prioritize findings that will influence product and business decisions
+3. **Quantify When Possible:** Provide specific numbers, percentages, and metrics where available
+4. **Consider Multiple Scenarios:** Analyze best-case, worst-case, and most-likely scenarios
+5. **Update Regularly:** Market conditions change; plan for regular updates
+6. **Validate Assumptions:** Clearly state assumptions and create plans to validate them
+7. **Think Dynamically:** Consider how the market might evolve and change
+8. **Connect to Strategy:** Ensure every insight connects to strategic implications
+
+## Integration with Product Brief
+
+The market analysis should explicitly reference and build upon the product brief by:
+- Validating target audience assumptions from the product brief
+- Confirming or refining the competitive landscape outlined in the product brief
+- Supporting or challenging the market opportunity stated in the product brief
+- Providing deeper context for feature prioritization decisions
+- Informing pricing strategy recommendations
+- Supporting go-to-market strategy development
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `market-analysis.md`
+- **Length:** Comprehensive analysis (typically 20-35 pages)
+- **Audience:** Product managers, executives, investors, and development teams
+- **Dependencies:** References and builds upon `master-product-brief.md`
+- **Updates:** Include version control and regular update schedule
+
+## Final Instructions
+
+1. **DO NOT** generate the Market Analysis immediately upon receiving this request
+2. **DO** first thoroughly review the existing `master-product-brief.md` in the `/docs` folder
+3. **DO** identify specific gaps between the product brief and market analysis requirements
+4. **DO** ask targeted follow-up questions to gather missing critical market information
+5. **DO** validate alignment between market findings and product strategy before finalizing
+6. **DO** ensure the analysis provides actionable insights that will inform subsequent documentation phases
+7. **DO** reference specific sections of the product brief when building upon previous assumptions or findings
+
+8. **DO** highlight any conflicts or contradictions between market reality and product brief assumptions

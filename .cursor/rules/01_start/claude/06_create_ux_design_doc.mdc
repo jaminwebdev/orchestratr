@@ -1,0 +1,293 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating UX & Design Considerations
+
+## Goal
+
+To guide an AI assistant in generating a comprehensive **UX & Design Considerations** document that establishes the visual design system, interaction principles, emotional tone, and brand expression framework for the product.
+
+This document serves as the definitive creative and usability brief for UI/UX designers, frontend developers, and content creators, providing clear guidance on visual language, interaction patterns, accessibility standards, and user experience principles that will ensure consistent, user-centered design implementation across all touchpoints.
+
+## Process
+
+### 1. **Comprehensive Documentation Analysis**
+   Review and synthesize insights from the following documents in `/docs/`:
+   - `master-product-brief.md` - Product vision, target market, competitive positioning, and brand values
+   - `user-personas.md` - User demographics, psychographics, technical comfort levels, and aesthetic preferences
+   - `features.md` - Feature complexity, interaction patterns, and functional requirements
+   - `user-flows.md` - Navigation patterns, decision points, and user journey complexity
+   - `market-analysis.md` - Competitive design landscape and industry standards (if available)
+
+### 2. **Design Context & Constraints Assessment**
+   Analyze existing documentation for:
+   - **Brand personality indicators** from product positioning and messaging
+   - **User sophistication levels** from persona technical comfort and usage patterns
+   - **Feature complexity requirements** that impact UI density and interaction paradigms
+   - **Business constraints** that affect design scope and implementation approach
+   - **Competitive differentiation opportunities** in visual and experiential design
+
+### 3. **Strategic Design Questioning**
+   Before generating the document, clarify critical design decisions:
+   - Visual brand identity and emotional positioning
+   - User experience complexity and sophistication level
+   - Platform-specific design requirements and constraints
+   - Accessibility and inclusive design commitments
+   - Technical implementation considerations affecting design choices
+
+### 4. **Comprehensive Design Framework Generation**
+   Create a holistic design system that covers:
+   - **Visual Identity System** - Colors, typography, iconography, imagery
+   - **Interaction Design Principles** - Behavior patterns, feedback systems, navigation
+   - **Content Strategy Integration** - Voice, tone, messaging hierarchy
+   - **Accessibility & Inclusion Framework** - Universal design principles
+   - **Platform & Technical Considerations** - Responsive design, performance impact
+   - **Brand Expression Guidelines** - Personality manifestation in UI elements
+
+### 5. **Implementation & Consistency Framework**
+   Ensure the document provides:
+   - Clear design decision rationale tied to user needs and business goals
+   - Specific implementation guidance for designers and developers
+   - Quality assurance criteria for design review and validation
+   - Integration points with development workflow and style guides
+
+## Advanced Clarifying Questions Framework
+
+### 🎨 **Brand Identity & Visual Personality**
+- Based on the product brief, what 5-7 adjectives best describe the desired brand personality?
+- How should the visual design reflect the product's core value proposition?
+- Are there specific brands or products (in any industry) whose visual approach resonates with your vision?
+- Should the design feel more premium/professional or accessible/approachable?
+- Do you have existing brand assets (logo, colors, fonts) or need a complete visual identity?
+
+### 👥 **User-Centered Design Considerations**
+- Given the user personas, what level of visual complexity will resonate best?
+- How tech-savvy are the primary users, and how should that influence interface complexity?
+- What are the primary emotional states users will be in when using the product?
+- Are there cultural or demographic considerations that should influence design choices?
+- What accessibility needs are most important based on the user base?
+
+### 🔧 **Functional Design Requirements**
+- Which features require the most visual prominence in the interface hierarchy?
+- Are there complex data visualization or content presentation needs?
+- How important is speed vs. visual richness in the user experience?
+- What level of customization or personalization should the design accommodate?
+- Are there integration requirements with other tools that affect design consistency?
+
+### 📱 **Platform & Technical Design Strategy**
+- What platforms and devices are highest priority for design optimization?
+- Should the design system prioritize native platform conventions or custom brand expression?
+- Are there performance constraints that limit visual complexity or animation?
+- How important is offline functionality, and how should that affect the design approach?
+- What browser/device compatibility requirements might impact design choices?
+
+### 🎯 **Competitive & Market Positioning**
+- Based on market analysis, how should the design differentiate from key competitors?
+- Are there industry design conventions that should be followed or deliberately avoided?
+- What design trends are most relevant to the target market and user base?
+- How can the design support the product's unique value proposition?
+
+## Comprehensive Document Structure
+
+### **🎨 Visual Design System**
+
+#### **Brand Personality & Visual Identity**
+- **Core Brand Adjectives:** [5-7 descriptive terms with rationale]
+- **Visual Personality Matrix:** [Professional ↔ Casual, Minimal ↔ Rich, etc.]
+- **Emotional Design Goals:** [Specific feelings to evoke at key moments]
+- **Brand Voice Integration:** [How personality shows in visual elements]
+
+#### **Color Palette & Psychology**
+- **Primary Colors:** [Hex codes with psychological reasoning]
+- **Secondary & Accent Colors:** [Supporting palette with usage guidelines]
+- **Semantic Colors:** [Success, warning, error, info states]
+- **Accessibility Considerations:** [Contrast ratios, colorblind accommodation]
+- **Dark/Light Mode Strategy:** [If applicable, with switching behavior]
+
+#### **Typography System**
+- **Primary Typeface:** [Font selection with personality rationale]
+- **Hierarchy Scale:** [H1-H6, body, caption with size/weight specifications]
+- **Readability Considerations:** [Line height, letter spacing, measure]
+- **Accessibility Compliance:** [Font size minimums, contrast requirements]
+- **Performance Impact:** [Loading strategy, fallback fonts]
+
+#### **Iconography & Visual Elements**
+- **Icon Style:** [Outline vs filled, geometric vs organic, weight/style]
+- **Illustration Approach:** [Photographic, illustrated, abstract, none]
+- **Visual Metaphors:** [Key conceptual representations]
+- **Logo Integration:** [Placement, sizing, variations]
+- **Visual Consistency Rules:** [Style maintenance across elements]
+
+### **🧠 User Experience Principles**
+
+#### **Core UX Philosophy**
+- **Primary UX Goals:** [Speed, simplicity, delight, efficiency, etc.]
+- **User Mental Model Support:** [How design matches user expectations]
+- **Cognitive Load Management:** [Information hierarchy and progressive disclosure]
+- **Error Prevention & Recovery:** [Design patterns that prevent mistakes]
+
+#### **Interaction Design Patterns**
+- **Navigation Philosophy:** [Tab-based, hierarchical, contextual, etc.]
+- **Input & Control Patterns:** [Forms, buttons, gestures, voice, etc.]
+- **Feedback Systems:** [Loading states, confirmations, error handling]
+- **Microinteraction Strategy:** [Subtle feedback, delightful moments, functional animation]
+
+#### **Content Strategy Integration**
+- **Information Architecture:** [How content hierarchy supports user flows]
+- **Microcopy Guidelines:** [Button labels, error messages, help text tone]
+- **Content Density:** [Text-heavy vs visual, information per screen]
+- **Localization Considerations:** [Text expansion, RTL support, cultural adaptation]
+
+### **♿ Accessibility & Inclusive Design**
+
+#### **WCAG Compliance Framework**
+- **Accessibility Level Target:** [AA, AAA, specific criteria]
+- **Color & Contrast Standards:** [Ratios and testing methodology]
+- **Keyboard Navigation:** [Tab order, focus management, shortcuts]
+- **Screen Reader Optimization:** [ARIA labels, semantic markup, alt text]
+
+#### **Inclusive Design Principles**
+- **Motor Accessibility:** [Touch targets, gesture alternatives, timing]
+- **Cognitive Accessibility:** [Clear language, consistent patterns, error handling]
+- **Visual Accessibility:** [Text sizing, high contrast modes, reduced motion]
+- **Temporary Disability Considerations:** [One-handed use, situational impairments]
+
+### **📱 Platform-Specific Design Strategy**
+
+#### **Responsive Design Framework**
+- **Breakpoint Strategy:** [Mobile-first, desktop-first, specific breakpoints]
+- **Content Prioritization:** [What content appears at each screen size]
+- **Navigation Adaptation:** [How menus and navigation change across devices]
+- **Touch vs Click Optimization:** [Interaction pattern differences]
+
+#### **Platform Convention Integration**
+- **iOS Design Considerations:** [Human Interface Guidelines alignment]
+- **Android Design Considerations:** [Material Design integration]
+- **Web Standards:** [Progressive enhancement, browser compatibility]
+- **Cross-Platform Consistency:** [What stays consistent vs what adapts]
+
+### **🎭 Emotional Design & Brand Expression**
+
+#### **Emotional Journey Mapping**
+- **Onboarding Emotional Arc:** [First impression through activation]
+- **Core Feature Emotional Goals:** [Feelings during primary tasks]
+- **Error State Emotional Management:** [Frustration mitigation, recovery encouragement]
+- **Success State Celebration:** [Achievement recognition and motivation]
+
+#### **Personality in Interface Elements**
+- **Button & Control Personality:** [How brand voice shows in interactive elements]
+- **Animation & Motion Language:** [Movement that reflects brand character]
+- **Empty State Design:** [How personality shows when content is missing]
+- **Loading & Waiting States:** [Brand expression during system delays]
+
+### **⚡ Performance & Technical Design Considerations**
+
+#### **Design-Performance Balance**
+- **Visual Complexity vs Load Speed:** [Trade-off decisions and priorities]
+- **Image & Media Strategy:** [Optimization, lazy loading, responsive images]
+- **Animation Performance:** [GPU acceleration, frame rate targets]
+- **Font Loading Strategy:** [FOUT/FOIT mitigation, performance impact]
+
+#### **Development Integration**
+- **Design Token System:** [Colors, spacing, typography as code variables]
+- **Component-Based Design:** [Reusable elements and design system thinking]
+- **Handoff Specifications:** [What information developers need]
+- **Quality Assurance Integration:** [Design validation in development process]
+
+### **🔄 Feature-Specific UX Priorities**
+
+#### **User Flow-Specific Design Guidelines**
+- **Onboarding UX Focus:** [Reducing friction, building confidence, early value]
+- **Core Feature Interaction:** [Efficiency, discoverability, mastery path]
+- **Administrative Interface:** [Power-user efficiency, information density]
+- **Mobile-Specific Adaptations:** [Touch-first design, context-aware simplification]
+
+#### **Persona-Driven Design Variations**
+- **Primary Persona Design Priorities:** [Based on user-personas.md analysis]
+- **Secondary Persona Accommodations:** [How design flexes for different user types]
+- **Expert vs Novice User Paths:** [Progressive disclosure and customization]
+
+### **📊 Design Success Metrics & Validation**
+
+#### **Usability Metrics Integration**
+- **Task Completion Rate Targets:** [Speed and success rate goals]
+- **User Satisfaction Measurements:** [Emotional response tracking]
+- **Accessibility Compliance Validation:** [Testing methodology and frequency]
+- **Cross-Platform Consistency Auditing:** [Regular design system compliance]
+
+#### **Iterative Design Framework**
+- **A/B Testing Design Strategy:** [What design elements to test]
+- **User Feedback Integration:** [How user insights inform design updates]
+- **Analytics-Informed Design Decisions:** [Data points that guide design changes]
+- **Design System Evolution:** [How guidelines update based on learnings]
+
+## Quality Assurance Framework
+
+### **Design Documentation Checklist:**
+- [ ] All design decisions reference user persona insights from user-personas.md
+- [ ] Visual choices support product objectives from master-product-brief.md
+- [ ] UX patterns align with user flows from user-flows.md
+- [ ] Feature-specific design guidance connects to features.md priorities
+- [ ] Accessibility standards are specific and measurable
+- [ ] Platform-specific guidelines are comprehensive and actionable
+- [ ] Brand personality is clearly defined and consistently applied
+- [ ] Performance implications of design choices are addressed
+- [ ] Implementation guidance is specific enough for developer handoff
+- [ ] Success metrics and validation methods are established
+
+### **Cross-Document Integration Validation:**
+- [ ] Design complexity matches user technical sophistication levels
+- [ ] Visual hierarchy supports user flow priorities and decision points
+- [ ] Brand expression aligns with product positioning and target market
+- [ ] Accessibility considerations address persona-specific needs
+- [ ] Platform strategy matches distribution and usage patterns from product brief
+
+## Output Requirements
+
+### **File Structure:**
+```
+/docs/ux-design-considerations.md
+├── Executive Summary & Design Philosophy
+├── Visual Design System
+│   ├── Brand Identity & Personality
+│   ├── Color System & Psychology
+│   ├── Typography Hierarchy
+│   └── Iconography & Visual Elements
+├── User Experience Framework
+│   ├── Core UX Principles
+│   ├── Interaction Design Patterns
+│   └── Content Strategy Integration
+├── Accessibility & Inclusive Design
+├── Platform-Specific Guidelines
+├── Emotional Design & Brand Expression
+├── Performance & Technical Considerations
+├── Feature-Specific UX Priorities
+├── Design Success Metrics
+└── Implementation & Next Steps
+```
+
+### **Implementation Integration Notes:**
+This document will serve as primary input for:
+- **Design System Development:** Component libraries and style guides
+- **Frontend Development:** CSS frameworks and UI component architecture
+- **Content Strategy:** Voice, tone, and messaging guidelines from `/docs/content-strategy.md`
+- **User Testing:** Validation scenarios and success criteria for `/docs/testing-doc.md`
+- **Development Tasks:** UI/UX implementation priorities for `/tasks/mvp-tasks.md`
+
+## Execution Instructions
+
+1. **DO NOT generate the document immediately** - Begin with comprehensive analysis and strategic questioning
+2. **Thoroughly analyze all referenced documentation** to understand user needs, business goals, and technical constraints
+3. **Present a strategic design approach** based on documented insights before diving into specifics
+4. **Confirm design philosophy and priorities** with the user through targeted questions
+5. **Generate comprehensive design guidance** that balances user needs, business goals, and technical feasibility
+6. **Ensure practical implementation focus** - every guideline should be actionable for designers and developers
+7. **Validate design decisions** against user personas and product objectives throughout the process
+8. **Provide clear rationale** for all design recommendations tied to user research and business strategy
+
+## Final Notes
+
+
+The resulting design document should be comprehensive enough to guide consistent design decisions across the entire product development lifecycle while remaining flexible enough to evolve based on user feedback and technical discoveries. Every design recommendation should clearly connect back to user needs identified in personas and flows, business objectives outlined in the product brief, and technical requirements emerging from the architecture and feature specifications.

@@ -1,0 +1,445 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Creating a Comprehensive Features Document
+
+## Goal
+
+To guide an AI assistant in generating a detailed, strategically prioritized Features Document in Markdown format that serves as the definitive feature specification for the entire product development lifecycle. This document should synthesize insights from the Product Brief, Market Analysis, and User Personas to create a comprehensive feature roadmap that directly addresses user needs, market opportunities, and business objectives.
+
+The features document will serve as the foundation for user stories, user flows, wireframes, technical architecture, testing strategies, and development sprints. Each feature should be detailed enough to guide implementation decisions while remaining accessible to all team members - from junior developers and designers to product managers and stakeholders.
+
+## Process
+
+1. **Comprehensive Documentation Review:** Thoroughly analyze all existing documents in `/docs/`:
+   - Extract feature requirements and priorities from `master-product-brief.md`
+   - Incorporate competitive insights and market opportunities from `market-analysis.md`
+   - Align features with user needs and behaviors from `user-personas.md`
+   - Identify gaps between documented requirements and comprehensive feature specifications
+
+2. **Strategic Feature Mapping:** Create strategic alignment between features and business objectives:
+   - Map features to user persona needs and pain points
+   - Align features with competitive positioning and market differentiation
+   - Prioritize features based on business value and user impact
+   - Consider technical dependencies and implementation complexity
+
+3. **Feature Discovery & Validation:** Conduct structured feature exploration:
+   - Validate core feature assumptions against user research
+   - Identify missing features critical for user success
+   - Explore integration and ecosystem requirements
+   - Consider accessibility, security, and compliance features
+
+4. **Prioritization Framework Application:** Apply systematic prioritization methodology:
+   - Business value assessment
+   - User impact analysis
+   - Technical complexity evaluation
+   - Market timing considerations
+   - Resource requirement estimation
+
+5. **Comprehensive Feature Specification:** Develop detailed feature descriptions with full context
+6. **Cross-Reference Validation:** Ensure feature alignment with all previous documentation
+7. **Quality Assurance Review:** Validate completeness, clarity, and strategic alignment
+8. **Save Document:** Output as `features.md` in the `/docs/` directory
+
+## Enhanced Feature Discovery Framework
+
+### 🎯 Core Product Functionality
+- **Primary Value Delivery:** What features directly deliver the core product value proposition?
+- **Essential User Workflows:** What features are required for users to complete their primary goals?
+- **Data Management:** What features are needed for data creation, storage, retrieval, and management?
+- **User Interface Foundation:** What UI components and interactions are essential?
+- **Business Logic Core:** What features implement the fundamental business rules and logic?
+- **Integration Requirements:** What third-party integrations are essential for core functionality?
+
+### 👥 User-Centric Feature Analysis
+- **Persona-Specific Features:** What features are critical for each primary user persona?
+- **User Journey Support:** What features support each stage of the customer journey?
+- **Accessibility Features:** What features ensure product accessibility for all users?
+- **Personalization Capabilities:** What features allow users to customize their experience?
+- **User Onboarding:** What features guide new users to success?
+- **User Retention:** What features encourage continued engagement and usage?
+
+### 🏢 Business & Operational Features
+- **Monetization Features:** What features support the business model and revenue streams?
+- **Analytics & Reporting:** What features provide business intelligence and user insights?
+- **Administration & Management:** What features are needed for product administration?
+- **Customer Support:** What features enable effective customer support and self-service?
+- **Compliance & Security:** What features ensure regulatory compliance and data security?
+- **Scalability Features:** What features support business growth and scaling?
+
+### 🔗 Integration & Ecosystem Features
+- **Third-Party Integrations:** What external services and APIs need integration?
+- **Platform Compatibility:** What features ensure compatibility across target platforms?
+- **Data Import/Export:** What features enable data portability and migration?
+- **API & Developer Tools:** What features enable third-party developers and integrations?
+- **Notification Systems:** What features handle internal and external communications?
+- **Synchronization:** What features manage data sync across devices and platforms?
+
+### 🚀 Growth & Optimization Features
+- **Viral & Sharing Features:** What features encourage user-driven growth?
+- **Performance Optimization:** What features ensure optimal performance and speed?
+- **A/B Testing Capabilities:** What features enable experimentation and optimization?
+- **Internationalization:** What features support global markets and localization?
+- **Mobile Optimization:** What features optimize the mobile user experience?
+- **Offline Capabilities:** What features work without internet connectivity?
+
+### 🛡️ Security & Privacy Features
+- **Authentication & Authorization:** What features manage user identity and access?
+- **Data Protection:** What features protect user data and privacy?
+- **Audit & Compliance:** What features support compliance and auditing requirements?
+- **Fraud Prevention:** What features detect and prevent fraudulent activity?
+- **Backup & Recovery:** What features ensure data backup and disaster recovery?
+
+### 📊 Analytics & Intelligence Features
+- **User Analytics:** What features track user behavior and engagement?
+- **Business Intelligence:** What features provide actionable business insights?
+- **Performance Monitoring:** What features monitor system performance and health?
+- **Custom Reporting:** What features allow users to generate custom reports?
+- **Predictive Analytics:** What features provide predictive insights and recommendations?
+
+### 🎨 User Experience Enhancement Features
+- **Search & Discovery:** What features help users find what they need?
+- **Filtering & Sorting:** What features help users organize and navigate content?
+- **Bulk Operations:** What features enable efficient batch processing?
+- **Keyboard Shortcuts:** What features improve power user efficiency?
+- **Dark Mode & Themes:** What features support user interface preferences?
+- **Help & Documentation:** What features provide in-product guidance and support?
+
+## Comprehensive Features Document Structure
+
+```markdown
+# Features Document: [Product Name]
+
+## Document Overview
+### Purpose and Scope
+### Relationship to Product Strategy
+### Feature Prioritization Methodology
+### Last Updated and Version Control
+
+## Executive Summary
+### Core Feature Themes
+### MVP Feature Overview
+### Post-MVP Roadmap Highlights
+### Resource and Timeline Implications
+
+## Feature Prioritization Framework
+### Prioritization Criteria
+- Business value impact
+- User impact and adoption potential
+- Technical complexity and effort
+- Market timing and competitive advantage
+- Resource requirements and dependencies
+
+### Priority Definitions
+- **P0 (MVP Core):** Essential for product launch and core value delivery
+- **P1 (MVP Enhanced):** Important for competitive product experience
+- **P2 (Post-MVP Priority):** Valuable for growth and engagement
+- **P3 (Future Consideration):** Nice-to-have features for future evaluation
+
+## Core Product Features (MVP)
+
+### Authentication & User Management
+#### [Feature Name]
+- **Description:** [Detailed description of what the feature does]
+- **User Value:** [Why this matters to users and how it solves their problems]
+- **Target Personas:** [Which user personas benefit from this feature]
+- **User Stories:** 
+  - As a [persona], I want [functionality] so that [benefit]
+  - [Additional user stories as needed]
+- **Acceptance Criteria:**
+  - [Specific, testable criteria for feature completion]
+  - [Additional criteria as needed]
+- **Technical Considerations:**
+  - [Key technical requirements or constraints]
+  - [Integration dependencies]
+  - [Performance requirements]
+- **Business Impact:** [How this feature supports business objectives]
+- **Priority:** P0/P1/P2/P3
+- **Effort Estimate:** [T-shirt sizing: XS/S/M/L/XL]
+- **Dependencies:** [Other features or systems this depends on]
+- **Success Metrics:** [How success will be measured]
+
+[Repeat structure for each feature category]
+
+### Core User Workflows
+### Data Management
+### User Interface Foundation
+### Essential Integrations
+
+## Enhanced MVP Features (P1)
+
+### Advanced User Experience
+### Performance & Optimization
+### Extended Integrations
+### Basic Analytics
+
+## Post-MVP Priority Features (P2)
+
+### Growth & Engagement
+### Advanced Analytics
+### Collaboration Features
+### Advanced Customization
+
+## Future Consideration Features (P3)
+
+### Advanced Automation
+### AI/ML Capabilities
+### Enterprise Features
+### Advanced Integrations
+
+## Feature Categories Cross-Reference
+
+### By User Persona
+#### [Persona Name]
+- Primary features: [List of P0 features for this persona]
+- Secondary features: [List of P1 features for this persona]
+- Growth features: [List of P2+ features for this persona]
+
+### By User Journey Stage
+#### Awareness & Acquisition
+#### Onboarding & Activation
+#### Core Usage & Engagement
+#### Retention & Growth
+#### Advocacy & Expansion
+
+### By Platform/Device
+#### Web Application Features
+#### Mobile-Specific Features
+#### Cross-Platform Features
+#### Progressive Web App Features
+
+## Technical Feature Categories
+
+### Frontend Features
+### Backend Features
+### Database Features
+### API Features
+### Integration Features
+### Infrastructure Features
+
+## Feature Dependencies Map
+
+### Critical Path Dependencies
+### Integration Dependencies
+### Data Dependencies
+### Platform Dependencies
+
+## Competitive Feature Analysis
+
+### Competitive Parity Features
+- [Features needed to match competitor capabilities]
+
+### Competitive Advantage Features
+- [Features that differentiate from competitors]
+
+### Competitive Gap Opportunities
+- [Features competitors lack that we could exploit]
+
+## Accessibility & Compliance Features
+
+### WCAG Compliance Features
+### GDPR/Privacy Compliance Features
+### Industry-Specific Compliance Features
+### Internationalization Features
+
+## Security Features
+
+### Authentication & Authorization
+### Data Protection & Privacy
+### Audit & Compliance
+### Fraud Prevention
+
+## Analytics & Reporting Features
+
+### User Analytics
+### Business Intelligence
+### Performance Monitoring
+### Custom Reporting
+
+## Integration Ecosystem
+
+### Essential Integrations (MVP)
+### Growth Integrations (Post-MVP)
+### Future Integration Opportunities
+### API & Developer Features
+
+## Feature Risk Assessment
+
+### High-Risk Features
+- [Features with significant technical, market, or execution risks]
+- Risk mitigation strategies
+
+### Assumption-Dependent Features
+- [Features based on unvalidated assumptions]
+- Validation strategies
+
+## Resource & Timeline Implications
+
+### Development Effort Summary
+- MVP features total effort estimate
+- Post-MVP features effort estimate
+- Technical debt and maintenance considerations
+
+### Team Skill Requirements
+- Frontend development skills needed
+- Backend development skills needed
+- Specialized skills required (AI/ML, security, etc.)
+
+### External Dependencies
+- Third-party service dependencies
+- Integration partner requirements
+- Compliance certification needs
+
+## Success Metrics & KPIs
+
+### Feature-Specific Metrics
+- [How each major feature's success will be measured]
+
+### Overall Product Metrics
+- [How features collectively support product KPIs]
+
+### Business Impact Metrics
+- [How features support business objectives]
+
+## Implementation Phases
+
+### Phase 1: MVP Core (P0 Features)
+- Timeline estimate
+- Resource requirements
+- Success criteria
+
+### Phase 2: MVP Enhanced (P1 Features)
+- Timeline estimate
+- Resource requirements
+- Success criteria
+
+### Phase 3: Growth Features (P2 Features)
+- Timeline estimate
+- Resource requirements
+- Success criteria
+
+## Validation & Testing Strategy
+
+### User Testing Requirements
+### Technical Testing Requirements
+### Performance Testing Requirements
+### Security Testing Requirements
+### Accessibility Testing Requirements
+
+## Documentation & Support Requirements
+
+### User Documentation Needs
+### Developer Documentation Needs
+### Support Material Requirements
+### Training Requirements
+
+## Future Evolution & Extensibility
+
+### Feature Extension Points
+### Scalability Considerations
+### Technology Evolution Path
+### Market Evolution Adaptation
+```
+
+## Quality Assurance Framework
+
+### Feature Completeness Checks
+- [ ] Each feature has clear description and user value proposition
+- [ ] Acceptance criteria are specific and testable
+- [ ] Technical considerations are documented
+- [ ] Dependencies are identified and mapped
+- [ ] Success metrics are defined and measurable
+
+### Strategic Alignment Checks
+- [ ] Features align with product vision from `master-product-brief.md`
+- [ ] Features address market opportunities from `market-analysis.md`
+- [ ] Features serve user needs identified in `user-personas.md`
+- [ ] Feature prioritization reflects business strategy
+- [ ] Competitive positioning is supported by feature set
+
+### User-Centric Validation
+- [ ] Each primary persona's core needs are addressed
+- [ ] User journey stages are supported by appropriate features
+- [ ] Accessibility requirements are included
+- [ ] User experience is cohesive across features
+- [ ] Onboarding and retention features are included
+
+### Technical Feasibility Checks
+- [ ] Technical dependencies are realistic and available
+- [ ] Integration requirements are feasible
+- [ ] Performance requirements are achievable
+- [ ] Security requirements are comprehensive
+- [ ] Scalability considerations are addressed
+
+### Business Viability Checks
+- [ ] Features support identified revenue streams
+- [ ] Resource requirements are realistic
+- [ ] Timeline estimates are grounded
+- [ ] Risk assessment is thorough
+- [ ] Success metrics align with business goals
+
+## Integration with Previous Documentation
+
+### Product Brief Alignment
+- Reference specific sections of `master-product-brief.md` that informed feature decisions
+- Validate feature set against product vision and objectives
+- Ensure features support identified value propositions
+- Confirm feature priorities align with business model
+
+### Market Analysis Integration
+- Incorporate competitive feature analysis from `market-analysis.md`
+- Address market opportunities through specific features
+- Include features that support market positioning strategy
+- Reference customer needs identified in market research
+
+### User Persona Validation
+- Map features to specific user persona needs from `user-personas.md`
+- Ensure each primary persona's core workflows are supported
+- Include persona-specific features where appropriate
+- Reference user pain points that features address
+
+### Cross-Document Consistency
+- Highlight any new insights that emerged during feature planning
+- Identify where features challenge or refine previous assumptions
+- Ensure terminology and user references are consistent
+- Create clear linkages for subsequent documentation phases
+
+## Best Practices for Feature Documentation
+
+1. **Be Specific and Actionable:** Avoid vague descriptions; use concrete, implementable language
+2. **Think User-First:** Always start with user value before diving into functionality
+3. **Consider the Ecosystem:** Think about how features interact and affect the overall experience
+4. **Plan for Scale:** Consider how features will perform and evolve with growth
+5. **Document Trade-offs:** Explain why certain approaches were chosen over alternatives
+6. **Validate Assumptions:** Clearly state assumptions and plans for validation
+7. **Maintain Traceability:** Link features back to user needs and business objectives
+8. **Plan for Measurement:** Define how feature success will be measured
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `features.md`
+- **Length:** Comprehensive specification (typically 25-40 pages)
+- **Audience:** All team members - developers, designers, product managers, QA, stakeholders
+- **Dependencies:** Built upon `master-product-brief.md`, `market-analysis.md`, and `user-personas.md`
+- **Maintenance:** Include version control and regular update procedures
+
+## Final Instructions
+
+1. **DO NOT** generate the features document immediately upon receiving this request
+2. **DO** first conduct thorough review of all existing documentation in `/docs/`:
+   - Extract feature requirements from `master-product-brief.md`
+   - Incorporate market insights from `market-analysis.md`
+   - Map features to user needs from `user-personas.md`
+   - Identify any conflicts or gaps between documents
+3. **DO** ask specific questions to clarify missing feature requirements or priorities
+4. **DO** ensure features are detailed enough to guide implementation without ambiguity
+5. **DO** create clear prioritization with rationale based on business value and user impact
+6. **DO** validate that features collectively deliver on the product vision and user needs
+7. **DO** reference specific insights from previous documents when justifying feature decisions
+8. **DO** highlight any new strategic insights or requirements that emerge during feature planning
+
+9. **DO** ensure the feature set is comprehensive enough to guide all subsequent development phases

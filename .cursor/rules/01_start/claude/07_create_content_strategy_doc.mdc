@@ -1,0 +1,355 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating Content Strategy Document
+
+## Goal
+
+To guide an AI assistant in generating a comprehensive **Content Strategy** document that establishes the framework for creating, organizing, delivering, and maintaining all content across the product ecosystem.
+
+This document ensures that every piece of content—from microcopy and error messages to help documentation and marketing materials—is strategically aligned with user needs, business objectives, and brand voice, creating a cohesive and purposeful content experience that supports user success and product goals.
+
+## Process
+
+### 1. **Comprehensive Documentation Analysis**
+   Extract content-relevant insights from the following documents in `/docs/`:
+   - `master-product-brief.md` - Brand positioning, target audience, competitive differentiation, and business objectives
+   - `user-personas.md` - Language preferences, technical literacy, communication styles, and content consumption patterns
+   - `features.md` - Content requirements per feature, user guidance needs, and complexity levels
+   - `ux-design-considerations.md` - Brand voice, tone guidelines, and content hierarchy principles
+   - `user-flows.md` - Content touchpoints, decision support needs, and contextual guidance requirements
+   - `market-analysis.md` - Industry content standards, competitive messaging analysis, and market positioning (if available)
+
+### 2. **Content Ecosystem Assessment**
+   Analyze existing documentation to identify:
+   - **Content-critical user journeys** where messaging significantly impacts success
+   - **Feature complexity levels** that determine explanation and guidance needs
+   - **User sophistication variations** that require different communication approaches
+   - **Brand personality indicators** that inform voice and tone development
+   - **Technical constraints** that affect content delivery and management
+
+### 3. **Strategic Content Planning**
+   Before generating the strategy, clarify:
+   - Content's role in user activation, engagement, and retention
+   - Voice and tone alignment with brand personality and user expectations
+   - Content creation, management, and governance requirements
+   - Localization, accessibility, and inclusive language needs
+   - Performance and SEO considerations for content delivery
+
+### 4. **Holistic Content Strategy Framework**
+   Create a comprehensive strategy covering:
+   - **Content Philosophy & Objectives** - Strategic foundation and success criteria
+   - **Voice, Tone & Style System** - Consistent communication framework
+   - **Content Architecture & Taxonomy** - Organization and discovery system
+   - **User Journey Content Mapping** - Contextual content strategy per touchpoint
+   - **Content Creation & Governance** - Workflow, quality, and maintenance processes
+   - **Performance & Optimization** - Measurement, testing, and iteration framework
+
+### 5. **Implementation & Integration Framework**
+   Ensure the strategy provides:
+   - Clear guidelines for content creators and developers
+   - Integration points with design system and development workflow
+   - Quality assurance criteria and content validation processes
+   - Scalability considerations for content growth and evolution
+
+## Advanced Clarifying Questions Framework
+
+### 🎯 **Strategic Content Objectives**
+- Based on the product brief, what role should content play in achieving business goals?
+- How can content support the key value propositions identified in the product brief?
+- What specific user outcomes should content enable or accelerate?
+- How does content factor into user activation, engagement, and retention strategies?
+- What competitive advantages can be gained through superior content strategy?
+
+### 🗣️ **Voice, Tone & Brand Expression**
+- Given the brand personality from the UX design considerations, how should that translate into written communication?
+- What specific adjectives best describe the desired content voice and tone?
+- How should the tone adapt across different contexts (onboarding vs. error states vs. success celebrations)?
+- Are there specific words, phrases, or communication patterns to embrace or avoid?
+- How formal or casual should the communication be given the target personas?
+
+### 👥 **User-Centered Content Strategy**
+- Based on user personas, what are the primary language preferences and literacy levels?
+- How do different user types prefer to consume information (text, video, interactive, etc.)?
+- What are the most common questions or concerns users have during key flows?
+- How can content reduce cognitive load and support decision-making?
+- What cultural or demographic considerations should influence content approach?
+
+### 🏗️ **Content Architecture & Organization**
+- What types of content will the product require (UI copy, help docs, notifications, etc.)?
+- How should content be structured to support user flows and feature discovery?
+- What content management and versioning capabilities are needed?
+- How should content be organized for easy maintenance and updates?
+- What content personalization or customization is required?
+
+### 🔧 **Technical & Operational Content Requirements**
+- Will content be static, dynamic, user-generated, or AI-assisted?
+- What are the technical constraints for content delivery and management?
+- How frequently will different types of content need updates?
+- Who will be responsible for content creation, editing, and approval?
+- What tools and workflows will support content creation and management?
+
+### 🌍 **Accessibility, Inclusion & Localization**
+- What accessibility standards must the content meet (WCAG, plain language, etc.)?
+- Will the product need to support multiple languages or regions?
+- How should content accommodate different abilities and technological access?
+- What inclusive language guidelines should be established?
+- Are there specific regulatory or compliance requirements for content?
+
+### 📊 **Content Performance & Optimization**
+- How will content effectiveness be measured and optimized?
+- What A/B testing or content experimentation is planned?
+- How should SEO and discoverability factor into content strategy?
+- What analytics and feedback mechanisms will inform content improvements?
+
+## Comprehensive Document Structure
+
+### **🎯 Content Strategy Foundation**
+
+#### **Strategic Content Mission**
+- **Primary Content Objectives:** [How content supports product and business goals]
+- **User Success Enablement:** [Specific ways content helps users achieve their goals]
+- **Content Success Metrics:** [Measurable outcomes for content effectiveness]
+- **Competitive Content Positioning:** [How content differentiates from competitors]
+
+#### **Content Principles & Philosophy**
+- **Core Content Values:** [Honesty, clarity, helpfulness, etc.]
+- **Content Quality Standards:** [Accuracy, usefulness, accessibility benchmarks]
+- **User-First Content Approach:** [How all content decisions prioritize user needs]
+- **Brand Expression Through Content:** [How content manifests brand personality]
+
+### **🗣️ Voice, Tone & Style System**
+
+#### **Brand Voice Definition**
+- **Core Voice Attributes:** [5-7 descriptive adjectives with definitions]
+- **Voice Personality Matrix:** [Formal ↔ Casual, Authoritative ↔ Collaborative, etc.]
+- **Brand Character Expression:** [How personality shows in word choice and structure]
+- **Voice Consistency Guidelines:** [Maintaining voice across all content types]
+
+#### **Contextual Tone Framework**
+- **Onboarding Tone:** [Welcoming, encouraging, confidence-building]
+- **Instructional Tone:** [Clear, step-by-step, supportive]
+- **Error State Tone:** [Reassuring, solution-focused, blame-free]
+- **Success State Tone:** [Celebratory, motivating, achievement-focused]
+- **Administrative Tone:** [Efficient, professional, informative]
+
+#### **Style Guide & Standards**
+- **Grammar & Punctuation:** [Oxford comma, contractions, capitalization rules]
+- **Vocabulary Guidelines:** [Technical terms, jargon, reading level targets]
+- **Formatting Conventions:** [Headings, lists, emphasis, links]
+- **Inclusive Language Standards:** [Gender-neutral, accessible, culturally sensitive]
+- **Content Length Guidelines:** [Optimal lengths for different content types]
+
+### **🏗️ Content Architecture & Taxonomy**
+
+#### **Content Type Classification**
+- **Interface Content:** [Button labels, navigation, form fields, tooltips]
+- **Instructional Content:** [Help text, tutorials, onboarding guidance]
+- **System Communication:** [Notifications, alerts, status messages, confirmations]
+- **Support Content:** [FAQs, troubleshooting, contact information]
+- **Marketing Content:** [Feature descriptions, value propositions, calls-to-action]
+- **Legal/Compliance Content:** [Terms, privacy, disclaimers, regulatory notices]
+
+#### **Content Hierarchy & Information Architecture**
+- **Content Prioritization Framework:** [Primary, secondary, tertiary content importance]
+- **Progressive Disclosure Strategy:** [When and how to reveal additional information]
+- **Content Relationship Mapping:** [How different content pieces connect and reference each other]
+- **Search & Discovery Strategy:** [How users find and navigate content]
+
+#### **Content Metadata & Tagging**
+- **Content Classification System:** [Categories, tags, and organizational structure]
+- **Version Control & History:** [Content lifecycle and change management]
+- **Content Ownership & Responsibility:** [Who creates, reviews, and maintains each type]
+- **Content Dependencies:** [Relationships between content and features/flows]
+
+### **🗺️ User Journey Content Strategy**
+
+#### **Onboarding Content Framework**
+- **Welcome & Introduction:** [First impression messaging and value reinforcement]
+- **Setup Guidance:** [Step-by-step instructions with progress indicators]
+- **Feature Introduction:** [Progressive feature disclosure and benefit explanation]
+- **Success Milestones:** [Achievement recognition and next step guidance]
+
+#### **Core Feature Content Support**
+- **Feature Discovery:** [How users learn about and find new capabilities]
+- **Usage Instructions:** [Contextual help and guidance during feature use]
+- **Advanced Feature Education:** [Progressive skill building and mastery support]
+- **Feature Interconnections:** [How to use features together effectively]
+
+#### **Support & Recovery Content**
+- **Error Prevention:** [Proactive guidance to avoid common mistakes]
+- **Error Resolution:** [Clear, actionable solutions for problems]
+- **Help & Support Access:** [How users get additional assistance]
+- **Account & Settings Management:** [Self-service content for user control]
+
+#### **Engagement & Retention Content**
+- **Feature Adoption:** [Encouraging expanded product usage]
+- **Value Reinforcement:** [Reminding users of benefits achieved]
+- **Community & Social Features:** [Content that builds connection and engagement]
+- **Upgrade & Expansion:** [Content supporting growth and increased usage]
+
+### **♿ Content Accessibility & Inclusion**
+
+#### **Accessibility Standards Compliance**
+- **WCAG Content Guidelines:** [Specific compliance level and requirements]
+- **Alt Text Strategy:** [Image description standards and implementation]
+- **Plain Language Principles:** [Clear, simple communication guidelines]
+- **Screen Reader Optimization:** [Content structure and labeling for assistive technology]
+
+#### **Inclusive Content Framework**
+- **Diverse Representation:** [Inclusive examples, names, and scenarios]
+- **Cultural Sensitivity:** [Avoiding assumptions and cultural bias]
+- **Ability-First Language:** [Respectful terminology for disabilities and differences]
+- **Socioeconomic Inclusion:** [Avoiding assumptions about resources or circumstances]
+
+#### **Cognitive Accessibility**
+- **Information Processing Support:** [Chunking, clear hierarchy, logical flow]
+- **Memory & Attention Considerations:** [Reducing cognitive load, providing reminders]
+- **Language Complexity Management:** [Appropriate vocabulary and sentence structure]
+- **Error Prevention & Recovery:** [Clear feedback and correction guidance]
+
+### **🌍 Localization & Global Content Strategy**
+
+#### **Multi-Language Content Framework**
+- **Language Priority & Rollout:** [Which languages, in what order, based on user data]
+- **Translation Quality Standards:** [Professional translation vs. machine translation guidelines]
+- **Cultural Adaptation Requirements:** [Beyond translation to cultural relevance]
+- **Localized Content Management:** [Workflow for maintaining multiple language versions]
+
+#### **Regional Content Considerations**
+- **Legal & Regulatory Compliance:** [Region-specific content requirements]
+- **Cultural Communication Patterns:** [Formal vs. informal, direct vs. indirect communication]
+- **Local Examples & References:** [Relevant scenarios and use cases per region]
+- **Currency, Dates & Formatting:** [Localized conventions for data presentation]
+
+### **⚙️ Content Creation & Governance**
+
+#### **Content Creation Workflow**
+- **Content Planning Process:** [How content needs are identified and prioritized]
+- **Creation & Collaboration:** [Writer, designer, developer, and stakeholder involvement]
+- **Review & Approval Process:** [Quality assurance and sign-off procedures]
+- **Implementation & Publishing:** [How content gets into the product]
+
+#### **Content Quality Assurance**
+- **Editorial Standards:** [Grammar, style, and brand compliance checking]
+- **User Testing Integration:** [How content is validated with actual users]
+- **Accessibility Auditing:** [Regular compliance and usability testing]
+- **Performance Impact Assessment:** [Content load time and user experience impact]
+
+#### **Content Maintenance & Evolution**
+- **Regular Content Audits:** [Systematic review of content relevance and accuracy]
+- **Update Triggers & Schedules:** [When and why content gets refreshed]
+- **Content Analytics & Optimization:** [Data-driven content improvement process]
+- **Content Deprecation Strategy:** [How outdated content is handled]
+
+### **📊 Content Performance & Optimization**
+
+#### **Content Success Metrics**
+- **User Engagement Metrics:** [Time spent, interaction rates, completion rates]
+- **Task Success Metrics:** [How content helps users complete key actions]
+- **User Satisfaction Measures:** [Feedback, ratings, and qualitative assessment]
+- **Business Impact Metrics:** [Conversion, retention, and revenue attribution]
+
+#### **Content Testing & Experimentation**
+- **A/B Testing Framework:** [What content elements to test and how]
+- **User Feedback Integration:** [How user input informs content improvements]
+- **Content Performance Analysis:** [Regular review of content effectiveness]
+- **Iterative Improvement Process:** [How insights lead to content evolution]
+
+#### **SEO & Content Discoverability**
+- **Search Optimization Strategy:** [Keyword research and implementation for public content]
+- **Content Discoverability:** [How users find relevant content within the product]
+- **Link Strategy & Information Architecture:** [Internal linking and content relationships]
+- **Content Freshness & Authority:** [Maintaining relevance and credibility]
+
+### **🔧 Technical Content Implementation**
+
+#### **Content Management System Requirements**
+- **CMS Selection Criteria:** [What features and capabilities are needed]
+- **Content Workflow Integration:** [How CMS supports creation and approval processes]
+- **Version Control & Collaboration:** [Managing content changes and team coordination]
+- **Performance & Scalability:** [Technical requirements for content delivery]
+
+#### **Content Integration with Development**
+- **Copy-Development Handoff:** [How content gets implemented in code]
+- **Dynamic Content Strategy:** [Personalization and real-time content updates]
+- **Content API & Data Structure:** [Technical architecture for content management]
+- **Content Deployment & Updates:** [How content changes are pushed to production]
+
+#### **Content Security & Compliance**
+- **Data Privacy & User Content:** [Handling user-generated content safely]
+- **Content Backup & Recovery:** [Protecting against content loss]
+- **Compliance Documentation:** [Legal and regulatory content requirements]
+- **Content Moderation Strategy:** [Managing inappropriate or harmful content]
+
+## Quality Assurance Framework
+
+### **Content Strategy Validation Checklist:**
+- [ ] Content objectives align with product goals from master-product-brief.md
+- [ ] Voice and tone reflect brand personality from ux-design-considerations.md
+- [ ] Content strategy supports user needs identified in user-personas.md
+- [ ] Content touchpoints mapped to user-flows.md journey points
+- [ ] Feature-specific content requirements address features.md complexity
+- [ ] Accessibility standards are specific and measurable
+- [ ] Content creation workflow is practical and scalable
+- [ ] Performance metrics tie to business objectives
+- [ ] Localization strategy matches target market analysis
+- [ ] Technical implementation considerations are addressed
+
+### **Cross-Document Integration Verification:**
+- [ ] Content complexity matches user technical literacy from personas
+- [ ] Voice and tone align with brand personality from design considerations
+- [ ] Content support identified for each critical user flow
+- [ ] Feature explanations match complexity levels in features documentation
+- [ ] Content strategy supports onboarding and activation goals
+
+## Output Requirements
+
+### **File Structure:**
+```
+/docs/content-strategy.md
+├── Executive Summary & Content Mission
+├── Voice, Tone & Style System
+│   ├── Brand Voice Definition
+│   ├── Contextual Tone Framework
+│   └── Style Guide & Standards
+├── Content Architecture & Taxonomy
+├── User Journey Content Strategy
+│   ├── Onboarding Content Framework
+│   ├── Core Feature Content Support
+│   ├── Support & Recovery Content
+│   └── Engagement & Retention Content
+├── Content Accessibility & Inclusion
+├── Localization & Global Strategy
+├── Content Creation & Governance
+├── Content Performance & Optimization
+├── Technical Implementation
+└── Implementation Roadmap & Next Steps
+```
+
+### **Implementation Integration Notes:**
+This document will serve as foundation for:
+- **Design System Integration:** Voice and tone guidelines for UI components
+- **Development Implementation:** Content management and delivery requirements
+- **User Testing:** Content validation scenarios for `/docs/testing-doc.md`
+- **Marketing Alignment:** Consistent messaging across all touchpoints
+- **Support Documentation:** Help content and user assistance materials
+- **Task Planning:** Content creation and management tasks for `/tasks/mvp-tasks.md`
+
+## Execution Instructions
+
+1. **DO NOT generate the strategy immediately** - Begin with thorough analysis and strategic questioning
+2. **Synthesize insights from all referenced documentation** to understand content's strategic role
+3. **Present a content philosophy and objectives** grounded in user needs and business goals
+4. **Confirm voice, tone, and content approach** through targeted clarification questions
+5. **Generate comprehensive content guidelines** that balance user needs with operational feasibility
+6. **Ensure practical implementation focus** - every guideline should be actionable for content creators
+7. **Validate content strategy** against user personas and product objectives
+8. **Provide clear integration points** with design, development, and business processes
+
+## Final Notes
+
+
+The resulting content strategy should be comprehensive enough to guide consistent, high-quality content creation across the entire product ecosystem while remaining flexible enough to evolve with user feedback and business growth. Every content decision should clearly connect to user success, business objectives, and brand expression, creating a cohesive content experience that supports both user goals and product success.

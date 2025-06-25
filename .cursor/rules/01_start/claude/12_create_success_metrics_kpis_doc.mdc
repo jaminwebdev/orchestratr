@@ -1,0 +1,369 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating Analytics & Success Metrics Document
+
+## Goal
+
+To guide an AI assistant in creating a comprehensive **Analytics & Success Metrics** document that establishes a robust measurement framework for tracking product performance, user behavior, business impact, and strategic objectives. This document serves as the foundation for data-driven decision making, product optimization, and long-term business growth.
+
+This document enables product owners, analysts, developers, marketers, and executives to understand what success looks like, how to measure it accurately, and how to act on insights to drive continuous improvement and business value.
+
+## Process
+
+1. **Reference Previous Docs:**
+   - `/docs/master-product-brief.md` - For business objectives, success criteria, and strategic alignment
+   - `/docs/features.md` - To understand feature-specific metrics and success indicators
+   - `/docs/user-personas.md` - For user segment analysis and behavioral tracking requirements
+   - `/docs/user-flows-diagrams.md` - To identify critical conversion points and funnel metrics
+   - `/docs/testing-qa-strategy.md` - For quality metrics and performance indicators alignment
+   - `/docs/performance-optimization-plan.md` - For technical performance metrics integration
+   - `/docs/ux-design-doc.md` - For user experience metrics and interaction tracking
+   - `/docs/content-strategy.md` - For content engagement and effectiveness metrics
+   - `/docs/architecture-design-patterns.md` - For system health and operational metrics
+
+2. **Ask Comprehensive Clarifying Questions:**
+
+   **Business Context & Strategic Alignment:**
+   - What are the primary business objectives (user acquisition, engagement, retention, revenue, market expansion)?
+   - How do you define product success at different stages (MVP, growth, maturity)?
+   - What are the key business models and revenue streams to track?
+   - Are there specific industry benchmarks or competitive metrics to consider?
+   - What are the short-term (3-6 months) vs long-term (1-2 years) success metrics?
+
+   **User Behavior & Experience Metrics:**
+   - What are the most critical user actions that indicate value realization?
+   - Which user journeys and conversion funnels are most important to optimize?
+   - How do you want to segment users (demographics, behavior, value, lifecycle stage)?
+   - What constitutes an "activated" or "engaged" user in your product?
+   - Are there specific user experience quality metrics that matter most?
+
+   **Technical & Operational Metrics:**
+   - What performance metrics directly impact user experience and business outcomes?
+   - Which system health and reliability metrics are critical for business continuity?
+   - Are there specific technical debt or code quality metrics to track?
+   - What security and compliance metrics need monitoring?
+
+   **Analytics Infrastructure & Tools:**
+   - What analytics platforms and tools are available or preferred (Google Analytics, Mixpanel, Amplitude, custom solutions)?
+   - Are there existing data warehouses, business intelligence tools, or reporting systems?
+   - What are the data privacy and compliance requirements (GDPR, CCPA, HIPAA)?
+   - What level of real-time vs batch analytics is needed?
+   - Are there budget constraints for analytics tooling and infrastructure?
+
+   **Experimentation & Optimization:**
+   - What experimentation framework and A/B testing approach will be used?
+   - Which metrics are primary vs secondary for experiment evaluation?
+   - How will you balance statistical significance with business impact?
+   - What is the intended frequency and scale of experimentation?
+
+   **Reporting & Governance:**
+   - Who are the key stakeholders and what are their reporting needs?
+   - What frequency and format of reporting is required (real-time dashboards, weekly reports, monthly reviews)?
+   - How will data quality and accuracy be maintained?
+   - What decision-making processes will be driven by these metrics?
+
+3. **Generate the Analytics & Success Metrics Document** using the comprehensive structure below.
+
+## Recommended Document Structure
+
+### 🎯 Executive Summary & Analytics Vision
+- Analytics mission statement and strategic importance
+- Key principles for data-driven decision making
+- Analytics maturity roadmap and evolution plan
+- Stakeholder alignment and success definition
+
+### 🏆 Business Goals & Success Framework
+
+**Primary Business Objectives:**
+- Strategic business goals and their measurable outcomes
+- Product-market fit indicators and validation metrics
+- Revenue and monetization success criteria
+- Market position and competitive advantage metrics
+- User satisfaction and brand loyalty indicators
+
+**Success Metrics Hierarchy:**
+- North Star metrics that drive overall business success
+- Primary KPIs for each business objective
+- Secondary metrics that provide deeper insights
+- Leading vs lagging indicator classification
+- Metric interdependencies and relationships
+
+**Success Criteria by Product Stage:**
+- MVP validation metrics and thresholds
+- Growth stage acceleration indicators
+- Maturity stage optimization metrics
+- Sunset or pivot decision criteria
+
+### 📊 Core Metrics & KPIs Framework
+
+**Acquisition Metrics:**
+- User acquisition channels and attribution
+- Cost per acquisition (CPA) by channel and campaign
+- Organic vs paid acquisition mix and trends
+- Sign-up and registration conversion rates
+- Time-to-first-value metrics
+- Referral and viral coefficient tracking
+
+**Activation & Onboarding Metrics:**
+- Onboarding completion rates and drop-off points
+- Time to first meaningful action or "aha moment"
+- Feature adoption rates during initial sessions
+- Account setup completion and profile completeness
+- Early user engagement patterns and behaviors
+- Activation funnel conversion optimization
+
+**Engagement & Usage Metrics:**
+- Daily Active Users (DAU), Weekly Active Users (WAU), Monthly Active Users (MAU)
+- Session frequency, duration, and depth
+- Feature usage patterns and adoption rates
+- User interaction quality and engagement score
+- Content consumption and creation metrics
+- Cross-platform and multi-device usage patterns
+
+**Retention & Lifecycle Metrics:**
+- Cohort retention analysis (Day 1, 7, 30, 90, 365)
+- Churn rate calculation and segmentation
+- Customer Lifetime Value (CLV) modeling and tracking
+- User lifecycle stage progression and optimization
+- Win-back and re-engagement campaign effectiveness
+- Dormancy prediction and intervention metrics
+
+**Revenue & Monetization Metrics:**
+- Monthly Recurring Revenue (MRR) and Annual Recurring Revenue (ARR)
+- Average Revenue Per User (ARPU) and per customer segment
+- Conversion rates across subscription tiers or purchase funnels
+- Payment success rates and transaction completion
+- Upsell and cross-sell effectiveness
+- Customer Acquisition Cost (CAC) to CLV ratio
+
+**Product Quality & Performance Metrics:**
+- Core Web Vitals and user experience performance indicators
+- Error rates, crash reports, and stability metrics
+- API response times and system availability
+- User-reported issues and support ticket volume
+- Feature success rates and completion metrics
+- Technical debt impact on user experience
+
+### 🔍 Event Tracking & Data Collection Strategy
+
+**Core Event Taxonomy:**
+- User authentication and account management events
+- Feature interaction and usage events
+- Content creation, consumption, and sharing events
+- Transaction and monetization events
+- Error and exception tracking events
+- Performance and system health events
+
+**Event Properties & Attributes:**
+- User properties (demographics, subscription status, lifecycle stage)
+- Session properties (device, browser, location, referrer)
+- Product properties (feature flags, A/B test variants, product version)
+- Business properties (subscription tier, payment method, support tier)
+- Technical properties (performance metrics, error codes, system status)
+
+**Data Collection Architecture:**
+- Client-side tracking implementation and best practices
+- Server-side event collection and validation
+- Real-time vs batch data processing strategies
+- Data quality assurance and validation procedures
+- Cross-platform and cross-device user identification
+- Offline event collection and synchronization
+
+**User Segmentation & Cohort Analysis:**
+- Behavioral segmentation criteria and definitions
+- Demographic and psychographic segmentation strategies
+- Value-based segmentation (high-value users, power users, at-risk users)
+- Lifecycle stage segmentation (new, active, dormant, churned)
+- Geographic and temporal segmentation considerations
+- Dynamic segmentation and real-time personalization
+
+### 🛠️ Analytics Tools & Technology Stack
+
+**Analytics Platforms & Integration:**
+- Primary analytics platform selection and implementation
+- Secondary analytics tools for specialized analysis
+- Customer Data Platform (CDP) integration and data unification
+- Business Intelligence (BI) tools and data visualization
+- Data warehouse and ETL pipeline architecture
+- API integrations and data export capabilities
+
+**Tag Management & Implementation:**
+- Tag management system setup and governance
+- Event tracking implementation standards and guidelines
+- Quality assurance processes for tracking implementations
+- Version control and deployment procedures for tracking code
+- Cross-team collaboration for tracking requirements
+- Documentation and training for tracking maintenance
+
+**Data Privacy & Compliance Framework:**
+- GDPR, CCPA, and other privacy regulation compliance
+- Cookie consent management and user preference tracking
+- Data retention policies and automated deletion procedures
+- User data anonymization and pseudonymization strategies
+- Cross-border data transfer compliance and safeguards
+- Audit trails and compliance reporting capabilities
+
+**Data Security & Governance:**
+- Data access controls and user permission management
+- PII protection and sensitive data handling procedures
+- Data encryption and secure transmission protocols
+- Audit logging and access monitoring
+- Data breach response and incident management
+- Regular security assessments and compliance reviews
+
+### 📅 Reporting, Dashboards & Insights
+
+**Executive Reporting:**
+- C-level dashboard with key business metrics
+- Monthly business review (MBR) reporting format
+- Quarterly business review (QBR) deep-dive analysis
+- Board-level reporting and investor metrics
+- Strategic initiative tracking and ROI measurement
+
+**Operational Dashboards:**
+- Real-time operational health monitoring
+- Product team performance and feature success tracking
+- Marketing campaign performance and attribution analysis
+- Customer success and support effectiveness metrics
+- Engineering and technical performance monitoring
+
+**Analytical Deep Dives:**
+- User behavior analysis and journey optimization
+- Cohort analysis and retention improvement insights
+- Revenue analysis and monetization optimization
+- Product-market fit assessment and validation
+- Competitive analysis and market positioning insights
+
+**Automated Alerting & Anomaly Detection:**
+- Critical metric threshold alerts and escalation procedures
+- Anomaly detection algorithms and machine learning insights
+- Performance degradation and system health alerts
+- Business metric anomaly investigation workflows
+- Proactive issue identification and resolution processes
+
+### 🧪 Experimentation & A/B Testing Framework
+
+**Experiment Design & Methodology:**
+- Hypothesis formation and validation frameworks
+- Statistical significance and power analysis requirements
+- Sample size calculation and experiment duration planning
+- Control and treatment group design principles
+- Multi-variate testing strategies and capabilities
+
+**Experiment Metrics & Evaluation:**
+- Primary success metrics for experiment evaluation
+- Secondary metrics and guardrail metric monitoring
+- Statistical significance thresholds and confidence intervals
+- Business significance vs statistical significance evaluation
+- Long-term impact assessment and follow-up analysis
+
+**Experimentation Infrastructure:**
+- A/B testing platform selection and implementation
+- Feature flag management and experiment deployment
+- User segmentation and targeting capabilities
+- Results analysis and statistical computation tools
+- Experiment lifecycle management and documentation
+
+**Learning & Iteration Framework:**
+- Experiment results documentation and knowledge sharing
+- Failed experiment analysis and learning extraction
+- Successful experiment scaling and rollout procedures
+- Continuous improvement culture and experimentation best practices
+- Cross-team experimentation coordination and conflict resolution
+
+### 📈 Advanced Analytics & Predictive Insights
+
+**Predictive Analytics & Machine Learning:**
+- Churn prediction models and intervention strategies
+- Customer Lifetime Value prediction and optimization
+- Demand forecasting and capacity planning models
+- Personalization and recommendation system metrics
+- Fraud detection and risk assessment analytics
+
+**Cohort & Behavioral Analysis:**
+- Advanced cohort analysis and lifecycle modeling
+- User journey analysis and path optimization
+- Behavioral pattern recognition and clustering
+- Cross-product and cross-platform behavior analysis
+- Temporal behavior analysis and seasonality insights
+
+**Attribution & Marketing Analytics:**
+- Multi-touch attribution modeling and optimization
+- Marketing mix modeling and budget allocation
+- Customer acquisition funnel analysis and optimization
+- Organic growth and viral coefficient measurement
+- Brand awareness and market perception tracking
+
+### 🔄 Continuous Improvement & Analytics Operations
+
+**Data Quality & Validation:**
+- Data quality monitoring and automated validation
+- Data consistency checks across systems and platforms
+- Historical data accuracy and integrity maintenance
+- Data pipeline monitoring and error detection
+- Regular data audits and quality improvement initiatives
+
+**Analytics Team & Processes:**
+- Analytics team structure and role definitions
+- Cross-functional collaboration and requirement gathering
+- Analytics request prioritization and delivery processes
+- Training and education programs for data literacy
+- Best practices documentation and knowledge management
+
+**Metric Evolution & Optimization:**
+- Regular metric review and relevance assessment
+- New metric identification and implementation procedures
+- Sunset criteria for outdated or irrelevant metrics
+- Metric standardization across teams and products
+- Benchmarking and competitive intelligence integration
+
+## Clarifying Questions (Examples)
+
+**Strategic Alignment & Business Context:**
+- What specific business outcomes define success for your product in the next 12 months?
+- How do you currently measure product-market fit and user satisfaction?
+- What competitive benchmarks or industry standards should influence your metrics?
+- Are there regulatory or compliance requirements that affect data collection and reporting?
+
+**User Behavior & Product Usage:**
+- What user actions or behaviors indicate genuine value realization from your product?
+- Which user segments or personas require different success metrics and tracking approaches?
+- What does an ideal user journey look like, and where are the critical conversion points?
+- How do you want to balance user privacy with comprehensive behavioral tracking?
+
+**Technical Infrastructure & Capabilities:**
+- What analytics tools and platforms are currently in use or being considered?
+- Are there existing data sources, APIs, or systems that need integration?
+- What level of real-time analytics and alerting capabilities are required?
+- What data retention, privacy, and compliance requirements must be met?
+
+**Organizational & Operational Needs:**
+- Who are the primary consumers of analytics data and what are their specific needs?
+- What decision-making processes should be directly informed by these metrics?
+- How frequently do different stakeholders need access to performance data?
+- What level of analytics sophistication and self-service capability is desired?
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `analytics-success-metrics.md`
+
+## Final Instructions
+
+1. **DO NOT generate the document** until business objectives, user behavior priorities, and measurement requirements are clearly defined
+2. **Thoroughly reference previous documentation** from `/docs/` to ensure metrics align with product strategy, user needs, and technical capabilities
+3. **Ask comprehensive clarifying questions** about business goals, user behavior, technical infrastructure, and organizational needs
+4. **Establish clear metric hierarchies** that distinguish between North Star metrics, primary KPIs, and secondary indicators
+5. **Include detailed implementation guidance** for event tracking, tool integration, and data collection procedures
+6. **Address data privacy and compliance** requirements throughout the measurement framework
+7. **Design for scalability and evolution** as the product and business mature and requirements change
+8. **Emphasize actionable insights** over vanity metrics, ensuring all measurements drive decision-making
+9. **Include experimentation framework** that enables continuous optimization and learning
+10. **Establish governance and quality assurance** processes to maintain data accuracy and reliability
+11. **Consider cross-functional collaboration** needs and ensure metrics serve all relevant stakeholders
+
+12. **Plan for advanced analytics capabilities** including predictive modeling and machine learning applications

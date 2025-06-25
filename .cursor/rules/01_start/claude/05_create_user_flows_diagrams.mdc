@@ -1,0 +1,259 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Creating User Flow Diagrams
+
+## Goal
+
+To help an AI assistant generate comprehensive, actionable **User Flow Diagrams** and structured flow documentation that illustrate how users navigate through the application to complete critical tasks and achieve their goals.
+
+These user flows will serve as the bridge between feature specifications and actual design implementation, providing clear visual guidance for UI/UX design, wireframing, user testing scenarios, technical architecture decisions, and stakeholder communication.
+
+## Process
+
+### 1. **Reference & Analyze Existing Documentation**
+   Review and extract key insights from the following documents in `/docs/`:
+   - `master-product-brief.md` - Core product vision, objectives, and success criteria
+   - `user-personas.md` - Primary user types, goals, pain points, and behavioral patterns
+   - `features.md` - Feature prioritization, functional requirements, and user stories
+   - `market-analysis.md` - Competitive landscape and industry standards (if relevant to UX patterns)
+
+### 2. **Identify Critical User Journeys**
+   Based on documentation analysis, categorize flows by:
+   - **Core Flows:** Essential paths for primary value delivery
+   - **Onboarding Flows:** First-time user experience and activation
+   - **Feature Flows:** Specific functionality usage patterns
+   - **Administrative Flows:** Account management, settings, and maintenance
+   - **Error/Edge Case Flows:** Recovery paths and exception handling
+
+### 3. **Flow Prioritization & Validation**
+   Before generating diagrams, confirm with the user:
+   - Which flows are most critical for MVP vs. future iterations
+   - Whether flows should include mobile-specific considerations
+   - Level of detail required (high-level journey vs. granular step-by-step)
+   - Specific user personas to focus on for each flow
+
+### 4. **Generate Comprehensive Flow Documentation**
+   For each identified flow, create:
+   - **Visual diagram** (Mermaid flowchart format)
+   - **Detailed step breakdown** with user actions and system responses
+   - **Decision points and branching logic**
+   - **Error states and recovery paths**
+   - **Success metrics and completion criteria**
+   - **Cross-references to relevant features and personas**
+
+### 5. **Quality Assurance & Optimization**
+   Ensure each flow includes:
+   - Clear entry and exit points
+   - Realistic user decision-making patterns
+   - Technical feasibility considerations
+   - Accessibility and inclusive design principles
+   - Performance and loading state considerations
+
+## Clarifying Questions Framework
+
+### 🎯 **Flow Scope & Priority**
+- Based on the product brief, which user goals are most critical to visualize?
+- Should we focus on [specific persona] flows first, or cover all user types?
+- Are there any flows that are essential for the MVP vs. nice-to-have for v2?
+- Do any competitive analysis insights suggest specific flow patterns we should adopt or avoid?
+
+### 📱 **Platform & Context Considerations**
+- Should flows account for different device types (mobile, tablet, desktop)?
+- Are there offline or low-connectivity scenarios to consider?
+- Do any flows involve external integrations or third-party services?
+- Are there regulatory or compliance requirements that affect certain flows?
+
+### 🔀 **Complexity & Edge Cases**
+- How detailed should decision trees be (simple binary vs. multiple conditions)?
+- Should we include error recovery and retry mechanisms?
+- Are there admin override or support intervention scenarios?
+- Do any flows involve multi-step processes that span multiple sessions?
+
+### 📊 **Success Metrics & Validation**
+- What defines successful completion for each flow?
+- Are there intermediate success points or micro-conversions to track?
+- How should abandoned or incomplete flows be handled?
+- What data should be captured during flow execution for optimization?
+
+## Flow Documentation Standards
+
+### **Mermaid Diagram Format (Primary)**
+
+```mermaid
+flowchart TD
+    Start([User lands on homepage]) 
+    Start --> Auth{Authenticated?}
+    Auth -->|No| SignUp[Click 'Sign Up']
+    Auth -->|Yes| Dashboard[Go to Dashboard]
+    
+    SignUp --> Form[Fill registration form]
+    Form --> Validate{Form valid?}
+    Validate -->|No| FormError[Show validation errors]
+    FormError --> Form
+    Validate -->|Yes| EmailSent[Send verification email]
+    
+    EmailSent --> EmailCheck[Check email]
+    EmailCheck --> Verify[Click verification link]
+    Verify --> VerifySuccess[Email verified]
+    VerifySuccess --> Onboarding[Start onboarding flow]
+    
+    Onboarding --> Profile[Complete profile setup]
+    Profile --> Preferences[Set initial preferences]
+    Preferences --> Welcome[Show welcome message]
+    Welcome --> Dashboard
+    
+    Dashboard --> End([Flow complete])
+    
+    %% Error paths
+    EmailCheck --> ResendEmail{Need to resend?}
+    ResendEmail -->|Yes| EmailSent
+    ResendEmail -->|No| Abandon([User abandons])
+    
+    %% Styling
+    classDef startEnd fill:#e1f5fe
+    classDef decision fill:#fff3e0
+    classDef action fill:#f3e5f5
+    classDef error fill:#ffebee
+    
+    class Start,End,Abandon startEnd
+    class Auth,Validate,ResendEmail decision
+    class SignUp,Form,EmailSent,EmailCheck,Verify,VerifySuccess,Onboarding,Profile,Preferences,Welcome,Dashboard action
+    class FormError error
+```
+
+### **Structured Flow Documentation Template**
+
+For each flow, provide:
+
+#### **Flow Name:** [Descriptive title]
+- **Primary Persona:** [Reference from user-personas.md]
+- **Trigger:** [What initiates this flow]
+- **Success Criteria:** [How we measure completion]
+- **Estimated Duration:** [Expected time to complete]
+
+#### **Flow Steps:**
+1. **[Action/Screen]** - [User action] → [System response]
+   - *Persona insight:* [Why this step matters to the user]
+   - *Technical note:* [Any implementation considerations]
+   - *Success metric:* [How to measure this step]
+
+#### **Decision Points:**
+- **[Decision name]:** [Condition description]
+  - *Path A:* [Outcome and next steps]
+  - *Path B:* [Alternative outcome and steps]
+
+#### **Error Scenarios:**
+- **[Error type]:** [Recovery mechanism]
+- **Abandonment points:** [Where users typically drop off]
+
+#### **Cross-References:**
+- **Related Features:** [Links to features.md sections]
+- **Supporting Personas:** [Secondary user types involved]
+- **Dependencies:** [Required prior flows or setup]
+
+## Flow Categories & Examples
+
+### **Core Application Flows**
+- Primary value proposition delivery
+- Main feature usage patterns
+- User goal achievement paths
+
+### **Onboarding & Activation Flows**
+- Account creation and verification
+- Initial setup and configuration
+- First successful action/value realization
+
+### **Feature-Specific Flows**
+- Each major feature from features.md
+- Feature discovery and adoption
+- Advanced feature usage patterns
+
+### **Account & Profile Management**
+- Settings and preferences
+- Security and privacy controls
+- Account lifecycle management
+
+### **Support & Recovery Flows**
+- Error resolution and recovery
+- Help-seeking and support access
+- Account recovery and troubleshooting
+
+## Advanced Flow Considerations
+
+### **Accessibility Integration**
+- Screen reader navigation paths
+- Keyboard-only interaction flows
+- Visual impairment accommodations
+- Cognitive load considerations
+
+### **Performance Optimization**
+- Loading state management
+- Progressive disclosure patterns
+- Offline capability flows
+- Bandwidth-conscious design
+
+### **Personalization & Adaptation**
+- User preference-driven variations
+- Behavioral adaptation over time
+- A/B testing flow variations
+- Contextual flow modifications
+
+### **Analytics & Optimization**
+- Conversion funnel mapping
+- Drop-off point identification
+- User behavior tracking points
+- Optimization opportunity flagging
+
+## Output Requirements
+
+### **File Structure:**
+```
+/docs/user-flows.md
+├── Executive Summary
+├── Flow Index & Priority Matrix
+├── Core Application Flows
+├── Onboarding & Activation Flows
+├── Feature-Specific Flows
+├── Administrative & Support Flows
+├── Error Handling & Recovery Flows
+├── Mobile-Specific Considerations
+├── Accessibility Flow Notes
+├── Performance & Technical Considerations
+├── Analytics & Measurement Framework
+└── Implementation Recommendations
+```
+
+### **Quality Checklist:**
+- [ ] All flows reference relevant personas from user-personas.md
+- [ ] Each flow connects to specific features from features.md
+- [ ] Success metrics align with product brief objectives
+- [ ] Error states and recovery paths are documented
+- [ ] Mobile and accessibility considerations are included
+- [ ] Technical implementation notes are provided
+- [ ] Cross-flow dependencies are identified
+- [ ] Analytics tracking points are specified
+
+## Execution Instructions
+
+1. **DO NOT generate flows immediately** - Always start with analysis and clarification
+2. **Review all referenced documentation** thoroughly before proposing flows
+3. **Present a prioritized list** of recommended flows based on product brief and personas
+4. **Confirm scope and detail level** with the user before proceeding
+5. **Generate flows incrementally** - start with highest priority flows
+6. **Validate flow logic** against user personas and feature requirements
+7. **Include implementation guidance** for designers and developers
+8. **Provide measurement framework** for flow optimization
+
+## Integration Notes
+
+This document will serve as input for:
+- `/docs/ux-design-doc.md` - Wireframe and interface design
+- `/docs/testing-doc.md` - User acceptance testing scenarios
+- `/docs/architecture-doc.md` - Technical implementation planning
+- `/tasks/mvp-tasks.md` - Development task breakdown and prioritization
+
+
+Ensure all flow documentation maintains consistency with previously established product vision, user understanding, and feature specifications while providing actionable guidance for subsequent design and development phases.

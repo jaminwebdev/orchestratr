@@ -1,0 +1,259 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating Architecture & System Design Patterns Document
+
+## Goal
+
+To guide an AI assistant in creating a comprehensive **Architecture & System Design Patterns** document that outlines how the application will be structured technically. This includes system components, data flow, API boundaries, storage, authentication, deployment infrastructure, observability, and comprehensive edge case handling.
+
+The document should provide sufficient technical depth for senior developers and tech leads to make informed decisions, while remaining implementable by mid-level engineers. It should serve as the definitive technical blueprint that bridges business requirements with engineering execution.
+
+## Process
+
+1. **Reference Previous Docs (MANDATORY):**
+   - `master-product-brief.md` - For business context, scale expectations, and success criteria
+   - `features.md` - For functional requirements and feature complexity analysis
+   - `user-flows.md` - For understanding interaction patterns and data flow requirements
+   - `ux-design-considerations.md` - For frontend architecture implications and performance requirements
+   - `content-strategy.md` - For content management, localization, and SEO architectural needs
+   - `market-analysis.md` - For competitive landscape and differentiation requirements
+   - `user-personas.md` - For understanding usage patterns and accessibility requirements
+
+2. **Technology Stack Assessment Questions:**
+   - What frontend and backend tech stacks are being considered or mandated?
+   - Are there existing technology constraints or organizational preferences?
+   - What is the team's current expertise and preferred development workflow?
+   - Are there specific compliance requirements that dictate technology choices?
+   - What is the budget for third-party services and infrastructure?
+
+3. **Scale & Performance Requirements:**
+   - What is the expected user base at launch, 6 months, and 2 years?
+   - What are the peak concurrent user expectations?
+   - What are the acceptable response times for different user interactions?
+   - Are there specific geographic regions or global reach requirements?
+   - What are the expected data volumes and growth rates?
+
+4. **Integration & Ecosystem Questions:**
+   - Will there be third-party integrations (auth providers, payments, analytics, CRM)?
+   - Are there existing internal systems that need integration?
+   - What external APIs or services will the application consume?
+   - Are there webhook or real-time notification requirements?
+   - Will there be mobile app requirements (now or future)?
+
+5. **Operational & Business Questions:**
+   - Are there real-time or offline-first requirements?
+   - What are the uptime requirements and acceptable downtime windows?
+   - Are microservices or monolith architecture preferred based on team structure?
+   - What are the disaster recovery and business continuity requirements?
+   - Are there specific audit, compliance, or regulatory requirements?
+
+6. **Generate the Architecture & System Design Document** using the comprehensive structure below.
+
+## Recommended Document Structure
+
+### 🧱 System Overview & Architecture Philosophy
+- **High-level Architecture Summary**: Frontend, backend, database, APIs, and key services
+- **Architecture Decision Records (ADRs)**: Key architectural decisions with rationale
+- **Monolith vs Microservices Analysis**: Decision rationale with pros/cons for the specific use case
+- **Technology Stack Justification**: Detailed reasoning for each technology choice
+- **System Architecture Diagram**: Visual representation of system components and interactions
+- **Data Architecture Overview**: High-level data modeling and relationships
+
+### 🔧 Technology Stack & Implementation Details
+- **Frontend Stack**: Framework, state management, styling, build tools, and bundling strategy
+- **Backend Stack**: Runtime, framework, ORM/query builder, validation libraries
+- **Database Strategy**: Primary database choice, caching layers, search solutions
+- **Development Tooling**: Testing frameworks, linting, formatting, pre-commit hooks
+- **Infrastructure as Code**: Terraform, CloudFormation, or other IaC approaches
+
+### 🔁 Core Services & Responsibilities
+- **Authentication & Authorization Service**: Identity management, session handling, role-based access
+- **API Gateway & Rate Limiting**: Request routing, transformation, throttling, and abuse prevention
+- **Business Logic Layer**: Domain services, use cases, and business rule enforcement
+- **Data Access Layer**: Repository patterns, query optimization, connection pooling
+- **Background Processing**: Job queues, scheduled tasks, event processing
+- **File Storage & Management**: Upload handling, CDN integration, image processing
+- **Notification System**: Email, SMS, push notifications, and in-app messaging
+- **External Integration Layer**: Third-party API clients, webhook handlers, data synchronization
+- **Audit & Logging Service**: Activity tracking, compliance logging, and forensic capabilities
+
+### 📡 Data Flow & API Design
+- **API Architecture Pattern**: REST, GraphQL, tRPC, or hybrid approach with justification
+- **Request/Response Flow**: Detailed data flow from frontend to backend and back
+- **API Versioning Strategy**: How breaking changes will be handled over time
+- **Data Validation Pipeline**: Input validation, sanitization, and transformation layers
+- **Error Handling Standards**: Consistent error responses, error codes, and user messaging
+- **API Documentation Strategy**: OpenAPI/Swagger, GraphQL schema, or alternative approaches
+- **Real-time Communication**: WebSockets, Server-Sent Events, or polling strategies
+- **Batch Processing**: Bulk operations, imports/exports, and data migration strategies
+
+### 🛡️ Security & Compliance Architecture
+- **Authentication Mechanisms**: Password-based, social login, SSO, MFA implementation
+- **Authorization Model**: RBAC, ABAC, or custom permission systems
+- **Session Management**: JWT vs server-side sessions, refresh token rotation
+- **Security Headers & Policies**: CORS, CSP, HSTS, and other protective headers
+- **Input Validation & Sanitization**: XSS prevention, SQL injection protection, CSRF tokens
+- **Encryption Strategy**: Data at rest, data in transit, key management
+- **Compliance Framework**: GDPR, CCPA, HIPAA, SOC2, or other relevant standards
+- **Vulnerability Management**: Security scanning, dependency updates, penetration testing
+- **Privacy by Design**: Data minimization, consent management, right to deletion
+
+### 🌐 Hosting & Infrastructure Architecture
+- **Cloud Provider Strategy**: Multi-cloud, single-cloud, or hybrid approach
+- **Compute Architecture**: Serverless, containers, VMs, or hybrid deployments
+- **Network Architecture**: VPCs, subnets, load balancers, and traffic routing
+- **CDN Strategy**: Global content delivery, edge computing, and cache invalidation
+- **DNS & Domain Management**: Subdomain strategy, SSL certificate management
+- **Environment Strategy**: Development, staging, production, and feature environments
+- **Infrastructure Monitoring**: Health checks, resource utilization, cost monitoring
+
+### 🚀 Deployment & DevOps Architecture
+- **CI/CD Pipeline Design**: Source control integration, automated testing, deployment gates
+- **Deployment Strategies**: Blue-green, canary, rolling updates, or feature flags
+- **Configuration Management**: Environment variables, secrets management, feature toggles
+- **Database Migration Strategy**: Schema versioning, rollback procedures, data seeding
+- **Rollback & Recovery Procedures**: Quick rollback capabilities and disaster recovery
+- **Development Workflow**: Git flow, code review process, branch protection rules
+
+### 📈 Scalability & Performance Architecture
+- **Caching Strategy**: Multi-layer caching (browser, CDN, application, database)
+- **Database Performance**: Indexing strategy, query optimization, connection pooling
+- **Horizontal Scaling**: Load balancing, auto-scaling, and stateless design principles
+- **Vertical Scaling**: Resource optimization and upgrade strategies
+- **Performance Budgets**: Page load times, API response times, database query limits
+- **Content Optimization**: Image optimization, code splitting, lazy loading strategies
+- **Search & Analytics**: Search engine optimization, analytics data collection architecture
+
+### 🧪 Edge Cases & Failure Mode Analysis
+- **Concurrency & Race Conditions**: Optimistic locking, distributed locks, event ordering
+- **Network Reliability**: API timeouts, retry logic with exponential backoff, circuit breakers
+- **Third-party Service Failures**: Graceful degradation, fallback mechanisms, service isolation
+- **Data Consistency Issues**: Transaction boundaries, eventual consistency, conflict resolution
+- **Resource Exhaustion**: Memory leaks, connection pool exhaustion, disk space management
+- **Security Breach Response**: Incident response procedures, data breach protocols
+- **Scalability Bottlenecks**: Traffic spikes, viral growth scenarios, cascade failures
+- **Data Corruption Scenarios**: Backup verification, data integrity checks, recovery procedures
+- **Session & Authentication Edge Cases**: Concurrent logins, session hijacking, token expiry during requests
+- **Geographic & Regulatory Challenges**: Data sovereignty, cross-border compliance, latency issues
+
+### 🔍 Observability & Debugging Architecture
+- **Logging Strategy**: Structured logging, log levels, log aggregation, and retention policies
+- **Metrics & Monitoring**: Application metrics, infrastructure metrics, business metrics
+- **Distributed Tracing**: Request tracing across microservices, performance bottleneck identification
+- **Error Tracking & Alerting**: Real-time error detection, alert fatigue prevention, escalation procedures
+- **Health Checks & Status Pages**: Service health monitoring, dependency checks, public status communication
+- **Performance Profiling**: APM tools, database query analysis, frontend performance monitoring
+- **Audit Trails**: User activity logging, administrative actions, compliance reporting
+- **Debugging Tools**: Development debugging, production troubleshooting, log analysis tools
+
+### 🔄 Data Management & Governance
+- **Data Modeling Strategy**: Domain-driven design, normalization vs denormalization decisions
+- **Data Lifecycle Management**: Data retention policies, archival strategies, purging procedures
+- **Backup & Recovery**: Automated backups, point-in-time recovery, cross-region replication
+- **Data Migration Strategy**: Version upgrades, schema changes, data transformation pipelines
+- **Master Data Management**: Reference data, data consistency across services
+- **Analytics & Reporting**: Data warehouse strategy, ETL pipelines, business intelligence integration
+
+### 🧭 Future Architecture Considerations
+- **Scalability Roadmap**: Anticipated architectural changes as the system grows
+- **Technology Evolution Path**: Framework upgrades, database migrations, infrastructure modernization
+- **Feature Architecture Preparation**: Planned features and their architectural implications
+- **Technical Debt Management**: Refactoring strategies, code quality initiatives
+- **Team Growth Implications**: How architecture will support larger development teams
+- **Mobile & Multi-platform Strategy**: API design for future mobile apps or desktop clients
+
+## Enhanced Clarifying Questions
+
+### Technology & Implementation
+- What specific frameworks, libraries, and services are you considering or required to use?
+- Are you building on existing infrastructure or starting from scratch?
+- What is the team's experience level with different technologies?
+- Are there organizational standards or preferences that must be followed?
+- What is the expected development timeline and how does it affect technology choices?
+
+### Scale & Performance
+- What are the expected user numbers at launch, 6 months, 1 year, and 2 years?
+- What are the peak concurrent usage expectations?
+- What are the acceptable response times for different types of user interactions?
+- Are there specific geographic regions or global reach requirements?
+- What are the expected data volumes and growth patterns?
+
+### Business & Operational Requirements
+- What are the uptime requirements and acceptable maintenance windows?
+- Are there real-time features like chat, notifications, or collaborative editing?
+- What third-party services need integration (payments, auth, analytics, etc.)?
+- Are there compliance requirements (GDPR, HIPAA, SOC2, etc.)?
+- What is the disaster recovery and business continuity strategy?
+
+### Security & Privacy
+- What are the authentication requirements (social login, SSO, MFA)?
+- What sensitive data will be stored and how must it be protected?
+- Are there specific security compliance requirements?
+- What are the privacy requirements and user data control needs?
+- How will security vulnerabilities be detected and addressed?
+
+### Development & Operations
+- How many developers will be working on the system?
+- What is the preferred development workflow and deployment strategy?
+- How will database schema changes be managed over time?
+- What monitoring and alerting capabilities are needed?
+- How will performance issues be diagnosed and resolved?
+
+### Future Planning
+- What features are planned for future releases?
+- How might the system need to evolve as the business grows?
+- What integration points might be needed with future systems?
+- How will the architecture support mobile apps or additional platforms?
+- What analytics and reporting capabilities will be needed?
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `architecture-design-patterns.md`
+- **Length:** Comprehensive document (typically 3000-6000 words for thorough coverage)
+- **Visual Elements:** Include ASCII diagrams or mermaid diagrams where helpful
+- **Cross-references:** Link to relevant sections in other documents from `/docs/`
+
+## Final Instructions & Quality Gates
+
+1. **Prerequisites Check:** Do NOT generate the architecture document until you have clear understanding of:
+   - Technology stack preferences and constraints
+   - Scale and performance requirements
+   - Security and compliance needs
+   - Integration requirements
+   - Team structure and capabilities
+
+2. **Mandatory Clarification Areas:**
+   - Hosting model and infrastructure preferences
+   - Real-time vs batch processing requirements
+   - Data consistency and availability requirements
+   - Failure tolerance and recovery expectations
+   - Budget constraints for third-party services
+
+3. **Documentation Standards:**
+   - Use clear, technical language appropriate for senior developers
+   - Structure content with consistent markdown formatting
+   - Include concrete examples and specific technology recommendations
+   - Provide rationale for architectural decisions, not just descriptions
+   - Cross-reference relevant sections from other `/docs/` files
+
+4. **Completeness Requirements:**
+   - **Edge cases and failure modes section is mandatory and must be comprehensive**
+   - Include specific technology recommendations with version considerations
+   - Address both current needs and future scalability concerns
+   - Provide actionable guidance for implementation teams
+   - Include monitoring and debugging strategies for each major component
+
+5. **Review Checklist:**
+   - [ ] All previous documents from `/docs/` have been referenced appropriately
+   - [ ] Technology choices are justified based on project requirements
+   - [ ] Security considerations are comprehensive and specific
+   - [ ] Scalability path is clearly defined with specific bottleneck analysis
+   - [ ] Edge cases cover both technical and business failure scenarios
+   - [ ] Observability strategy enables effective debugging and monitoring
+
+   - [ ] Document provides sufficient detail for implementation planning
