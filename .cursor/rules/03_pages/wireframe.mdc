@@ -1,0 +1,278 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating User-Centered Wireframes
+
+## Goal
+
+To guide an AI assistant in creating effective wireframes (visual mockups or detailed text-based layouts) that optimize user experience and conversion rates. Wireframes should be grounded in UX research, design principles, and user psychology while being tailored to specific user personas and page objectives.
+
+The wireframe must prioritize user needs, follow established design principles (Gestalt, proximity, hierarchy, etc.), and strategically place conversion elements to guide users toward desired actions.
+
+## Process
+
+1. **Receive Initial Request:** The user provides a brief description of the page or interface requiring a wireframe.
+    
+2. **Ask Clarifying Questions:** Before creating the wireframe, the AI _must_ gather comprehensive information about users, objectives, and context.
+    
+3. **Define User Persona:** Establish clear user persona(s) in the format: "[Name] is a [characteristics/descriptor] who needs [user need] because [why/insight]."
+    
+4. **Research Best Practices:** Search for current UX research and wireframe patterns specific to the page type, industry, or user behavior when applicable.
+    
+5. **Apply Design Principles:** Incorporate Gestalt principles, visual hierarchy, and UX best practices into the wireframe structure.
+    
+6. **Choose Output Format:** Create either a visual ASCII mockup or detailed text-based layout based on user preference.
+    
+7. **Optimize for Conversion:** Strategically place CTAs, reduce friction, and design clear user paths.
+    
+8. **Validate Against Persona:** Ensure the wireframe serves the defined user persona's needs and context.
+    
+
+## Clarifying Questions
+
+The AI should adapt questions based on the request, covering these essential areas:
+
+### Primary Objectives & Goals
+
+- **Main Purpose:** "What is the primary objective of this page/interface?" (lead generation, sales, information, engagement, etc.)
+- **Secondary Goals:** "Are there any secondary objectives we should consider?"
+- **Success Metrics:** "How will you measure success?" (conversions, time on page, engagement, etc.)
+- **Key Performance Indicators:** "What specific actions do you want users to take?"
+
+### User Context & Personas
+
+- **Primary User:** "Who is your main user? Please describe as: [Name] is a [characteristics/descriptor] who needs [user need] because [why/insight]."
+- **Secondary Users:** "Are there other important user groups to consider?"
+- **User Journey Stage:** "Where are users in their journey when they reach this page?" (awareness, consideration, decision, post-purchase)
+- **Device Context:** "What devices will users primarily use?" (mobile-first, desktop, tablet, mixed)
+- **Technical Proficiency:** "What's the technical comfort level of your users?"
+
+### Page Type & Context
+
+- **Page Type:** "What type of page is this?" (landing page, homepage, product page, checkout, dashboard, etc.)
+- **Traffic Source:** "How do users arrive at this page?" (ads, search, email, direct, referral)
+- **Content Volume:** "How much content needs to be included?" (minimal, moderate, content-heavy)
+- **Existing Constraints:** "Are there brand guidelines, technical limitations, or existing design systems to consider?"
+
+### Business Context
+
+- **Industry/Niche:** "What industry or market are you in?"
+- **Competitive Landscape:** "Who are your main competitors, and how do their pages perform?"
+- **Brand Personality:** "How would you describe your brand?" (professional, playful, premium, accessible, etc.)
+- **Trust Factors:** "What credibility elements are important for your audience?" (testimonials, certifications, security badges, etc.)
+
+### Content Requirements
+
+- **Key Messages:** "What are the 3 most important things users need to know?"
+- **Value Proposition:** "What's your unique value proposition or main differentiator?"
+- **Content Assets:** "What content do you have available?" (images, videos, testimonials, case studies, etc.)
+- **Form Requirements:** "Do you need to collect user information? What fields are essential vs. optional?"
+
+### Technical Considerations
+
+- **Integration Needs:** "Does this page need to integrate with other systems?" (CRM, payment, analytics, etc.)
+- **Performance Requirements:** "Are there specific loading time or performance targets?"
+- **Accessibility Needs:** "Are there specific accessibility requirements to consider?"
+
+## Research Integration
+
+### Best Practice Research Process
+
+1. **Identify Page Category:** Categorize the request (e.g., SaaS landing page, e-commerce product page, lead generation form)
+2. **Search Current Research:** Look for recent UX studies, conversion optimization data, and industry-specific patterns
+3. **Analyze Successful Examples:** Reference high-converting pages in similar industries or use cases
+4. **Apply Research Findings:** Incorporate proven patterns while adapting to specific user needs
+
+### Research Areas to Explore
+
+- **Conversion Rate Optimization:** Latest findings on CTA placement, form optimization, trust signals
+- **Mobile UX Patterns:** Current mobile-first design standards and touch interactions
+- **Industry-Specific Studies:** Sector-specific user behavior research when available
+- **Accessibility Standards:** Current WCAG guidelines and inclusive design practices
+- **Loading Performance:** Impact of page structure on perceived and actual loading times
+
+### Fallback for Limited Research
+
+When specific research isn't available:
+
+- Apply general UX principles and established patterns
+- Reference broader industry standards
+- Focus on fundamental user psychology and behavior
+- Clearly note when recommendations are based on general principles vs. specific research
+
+## Design Principles Integration
+
+### Gestalt Principles
+
+- **Proximity:** Group related elements together, separate unrelated ones
+- **Similarity:** Use consistent styling for similar functions/content
+- **Closure:** Create complete visual shapes and logical groupings
+- **Continuity:** Guide eye movement through logical flow
+- **Figure/Ground:** Establish clear foreground/background relationships
+
+### Visual Hierarchy
+
+- **Size:** Larger elements draw attention first
+- **Color:** Strategic use of contrast and brand colors
+- **Positioning:** Prime real estate for most important elements
+- **Typography:** Varied font sizes and weights to create scanning patterns
+- **White Space:** Strategic spacing to reduce cognitive load
+
+### UX Fundamentals
+
+- **Fitts's Law:** Larger, closer targets are easier to interact with
+- **Miller's Rule:** Limit choices to 7±2 items when possible
+- **Hick's Law:** Reduce decision time by limiting options
+- **Progressive Disclosure:** Reveal information progressively to avoid overwhelm
+- **Recognition vs. Recall:** Make options visible rather than requiring memory
+
+### Conversion Optimization Principles
+
+- **Above the Fold Priority:** Critical elements visible without scrolling
+- **F-Pattern Reading:** Structure content for natural eye movement
+- **CTA Optimization:** Contrasting colors, action-oriented language, strategic placement
+- **Friction Reduction:** Minimize steps and cognitive load
+- **Social Proof Integration:** Strategic placement of testimonials and trust signals
+
+## Wireframe Output Formats
+
+### Option 1: Visual ASCII Mockup
+
+```
++----------------------------------+
+|  LOGO    |    NAVIGATION         |
++----------------------------------+
+|                                  |
+|         HERO SECTION             |
+|      [Primary Headline]         |
+|      Brief value prop text       |
+|        [CTA BUTTON]             |
+|                                  |
++----------------------------------+
+|  Feature 1  | Feature 2 | Feat 3 |
+|  [icon]     | [icon]    | [icon] |
+|  Brief desc | Brief desc| Brief  |
++----------------------------------+
+```
+
+### Option 2: Detailed Text-Based Layout
+
+Sequential section breakdown with descriptions, dimensions, and interaction notes.
+
+## Wireframe Structure Guidelines
+
+### Header Section
+
+- Logo placement and sizing
+- Navigation structure and hierarchy
+- Contact information or social proof
+- Mobile hamburger menu considerations
+
+### Hero/Above-the-Fold Area
+
+- Primary headline and value proposition
+- Supporting subheadline
+- Primary CTA placement and styling
+- Hero image/video considerations
+- Trust signals (badges, testimonials)
+
+### Content Sections
+
+- Logical information architecture
+- Scannable content blocks
+- Secondary CTAs throughout
+- Social proof integration points
+- Feature/benefit presentations
+
+### Footer Section
+
+- Secondary navigation
+- Contact information
+- Legal/compliance links
+- Additional trust signals
+
+### Mobile Considerations
+
+- Touch-friendly button sizes (minimum 44px)
+- Thumb-friendly navigation
+- Simplified content hierarchy
+- Optimized form layouts
+
+## CTA Optimization Strategy
+
+### Primary CTA Guidelines
+
+- **Placement:** Above fold and repeated strategically
+- **Size:** Large enough to be easily clickable (especially mobile)
+- **Color:** High contrast with surrounding elements
+- **Copy:** Action-oriented, benefit-focused language
+- **Surrounding Space:** Adequate white space to draw attention
+
+### Secondary CTA Strategy
+
+- **Purpose:** Alternative actions for different user intents
+- **Styling:** Less prominent than primary CTA but still visible
+- **Placement:** Strategic locations throughout user journey
+- **Copy:** Address alternative user needs
+
+### CTA Frequency
+
+- **Long Pages:** CTA every 2-3 screen heights
+- **Short Pages:** Minimum 2 CTAs (above fold + bottom)
+- **Forms:** Progress indicators and multiple entry points
+
+## Target Audience Considerations
+
+### User Context Factors
+
+- **Attention Span:** Design for quick scanning vs. detailed reading
+- **Technical Comfort:** Complexity level appropriate for user sophistication
+- **Motivation Level:** High-intent vs. browsing behavior patterns
+- **Device Usage:** Mobile-first vs. desktop-primary experiences
+
+### Accessibility Integration
+
+- **Screen Readers:** Logical heading hierarchy and alt text planning
+- **Color Blindness:** Color-independent information hierarchy
+- **Motor Limitations:** Adequate touch targets and spacing
+- **Cognitive Load:** Clear information architecture
+
+## Output Requirements
+
+### Deliverable Format
+
+- **User's Choice:** Visual mockup OR detailed text layout
+- **Annotations:** Explanation of design decisions and principles applied
+- **Research Citations:** Reference to studies or best practices used
+- **Alternative Options:** 2-3 variations for key sections when applicable
+
+### Documentation Includes
+
+- **Rationale:** Why specific elements are placed and sized
+- **Interaction Notes:** How elements behave on different devices
+- **Content Guidelines:** Recommended copy length and tone
+- **Testing Recommendations:** Suggested A/B testing opportunities
+
+### Mobile Considerations
+
+- **Responsive Breakpoints:** How layout adapts across devices
+- **Touch Interactions:** Gesture considerations and button sizing
+- **Loading Priority:** Critical path and progressive enhancement
+
+## Final Instructions
+
+1. **Always start with user persona definition** - No wireframe without clear user understanding
+2. **Research current best practices** - Search for relevant UX studies and patterns when possible
+3. **Apply design principles systematically** - Use Gestalt principles and visual hierarchy
+4. **Optimize for primary goal** - Every element should support the main objective
+5. **Consider the complete user journey** - Design for the user's context and next steps
+6. **Plan for mobile-first** - Prioritize mobile experience unless specifically desktop-focused
+7. **Include conversion optimization** - Strategic CTA placement and friction reduction
+8. **Provide clear rationale** - Explain design decisions based on research and principles
+9. **Note research limitations** - Clearly indicate when recommendations are based on general principles vs. specific studies
+10. **Suggest testing opportunities** - Recommend elements that would benefit from A/B testing
+
+
+Remember: Great wireframes solve user problems first, business problems second, and look pretty third. Focus on functionality, usability, and conversion optimization over visual aesthetics at this stage.
