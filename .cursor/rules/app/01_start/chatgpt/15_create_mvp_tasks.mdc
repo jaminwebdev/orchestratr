@@ -5,9 +5,9 @@ alwaysApply: false
 ---
 ---
 description: |
-  Generate a comprehensive, prioritized master task list to kick off and build the MVP application, based on the foundational documentation created in the `/01_start` directory. This task list will guide developers step-by-step through implementing the MVP, ensuring alignment with all prior documentation such as product brief, market analysis, user personas, architecture, and more.
+  Generate a comprehensive, prioritized master task list to kick off and build the MVP application, based on the foundational documentation created in the `/docs` directory. This task list will guide developers step-by-step through implementing the MVP, ensuring alignment with all prior documentation such as product brief, market analysis, user personas, architecture, and more.
 globs:
-  - /docs/01_start/*.md
+  - /docs/*.md
 alwaysApply: false
 ---
 
@@ -17,7 +17,7 @@ alwaysApply: false
 
 To produce a detailed, prioritized master task list in Markdown format that guides the implementation of the MVP application. The task list should:
 
-- Reference the entire corpus of foundational documentation generated in `/01_start`
+- Reference the entire corpus of foundational documentation generated in `/docs`
 - Cover design, development, infrastructure, testing, and deployment tasks needed to build the MVP
 - Reflect dependencies and priorities informed by the product brief, architecture, and UX documentation
 - Be suitable for guiding junior developers through MVP delivery
@@ -31,7 +31,7 @@ To produce a detailed, prioritized master task list in Markdown format that guid
 ## Process
 
 1. **Gather Foundational Docs:**  
-   Collect and analyze the core docs from `/01_start` including but not limited to:  
+   Collect and analyze the core docs from `/docs` including but not limited to:  
    - Product Brief  
    - Market Analysis  
    - User Personas  
@@ -87,7 +87,7 @@ To produce a detailed, prioritized master task list in Markdown format that guid
 
 ### Notes
 
-- This master task list references foundational documentation in `/docs/01_start` to maintain alignment with product goals, architecture, and UX.
+- This master task list references foundational documentation in `/docs/` to maintain alignment with product goals, architecture, and UX.
 - Prioritize tasks according to MVP scope defined in the MVP Growth & Iteration Plan.
 - Testing and security are integral from the start.
 

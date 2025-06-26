@@ -24,7 +24,7 @@ This general approach can easily be extended to work with your favorite task-man
 ## Project Structure
 
 ```plaintext
-├── 01_start/                # Initial project kickoff documentation rules
+├── app/                # Initial project kickoff documentation rules
 │   ├── 01_create_product_brief.mdc
 │   ├── 02_create_market_analysis.mdc
 │   ├── 03_create_user_personas.mdc
@@ -53,7 +53,7 @@ This general approach can easily be extended to work with your favorite task-man
 
 ## Getting Started — Project Initiation
 
-The `/01_start` directory contains a set of cursor rules (`.mdc`) that guide the AI through the foundational product documentation process. These are designed to be run sequentially to build out a full and well-rounded understanding of the product, market, users, and technical considerations.
+The `/app` directory contains a set of cursor rules (`.mdc`) that guide the AI through the foundational product documentation process. These are designed to be run sequentially to build out a full and well-rounded understanding of the product, market, users, and technical considerations.
 
 ### Step-by-Step Initiation Flow
 

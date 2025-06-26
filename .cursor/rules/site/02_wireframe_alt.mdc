@@ -19,7 +19,7 @@ This wireframe will serve as a blueprint for that specific page's UI/UX design, 
 ## Process
 
 1. **Analyze Existing Documentation:** Review `master-product-brief.md` and `market-analysis.md` in the `/docs` folder to understand product vision, user personas, and feature requirements if those documents exist.
-2. **Reference Supporting Documentation:** Use `wireframe_best_practices.md`, `wireframe_101.md`, and `example_wireframes.md` from the .cursor/rules/02_pages/supporting_docs folder for industry standards, methodologies, and proven patterns.
+2. **Reference Supporting Documentation:** Use `wireframe_best_practices.md`, `wireframe_101.md`, and `example_wireframes.md` from the .cursor/rules/site/research_docs folder for industry standards, methodologies, and proven patterns.
 3. **Identify Page Context:** Understand where this page fits in the overall product flow and user journey.
 4. **Conduct Focused Page Discovery:** Use the targeted question framework below to gather page-specific requirements.
 5. **Validate Page Requirements:** Confirm user goals, content needs, and functionality before wireframe creation.
