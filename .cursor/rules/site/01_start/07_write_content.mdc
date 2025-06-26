@@ -1,0 +1,569 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Writing High-Converting Website Content
+
+## Goal
+
+To guide an AI assistant in creating comprehensive, conversion-optimized website content that seamlessly integrates with wireframe specifications and fulfills the strategic content framework established in previous documentation. The content must be highly targeted, persuasive, and perfectly aligned with user needs, business objectives, and design constraints while implementing proven copywriting techniques for maximum conversion impact.
+
+This rule produces actual website copy—headlines, body text, CTAs, microcopy, and all written content elements—that can be directly implemented into the website, ensuring every word serves the strategic goals identified throughout the planning process.
+
+## Process
+
+1. **Analyze All Strategic Foundation Documents:** Thoroughly review all preceding documents in the `/docs` folder:
+   - `website-brief.md` - Business objectives, value propositions, target outcomes, and success metrics
+   - `audience-research.md` - User personas, language preferences, pain points, and decision-making factors
+   - `sitemaps-document.md` - Site structure, page hierarchy, and content organization requirements
+   - `wireframes-document.md` - Layout specifications, content blocks, character limits, and UI copy placement
+   - `ux-design-considerations.md` - Brand personality, visual-content integration, and user experience priorities
+   - `content-strategy.md` - Voice guidelines, messaging framework, and content creation standards
+
+2. **Integrate Copywriting Best Practices:** Reference and apply insights from `/research_docs/`:
+   - `copy_101.md` - Fundamental copywriting principles and persuasion techniques
+   - `copy_best_practices.md` - Advanced conversion optimization and messaging strategies
+   - `copy_headlines.md` - Headline formulas, attention-grabbing techniques, and engagement optimization
+
+3. **Cross-Reference Content Implementation Requirements:** Extract specific content needs from previous findings:
+   - Exact content blocks and character limits from wireframes
+   - Brand voice and tone specifications from content strategy
+   - User language preferences and communication style from audience research
+   - Conversion goals and persuasion priorities from business objectives
+   - Design-content integration requirements from UX considerations
+
+4. **Conduct Content-Specific Discovery:** Ask targeted questions to clarify implementation details not covered in previous documentation
+
+5. **Generate Wireframe-Matched Content:** Create actual copy that fits perfectly within wireframe specifications while maximizing conversion potential
+
+6. **Optimize for Multi-Device Experience:** Ensure content works effectively across all device breakpoints specified in wireframes
+
+7. **Quality Assurance Review:** Validate content against strategic framework, conversion best practices, and implementation requirements
+
+8. **Save Document:** Save as `website-content.md` in the `/docs` directory
+
+## Content Implementation Discovery Questions
+
+### 📋 **Wireframe Content Specifications & Constraints**
+- **Layout Integration:** What are the exact character limits, content block dimensions, and layout constraints for each wireframe section?
+- **Content Hierarchy Validation:** How should content priority and visual emphasis align with the wireframe hierarchy and user flow priorities?
+- **Interactive Element Copy:** What specific microcopy is needed for buttons, form fields, tooltips, error messages, and user interface elements?
+- **Responsive Content Adaptation:** How should content adapt or truncate across different device breakpoints shown in wireframes?
+
+### 🎯 **Conversion Optimization Implementation**
+- **Primary CTA Strategy:** What are the exact conversion actions prioritized in wireframes, and what copy will drive maximum click-through rates?
+- **Value Proposition Placement:** Where and how should core value propositions be communicated within wireframe content blocks for maximum impact?
+- **Persuasion Point Integration:** How should social proof, urgency, scarcity, and other persuasion elements be incorporated within layout constraints?
+- **Objection Handling Placement:** Where in the wireframe flow should common objections be addressed to prevent conversion drop-off?
+
+### 🗣️ **Brand Voice Application & Consistency**
+- **Voice Calibration:** How should the established brand voice from content strategy translate into specific copy across different page types and user contexts?
+- **Tone Adaptation:** How should tone shift across awareness, consideration, and decision-stage content while maintaining brand consistency?
+- **Technical Communication:** How should complex features or services be explained using the established voice while fitting wireframe space constraints?
+- **Personality Expression:** How can brand personality shine through within the concise copy requirements of wireframe layouts?
+
+### 👥 **Persona-Driven Content Customization**
+- **Language Sophistication:** How should copy complexity and terminology match the technical comfort levels of primary user personas?
+- **Pain Point Addressing:** How should specific user pain points identified in audience research be addressed within wireframe content structure?
+- **Decision Factor Integration:** How should the key decision-making factors for each persona be emphasized in conversion-critical wireframe sections?
+- **Cultural Communication:** How should messaging adapt to cultural preferences and communication styles of target audience segments?
+
+### 🔄 **User Journey Content Support**
+- **Page-to-Page Flow:** How should content create smooth transitions between pages and guide users through the conversion funnel?
+- **Progressive Information Disclosure:** How should content complexity and detail increase as users move deeper into the site experience?
+- **Entry Point Optimization:** How should content be optimized for different user entry points (organic search, social media, direct traffic, referrals)?
+- **Exit Intent Prevention:** What content elements should be strategically placed to reduce bounce rates and encourage deeper engagement?
+
+### 💡 **Content Innovation & Differentiation**
+- **Competitive Advantage Communication:** How should unique selling propositions be communicated compellingly within wireframe content blocks?
+- **Industry Authority Positioning:** How should expertise and credibility be established through content while maintaining concise wireframe requirements?
+- **Innovation Communication:** How should new or complex solutions be explained in accessible, compelling ways within layout constraints?
+- **Emotional Connection Building:** How should content create emotional resonance and connection within the structured wireframe environment?
+
+## Comprehensive Website Content Document Structure
+
+```markdown
+# Website Content: [Website/Business Name]
+
+## Content Implementation Overview
+### Strategic Foundation Summary
+### Wireframe Integration Approach
+### Conversion Optimization Priorities
+### Content Quality Assurance Standards
+
+## Content Implementation Framework
+### Website Brief Content Directives
+- Primary business objectives driving content creation
+- Value proposition communication requirements and priority placement
+- Target conversion actions and measurement priorities
+- Competitive positioning reflected in messaging and tone
+
+### Audience Research Content Applications
+- Primary persona language preferences and communication styles
+- Secondary persona adaptations and inclusive messaging approach
+- User pain point addressing and solution communication
+- Decision-making factor emphasis and conversion support
+
+### Wireframe Content Specifications
+- Exact content block requirements and layout constraints
+- Character limits and responsive content adaptation needs
+- Interactive element copy and microcopy specifications
+- Content hierarchy alignment with visual design priorities
+
+### Content Strategy Implementation
+- Brand voice consistency across all content elements
+- Tone adaptation for different page types and user journey stages
+- Content creation standards and quality assurance requirements
+- SEO integration balanced with conversion optimization
+
+### Copywriting Best Practices Integration
+- Proven headline formulas adapted to specific business context
+- Persuasion technique implementation within wireframe constraints
+- CTA optimization and action-driving copy principles
+- Conversion rate optimization through strategic content placement
+
+## Homepage Content
+
+### Hero Section
+#### Primary Headline
+**Content:** [Compelling headline that communicates primary value proposition using proven formula]
+**Character Limit:** [X characters based on wireframe]
+**Voice Application:** [How brand voice is expressed]
+**Conversion Focus:** [Primary user action this headline should drive]
+
+#### Secondary Headline/Subheadline
+**Content:** [Supporting headline that elaborates on value or addresses primary user pain point]
+**Character Limit:** [X characters]
+**Persuasion Technique:** [Specific technique applied]
+**User Journey Support:** [How this supports user progression]
+
+#### Hero Body Copy
+**Content:** [Concise, compelling body text that expands on value proposition and guides toward primary CTA]
+**Character Limit:** [X characters]
+**Persona Targeting:** [Specific persona language and pain point addressing]
+**Social Proof Integration:** [How credibility is established]
+
+#### Primary Call-to-Action
+**Button Text:** [Action-driving CTA copy optimized for conversion]
+**Supporting Microcopy:** [Any additional guidance or reassurance text]
+**Conversion Goal:** [Specific action and measurement criteria]
+**Urgency/Scarcity Application:** [If applicable, how these techniques are used]
+
+#### Secondary Call-to-Action
+**Button Text:** [Alternative action for users not ready for primary conversion]
+**Strategic Purpose:** [How this supports overall conversion funnel]
+**User Journey Stage:** [Which stage users this targets]
+
+### Value Proposition Section
+#### Section Headline
+**Content:** [Clear, benefit-focused headline that introduces value propositions]
+**Copywriting Technique:** [Specific approach used]
+**User Focus:** [How this addresses user needs]
+
+#### Value Proposition 1
+**Headline:** [Benefit-focused headline]
+**Body Copy:** [Supporting explanation with proof points]
+**Icon/Visual Support:** [How written content works with visual elements]
+**Persona Relevance:** [Which personas this primarily targets]
+
+#### Value Proposition 2
+**Headline:** [Second key benefit]
+**Body Copy:** [Compelling explanation with differentiation]
+**Competitive Advantage:** [How this positions against competitors]
+**Technical Communication:** [How complexity is made accessible]
+
+#### Value Proposition 3
+**Headline:** [Third essential benefit]
+**Body Copy:** [Persuasive copy with outcome focus]
+**Emotional Appeal:** [How this creates emotional connection]
+**Credibility Building:** [How trust is established]
+
+### Social Proof Section
+#### Section Headline
+**Content:** [Trust-building headline that introduces social proof]
+**Persuasion Focus:** [Authority, popularity, or similarity emphasis]
+
+#### Customer Testimonials
+**Testimonial 1:** [Specific, results-focused customer quote]
+**Attribution:** [Customer name, company, relevant credentials]
+**Relevance:** [How this addresses primary user concerns]
+
+**Testimonial 2:** [Different angle or user type testimonial]
+**Attribution:** [Diverse customer representation]
+**Pain Point Focus:** [Specific challenge this testimonial addresses]
+
+#### Statistics/Numbers
+**Key Metric 1:** [Impressive, relevant number with context]
+**Key Metric 2:** [Supporting statistic that builds credibility]
+**Presentation:** [How numbers are communicated compellingly]
+
+### Navigation Content
+#### Primary Navigation Menu Items
+**Item 1:** [Clear, user-focused navigation label]
+**Item 2:** [Action-oriented or benefit-focused label]
+**Item 3:** [User journey-supporting navigation option]
+**Item 4:** [Conversion-focused navigation element]
+
+#### Secondary Navigation Elements
+**Support Links:** [Help, FAQ, Contact optimization]
+**Legal Links:** [Privacy, Terms, etc. - user-friendly labeling]
+**Utility Navigation:** [Account, Search, etc. - clear functionality description]
+
+## Product/Service Pages Content
+
+### [Product/Service Name] Landing Page
+#### Page Headline
+**Content:** [Conversion-optimized headline specific to this offering]
+**SEO Integration:** [How keyword targeting is naturally incorporated]
+**User Intent Matching:** [How this matches search/referral intent]
+
+#### Problem/Solution Framework
+**Problem Statement:** [Clear articulation of user pain point this solves]
+**Solution Introduction:** [How your offering specifically addresses the problem]
+**Unique Approach:** [What makes your solution different/better]
+
+#### Feature-Benefit Translation
+**Feature 1:** [Technical capability]
+**Benefit:** [User outcome and value]
+**Proof Point:** [How this is validated or demonstrated]
+
+**Feature 2:** [Second key capability]
+**Benefit:** [Specific user advantage]
+**Use Case:** [Real-world application example]
+
+**Feature 3:** [Third important feature]
+**Benefit:** [Compelling user outcome]
+**Differentiation:** [Competitive advantage communication]
+
+#### Conversion Section
+**Conversion Headline:** [Action-focused headline driving toward CTA]
+**Supporting Copy:** [Risk mitigation and value reinforcement]
+**Primary CTA:** [Optimized button copy for this specific page]
+**Secondary Option:** [Alternative action for hesitant users]
+
+## About/Company Pages Content
+
+### About Us Page
+#### Company Story Headline
+**Content:** [Engaging headline that introduces company narrative]
+**Brand Personality:** [How voice and personality are expressed]
+
+#### Mission/Vision Statement
+**Mission:** [Clear, user-benefit focused mission statement]
+**Vision:** [Inspiring future-state that users want to be part of]
+**Values Connection:** [How company values benefit users]
+
+#### Team Introduction
+**Team Headline:** [People-focused headline that builds trust]
+**Key Team Member Descriptions:** [Credibility-building, personality-showing bios]
+**Expertise Communication:** [How team qualifications benefit users]
+
+#### Company Credibility
+**Awards/Recognition:** [Third-party validation and credibility building]
+**Experience/History:** [Trust-building company background]
+**Customer Success:** [How company track record benefits potential users]
+
+## Contact/Support Pages Content
+
+### Contact Page
+#### Page Headline
+**Content:** [Welcoming, action-encouraging headline]
+**Support Focus:** [How this positions company as helpful and accessible]
+
+#### Contact Method Presentation
+**Phone:** [Encouraging copy around phone support]
+**Email:** [Professional, responsive communication emphasis]
+**Form:** [User-friendly form instructions and expectations]
+**Live Chat:** [Immediate help positioning]
+
+#### Response Expectations
+**Timeline Communication:** [Clear expectations for response times]
+**Quality Assurance:** [How users can expect to be treated]
+**Next Steps:** [What happens after user reaches out]
+
+### FAQ Page
+#### FAQ Headline
+**Content:** [User-focused headline that positions FAQ as helpful resource]
+**Search Optimization:** [How to make FAQ discoverable and useful]
+
+#### Question Categories
+**Getting Started Questions:** [Onboarding and initial user concerns]
+**Technical Questions:** [Feature and functionality clarifications]
+**Billing/Pricing Questions:** [Financial concerns and objection handling]
+**Support Questions:** [Help and troubleshooting guidance]
+
+#### Individual FAQ Entries
+**Question:** [User-language question formulation]
+**Answer:** [Clear, helpful response with next-step guidance]
+**Related Resources:** [Links to additional helpful content]
+
+## Form Content & Microcopy
+
+### Contact Forms
+#### Form Headlines
+**Contact Form:** [Encouraging headline that reduces form anxiety]
+**Newsletter Signup:** [Value-focused headline explaining benefit of subscription]
+**Demo Request:** [Excitement-building headline for trial/demo requests]
+
+#### Field Labels
+**Name Field:** [Clear, friendly label]
+**Email Field:** [Professional, privacy-conscious labeling]
+**Message Field:** [Encouraging prompt for user input]
+**Optional Fields:** [Clear indication of required vs. optional information]
+
+#### Form Microcopy
+**Privacy Assurance:** [Trust-building privacy and data use communication]
+**Submission Confirmation:** [What happens after form submission]
+**Error Messages:** [Helpful, blame-free error guidance]
+**Success Messages:** [Celebratory, next-step guiding confirmation]
+
+## User Interface Microcopy
+
+### Button Copy Optimization
+#### Primary Action Buttons
+**Purchase/Buy:** [Action-oriented, benefit-focused button copy]
+**Sign Up/Register:** [Value-emphasizing registration encouragement]
+**Contact/Get Started:** [Low-pressure, helpful engagement copy]
+**Download/Access:** [Clear value communication for content access]
+
+#### Secondary Action Buttons
+**Learn More:** [Curiosity-driving, non-committal exploration]
+**View Details:** [Information-seeking user support]
+**Compare Options:** [Decision-making support and guidance]
+**Save/Bookmark:** [Future engagement facilitation]
+
+### Navigation Microcopy
+#### Breadcrumb Navigation
+**Home Link:** [Clear site navigation starting point]
+**Category Pages:** [User-friendly category descriptions]
+**Current Page:** [Clear location indication]
+
+#### Search Functionality
+**Search Placeholder:** [Helpful search guidance and examples]
+**No Results Message:** [Encouraging, alternative-suggesting copy for failed searches]
+**Search Suggestions:** [Helpful query refinement guidance]
+
+### Loading and Process Communication
+#### Loading States
+**Page Loading:** [Reassuring progress communication]
+**Form Processing:** [Patient, confident submission processing]
+**Content Loading:** [Engaging waiting experience copy]
+
+#### Progress Indicators
+**Multi-Step Processes:** [Clear step communication and progress encouragement]
+**Completion Confirmation:** [Achievement recognition and next-step guidance]
+**Save States:** [Reassuring auto-save and manual save confirmation]
+
+## Error Messages and User Guidance
+
+### Form Validation Messages
+#### Required Field Errors
+**Missing Information:** [Helpful, specific guidance for completing fields]
+**Format Errors:** [Clear explanation and correction guidance]
+**Invalid Entries:** [Constructive feedback and proper format examples]
+
+#### System Error Messages
+**Technical Errors:** [Blame-free, solution-focused error communication]
+**Temporary Issues:** [Reassuring, try-again encouragement]
+**Maintenance Messages:** [Advance notice and expectation setting]
+
+### 404 and Error Page Content
+#### 404 Page Headline
+**Content:** [Friendly, non-technical error explanation]
+**Brand Personality:** [How to maintain brand voice even in error states]
+
+#### 404 Page Body Copy
+**Problem Explanation:** [Simple, user-friendly error description]
+**Solution Options:** [Helpful alternatives and navigation assistance]
+**Site Search:** [Easy way to find intended content]
+**Popular Pages:** [Most likely intended destinations]
+
+## SEO Content Integration
+
+### Meta Descriptions
+#### Homepage Meta Description
+**Content:** [Conversion-focused description within character limits]
+**Keyword Integration:** [Natural primary keyword inclusion]
+**CTA Integration:** [Action encouragement within meta description]
+
+#### Product/Service Page Meta Descriptions
+**Page-Specific Value:** [Unique value proposition for each page]
+**Long-Tail Keywords:** [Specific search intent matching]
+**Local SEO:** [Geographic targeting if applicable]
+
+### Header Tag Optimization
+#### H1 Headlines
+**SEO + Conversion Balance:** [Keyword optimization without sacrificing conversion focus]
+**User Intent Matching:** [Search query alignment with user goals]
+
+#### H2-H6 Structure
+**Content Hierarchy:** [Logical information organization]
+**Keyword Distribution:** [Natural secondary keyword integration]
+**Scannable Content:** [User-friendly content organization]
+
+## Content Performance Optimization
+
+### A/B Testing Content Variations
+#### Homepage Hero Variations
+**Headline A:** [Current/control headline]
+**Headline B:** [Alternative approach for testing]
+**Testing Hypothesis:** [What improvement is expected and why]
+
+#### CTA Button Variations
+**Version A:** [Current button copy]
+**Version B:** [Alternative copy approach]
+**Success Metric:** [How improvement will be measured]
+
+### Conversion Rate Optimization
+#### High-Impact Content Elements
+**Primary Headlines:** [Most conversion-critical headlines identified]
+**CTA Copy:** [Action-driving buttons prioritized for optimization]
+**Value Propositions:** [Key selling points for refinement]
+
+#### User Feedback Integration
+**Common User Questions:** [Content gaps identified through user interaction]
+**Support Ticket Insights:** [Content improvements based on user confusion]
+**Survey Feedback:** [User-suggested content improvements]
+
+## Implementation Guidelines
+
+### Content Management Integration
+#### CMS Implementation
+**Content Block Organization:** [How content fits into CMS structure]
+**Version Control:** [Content update and approval workflow]
+**SEO Integration:** [Technical SEO requirements for content implementation]
+
+#### Responsive Content Delivery
+**Mobile Optimization:** [Content adaptation for mobile wireframes]
+**Tablet Experience:** [Medium-screen content presentation]
+**Desktop Enhancement:** [Full-screen content utilization]
+
+### Quality Assurance Checklist
+#### Brand Consistency Validation
+- [ ] All content matches established brand voice and tone
+- [ ] Personality expression is consistent across all pages
+- [ ] Technical terminology usage aligns with audience sophistication
+- [ ] Cultural sensitivity and inclusive language standards met
+
+#### Conversion Optimization Validation
+- [ ] Primary conversion goals clearly supported by content
+- [ ] Secondary conversion opportunities strategically placed
+- [ ] Objection handling integrated at key decision points
+- [ ] Social proof and credibility building appropriately emphasized
+
+#### Technical Implementation Validation
+- [ ] Content fits within wireframe character and space constraints
+- [ ] SEO requirements met without compromising conversion focus
+- [ ] Accessibility standards addressed in content presentation
+- [ ] Cross-device content experience optimized
+
+#### User Experience Validation
+- [ ] Content supports smooth user journey progression
+- [ ] Information hierarchy matches wireframe visual priorities
+- [ ] Scan-ability and readability optimized for target audience
+- [ ] Content reduces rather than increases cognitive load
+
+## Next Steps for Implementation
+
+### Content Integration Process
+1. **Design Integration:** Work with designers to implement content within visual layouts
+2. **Development Coordination:** Collaborate with developers on technical content implementation
+3. **SEO Technical Setup:** Ensure proper meta tags, schema markup, and technical SEO elements
+4. **Analytics Implementation:** Set up conversion tracking for content performance measurement
+
+### Launch Preparation
+1. **Content Review:** Final stakeholder approval and brand compliance check
+2. **User Testing:** Content validation with target audience segments
+3. **Performance Baseline:** Pre-launch metrics establishment for improvement measurement
+4. **Optimization Planning:** Post-launch A/B testing and improvement roadmap
+
+### Ongoing Content Management
+1. **Performance Monitoring:** Regular analysis of content effectiveness and conversion impact
+2. **User Feedback Integration:** Continuous improvement based on user interaction and feedback
+3. **Content Updates:** Regular refreshing and optimization based on performance data
+4. **Expansion Planning:** Content strategy evolution based on business growth and user needs
+```
+
+## Quality Assurance Framework
+
+### Strategic Integration Validation
+- [ ] Content directly supports conversion goals and business objectives from website brief
+- [ ] All copy aligns with brand voice and personality established in content strategy
+- [ ] Content addresses user pain points and communication preferences from audience research
+- [ ] Copy fits precisely within wireframe layout constraints and character limits
+- [ ] Content hierarchy matches wireframe visual priorities and user flow design
+- [ ] Copywriting best practices are effectively applied to target audience context
+
+### Conversion Optimization Validation
+- [ ] Headlines use proven formulas adapted to specific business context and audience
+- [ ] CTAs are action-oriented and optimized for maximum click-through rates
+- [ ] Value propositions are clearly communicated and strategically placed
+- [ ] Social proof and credibility elements are integrated at key decision points
+- [ ] Objection handling is preemptively addressed throughout user journey
+- [ ] Persuasion techniques are ethically applied and appropriate for audience
+
+### User Experience Content Validation
+- [ ] Reading level and technical complexity match audience sophistication
+- [ ] Content supports smooth progression through conversion funnel
+- [ ] Information disclosure is progressive and reduces cognitive load
+- [ ] Accessibility standards are met through inclusive language and clear communication
+- [ ] Content works effectively across all device breakpoints in wireframes
+- [ ] Microcopy and interface elements enhance rather than hinder user interaction
+
+### Implementation Readiness Checks
+- [ ] All content blocks specified in wireframes have corresponding copy
+- [ ] Character limits and layout constraints are respected
+- [ ] SEO requirements are naturally integrated without compromising conversion focus
+- [ ] Content management and update processes are clearly defined
+- [ ] A/B testing framework is established for ongoing optimization
+- [ ] Performance measurement criteria are tied to business objectives
+
+## Best Practices for High-Converting Content Creation
+
+1. **Wireframe Integration First:** Always begin with exact layout constraints and content block specifications from wireframes
+2. **Conversion Goal Clarity:** Every content element should have a clear purpose in supporting user conversion actions
+3. **Brand Voice Consistency:** Maintain established voice while adapting tone for different user journey stages
+4. **User-Centered Language:** Use language that matches audience sophistication and addresses their specific pain points
+5. **Proven Technique Application:** Apply copywriting best practices while testing and optimizing for specific context
+6. **Cross-Device Optimization:** Ensure content works effectively across all wireframe device breakpoints
+7. **Performance Measurement:** Establish clear metrics for content effectiveness tied to business objectives
+8. **Continuous Improvement:** Plan for ongoing testing, optimization, and refinement based on user behavior and feedback
+
+## Integration with Previous Documents
+
+The Website Content should directly implement insights from all previous documentation:
+
+### From Website Brief: Translate business objectives into compelling copy that drives specific conversion actions
+### From Audience Research: Apply user language preferences, pain points, and decision factors to all content creation
+### From Sitemaps: Ensure content supports site structure and navigation flow established in architecture
+### From Wireframes: Fit content precisely within layout constraints while maximizing conversion potential
+### From UX Design: Align written content with visual brand personality and user experience priorities
+### From Content Strategy: Implement established voice, tone, and messaging framework consistently
+### From Research Docs: Apply proven copywriting principles, headline formulas, and persuasion techniques
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `website-content.md`
+- **Content Type:** Complete, implementation-ready website copy
+- **Audience:** Designers, developers, and content managers ready to implement
+- **Dependencies:** All previous strategic documents plus copywriting research materials
+- **Deliverable:** Actual website content that can be directly implemented into wireframes and development
+
+## Final Instructions
+
+1. **DO NOT** generate content immediately upon receiving this request
+2. **DO** thoroughly review ALL preceding documents in the `/docs` folder, especially wireframes for exact specifications
+3. **DO** analyze copywriting research documents for technique application
+4. **DO** identify specific content requirements, character limits, and layout constraints from wireframes
+5. **DO** ask targeted questions about implementation details not covered in previous documentation
+6. **DO** create actual, ready-to-implement website copy rather than content strategy or guidelines
+7. **DO** ensure every content element serves conversion optimization while fitting wireframe constraints
+8. **DO** maintain brand voice consistency while adapting content for maximum user engagement and conversion
+9. **DO** integrate SEO requirements naturally without compromising conversion effectiveness
+10. **DO** provide content variations for A/B testing key elements like headlines and CTAs
+11. **DO** include all microcopy, error messages, and user interface content needed for complete implementation
+
+12. **DO** validate content against wireframe specifications and strategic objectives before finalization

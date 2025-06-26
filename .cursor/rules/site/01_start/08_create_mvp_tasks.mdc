@@ -1,0 +1,105 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: |
+  Generate a comprehensive, prioritized master task list to kick off and build the MVP application, based on the foundational documentation created in the `/docs` directory. This task list will guide developers step-by-step through implementing the MVP, ensuring alignment with all prior documentation such as product brief, market analysis, user personas, architecture, and more.
+globs:
+  - /docs/*.md
+alwaysApply: false
+---
+
+# Rule: Generating a Master MVP Task List from Foundational Docs
+
+## Goal
+
+To produce a detailed, prioritized master task list in Markdown format that guides the implementation of the MVP application. The task list should:
+
+- Reference the entire corpus of foundational documentation generated in `/docs`
+- Cover design, development, infrastructure, testing, and deployment tasks needed to build the MVP
+- Reflect dependencies and priorities informed by the product brief, architecture, and UX documentation
+- Be suitable for guiding junior developers through MVP delivery
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/tasks/`
+- **Filename:** `tasks-create-mvp.md`
+
+## Process
+
+1. **Gather Foundational Docs:**  
+   Collect and analyze the core docs from `/docs` including but not limited to:  
+   - Website Brief  
+   - Audience Research
+   - Sitemaps  
+   - Wirefames 
+   - UX Design Docs    
+   - Content Strategy  
+   - All Website Copy 
+
+2. **Extract Implementation Requirements:**  
+   Identify all key functional areas, features, technical requirements, and constraints implied by these docs.
+
+3. **Prioritize Tasks:**  
+   Order tasks to build a viable MVP aligned with product goals and technical feasibility.
+
+4. **Generate High-Level Parent Tasks:**  
+   Create about 5-7 parent tasks covering major MVP areas, such as:  
+   - Setup & Configuration  
+   - Core Feature Development  
+   - UX & UI Implementation  
+   - Testing & QA Setup  
+   - Security & Compliance  
+   - Performance Optimization  
+   - Deployment & Monitoring
+
+5. **Wait for User Confirmation:**  
+   Present the parent tasks for review and pause for user confirmation ("Go").
+
+6. **Generate Sub-Tasks:**  
+   Upon confirmation, break down each parent task into detailed, actionable sub-tasks.  
+   Include references to relevant docs for context.
+
+7. **Identify Relevant Files:**  
+   List anticipated files to create or modify for MVP development, including code, config, tests, and docs.
+
+8. **Combine into Final Output:**  
+   Produce a structured Markdown file including:  
+   - Relevant Files section  
+   - Notes on referencing foundational docs  
+   - Complete Tasks section with parent and sub-tasks
+
+## Relevant Files
+
+- `path/to/file1` - Purpose of the file
+- `path/to/file1.test` - Tests for file1
+...
+
+### Notes
+
+- This master task list references foundational documentation in `/docs/` to maintain alignment with product goals, architecture, and UX.
+- Prioritize tasks according to MVP scope defined in the MVP Growth & Iteration Plan.
+- Testing and security are integral from the start.
+
+## Tasks
+
+- [ ] 1.0 Setup & Configuration
+  - [ ] 1.1 [Sub-task 1]
+  - [ ] 1.2 [Sub-task 2]
+- [ ] 2.0 Core Feature Development
+  - [ ] 2.1 [Sub-task 1]
+  - ...
+
+## Interaction Model
+- Pause after presenting parent tasks and request "Go" from the user before generating detailed sub-tasks.
+- Keep the user informed of progress and context by referencing foundational docs as needed.
+- Maintain clarity and granularity suitable for junior developers.
+
+## Target Audience
+Junior developers tasked with delivering the MVP, with full context from product and technical documentation.
+
+
+

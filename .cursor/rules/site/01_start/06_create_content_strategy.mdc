@@ -1,0 +1,428 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Creating Comprehensive Content Strategy Document
+
+## Goal
+
+To guide an AI assistant in creating a detailed, strategic Content Strategy document in Markdown format that builds upon all previously completed website documentation and incorporates proven copywriting best practices. The Content Strategy should establish the framework for creating, organizing, delivering, and maintaining all content across the website ecosystem that directly supports user journeys, conversion goals, and brand positioning identified in earlier strategic phases.
+
+This document will serve as the definitive content creation and management guide for copywriters, content creators, designers, and developers, ensuring that every piece of content—from headlines and microcopy to error messages and help documentation—is strategically aligned with user needs, business objectives, and conversion optimization principles.
+
+## Process
+
+1. **Analyze Sequential Documentation:** Thoroughly review all preceding documents in the `/docs` folder in order:
+   - `website-brief.md` - Business objectives, brand positioning, value propositions, and success metrics
+   - `audience-research.md` - User personas, language preferences, content consumption patterns, and communication needs
+   - `sitemaps-document.md` - Site structure, content organization, and navigation content requirements
+   - `wireframes-document.md` - Content hierarchy, layout constraints, and interface copy placement
+   - `ux-design-considerations.md` - Brand voice foundations, design-content integration, and user experience content requirements
+
+2. **Integrate Copywriting Best Practices:** Review and incorporate insights from `/research_docs/`:
+   - `copy_101.md` - Fundamental copywriting principles and techniques
+   - `copy_best_practices.md` - Advanced copywriting strategies and optimization methods  
+   - `copy_headlines.md` - Headline writing best practices and conversion optimization
+
+3. **Cross-Reference Content Implications:** Identify content strategy requirements from previous findings:
+   - Conversion goals and persuasion points from business objectives
+   - Voice and tone preferences based on audience psychographics and communication styles
+   - Content hierarchy needs derived from site structure and user flow priorities
+   - Design-content integration requirements from UX considerations
+
+4. **Conduct Targeted Content Discovery:** Using enhanced questions to fill content-specific gaps not addressed in previous documentation
+
+5. **Validate Content Strategy Integration:** Ensure content recommendations directly support:
+   - Conversion paths and business objectives from the website brief
+   - User information needs and communication preferences from audience research
+   - Content organization and hierarchy from sitemaps and wireframes
+   - Brand expression and user experience goals from design considerations
+
+6. **Generate Integrated Content Framework:** Create comprehensive content strategy that references and builds upon complete website strategy
+
+7. **Quality Assurance Review:** Verify content strategy enhances and aligns with all previous strategic decisions
+
+8. **Save Document:** Save as `content-strategy.md` in the `/docs` directory
+
+## Enhanced Content Discovery Questions
+
+### 🎯 **Strategic Content Objectives & Integration**
+- **Business Goal Alignment:** Based on the website brief's primary objectives, what specific role should content play in achieving conversion and engagement goals?
+- **Value Proposition Communication:** How should content communicate the unique value propositions identified in the website brief across different user touchpoints?
+- **Audience-Driven Content Approach:** Given the persona communication preferences from audience research, what content styles and formats will be most effective?
+- **Competitive Content Differentiation:** How can content strategy support the competitive positioning and differentiation outlined in the website brief?
+
+### 🗣️ **Voice, Tone & Brand Expression Development**
+- **Brand Personality Translation:** How should the brand personality established in UX design considerations translate into specific voice and tone guidelines for copywriting?
+- **Audience-Appropriate Communication:** Based on audience research demographics and psychographics, what communication style will build trust and engagement?
+- **Contextual Tone Adaptation:** How should tone adapt across different user journey stages (awareness, consideration, decision, post-conversion)?
+- **Technical Communication Balance:** Given user technical sophistication levels from audience research, how should complex concepts be explained?
+
+### 📝 **Copywriting Excellence Integration**
+- **Best Practices Application:** How should proven copywriting principles from research docs be applied to this specific audience and business context?
+- **Headline Strategy Implementation:** What headline approaches from research docs will be most effective for the identified user personas and conversion goals?
+- **Persuasion Technique Selection:** Which copywriting persuasion methods align best with the audience decision-making processes identified in user research?
+- **Copy Optimization Framework:** How should A/B testing and copy optimization principles be integrated into the ongoing content strategy?
+
+### 🏗️ **Content Architecture & User Journey Support**
+- **Site Structure Content Needs:** Based on the sitemap, what specific content types and messaging are needed for each major site section?
+- **User Flow Content Support:** How should content guide users through the key conversion paths identified in wireframes and user flows?
+- **Progressive Information Disclosure:** How should content complexity increase as users move deeper into the site or product experience?
+- **Content Relationship Strategy:** How should different content pieces reference and support each other to create cohesive user journeys?
+
+### 🎨 **Design-Content Integration**
+- **Wireframe Content Implementation:** How should content fit within the layout constraints and hierarchy established in wireframes?
+- **Visual-Content Harmony:** How should written content work with visual design elements to create cohesive user experiences?
+- **Responsive Content Strategy:** How should content adapt across different devices and screen sizes identified in audience device usage patterns?
+- **Interactive Content Elements:** What content features (CTAs, forms, interactive elements) need special attention based on conversion goals?
+
+### 📊 **Performance & Conversion Optimization**
+- **Conversion-Focused Copy:** How should copywriting best practices be applied to optimize for the specific conversion goals in the website brief?
+- **Content Testing Strategy:** What content elements should be prioritized for A/B testing based on their impact on key user journeys?
+- **Analytics-Informed Content:** How should content performance be measured and optimized based on the success metrics established in previous documents?
+- **SEO Integration:** How should content strategy balance conversion optimization with search visibility for the target audience?
+
+## Comprehensive Content Strategy Document Structure
+
+```markdown
+# Content Strategy: [Website/Business Name]
+
+## Executive Summary
+### Content Mission & Strategic Role
+### Key Content Principles and Approach
+### Integration with Overall Website Strategy
+### Implementation Priorities and Success Metrics
+
+## Strategic Foundation Analysis
+### Website Brief Content Implications
+- Business objectives driving content priorities
+- Value proposition communication requirements
+- Competitive positioning content opportunities
+- Success metrics that content must support
+
+### Audience Research Content Insights  
+- Persona-specific communication preferences and needs
+- Content consumption patterns and preferred formats
+- Language sophistication and technical terminology comfort
+- Decision-making information requirements
+- Cultural and demographic communication considerations
+
+### Site Architecture Content Requirements
+- Content needs derived from sitemap structure
+- Navigation content and wayfinding support
+- Content hierarchy supporting user flow priorities
+- Cross-page content relationships and internal linking strategy
+
+### UX Design Content Integration
+- Brand voice alignment with visual design personality
+- Content-design collaboration requirements
+- Responsive content presentation needs
+- Interactive element copy and microcopy specifications
+
+### Copywriting Best Practices Integration
+- Fundamental copywriting principles application
+- Advanced persuasion techniques for target audience
+- Headline optimization strategies for key pages
+- Conversion copy optimization methodologies
+
+## Brand Voice & Communication Framework
+### Brand Voice Definition & Personality
+- Core voice attributes aligned with brand personality from design considerations
+- Voice personality matrix positioning (authoritative ↔ approachable, formal ↔ conversational)
+- Audience-appropriate voice calibration based on persona preferences
+- Competitive voice differentiation strategy
+
+### Contextual Tone Guidelines
+#### User Journey Stage Tone Adaptation
+- **Awareness Stage:** Educational, helpful, non-pressuring tone
+- **Consideration Stage:** Informative, trustworthy, comparison-friendly tone  
+- **Decision Stage:** Confident, reassuring, action-oriented tone
+- **Post-Conversion:** Celebratory, supportive, guidance-focused tone
+
+#### Content Type Tone Specifications
+- **Headlines & CTAs:** Compelling, benefit-focused, action-driving tone
+- **Body Copy:** Informative, engaging, user-benefit oriented tone
+- **Error Messages:** Helpful, blame-free, solution-focused tone
+- **Success Messages:** Positive, achievement-recognizing, next-step guiding tone
+
+### Style Guide & Writing Standards
+- Grammar, punctuation, and formatting conventions
+- Vocabulary guidelines and technical terminology usage
+- Inclusive language standards and accessibility requirements
+- Reading level targets based on audience analysis
+- SEO writing integration without compromising user experience
+
+## Content Architecture & Information Strategy
+### Content Type Classification & Hierarchy
+#### Primary Content Categories
+- **Conversion-Critical Content:** Headlines, CTAs, value propositions, landing page copy
+- **Navigation & Wayfinding:** Menu labels, page titles, breadcrumbs, internal linking
+- **Educational Content:** Feature explanations, how-to guides, FAQ responses
+- **Trust-Building Content:** Testimonials, case studies, social proof, credentials
+- **Support Content:** Help documentation, troubleshooting, contact information
+
+#### Content Priority Framework
+- **Primary Content:** Direct conversion impact, user decision support
+- **Secondary Content:** User experience enhancement, engagement support
+- **Tertiary Content:** Nice-to-have information, extended value provision
+
+### Content Organization & Taxonomy
+- Content categorization system aligned with sitemap structure
+- Tagging and metadata strategy for content management
+- Content relationship mapping and cross-referencing system
+- Search and findability optimization within site architecture
+
+## User Journey Content Strategy
+### Awareness Stage Content Framework
+- **Search-Optimized Content:** Blog posts, guides, resources addressing user pain points
+- **Social Media Content:** Shareable insights, tips, industry expertise demonstration
+- **First-Touch Messaging:** Homepage headlines, initial value proposition communication
+- **Educational Content:** Problem identification and solution awareness building
+
+### Consideration Stage Content Support
+- **Feature Comparison Content:** Detailed capability explanations and benefit communication
+- **Trust Signal Content:** Customer testimonials, case studies, social proof integration
+- **FAQ & Objection Handling:** Common concern addressing and reassurance providing
+- **Demo & Trial Content:** Product experience facilitation and value demonstration
+
+### Decision Stage Conversion Optimization
+- **Landing Page Copy:** Conversion-optimized headlines, benefits, and CTAs based on best practices
+- **Pricing Page Content:** Value justification, plan comparison, upgrade encouragement
+- **Contact & Sales Content:** Lead generation optimization, consultation booking facilitation
+- **Trust & Security Content:** Credibility building, risk mitigation, guarantee communication
+
+### Post-Conversion Engagement & Retention
+- **Onboarding Content:** Welcome messaging, setup guidance, initial success facilitation
+- **Feature Adoption Content:** Usage encouragement, advanced feature introduction
+- **Success Reinforcement:** Achievement recognition, value realization demonstration
+- **Expansion Content:** Upgrade pathways, additional service introduction
+
+## Conversion-Focused Copywriting Strategy
+### Headline Optimization Framework
+- **Value Proposition Headlines:** Clear benefit communication using proven headline formulas
+- **Curiosity-Driven Headlines:** Engagement optimization for blog and educational content
+- **Action-Oriented Headlines:** Conversion page optimization for maximum impact
+- **SEO-Optimized Headlines:** Search visibility balanced with conversion effectiveness
+
+### Call-to-Action (CTA) Strategy
+- **Primary CTA Hierarchy:** Most important conversion actions emphasized throughout site
+- **Secondary CTA Support:** Alternative actions and micro-conversions facilitated
+- **Contextual CTA Adaptation:** Button copy tailored to specific page context and user intent
+- **CTA Testing Framework:** Systematic optimization of action-driving copy
+
+### Persuasion Technique Implementation
+- **Social Proof Integration:** Testimonials, reviews, usage statistics strategically placed
+- **Scarcity & Urgency:** Ethical application of time-sensitive and limited availability messaging
+- **Authority & Credibility:** Expert positioning, credentials, and third-party validation
+- **Benefit-Focused Messaging:** Feature translation into user value and outcome focus
+
+### Objection Handling Content Strategy
+- **Pre-emptive Objection Addressing:** Common concerns resolved before they arise
+- **FAQ Strategic Placement:** Conversion-critical questions answered at decision points
+- **Risk Reversal Content:** Guarantees, trials, and low-risk trial options emphasized
+- **Comparison Content:** Competitive advantages clearly communicated
+
+## Content Accessibility & Inclusion Framework
+### Plain Language Implementation
+- **Readability Standards:** Grade-level targets based on audience analysis
+- **Sentence Structure Optimization:** Clear, concise communication principles
+- **Technical Term Management:** Jargon reduction and necessary term explanation
+- **Cognitive Load Reduction:** Information chunking and progressive disclosure
+
+### Inclusive Content Guidelines
+- **Diverse Representation:** Examples, case studies, and scenarios reflecting audience diversity
+- **Cultural Sensitivity:** Avoiding assumptions and cultural bias in messaging
+- **Ability-First Language:** Respectful terminology and inclusive communication
+- **Gender-Neutral Communication:** Inclusive pronoun usage and assumption avoidance
+
+### Accessibility Compliance
+- **WCAG Content Guidelines:** Specific compliance standards for written content
+- **Alt Text Strategy:** Image description standards supporting screen readers
+- **Content Structure Optimization:** Heading hierarchy and semantic markup support
+- **Link Text Clarity:** Descriptive anchor text for navigation assistance
+
+## SEO Content Strategy Integration
+### Keyword Strategy & Implementation
+- **Primary Keyword Targeting:** Main business terms and conversion-focused searches
+- **Long-Tail Keyword Integration:** Specific user question and problem-focused terms
+- **User Intent Matching:** Content aligned with search behavior from audience research
+- **Local SEO Content:** Geographic targeting if relevant to business model
+
+### Content SEO Best Practices
+- **Title Tag Optimization:** Search visibility balanced with conversion effectiveness
+- **Meta Description Strategy:** Click-through rate optimization with clear value communication
+- **Header Structure:** H1-H6 hierarchy supporting both SEO and user experience
+- **Internal Linking Strategy:** Content relationship building and authority distribution
+
+## Content Creation & Management Framework
+### Content Creation Workflow
+- **Content Planning Process:** Need identification, priority assessment, creation scheduling
+- **Research & Strategy Phase:** Audience insight integration, competitive analysis, keyword research
+- **Creation & Collaboration:** Writer, designer, strategist coordination and feedback integration
+- **Review & Approval Process:** Quality assurance, brand compliance, stakeholder sign-off
+
+### Quality Assurance Standards
+- **Brand Voice Compliance:** Consistency checking against established voice guidelines
+- **Copywriting Best Practice Application:** Proven technique implementation verification
+- **User Testing Integration:** Content validation with target audience segments
+- **Conversion Impact Assessment:** Performance prediction and optimization opportunity identification
+
+### Content Maintenance & Optimization
+- **Performance Monitoring:** Analytics tracking for content effectiveness measurement
+- **A/B Testing Framework:** Systematic copy optimization and improvement process
+- **Regular Content Audits:** Relevance, accuracy, and performance evaluation
+- **Update & Refresh Schedule:** Content lifecycle management and improvement planning
+
+## Technical Implementation & Integration
+### Content Management System Requirements
+- **CMS Selection Criteria:** Features supporting content strategy and workflow needs
+- **Version Control & Collaboration:** Team coordination and change management support
+- **SEO Integration:** Technical SEO feature requirements and optimization support
+- **Performance Optimization:** Content delivery and loading speed considerations
+
+### Design-Content Integration Specifications
+- **Typography & Readability:** Content presentation optimization within design system
+- **Responsive Content Behavior:** Text adaptation across devices and screen sizes
+- **Interactive Element Copy:** Microcopy, tooltips, and user interface text specifications
+- **Content-Visual Balance:** Text-image relationship optimization for engagement
+
+## Performance Measurement & Optimization
+### Content Success Metrics
+- **Conversion Rate Impact:** Direct attribution of copy changes to business goal achievement
+- **User Engagement Metrics:** Time on page, bounce rate, content consumption patterns
+- **SEO Performance:** Search ranking improvements, organic traffic growth, keyword performance
+- **User Satisfaction Measures:** Feedback, surveys, and qualitative content assessment
+
+### Continuous Improvement Framework
+- **A/B Testing Strategy:** Priority content elements for systematic optimization
+- **User Feedback Integration:** Survey insights, support ticket analysis, user interview findings
+- **Analytics-Driven Optimization:** Data-informed content improvement and iteration
+- **Competitive Content Analysis:** Ongoing market research and differentiation maintenance
+
+## Implementation Roadmap & Next Steps
+### Phase 1: Foundation Content Creation
+- Core conversion pages (homepage, landing pages, pricing)
+- Essential navigation and user interface copy
+- Basic SEO content foundation
+
+### Phase 2: User Journey Content Expansion  
+- Educational and awareness-stage content
+- Detailed feature and benefit explanations
+- Support and FAQ content development
+
+### Phase 3: Optimization & Advanced Content
+- A/B testing implementation and optimization
+- Advanced persuasion technique integration
+- Personalization and dynamic content development
+
+### Content Team Structure & Responsibilities
+### Training & Guidelines Implementation
+### Success Measurement & Reporting Framework
+```
+
+## Quality Assurance Framework
+
+### Strategic Integration Validation
+- [ ] Content strategy directly supports conversion goals from website brief
+- [ ] Voice and tone align with brand personality from UX design considerations
+- [ ] Content approach matches audience communication preferences from user research
+- [ ] Content hierarchy supports site structure and user flows from previous documents
+- [ ] Copywriting best practices are appropriately applied to target audience and business context
+- [ ] SEO strategy balances search visibility with conversion optimization
+
+### User-Centered Content Validation
+- [ ] Content complexity matches audience technical sophistication and reading levels
+- [ ] Communication style builds trust with identified personas
+- [ ] Content addresses user pain points and information needs from audience research
+- [ ] Accessibility considerations support inclusive user experience
+- [ ] Content supports decision-making processes identified in user journey analysis
+
+### Implementation Readiness Checks
+- [ ] Content creation workflow is practical and scalable
+- [ ] Quality assurance processes ensure brand and conversion consistency
+- [ ] Performance measurement framework ties to business objectives
+- [ ] Technical implementation requirements are clearly specified
+- [ ] Content management and maintenance processes are sustainable
+
+### Cross-Document Consistency Verification
+- [ ] No contradictions between content strategy and previous strategic decisions
+- [ ] Content enhances rather than conflicts with established user experience priorities
+- [ ] Brand voice supports visual design personality and user expectations
+- [ ] Content organization aligns with site architecture and navigation design
+- [ ] Conversion copy priorities support business objectives and user journey optimization
+
+## Best Practices for Integrated Content Strategy
+
+1. **Build on Previous Insights:** Explicitly reference findings from website brief, audience research, and UX considerations when making content recommendations
+2. **Apply Proven Techniques:** Integrate copywriting best practices from research docs while adapting to specific audience and business context
+3. **Support User Journeys:** Ensure content strategy directly facilitates the user flows and conversion paths established in previous documents
+4. **Maintain Strategic Consistency:** Align all content decisions with brand positioning, user needs, and business objectives identified earlier
+5. **Balance Multiple Goals:** Optimize content for conversion, SEO, user experience, and accessibility simultaneously
+6. **Plan for Scalability:** Create content systems and processes that can grow with business needs and user feedback
+7. **Measure and Iterate:** Establish clear performance metrics and optimization processes tied to overall website success
+
+## Integration with Previous Documents
+
+The Content Strategy should explicitly reference and build upon previous documentation by:
+
+### From Website Brief (`website-brief.md`):
+- Translating business objectives into specific content goals and success metrics
+- Supporting value proposition communication through strategic messaging hierarchy
+- Addressing competitive positioning through differentiated voice and content approach
+- Aligning content priorities with primary business goals and target market needs
+
+### From Audience Research (`audience-research.md`):
+- Adapting voice, tone, and style to persona communication preferences and sophistication levels
+- Addressing specific user information needs and decision-making processes through content
+- Incorporating cultural, demographic, and psychographic insights into communication approach
+- Optimizing content consumption formats based on audience behavioral preferences
+
+### From Sitemaps Document (`sitemaps-document.md`):
+- Creating content hierarchy and organization that supports established site structure
+- Developing navigation content and wayfinding support for optimal user flow
+- Planning content relationships and internal linking strategy based on site architecture
+- Ensuring content supports conversion paths and priority page emphasis
+
+### From Wireframes Document (`wireframes-document.md`):
+- Fitting content within established layout constraints and design hierarchy
+- Creating microcopy and interface content that enhances user interaction patterns
+- Developing content that supports the user interface design and interaction flow
+- Balancing content density with usability and visual design requirements
+
+### From UX Design Considerations (`ux-design-considerations.md`):
+- Aligning written brand voice with visual brand personality and design expression
+- Creating content that works harmoniously with visual design elements and user experience
+- Supporting accessibility and inclusion goals through content writing and presentation
+- Ensuring content enhances rather than conflicts with established user experience priorities
+
+### From Research Docs (`/research_docs/`):
+- Applying fundamental copywriting principles from `copy_101.md` to specific business context
+- Implementing advanced copywriting strategies from `copy_best_practices.md` for target audience
+- Utilizing headline optimization techniques from `copy_headlines.md` for conversion-critical pages
+- Adapting proven copywriting methods to unique user personas and business objectives
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `content-strategy.md`
+- **Length:** Comprehensive strategy document (typically 25-35 pages)
+- **Audience:** Copywriters, content creators, designers, developers, and marketing stakeholders
+- **Dependencies:** References and builds upon all previous strategic documents plus copywriting research docs
+- **Cross-References:** Include specific section references to previous documents and research materials when building upon their insights
+
+## Final Instructions
+
+1. **DO NOT** generate the Content Strategy document immediately upon receiving this request
+2. **DO** first thoroughly review ALL preceding documents in the `/docs` folder in chronological order
+3. **DO** analyze and integrate insights from ALL copywriting research documents in `/research_docs/`
+4. **DO** identify specific content strategy implications from each previous document and research resource
+5. **DO** ask targeted follow-up questions to fill content-specific gaps not addressed in previous documentation
+6. **DO** validate content approach alignment with established user journeys, business objectives, and design considerations
+7. **DO** ensure content strategy enhances rather than conflicts with all previous strategic decisions
+8. **DO** reference specific sections and insights from previous documents and research materials when making content recommendations
+9. **DO** highlight how content decisions address user needs, business objectives, and conversion goals identified in the complete website strategy
+10. **DO** focus on content-specific strategic insights while building upon rather than duplicating analysis completed in previous phases
+
+11. **DO** create actionable content guidelines that directly support the user experience priorities and business goals established throughout the strategic planning process

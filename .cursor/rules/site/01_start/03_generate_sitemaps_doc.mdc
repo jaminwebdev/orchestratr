@@ -1,0 +1,329 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Comprehensive Sitemap Generation via Strategic Interview & Document Integration
+
+## Purpose
+Guide the AI to generate conversion-optimized, user-centered website sitemaps by:
+- **Leveraging existing project documentation** from previous workflow steps
+- Conducting targeted follow-up interviews to fill gaps and clarify requirements
+- Integrating best practices and research from sitemaps_best_practices.md and related IA documentation
+- Analyzing user journeys and business objectives to inform information architecture
+- Producing a detailed, annotated sitemap with rationale, research citations, and implementation guidance
+- Ensuring SEO optimization, accessibility compliance, and mobile-first considerations
+
+## Document Integration Prerequisites
+
+### Required Previous Documents
+Before beginning sitemap generation, ensure these documents exist in the /docs directory and are accessible:
+
+**1. Website Brief (`website_brief.md`)**
+- Business objectives and success metrics
+- Target audience overview
+- Technical requirements and platform constraints
+- Budget and timeline considerations
+- Brand guidelines and design direction
+
+**2. Audience Research (`audience_research.md`)**
+- Detailed user personas with motivations and pain points
+- Market analysis and competitive insights
+- User journey mapping and behavioral patterns
+- Device usage and technical capabilities
+- Geographic and demographic insights
+
+### Document Analysis Protocol
+1. **Extract Key Information** from existing docs:
+   - Business goals and conversion objectives
+   - Primary and secondary user personas
+   - User journey stages and touchpoints
+   - Technical constraints and requirements
+   - Content strategy and organizational needs
+   - Competitive positioning and differentiation
+
+2. **Identify Information Gaps** requiring clarification:
+   - Missing technical specifications
+   - Unclear content hierarchy needs
+   - Undefined user journey details
+   - Ambiguous business priorities
+
+3. **Synthesize Integrated Brief** combining all sources
+
+## Enhanced Process Flow
+
+### Phase 1: Document Integration & Gap Analysis
+
+#### Step 1.1: Extract from Website Brief
+```
+From website_brief.md, extract:
+- Primary business objectives → Sitemap priorities
+- Target audience summary → Navigation considerations  
+- Technical requirements → Platform constraints
+- Content strategy → Information architecture needs
+- Success metrics → Conversion path planning
+- Brand guidelines → Navigation terminology
+```
+
+#### Step 1.2: Extract from Audience Research
+```
+From audience_research.md, extract:
+- User persona details → Navigation mental models
+- User journey stages → Content organization
+- Device preferences → Mobile-first considerations
+- Pain points → Navigation friction reduction
+- Behavioral patterns → Content discovery preferences
+- Geographic data → Localization requirements
+```
+
+#### Step 1.3: Synthesize Document Insights
+Create integrated analysis covering:
+- **User-Business Alignment**: How user needs align with business goals
+- **Journey-Content Mapping**: Which content serves which journey stages
+- **Technical-UX Constraints**: How platform limitations affect IA decisions
+- **Competitive Differentiation**: How sitemap can support unique positioning
+
+### Phase 2: Targeted Gap-Filling Interview
+
+**Only ask questions NOT already answered in existing documentation:**
+
+#### Content Architecture Clarification
+- Based on your content strategy, what's the optimal depth for [specific content type mentioned in brief]?
+- Your audience research shows users prefer [pattern] - how should this influence [specific navigation area]?
+- The brief mentions [specific feature] - what content hierarchy does this require?
+
+#### User Journey Refinement
+- Your personas show [insight from research] - what additional navigation paths are needed?
+- The user journey map indicates [stage] - what content organization best supports this?
+- Research shows [user behavior] - how should this influence information architecture?
+
+#### Technical Integration Details
+- Given your [platform] requirements, are there IA constraints we should consider?
+- Your integration needs include [systems] - how does this affect site structure?
+- The brief specifies [technical requirement] - what sitemap implications does this have?
+
+#### Prioritization and Scope
+- Based on your timeline of [X months], which sitemap sections are MVP vs. future phases?
+- Your budget considerations suggest [constraint] - how should this influence IA complexity?
+- The brief prioritizes [business goal] - which navigation paths are most critical?
+
+### Phase 3: Strategic Analysis & Multi-Document Synthesis
+
+#### Document Cross-Reference Analysis
+Create synthesis showing:
+
+**Business Objective → User Need → Sitemap Structure**
+```
+Example:
+Business Goal: "Increase qualified leads by 40%" (from brief)
++ User Need: "Quickly evaluate solutions" (from audience research)  
+→ Sitemap Decision: Prominent comparison pages and clear service hierarchy
+```
+
+**User Journey Stage → Content Requirement → Navigation Design**
+```
+Example:
+Journey Stage: "Consideration" (from audience research)
++ Content Need: "Case studies and testimonials" (from brief)
+→ Navigation Design: Evidence-based content in multiple discovery paths
+```
+
+#### Research Integration with Document Context
+- Reference sitemaps_best_practices.md patterns that align with documented user needs
+- Apply IA principles that specifically address identified pain points
+- Integrate SEO strategies that support documented business objectives
+- Ensure accessibility compliance matches documented requirements
+
+### Phase 4: Context-Aware Information Architecture Strategy
+
+#### Site Type Analysis (Enhanced with Document Context)
+Using business context from brief and user insights from research:
+
+**E-commerce with Documented User Behavior:**
+- Product categorization based on researched user mental models
+- Filtering options aligned with identified decision-making patterns
+- Checkout flow optimized for documented user journey stages
+
+**SaaS with Defined Personas:**
+- Feature presentation matching persona priority hierarchy
+- Onboarding paths tailored to identified user skill levels
+- Documentation structure aligned with user journey complexity
+
+**Corporate with Market Positioning:**
+- Service presentation supporting documented competitive advantages
+- Authority-building content organized by researched user trust factors
+- Lead capture optimized for identified conversion points
+
+#### User Journey Integration (Multi-Document)
+Combining journey mapping with sitemap structure:
+
+**Awareness → Consideration → Decision → Post-Conversion**
+- Map documented awareness channels to entry page strategies
+- Align consideration content with researched evaluation criteria
+- Structure decision-support content based on identified conversion factors
+- Design post-conversion experience matching documented user lifecycle
+
+### Phase 5: Document-Informed Sitemap Generation
+
+#### Enhanced Sitemap Structure with Document References
+
+**Format: Hierarchical with Cross-Document Citations**
+
+```markdown
+## Primary Navigation: [Section Name]
+
+### Document Context
+- **From Website Brief**: [Relevant business objective or requirement]
+- **From Audience Research**: [Supporting user insight or behavior pattern]
+- **Research Citation**: [Best practice reference with document alignment]
+
+### Structure
+[Hierarchical sitemap structure]
+
+### Strategic Rationale
+- **User Journey Support**: How this addresses documented user needs
+- **Business Alignment**: Connection to stated business objectives  
+- **Research Validation**: Supporting evidence from audience research
+- **Technical Feasibility**: Alignment with documented platform constraints
+- **Competitive Advantage**: How structure supports documented positioning
+
+### Implementation Notes
+- **Content Requirements**: Based on brief and research insights
+- **Technical Considerations**: Platform-specific requirements from brief
+- **SEO Strategy**: Keyword focus aligned with documented goals
+- **Accessibility**: Compliance with stated requirements
+- **Mobile Optimization**: Device preferences from audience research
+```
+
+#### Example Enhanced Section:
+```markdown
+## Primary Navigation: Solutions/Services
+
+### Document Context
+- **From Website Brief**: "Primary goal is lead generation for B2B enterprise clients with 6-month sales cycle"
+- **From Audience Research**: "IT Directors (primary persona) prefer solution-focused navigation and need technical depth for evaluation"
+- **Research Citation**: B2B service navigation patterns (sitemaps_best_practices.md) + enterprise user behavior studies
+
+### Structure
+- Solutions [Main Category]
+  - By Industry
+    - Healthcare Solutions
+    - Financial Services
+    - Manufacturing
+  - By Business Need  
+    - Cost Reduction
+    - Compliance & Security
+    - Digital Transformation
+  - By Company Size
+    - Enterprise (1000+ employees)
+    - Mid-Market (100-999 employees)
+  - Solution Comparison Tool
+  - ROI Calculator
+
+### Strategic Rationale
+- **User Journey Support**: IT Directors (from personas) need both industry-specific and need-based navigation during 6-month evaluation cycle
+- **Business Alignment**: Multiple categorization supports lead qualification and nurturing strategy from brief
+- **Research Validation**: Audience research shows users evaluate by both industry fit and business impact
+- **Technical Feasibility**: WordPress multisite structure (from brief) supports this taxonomy
+- **Competitive Advantage**: Dual categorization differentiates from competitors who only organize by industry
+
+### Implementation Notes
+- **Content Requirements**: Each solution needs industry case studies + ROI data (per brief requirements)
+- **Technical Considerations**: Dynamic filtering requires custom taxonomy (WordPress constraint from brief)
+- **SEO Strategy**: Target "industry + solution" and "business need + solution" keyword combinations
+- **Accessibility**: Ensure filtering tools work with screen readers (WCAG 2.1 AA requirement from brief)
+- **Mobile Optimization**: 67% mobile traffic (from audience research) requires simplified mobile navigation
+```
+
+### Phase 6: Quality Assurance with Document Validation
+
+#### Cross-Document Consistency Check
+- [ ] **Business Alignment**: Every major navigation decision supports documented business objectives
+- [ ] **User Validation**: Navigation patterns address identified user pain points and behaviors
+- [ ] **Technical Feasibility**: Sitemap structure works within documented platform constraints
+- [ ] **Content Strategy**: Information architecture supports documented content strategy
+- [ ] **Timeline Alignment**: Sitemap complexity matches documented timeline and budget
+- [ ] **Brand Consistency**: Navigation terminology aligns with documented brand guidelines
+
+#### Document Integration Verification
+- [ ] All insights from website brief are reflected in sitemap decisions
+- [ ] User research findings directly influence information architecture choices
+- [ ] Technical requirements are accommodated in structural decisions
+- [ ] Competitive positioning is supported through navigation strategy
+- [ ] Success metrics can be tracked through proposed site structure
+
+### Phase 7: Enhanced Deliverables with Document Traceability
+
+#### Primary Deliverable: Integrated Sitemap Document
+
+**Enhanced File Structure:**
+1. **Executive Summary with Document Integration**
+   - Key insights from website brief and audience research
+   - How sitemap addresses documented business goals and user needs
+   - Major structural decisions with multi-document rationale
+
+2. **Document Synthesis Analysis**
+   - Business objective → User need → Sitemap decision mapping
+   - User journey → Content strategy → Navigation design connections
+   - Technical constraint → IA solution → Implementation approach
+
+3. **Complete Sitemap Hierarchy** (with enhanced annotations)
+   - Cross-references to relevant brief sections
+   - User research citations for major decisions
+   - Technical requirement accommodations
+
+4. **Navigation Strategy** (contextualized)
+   - Primary navigation supporting documented conversion goals
+   - Secondary navigation addressing researched user needs
+   - Contextual navigation optimized for identified user behaviors
+
+5. **Implementation Guidelines with Document References**
+   - Technical specifications aligned with brief requirements
+   - Content requirements based on strategy documentation
+   - SEO approach supporting documented business objectives
+
+#### Document Traceability Matrix
+Create mapping showing:
+- Brief Requirement → Sitemap Decision → Implementation Approach
+- User Research Insight → Navigation Pattern → Success Metric
+- Technical Constraint → IA Accommodation → Alternative Considered
+
+### File Naming & Organization
+
+**Primary File:** `sitemap_document.md`
+**Location:** `/docs/`
+
+**Document Header Template:**
+```markdown
+# Website Sitemap & Information Architecture
+**Project:** [Project Name]
+**Date:** [Creation Date]
+**Version:** 1.0
+
+## Document Dependencies
+- **Website Brief:** `01_website_brief.md` (v1.0)
+- **Audience Research:** `02_audience_research.md` (v1.0)
+- **Reference Materials:** `sitemaps_best_practices.md`
+
+## Change Log
+- v1.0: Initial sitemap based on brief and audience research integration
+```
+
+## Enhanced Success Criteria
+
+The integrated sitemap should demonstrate:
+- **Document Coherence**: Clear connections between brief, research, and sitemap decisions
+- **User-Business Alignment**: Navigation structure that serves both documented user needs and business goals
+- **Research-Driven Decisions**: Major IA choices backed by specific insights from audience research
+- **Technical Realism**: Structure that works within documented platform and budget constraints
+- **Competitive Differentiation**: Navigation approach that supports documented positioning strategy
+- **Measurable Outcomes**: Site structure that enables tracking of documented success metrics
+
+## Implementation Best Practices
+
+1. **Always reference previous documents** before asking clarifying questions
+2. **Quote specific insights** from brief and research when justifying sitemap decisions
+3. **Show traceability** from user research findings to navigation patterns
+4. **Validate technical feasibility** against documented platform constraints
+5. **Align with content strategy** established in brief and research phases
+6. **Support measurement** of success metrics defined in earlier documentation

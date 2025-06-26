@@ -1,0 +1,285 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Creating a Comprehensive Audience Research Document
+
+## Goal
+
+To guide an AI assistant in creating a detailed, strategic Audience Research document in Markdown format that builds upon the previously completed Website Brief (`website-brief.md`). The Audience Research should provide deep insights into target audiences, user behaviors, market dynamics, and positioning opportunities specific to website strategy.
+
+This document will serve as a critical foundation for strategic decision-making across site structure, content strategy, UX design, conversion optimization, and marketing approach. It should be accessible to stakeholders at all levels - from designers and developers to marketers, business owners, and potential partners.
+
+## Process
+
+1. **Analyze Existing Documentation:** Thoroughly review the `website-brief.md` in the `/docs` folder to understand the website purpose, initial target audience assumptions, and business objectives.
+2. **Identify Knowledge Gaps:** Compare the website brief against comprehensive audience research requirements to identify missing information.
+3. **Conduct Structured Audience Discovery:** Use the enhanced question framework below to gather detailed audience intelligence.
+4. **Cross-Reference and Validate:** Ensure audience findings align with and enhance the website strategy outlined in the website brief.
+5. **Generate Comprehensive Audience Research:** Create a detailed analysis using the structure below.
+6. **Quality Assurance Review:** Ensure the research is actionable, evidence-based, and strategically sound.
+7. **Save Document:** Save the final document as `audience-research.md` in the `/docs` directory.
+
+## Enhanced Audience Discovery Questions
+
+### 👥 Primary Audience Deep Dive
+- **Demographic Profile:** What are the detailed demographics of your primary website visitors? (age, gender, income, education, location, occupation)
+- **Psychographic Profile:** What are their values, interests, lifestyle preferences, and personality traits?
+- **Digital Behavior:** How do they typically use the internet and websites? What devices do they prefer?
+- **Content Consumption:** What types of content do they engage with? How do they prefer to consume information?
+- **Decision-Making Process:** How do they research and make decisions related to your business?
+- **Pain Points & Frustrations:** What specific problems or frustrations do they experience in your industry?
+- **Goals & Motivations:** What are they trying to achieve when they might visit your website?
+- **Current Solutions:** How do they currently solve the problems your business addresses?
+
+### 🎯 Audience Segmentation & Personas
+- **Segmentation Criteria:** Beyond demographics, how can your audience be meaningfully segmented? (behavior, needs, motivations, tech-savviness)
+- **Primary vs Secondary:** Which audience segments are most valuable to your business goals?
+- **Persona Development:** Can you describe 2-3 detailed user personas with names, backgrounds, goals, and frustrations?
+- **User Journey Mapping:** How do different personas discover, research, and engage with businesses like yours?
+- **Seasonal Variations:** Do your audience needs or behaviors change seasonally or cyclically?
+- **Geographic Considerations:** Are there regional differences in your audience characteristics or preferences?
+
+### 🌐 Digital Behavior & Preferences
+- **Device Usage:** What devices do they primarily use to browse websites? (desktop, mobile, tablet usage patterns)
+- **Browser Preferences:** What browsers and versions do they typically use?
+- **Internet Usage Patterns:** When and where do they typically browse the internet?
+- **Social Media Behavior:** What social media platforms do they use? How do they engage with brands online?
+- **Search Behavior:** How do they search for information? What keywords or phrases do they use?
+- **Website Expectations:** What do they expect from websites in your industry? What features are "must-haves"?
+- **Attention Spans:** How much time do they typically spend on websites? What affects their attention?
+- **Accessibility Needs:** Do any segments have specific accessibility requirements or preferences?
+
+### 🏢 Market Context & Competitive Analysis
+- **Industry Awareness:** How familiar is your audience with your industry or business category?
+- **Brand Awareness:** Are they aware of your brand or business? How do they currently perceive it?
+- **Competitor Preferences:** What competitor websites do they visit? What do they like/dislike about them?
+- **Trust Factors:** What builds trust and credibility with your audience online?
+- **Social Proof Importance:** How important are reviews, testimonials, and social proof to your audience?
+- **Industry Trends:** What trends or changes are affecting how your audience behaves or what they expect?
+
+### 💡 Content & Information Needs
+- **Information Seeking:** What information are they looking for when they visit websites in your category?
+- **Content Preferences:** Do they prefer detailed information or quick summaries? Visual or text-based content?
+- **Educational Needs:** What do they need to learn about your industry, products, or services?
+- **Comparison Shopping:** How do they compare options? What criteria do they use?
+- **FAQ Patterns:** What questions do they commonly ask about businesses like yours?
+- **Content Formats:** What content formats resonate with them? (articles, videos, infographics, tools, etc.)
+- **Language & Tone:** What communication style and tone resonates with them?
+
+### 🛒 Purchase & Conversion Behavior
+- **Buying Process:** How do they typically make purchasing decisions in your industry?
+- **Research Habits:** How much research do they do before making a decision? Where do they research?
+- **Price Sensitivity:** How price-sensitive are they? What affects their price perceptions?
+- **Urgency Factors:** What creates urgency for them to take action?
+- **Objections & Barriers:** What prevents them from taking action or making a purchase?
+- **Preferred Contact Methods:** How do they prefer to be contacted by businesses? (email, phone, chat, forms)
+- **Decision Influencers:** Who else influences their decisions? (family, colleagues, online reviews)
+
+### 📊 Current Market Intelligence
+- **Existing Data:** What data do you currently have about your audience? (website analytics, customer surveys, sales data)
+- **Customer Feedback:** What feedback have you received from existing customers about their needs and preferences?
+- **Industry Research:** What industry reports or studies provide insights about your audience?
+- **Competitor Intelligence:** What can you learn about the audience from competitor websites and marketing?
+- **Survey Opportunities:** Would you be able to survey existing customers or prospects for additional insights?
+- **Analytics Insights:** What does current website or social media analytics reveal about audience behavior?
+
+### 🎨 Design & UX Preferences
+- **Visual Preferences:** What visual styles, colors, and design elements appeal to your audience?
+- **Navigation Preferences:** How do they prefer to navigate websites? What navigation patterns are they familiar with?
+- **Information Architecture:** How do they mentally organize information? What categorization makes sense to them?
+- **Interaction Preferences:** Do they prefer simple interfaces or feature-rich experiences?
+- **Loading Tolerance:** How patient are they with website loading times?
+- **Mobile Expectations:** What are their specific expectations for mobile website experiences?
+
+## Comprehensive Audience Research Structure
+
+The generated audience research should follow this detailed structure:
+
+```markdown
+# Audience Research: [Website/Business Name]
+
+## Executive Summary
+- Primary audience overview
+- Key behavioral insights
+- Strategic implications for website
+- Priority recommendations
+
+## Research Methodology
+### Data Sources and Approach
+### Research Limitations and Assumptions
+### Validation Methods
+
+## Primary Audience Analysis
+### Demographic Profile
+### Psychographic Profile
+### Digital Behavior Patterns
+### Goals and Motivations
+### Pain Points and Frustrations
+### Current Solution Usage
+
+## Audience Segmentation
+### Segmentation Framework
+### Primary Persona Profiles
+- Persona 1: [Name and Description]
+  - Demographics and background
+  - Goals and motivations
+  - Pain points and challenges
+  - Digital behavior and preferences
+  - Website usage patterns
+  - Content preferences
+  - Decision-making process
+- Persona 2: [Name and Description]
+- Persona 3: [Name and Description]
+### Secondary Audience Segments
+### Persona Prioritization Matrix
+
+## User Journey Analysis
+### Awareness Stage Behavior
+### Consideration Stage Behavior
+### Decision Stage Behavior
+### Post-Purchase/Engagement Behavior
+### Touchpoint Mapping
+### Journey Pain Points and Opportunities
+
+## Digital Behavior Deep Dive
+### Device and Platform Usage
+### Website Usage Patterns
+### Content Consumption Preferences
+### Search and Discovery Behavior
+### Social Media Engagement
+### Mobile vs Desktop Preferences
+### Accessibility Considerations
+
+## Market Context Analysis
+### Industry Awareness and Understanding
+### Brand Perception and Awareness
+### Competitive Landscape from User Perspective
+### Competitor Website Analysis
+### Market Trends Affecting Audience
+### Trust and Credibility Factors
+
+## Content and Information Needs
+### Information Architecture Preferences
+### Content Type Preferences
+### Educational Content Needs
+### FAQ and Common Questions
+### Language and Tone Preferences
+### Visual Content Preferences
+### Search Intent Analysis
+
+## Conversion and Engagement Insights
+### Decision-Making Process
+### Conversion Barriers and Objections
+### Motivation and Urgency Factors
+### Preferred Contact and Communication Methods
+### Social Proof and Trust Building Needs
+### Purchase/Action Trigger Analysis
+
+## Website Implications
+### Site Structure Recommendations
+### Navigation Design Insights
+### Content Strategy Implications
+### User Experience Priorities
+### Mobile Experience Requirements
+### Conversion Optimization Opportunities
+### Personalization Opportunities
+
+## Competitive Intelligence
+### Competitor Audience Analysis
+### Competitor Website Strengths and Weaknesses
+### Audience Perception of Competitors
+### Differentiation Opportunities
+### Industry Best Practices
+### White Space Opportunities
+
+## Strategic Recommendations
+### Primary Audience Focus Areas
+### Website Strategy Adjustments
+### Content Strategy Priorities
+### User Experience Enhancements
+### Marketing Message Refinements
+### Conversion Optimization Priorities
+
+## Success Metrics and Tracking
+### Audience Engagement Metrics
+### Conversion Tracking Recommendations
+### User Behavior Analytics Setup
+### A/B Testing Priorities
+### Ongoing Research Recommendations
+
+## Supporting Data and Validation
+### Research Sources and References
+### Data Collection Methods
+### Assumption Validation Plan
+### Ongoing Research Recommendations
+### Update and Refresh Schedule
+```
+
+## Quality Assurance Framework
+
+### Research Quality Checks
+- [ ] Audience insights are based on credible data sources or validated assumptions
+- [ ] Personas are detailed, realistic, and actionable
+- [ ] User journey mapping reflects actual user behavior patterns
+- [ ] Digital behavior analysis considers current technology trends
+- [ ] Competitive analysis includes relevant direct and indirect competitors
+
+### Strategic Alignment Checks
+- [ ] Audience research aligns with website brief objectives and target audience
+- [ ] Personas support the business goals outlined in the website brief
+- [ ] User journey insights inform site structure and content strategy
+- [ ] Findings validate or challenge assumptions from the website brief
+- [ ] Recommendations connect directly to website success metrics
+
+### Actionability Checks
+- [ ] Insights translate into specific website design and content recommendations
+- [ ] Personas can guide content creation and UX decisions
+- [ ] User journey analysis identifies specific optimization opportunities
+- [ ] Competitive insights provide clear differentiation strategies
+- [ ] Success metrics are measurable and trackable
+
+## Best Practices for Audience Research
+
+1. **Combine Quantitative and Qualitative:** Use both data and insights to build complete audience pictures
+2. **Focus on Behavior Over Demographics:** Prioritize what people do over who they are
+3. **Think in User Journeys:** Consider the entire experience from awareness to advocacy
+4. **Validate Assumptions:** Test assumptions with real data whenever possible
+5. **Consider Device Context:** Understand how context affects user behavior and needs
+6. **Update Regularly:** Audience behavior evolves; plan for regular research updates
+7. **Connect to Business Goals:** Ensure every insight connects to website and business objectives
+8. **Make It Actionable:** Focus on insights that can directly inform website decisions
+
+## Integration with Website Brief
+
+The audience research should explicitly reference and build upon the website brief by:
+- Validating or refining target audience assumptions from the website brief
+- Confirming or challenging website goals and objectives based on audience needs
+- Providing deeper context for site structure and content strategy decisions
+- Informing UX design priorities and requirements
+- Supporting or refining conversion goals and success metrics
+- Enhancing understanding of competitive positioning opportunities
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `audience-research.md`
+- **Length:** Comprehensive analysis (typically 15-25 pages)
+- **Audience:** Designers, developers, marketers, content creators, and business stakeholders
+- **Dependencies:** References and builds upon `website-brief.md`
+- **Updates:** Include version control and regular update schedule
+
+## Final Instructions
+
+1. **DO NOT** generate the Audience Research immediately upon receiving this request
+2. **DO** first thoroughly review the existing `website-brief.md` in the `/docs` folder
+3. **DO** identify specific gaps between the website brief and audience research requirements
+4. **DO** ask targeted follow-up questions to gather missing critical audience information
+5. **DO** validate alignment between audience findings and website strategy before finalizing
+6. **DO** ensure the research provides actionable insights that will inform subsequent website development phases
+7. **DO** reference specific sections of the website brief when building upon previous assumptions or findings
+8. **DO** highlight any conflicts or contradictions between audience reality and website brief assumptions
+
+9. **DO** focus on insights that will directly impact website structure, content, and user experience decisions

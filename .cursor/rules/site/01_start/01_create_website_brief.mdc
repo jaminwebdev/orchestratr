@@ -1,0 +1,262 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating a Comprehensive Website Brief
+
+## Goal
+
+To guide an AI assistant in creating a detailed, actionable Website Brief in Markdown format that serves as the foundational document for website planning and development. The brief should be comprehensive enough for stakeholders at all levels - from designers to developers to business owners - to understand the website's purpose, requirements, and implementation approach.
+
+The generated website brief will serve as the single source of truth and be referenced throughout the entire development lifecycle, including audience research, sitemaps, wireframes, UX design, content strategy, and task planning.
+
+## Process
+
+1. **Receive Initial Prompt:** The user provides a brief description or request for a new website.
+2. **Conduct Structured Discovery:** Use the comprehensive question framework below to gather all necessary information through multiple rounds of clarifying questions.
+3. **Validate Understanding:** Summarize key findings and confirm alignment before proceeding.
+4. **Generate Comprehensive Website Brief:** Create a detailed brief using the structure outlined below.
+5. **Review and Refine:** Ensure completeness, clarity, and actionability.
+6. **Save Website Brief:** Save as `website-brief.md` in the `/docs` directory.
+
+## Structured Discovery Questions
+
+### 🎯 Website Purpose & Goals
+- **Primary Purpose:** What is the main goal of this website? (e.g., lead generation, e-commerce, information sharing, brand awareness)
+- **Business Objectives:** What specific business outcomes should this website achieve?
+- **Success Definition:** How will you measure if this website is successful?
+- **Call-to-Actions:** What primary actions do you want visitors to take?
+- **Conversion Goals:** What constitutes a "conversion" for this website?
+
+### 👥 Target Audience & Visitors
+- **Primary Audience:** Who are your main website visitors? (demographics, interests, tech comfort level)
+- **Secondary Audiences:** Are there additional visitor types or stakeholders?
+- **User Motivations:** Why will people visit your website? What are they looking for?
+- **Pain Points:** What frustrations do visitors currently experience with existing solutions?
+- **Device Usage:** How do your visitors typically access websites? (desktop, mobile, tablet)
+- **User Journey:** How do visitors typically discover and interact with your business?
+
+### 🏢 Business Context & Brand
+- **Business Overview:** What does your business/organization do?
+- **Brand Identity:** How would you describe your brand personality and values?
+- **Unique Value Proposition:** What makes you different from competitors?
+- **Current Online Presence:** Do you have existing websites or social media presence?
+- **Offline Presence:** How does this website connect to your offline business?
+- **Brand Guidelines:** Do you have existing brand colors, fonts, logos, or style guidelines?
+
+### 🌐 Competitive Landscape
+- **Direct Competitors:** Who are your main competitors with websites?
+- **Competitor Analysis:** What do you like/dislike about competitor websites?
+- **Industry Standards:** What features or elements are expected in your industry?
+- **Differentiation:** How should your website stand out from the competition?
+- **Inspiration:** Are there any websites (in or outside your industry) that you admire?
+
+### 📄 Content Requirements
+- **Existing Content:** What content do you already have? (text, images, videos, documents)
+- **Content Needs:** What new content needs to be created?
+- **Content Types:** What types of content will you publish? (blog posts, case studies, product pages, etc.)
+- **Content Updates:** How frequently will content be updated?
+- **Content Ownership:** Who will be responsible for creating and maintaining content?
+- **Multimedia:** What images, videos, or other media will be needed?
+- **SEO Keywords:** What keywords should the website target for search engines?
+
+### 🗺️ Site Structure & Features
+- **Essential Pages:** What pages are absolutely necessary for launch?
+- **Desired Pages:** What additional pages would you like to include?
+- **Site Sections:** How should the website be organized into main sections?
+- **Navigation Style:** How should visitors navigate through the site?
+- **Special Features:** Do you need any specific functionality? (forms, galleries, calendars, etc.)
+- **E-commerce:** Will you sell products or services directly through the website?
+- **User Accounts:** Do visitors need to create accounts or log in?
+- **Search Function:** Do you need on-site search capabilities?
+
+### 📱 Technical Requirements
+- **Platform Preference:** Do you have a preferred website platform or CMS? (WordPress, Shopify, custom, etc.)
+- **Hosting Requirements:** Do you have hosting preferences or constraints?
+- **Domain Name:** Do you have a domain name, or do you need help choosing one?
+- **Email Integration:** Do you need email functionality or newsletter integration?
+- **Third-party Integrations:** What external services need to integrate? (CRM, analytics, payment processors, etc.)
+- **Performance Expectations:** What are your speed and performance requirements?
+- **Security Needs:** Are there specific security or compliance requirements?
+- **Mobile Responsiveness:** How important is mobile optimization?
+
+### 🎨 Design Preferences
+- **Visual Style:** How should the website look and feel? (modern, traditional, playful, professional, etc.)
+- **Color Preferences:** Are there specific colors you want to use or avoid?
+- **Layout Style:** Do you prefer minimalist, content-rich, or image-heavy designs?
+- **Typography:** Are there font styles you prefer?
+- **Imagery Style:** What type of images work best for your brand? (photography, illustrations, icons)
+- **Accessibility:** What accessibility standards need to be met?
+- **Browser Support:** Which browsers and versions need to be supported?
+
+### 💰 Budget & Timeline
+- **Budget Range:** What's your approximate budget for this project?
+- **Timeline:** When would you like the website to launch?
+- **Phases:** Would you prefer to launch in phases or all at once?
+- **Ongoing Costs:** What's your budget for ongoing maintenance and updates?
+- **Priority Features:** If budget is limited, what features are most important?
+
+### 📊 Analytics & Tracking
+- **Analytics Needs:** What website analytics do you want to track?
+- **Goal Tracking:** What specific goals should be tracked? (form submissions, downloads, etc.)
+- **Reporting:** Who needs access to website performance reports?
+- **Marketing Integration:** Do you need integration with marketing tools?
+
+### 🚀 Launch & Maintenance
+- **Launch Strategy:** How will you promote the new website?
+- **SEO Strategy:** What's your plan for search engine optimization?
+- **Content Marketing:** Will you be blogging or creating regular content?
+- **Maintenance Plan:** Who will handle ongoing updates and maintenance?
+- **Training Needs:** Do you need training on how to update the website?
+- **Growth Plans:** How might the website need to evolve over time?
+
+## Website Brief Structure
+
+The generated website brief should follow this structure:
+
+```markdown
+# Website Brief: [Website Name/Project]
+
+## Executive Summary
+- Website purpose and primary goals
+- Target audience overview
+- Key success metrics
+- Timeline and budget summary
+
+## Project Overview
+### Purpose Statement
+### Business Objectives
+### Success Criteria
+### Primary Call-to-Actions
+
+## Target Audience
+### Primary Audience Profile
+### Secondary Audiences
+### User Motivations and Goals
+### User Journey Overview
+### Device and Technology Usage
+
+## Business Context
+### Company/Organization Overview
+### Brand Identity and Values
+### Unique Value Proposition
+### Current Online Presence
+### Competitive Positioning
+
+## Site Requirements
+### Essential Pages and Sections
+### Site Structure and Navigation
+### Key Features and Functionality
+### Content Requirements
+### E-commerce/Transaction Needs
+### User Account Requirements
+
+## Technical Specifications
+### Platform and CMS Requirements
+### Hosting and Domain Considerations
+### Third-party Integrations
+### Performance Requirements
+### Security and Compliance Needs
+### Mobile and Responsive Design Requirements
+### Browser Support Requirements
+
+## Design Direction
+### Visual Style and Brand Guidelines
+### Color Palette and Typography
+### Layout Preferences
+### Imagery and Media Strategy
+### Accessibility Requirements
+### Responsive Design Approach
+
+## Content Strategy
+### Content Inventory
+### Content Creation Needs
+### Content Organization
+### SEO Keyword Strategy
+### Content Maintenance Plan
+### Multimedia Requirements
+
+## Competitive Analysis
+### Direct Competitors
+### Competitive Advantages
+### Industry Standards
+### Differentiation Strategy
+### Inspiration and References
+
+## Success Metrics
+### Key Performance Indicators
+### Conversion Goals
+### Analytics and Tracking Requirements
+### Reporting Needs
+
+## Budget and Timeline
+### Project Budget
+### Timeline and Milestones
+### Phase Planning
+### Ongoing Maintenance Budget
+
+## Launch Strategy
+### Go-Live Plan
+### SEO and Marketing Strategy
+### Content Marketing Plan
+### Promotion Strategy
+
+## Maintenance and Growth
+### Ongoing Maintenance Plan
+### Content Update Strategy
+### Future Enhancement Possibilities
+### Training Requirements
+
+## Next Steps
+### Immediate Action Items
+### Stakeholder Approvals Needed
+### Content Collection Tasks
+### Design and Development Kickoff
+```
+
+## Quality Assurance Checklist
+
+Before finalizing the website brief, ensure:
+
+- [ ] Website purpose and goals are clearly defined
+- [ ] Target audience is well-understood and documented
+- [ ] Site structure and navigation are logical and user-friendly
+- [ ] Technical requirements are specific and achievable
+- [ ] Design direction aligns with brand and user needs
+- [ ] Content requirements are comprehensive and realistic
+- [ ] Success metrics are measurable and relevant
+- [ ] Budget and timeline are realistic for scope
+- [ ] Competitive analysis provides actionable insights
+- [ ] Next steps are specific and actionable
+
+## Best Practices
+
+1. **Focus on User Value:** Every page and feature should serve the user's needs
+2. **Keep It Simple:** Avoid feature creep; focus on essential functionality
+3. **Think Mobile-First:** Consider mobile experience as primary, not secondary
+4. **Plan for Content:** Ensure there's a realistic plan for creating and maintaining content
+5. **Consider SEO Early:** Build SEO considerations into the foundation, not as an afterthought
+6. **Design for Conversion:** Structure the site to guide users toward desired actions
+7. **Plan for Growth:** Consider how the site might need to evolve over time
+8. **Balance Ambition with Budget:** Ensure scope aligns with available resources
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `website-brief.md`
+- **Length:** Comprehensive but focused (typically 8-15 pages)
+- **Audience:** Accessible to all project stakeholders
+- **Maintenance:** Include version control and update procedures
+
+## Final Instructions
+
+1. **DO NOT** start creating the website brief until all discovery questions are thoroughly answered
+2. **DO** ask follow-up questions to clarify vague or incomplete responses
+3. **DO** validate your understanding by summarizing key points before proceeding
+4. **DO** ensure the brief provides clear direction for subsequent website development phases
+5. **DO** focus on practical, achievable recommendations rather than theoretical ideals
+6. **DO** consider the entire user experience from discovery to conversion
+
+7. **DO** include specific, actionable next steps with clear ownership

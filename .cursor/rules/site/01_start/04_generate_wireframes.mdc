@@ -1,0 +1,480 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Multi-Page Wireframe Generation via Document Integration & Research
+
+## Purpose
+Guide the AI to generate comprehensive, evidence-based wireframes for multiple website pages by:
+- **Leveraging existing project documentation** from previous workflow steps
+- Conducting targeted interviews to clarify wireframe-specific requirements
+- Integrating best practices from `/wireframe_best_practices.md`, `wireframe_101.md`, and `wireframe_examples.md` in the .cursor\rules\site\research_docs directory
+- Producing a complete wireframe set with rationale, research citations, and implementation guidance
+- Creating consistent, conversion-optimized layouts across all key pages
+
+## Document Integration Prerequisites
+
+### Required Previous Documents
+Before beginning wireframe generation, ensure these documents exist in the /docs/ directory and are accessible:
+
+**1. Website Brief (`website_brief.md`)**
+- Business objectives and conversion goals
+- Brand guidelines and design constraints
+- Technical requirements and platform specifications
+- Budget and timeline considerations
+
+**2. Audience Research (`audience_research.md`)**
+- Detailed user personas with behavioral patterns
+- User journey mapping and touchpoint analysis
+- Device preferences and technical capabilities
+- Pain points and motivation drivers
+
+**3. Sitemap Document (`sitemap_document.md`)**
+- Complete site structure and navigation hierarchy
+- Content organization and page relationships
+- SEO strategy and URL structure
+- User flow optimization decisions
+
+### Document Analysis Protocol
+
+#### Step 1: Extract Wireframe-Critical Information
+
+**From Website Brief:**
+```
+Extract for wireframing:
+- Primary conversion goals → CTA strategy across pages
+- Brand personality → Visual hierarchy and tone
+- Technical constraints → Layout limitations and requirements
+- Success metrics → Elements that support measurement
+- Content strategy → Information architecture priorities
+```
+
+**From Audience Research:**
+```
+Extract for wireframing:
+- User personas → Page-specific user needs and behaviors
+- Device preferences → Responsive design priorities
+- User journey stages → Content and CTA placement strategies
+- Pain points → Friction reduction opportunities
+- Behavioral patterns → Layout and interaction design decisions
+```
+
+**From Sitemap Document:**
+```
+Extract for wireframing:
+- Page hierarchy → Navigation design consistency
+- Content categories → Template requirements
+- User flow paths → Cross-page journey optimization
+- Conversion funnels → Multi-page CTA strategy
+- SEO considerations → Content structure requirements
+```
+
+#### Step 2: Identify Priority Pages for Wireframing
+
+Based on sitemap and business objectives, determine:
+- **Tier 1 (MVP/Launch Critical)**: Homepage, primary conversion pages, key landing pages
+- **Tier 2 (Phase 2)**: Secondary pages, support content, specialized functionality
+- **Tier 3 (Future Enhancement)**: Advanced features, niche content, expansion pages
+
+## Enhanced Interview Process
+
+### Pre-Interview Document Synthesis
+Before asking questions, create integrated brief showing:
+- **User Journey → Page Requirements**: Which pages serve which journey stages
+- **Business Goal → Page Function**: How each priority page supports conversion objectives
+- **Content Strategy → Layout Needs**: What content types need accommodation
+- **Technical Constraints → Design Limitations**: Platform-specific wireframe considerations
+
+### Targeted Wireframe Interview
+
+**Ask only questions NOT answered in existing documentation:**
+
+#### Page Prioritization & Scope
+- Based on your timeline of [X months from brief], which pages are essential for launch vs. future phases?
+- Your conversion goal is [goal from brief] - which pages are most critical to this objective?
+- The sitemap shows [X pages] - should we wireframe all Tier 1 pages or focus on a subset?
+
+#### Device & Responsive Strategy
+- Your audience research shows [device preference] - should we design mobile-first or desktop-first?
+- Are there page-specific device considerations? (e.g., mobile-heavy landing pages vs. desktop-heavy dashboards)
+- Do any pages require device-specific functionality or layouts?
+
+#### Content & Asset Availability
+- For the priority pages, what content assets do you currently have vs. need to create?
+- Are there specific images, videos, or interactive elements planned for key pages?
+- Do you have existing brand assets (logos, imagery, testimonials) we should incorporate?
+
+#### Conversion & CTA Strategy
+- Based on your user journey mapping, what should be the primary CTA on each key page?
+- Should CTAs be consistent across pages or vary based on journey stage?
+- Are there secondary actions you want to enable on each page type?
+
+#### Integration & Functionality Requirements
+- The brief mentions [technical integrations] - do these affect specific page layouts?
+- Are there forms, calculators, or interactive elements needed on priority pages?
+- Do any pages require special functionality (filtering, search, user accounts)?
+
+#### Brand & Design Constraints
+- Are there brand elements that must appear consistently across all pages?
+- Do different page types need different design approaches while maintaining consistency?
+- Are there accessibility requirements beyond standard WCAG compliance?
+
+## Multi-Page Wireframe Generation Process
+
+### Phase 1: Research Integration & Page Analysis
+
+For each priority page, create research-backed strategy:
+
+#### Page-Specific Research Application
+```markdown
+## [Page Name] Wireframe Strategy
+
+### Document Context
+- **Business Objective**: [From brief] → [Wireframe implication]
+- **User Need**: [From audience research] → [Layout consideration]
+- **Journey Stage**: [From sitemap] → [Content and CTA strategy]
+- **Technical Constraint**: [From brief] → [Design limitation]
+
+### Research Integration
+- **Best Practice Citation**: [From wireframe_best_practices.md]
+- **Industry Pattern**: [From wireframe_examples.md]
+- **UX Principle**: [From wireframe_101.md]
+- **Conversion Research**: [Relevant studies or patterns]
+
+### Layout Strategy
+- **Primary Goal**: [Specific conversion or user objective]
+- **User Mental Model**: [How target persona approaches this page]
+- **Information Hierarchy**: [Content priority based on user needs]
+- **Interaction Design**: [Key user actions and flow]
+```
+
+### Phase 2: Comprehensive Page Wireframes
+
+Generate wireframes for each priority page with consistent structure:
+
+#### Universal Page Elements (Consistent Across All Pages)
+
+**Header/Navigation System:**
+```
+Based on sitemap navigation hierarchy and user research findings:
+
++--------------------------------------------------+
+|  LOGO    |  PRIMARY NAV  |  UTIL NAV  | CTA     |
++--------------------------------------------------+
+
+Rationale:
+- Logo placement: [Research citation from wireframe_best_practices.md]
+- Navigation order: Based on sitemap hierarchy and user journey priorities
+- Utility navigation: [User research insight about secondary needs]
+- Header CTA: [Conversion strategy from business objectives]
+
+Mobile Adaptation:
+- Hamburger menu: [Device preference data from audience research]
+- Logo sizing: [Brand guidelines from brief]
+- Touch targets: [Accessibility requirements]
+```
+
+**Footer System:**
+```
+Consistent footer based on sitemap structure and business requirements:
+
++--------------------------------------------------+
+|  SECONDARY NAV  |  CONTACT  |  SOCIAL  | LEGAL   |
++--------------------------------------------------+
+
+Elements based on:
+- Secondary navigation: Sitemap utility pages
+- Contact information: Business requirements from brief
+- Social proof: Brand strategy from audience research
+- Legal compliance: Industry requirements from brief
+```
+
+#### Page-Specific Wireframe Generation
+
+**For each priority page, create:**
+
+```markdown
+# [Page Name] Wireframe
+
+## Page Context & Objectives
+- **Document References**: 
+  - Business Goal: [Specific objective from brief]
+  - User Need: [Persona insight from audience research]
+  - Journey Stage: [User flow context from sitemap]
+  - Success Metric: [Measurement criteria from brief]
+
+## Research-Backed Layout Strategy
+
+### Above-the-Fold Section
+[ASCII or detailed text layout]
+
+**Rationale & Research:**
+- **Element Placement**: [Citation from wireframe_best_practices.md]
+- **Content Hierarchy**: [User research insight supporting decision]
+- **CTA Strategy**: [Conversion research or best practice]
+- **Trust Signals**: [Industry-specific requirements from brief]
+
+### Content Sections
+[Detailed section-by-section breakdown]
+
+### Conversion Elements
+[Forms, CTAs, social proof placement with research backing]
+
+### Mobile Considerations
+[Responsive design strategy based on audience device data]
+
+## Alternative Layout Options
+[2-3 variations for high-impact sections with pros/cons analysis]
+
+## Integration Points
+- **Cross-Page Navigation**: Links to related pages from sitemap
+- **User Journey Continuity**: How this page connects to next steps
+- **Content Strategy Alignment**: How layout supports content from brief
+- **Technical Implementation**: Platform-specific considerations
+```
+
+### Phase 3: Page Template System
+
+Create reusable templates for similar page types:
+
+#### Template Categories Based on Sitemap Analysis
+
+**Landing Page Template:**
+- Hero section optimized for conversion
+- Trust signal integration
+- Clear value proposition hierarchy
+- Industry-specific elements from research
+
+**Product/Service Page Template:**
+- Feature presentation based on user research priorities
+- Social proof placement for consideration stage users
+- Technical specification accommodation
+- Cross-selling opportunity integration
+
+**Content Page Template:**
+- Scannable content structure based on audience reading patterns
+- Related content recommendations from sitemap relationships
+- Lead capture opportunities aligned with journey stage
+- SEO-optimized layout from sitemap strategy
+
+**Contact/Conversion Page Template:**
+- Form optimization based on conversion research
+- Trust signal prominence for decision-stage users
+- Alternative contact methods for different personas
+- Thank you page journey continuation
+
+### Phase 4: Cross-Page Consistency & User Flow
+
+#### Multi-Page User Journey Optimization
+
+**Journey Stage 1: Awareness (Entry Pages)**
+```
+Wireframe elements supporting discovery:
+- Clear value proposition above fold
+- Easy navigation to deeper content
+- Trust signals for credibility
+- Multiple engagement opportunities
+
+Research Support: [Citations for awareness-stage UX patterns]
+```
+
+**Journey Stage 2: Consideration (Product/Service Pages)**
+```
+Wireframe elements supporting evaluation:
+- Detailed information architecture
+- Comparison tools and features
+- Social proof and testimonials
+- Clear next-step guidance
+
+Research Support: [Citations for consideration-stage conversion patterns]
+```
+
+**Journey Stage 3: Decision (Conversion Pages)**
+```
+Wireframe elements supporting conversion:
+- Friction reduction in forms and processes
+- Prominent trust signals and guarantees
+- Clear value restatement
+- Multiple conversion paths
+
+Research Support: [Citations for decision-stage optimization]
+```
+
+#### Consistency Framework Across All Pages
+
+**Visual Hierarchy Standards:**
+- H1, H2, H3 styling consistency based on brand guidelines
+- CTA button styling and placement patterns
+- Image and media integration standards
+- White space and typography rhythm
+
+**Navigation Consistency:**
+- Breadcrumb implementation based on sitemap hierarchy
+- Cross-page linking strategy
+- Search functionality placement (if applicable)
+- User account/login integration (if applicable)
+
+**Conversion Optimization Standards:**
+- CTA frequency and placement across page types
+- Form design consistency and progressive disclosure
+- Trust signal integration patterns
+- Social proof presentation standards
+
+### Phase 5: Research Integration Documentation
+
+#### Citation and Rationale System
+
+For each major wireframe decision, provide:
+
+```markdown
+### Decision: [Specific Layout Choice]
+
+**Research Support:**
+- **Primary Citation**: [Specific section from wireframe_best_practices.md]
+- **Supporting Research**: [Industry study or UX principle from wireframe_101.md]
+- **User Context**: [How this addresses specific persona need from audience research]
+- **Business Alignment**: [How this supports objective from website brief]
+
+**Alternative Considered:**
+- **Option**: [Alternative approach]
+- **Why Not Chosen**: [Research or context-based reasoning]
+
+**Testing Recommendation:**
+- **A/B Test Opportunity**: [Specific element to test]
+- **Success Metric**: [How to measure performance]
+```
+
+## Enhanced Output Deliverables
+
+### Primary Deliverable: Multi-Page Wireframe Document
+
+**File Structure: `wireframe_document.md`**
+
+```markdown
+# Multi-Page Wireframe System
+**Project:** [Project Name from brief]
+**Date:** [Creation Date]
+**Version:** 1.0
+
+## Document Dependencies
+- **Website Brief**: `website_brief.md`
+- **Audience Research**: `audience_research.md`  
+- **Sitemap Document**: `sitemap_document.md`
+- **Research References**: wireframe_best_practices.md, wireframe_101.md, wireframe_examples.md
+
+## Executive Summary
+- **Pages Wireframed**: [List of completed pages]
+- **Key Design Decisions**: [Major layout choices with rationale]
+- **Research Integration**: [How previous docs influenced design]
+- **Next Steps**: [Development handoff requirements]
+
+## Universal Design System
+### Header/Navigation Standards
+### Footer System
+### Typography Hierarchy  
+### CTA Standards
+### Form Design Patterns
+### Trust Signal Integration
+
+## Individual Page Wireframes
+### [Page 1]: Homepage
+### [Page 2]: [Primary Landing Page]
+### [Page 3]: [Product/Service Page]
+### [Page 4]: [Contact/Conversion Page]
+[etc.]
+
+## Page Templates
+### Landing Page Template
+### Content Page Template  
+### Product/Service Template
+### Conversion Page Template
+
+## User Journey Integration
+### Awareness Stage Pages
+### Consideration Stage Pages
+### Decision Stage Pages
+### Post-Conversion Experience
+
+## Implementation Guidelines
+### Technical Specifications
+### Content Requirements
+### Responsive Design Notes
+### Accessibility Compliance
+### Testing Recommendations
+
+## Next Steps & Development Handoff
+### Priority Order for Development
+### Content Collection Requirements
+### Design System Creation Needs
+### User Testing Recommendations
+```
+
+### Supporting Deliverables
+
+**Individual Page Files** (if complex):
+- `homepage_wireframe.md`
+- `product_page_wireframe.md`
+- `contact_page_wireframe.md`
+
+**Research Integration Summary:**
+- Decision matrix showing document insight → wireframe choice
+- Research citation index with relevance ratings
+- Alternative options considered with reasoning
+
+### Quality Assurance Framework
+
+#### Cross-Document Validation Checklist
+- [ ] **Business Objective Alignment**: Every page supports documented conversion goals
+- [ ] **User Journey Continuity**: Page flow matches researched user behavior patterns  
+- [ ] **Content Strategy Support**: Layouts accommodate documented content requirements
+- [ ] **Technical Feasibility**: Wireframes work within documented platform constraints
+- [ ] **Brand Consistency**: Design decisions align with documented brand guidelines
+- [ ] **Research Integration**: Major decisions cite relevant best practices or studies
+- [ ] **Responsive Design**: Mobile considerations match audience device preferences
+- [ ] **Accessibility Compliance**: Layouts meet documented accessibility requirements
+
+#### Wireframe-Specific Quality Checks
+- [ ] **Conversion Optimization**: CTAs strategically placed based on research
+- [ ] **Information Hierarchy**: Content priority matches user research insights
+- [ ] **Cross-Page Consistency**: Design patterns maintained across all pages
+- [ ] **User Flow Logic**: Page connections support documented user journeys
+- [ ] **Trust Signal Integration**: Social proof placement optimizes for user needs
+- [ ] **Form Optimization**: Lead capture designed for documented personas
+- [ ] **Mobile-First Design**: Layouts prioritize documented device preferences
+
+## Implementation Timeline Integration
+
+### Alignment with Project Timeline
+Based on website brief timeline and sitemap priorities:
+
+**Phase 1 (MVP Launch)**: 
+- Tier 1 page wireframes complete
+- Core template system established
+- User journey validation ready
+
+**Phase 2 (Enhancement)**:
+- Tier 2 page wireframes
+- Advanced functionality wireframes
+- A/B testing variations
+
+**Phase 3 (Optimization)**:
+- Tier 3 page wireframes
+- Conversion optimization iterations
+- Advanced user experience enhancements
+
+## Success Metrics & Validation
+
+### Wireframe Success Criteria
+- **User Journey Support**: Clear path from awareness to conversion
+- **Business Goal Achievement**: Layout optimizes for documented objectives
+- **Research Integration**: Decisions backed by relevant studies and best practices
+- **Technical Viability**: Wireframes implementable within documented constraints
+- **Consistency Maintenance**: Design system scales across all page types
+
+### Recommended Testing Strategy
+- **User Testing**: Validate wireframes with documented personas
+- **Stakeholder Review**: Align with business objectives from brief
+- **Technical Review**: Confirm feasibility with platform requirements
+- **Accessibility Audit**: Ensure compliance with documented standards
+

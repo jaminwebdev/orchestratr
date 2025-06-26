@@ -1,0 +1,368 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Creating Comprehensive UX & Design Considerations Document
+
+## Goal
+
+To guide an AI assistant in creating a detailed, strategic UX & Design Considerations document in Markdown format that builds upon all previously completed website documentation. The UX & Design document should provide comprehensive visual design systems, interaction principles, emotional tone, and brand expression frameworks that directly address user needs identified in earlier research phases.
+
+This document will serve as the definitive creative and usability brief for UI/UX designers, frontend developers, and content creators, ensuring consistent, user-centered design implementation that supports conversion goals and user journey optimization identified in previous strategic documents.
+
+## Process
+
+1. **Analyze Sequential Documentation:** Thoroughly review all preceding documents in the `/docs` folder in order:
+   - `website-brief.md` - Business objectives, brand positioning, target market, and success metrics
+   - `audience-research.md` - User personas, behavioral insights, digital preferences, and pain points
+   - `sitemaps-document.md` - Site structure, navigation priorities, and user flow pathways
+   - `wireframes-document.md` - Layout frameworks, content hierarchy, and interaction patterns
+
+2. **Cross-Reference Strategic Alignment:** Identify design implications from previous findings:
+   - Brand personality indicators from business positioning and audience preferences
+   - Visual complexity levels based on user technical sophistication and preferences
+   - Navigation patterns that support identified user journeys and conversion goals
+   - Content presentation needs derived from audience information consumption preferences
+
+3. **Conduct Strategic Design Discovery:** Using the enhanced question framework to fill gaps not covered in previous documentation
+
+4. **Validate Design Strategy:** Ensure design recommendations directly support:
+   - Business objectives from the website brief
+   - User needs and preferences from audience research
+   - Site structure and navigation from sitemaps
+   - Layout and interaction patterns from wireframes
+
+5. **Generate Integrated Design Framework:** Create comprehensive design guidelines that reference and build upon previous strategic decisions
+
+6. **Quality Assurance Review:** Verify design recommendations align with and enhance the complete website strategy
+
+7. **Save Document:** Save as `ux-design-considerations.md` in the `/docs` directory
+
+## Enhanced Design Discovery Questions
+
+### 🎨 Brand Identity & Visual Expression
+- **Brand Personality Validation:** Based on the website brief's brand positioning and audience research findings, what 5-7 adjectives best capture the desired visual personality?
+- **Audience-Driven Aesthetics:** Given the demographic and psychographic profiles from audience research, what visual style will resonate most effectively?
+- **Competitive Differentiation:** How should the visual design differentiate from competitors identified in the website brief while appealing to the researched audience preferences?
+- **Trust & Credibility Factors:** What visual elements will build the trust and credibility factors identified as important to your audience?
+- **Existing Brand Assets:** Do you have established brand elements (logo, colors, fonts) or need a complete visual identity system?
+
+### 👥 User-Centered Design Integration
+- **Persona-Specific Design Needs:** How should the design accommodate the different technical comfort levels and preferences of each persona from audience research?
+- **Device Usage Patterns:** Based on audience research device preferences, what responsive design priorities should guide the visual hierarchy?
+- **Attention Span Considerations:** Given audience research insights about attention spans and information consumption, how should visual complexity and information density be balanced?
+- **Accessibility Requirements:** What specific accessibility needs were identified in audience research that should inform design decisions?
+- **Cultural and Demographic Considerations:** Are there cultural or regional preferences from audience research that should influence visual design choices?
+
+### 🗺️ Site Structure & Navigation Design
+- **Sitemap Visual Hierarchy:** How should the visual design reinforce the navigation priorities and site structure from the sitemaps document?
+- **User Flow Support:** What visual cues and design elements are needed to guide users through the key user journeys identified in previous documents?
+- **Conversion Path Emphasis:** How should the design visually prioritize the conversion goals and success metrics outlined in the website brief?
+- **Content Categorization:** How should visual design help users navigate the content categories and information architecture established in the sitemap?
+
+### 📐 Wireframe Enhancement & Interaction Design
+- **Layout System Refinement:** How should the visual design enhance and refine the layout frameworks established in wireframes?
+- **Interactive Element Design:** What visual treatment should interactive elements receive based on the user interaction preferences from audience research?
+- **Content Hierarchy Visualization:** How should typography, color, and spacing reinforce the content hierarchy established in wireframes?
+- **Mobile vs Desktop Considerations:** How should the design adapt the wireframe concepts for different devices based on audience usage patterns?
+
+### 🔧 Technical Implementation & Performance
+- **Performance vs Visual Richness:** Given the technical specifications and user device preferences, how should visual complexity be balanced with performance?
+- **Browser and Device Compatibility:** What design constraints are imposed by the technical requirements and audience device usage patterns?
+- **Content Management Considerations:** How should the design system accommodate the content strategy and ongoing content management needs?
+- **Scalability Requirements:** How should the design system scale to accommodate future features or content expansion outlined in strategic documents?
+
+## Comprehensive UX & Design Document Structure
+
+```markdown
+# UX & Design Considerations: [Website/Business Name]
+
+## Executive Summary
+### Design Philosophy and Strategic Approach
+### Key Design Decisions and Rationale
+### Integration with Website Strategy
+### Implementation Priorities
+
+## Strategic Foundation Analysis
+### Website Brief Integration
+- Business objectives driving design decisions
+- Brand positioning implications for visual identity
+- Target market considerations from brief
+- Success metrics that design must support
+
+### Audience Research Integration
+- Persona-specific design requirements
+- Digital behavior patterns informing UX decisions
+- Aesthetic preferences from audience analysis
+- Technical comfort levels affecting interface complexity
+- Device usage patterns shaping responsive strategy
+
+### Site Structure Design Implications
+- Navigation design based on sitemap priorities
+- Visual hierarchy supporting information architecture
+- User flow design considerations from site structure
+- Conversion path visual emphasis requirements
+
+### Wireframe Enhancement Strategy
+- Layout system refinement and visual treatment
+- Interactive element design specifications
+- Content hierarchy visualization approach
+- Mobile adaptation of wireframe concepts
+
+## Brand Identity & Visual Design System
+### Brand Personality Matrix
+- Core brand adjectives with persona alignment
+- Visual personality positioning (professional ↔ approachable, minimal ↔ rich)
+- Emotional design goals for key user journey moments
+- Competitive differentiation through visual expression
+
+### Color Psychology & System
+- Primary color palette with psychological rationale
+- Secondary colors supporting brand personality
+- Semantic color system for UI states and feedback
+- Accessibility compliance and contrast considerations
+- Color usage guidelines for different content types
+
+### Typography Hierarchy & System
+- Typeface selection supporting brand personality and readability
+- Hierarchical scale aligned with content strategy
+- Readability optimization for audience age demographics
+- Performance considerations and loading strategy
+- Multilingual and localization considerations
+
+### Iconography & Visual Language
+- Icon style reflecting brand personality
+- Visual metaphor system for complex concepts
+- Illustration approach and photography style
+- Logo integration and brand mark usage
+- Consistency guidelines across all visual elements
+
+## User Experience Framework
+### Core UX Principles
+- Primary UX goals aligned with business objectives
+- User mental model support based on audience research
+- Cognitive load management for different personas
+- Error prevention and recovery strategies
+
+### Interaction Design Patterns
+- Navigation philosophy supporting site structure
+- Input and control patterns for different user types
+- Feedback systems and microinteraction strategy
+- Progressive disclosure based on user sophistication levels
+
+### Content Strategy Integration
+- Information architecture visualization approach
+- Microcopy and voice/tone implementation in UI
+- Content density optimization for audience preferences
+- Visual content integration and media strategy
+
+### Persona-Driven UX Variations
+#### [Primary Persona Name] Design Priorities
+- Specific UX considerations for this persona
+- Visual complexity level and interface density
+- Navigation preferences and mental models
+- Content presentation optimization
+
+#### [Secondary Persona Name] Design Adaptations
+- Interface flexibility for different user types
+- Progressive disclosure and customization options
+- Alternative interaction patterns where needed
+
+## Accessibility & Inclusive Design Framework
+### WCAG Compliance Strategy
+- Accessibility level targets (AA/AAA requirements)
+- Color contrast and visual accessibility standards
+- Keyboard navigation and focus management
+- Screen reader optimization and semantic markup
+
+### Persona-Specific Accessibility Needs
+- Motor accessibility considerations from audience research
+- Cognitive accessibility based on user technical comfort
+- Visual accessibility requirements for different age groups
+- Temporary disability and situational impairment considerations
+
+## Platform-Specific Design Strategy
+### Responsive Design Framework
+- Breakpoint strategy based on audience device usage
+- Content prioritization across screen sizes
+- Navigation adaptation for mobile/desktop experiences
+- Touch vs click interaction optimization
+
+### Cross-Platform Consistency
+- Design system consistency across platforms
+- Platform convention integration (iOS/Android/Web)
+- Performance optimization for different devices
+- Browser compatibility requirements
+
+## Emotional Design & User Journey Enhancement
+### User Journey Emotional Mapping
+- Onboarding emotional arc and first impressions
+- Core feature emotional goals during primary tasks
+- Conversion moment emotional support and motivation
+- Error and frustration state emotional management
+
+### Brand Personality in Interface Elements
+- Button and control personality expression
+- Animation and motion language reflecting brand
+- Empty state and loading state brand expression
+- Success state celebration and achievement recognition
+
+## Conversion Optimization Design Strategy
+### Conversion Path Visual Hierarchy
+- Primary conversion action emphasis and visual treatment
+- Secondary action de-emphasis strategy
+- Trust signal placement and visual integration
+- Social proof and credibility indicator design
+
+### Persuasion Design Elements
+- Urgency and scarcity visual communication
+- Social proof integration in interface design
+- Trust building through visual credibility cues
+- Objection handling through design reassurance
+
+## Content Presentation & Visual Hierarchy
+### Content Type Design Specifications
+- Blog/article content presentation optimization
+- Product/service information visual hierarchy
+- Form design and input field optimization  
+- Media content integration and presentation
+
+### Information Architecture Visualization
+- Category and navigation visual distinction
+- Search and filtering interface design
+- Content relationship visual communication
+- Progressive disclosure implementation
+
+## Technical Implementation Guidelines
+### Design System Structure
+- Design token system (colors, spacing, typography)
+- Component library organization and naming
+- Reusable pattern documentation
+- Developer handoff specifications
+
+### Performance-Conscious Design
+- Image optimization and responsive image strategy
+- Animation performance and GPU acceleration
+- Font loading and performance impact mitigation
+- Critical rendering path design considerations
+
+## Quality Assurance & Testing Framework
+### Design Validation Criteria
+- User persona alignment testing checklist
+- Accessibility compliance validation process
+- Cross-browser and device testing requirements
+- Performance impact assessment guidelines
+
+### Iterative Design Process
+- A/B testing design element priorities
+- User feedback integration methodology
+- Analytics-informed design decision framework
+- Design system evolution and update process
+
+## Implementation Roadmap & Next Steps
+### Phase 1: Core Design System Implementation
+### Phase 2: Advanced Features and Customization
+### Phase 3: Optimization and Enhancement
+### Success Metrics and KPI Tracking
+### Documentation and Training Requirements
+
+## Supporting Research & Validation
+### Design Decision Rationale Documentation
+### User Testing and Feedback Integration Plan
+### Competitive Analysis Design Implications
+### Industry Best Practice Integration
+### Future Enhancement Considerations
+```
+
+## Quality Assurance Framework
+
+### Strategic Integration Checks
+- [ ] Design decisions directly reference and support website brief objectives
+- [ ] Visual design accommodates all persona types from audience research
+- [ ] Navigation design enhances sitemap structure and user flow priorities
+- [ ] Layout enhancements build upon wireframe foundations appropriately
+- [ ] Brand expression aligns with target market preferences from audience research
+
+### User-Centered Design Validation
+- [ ] Visual complexity matches audience technical sophistication levels
+- [ ] Device-specific design priorities reflect audience usage patterns
+- [ ] Accessibility considerations address persona-specific needs identified
+- [ ] Content presentation supports information consumption preferences
+- [ ] Conversion design elements address audience decision-making processes
+
+### Technical Implementation Checks
+- [ ] Design specifications are actionable for developers
+- [ ] Performance considerations balance visual goals with technical constraints
+- [ ] Responsive design strategy addresses audience device preferences
+- [ ] Design system supports content strategy and scalability requirements
+- [ ] Implementation timeline aligns with overall project goals from website brief
+
+### Cross-Document Consistency Validation
+- [ ] No contradictions between design recommendations and previous strategic decisions
+- [ ] Design enhances rather than conflicts with established user journeys
+- [ ] Visual hierarchy supports conversion goals from website brief
+- [ ] Brand expression reinforces positioning established in website brief
+- [ ] User experience accommodates all use cases identified in previous research
+
+## Best Practices for Integrated Design Planning
+
+1. **Reference Previous Decisions:** Explicitly cite insights from previous documents when making design recommendations
+2. **Address Gaps, Don't Duplicate:** Focus on design-specific insights not covered in previous documentation
+3. **Validate Against User Needs:** Ensure every design decision can be traced back to user research findings
+4. **Support Business Goals:** Connect visual and UX decisions to success metrics from website brief
+5. **Consider Implementation Reality:** Balance design aspirations with technical constraints and timeline
+6. **Plan for Evolution:** Create design systems that can grow with the insights gained from user feedback
+7. **Document Decision Rationale:** Explain why specific design choices were made based on previous research
+
+## Integration with Previous Documents
+
+The UX & Design document should explicitly reference and build upon previous documentation by:
+
+### From Website Brief (`website-brief.md`):
+- Translating brand positioning into visual personality and design approach
+- Supporting primary business objectives through conversion-optimized design
+- Addressing competitive differentiation through unique visual and UX strategies
+- Aligning design complexity with target market sophistication and expectations
+
+### From Audience Research (`audience-research.md`):
+- Adapting visual design to persona aesthetic preferences and technical comfort levels
+- Optimizing information hierarchy for audience content consumption patterns
+- Designing interactions that match user behavioral preferences and expectations
+- Incorporating accessibility needs and device usage patterns into design decisions
+
+### From Sitemaps Document (`sitemaps-document.md`):
+- Creating visual hierarchy that reinforces site structure and navigation priorities
+- Designing navigation elements that support identified user journey pathways
+- Emphasizing conversion paths and key pages through strategic visual treatment
+- Organizing content presentation to match established information architecture
+
+### From Wireframes Document (`wireframes-document.md`):
+- Enhancing layout frameworks with appropriate visual treatment and brand expression
+- Refining interaction patterns established in wireframes with detailed design specifications
+- Adding visual polish and emotional design elements to functional wireframe structures
+- Optimizing responsive behavior and cross-device experience based on wireframe concepts
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `ux-design-considerations.md` 
+- **Length:** Comprehensive analysis (typically 20-30 pages)
+- **Audience:** UI/UX designers, frontend developers, content creators, and stakeholders
+- **Dependencies:** References and builds upon `website-brief.md`, `audience-research.md`, `sitemaps-document.md`, and `wireframes-document.md`
+- **Cross-References:** Include specific section references to previous documents when building upon their insights
+
+## Final Instructions
+
+1. **DO NOT** generate the UX & Design document immediately upon receiving this request
+2. **DO** first thoroughly review ALL preceding documents in the `/docs` folder in chronological order
+3. **DO** identify specific design implications and requirements from each previous document
+4. **DO** ask targeted follow-up questions to fill gaps not addressed in previous documentation
+5. **DO** validate design approach alignment with established user journeys and business objectives
+6. **DO** ensure design recommendations enhance rather than conflict with previous strategic decisions
+7. **DO** reference specific sections and insights from previous documents when making design recommendations
+8. **DO** highlight how design decisions address user needs and business objectives identified earlier
+9. **DO** focus on design-specific insights and avoid duplicating analysis already completed in previous phases
+
+10. **DO** create actionable design guidance that directly supports the conversion goals and user experience priorities established in the complete website strategy
