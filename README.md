@@ -174,3 +174,10 @@ This project is licensed under the [MIT License](LICENSE).
 Thank you for using this toolkit!
 Empower your team with AI-guided, structured, and maintainable product delivery workflows.
 
+<!-- TODO: 
+Smart workflow
+1. sitemap/page goals
+2. wireframe: define layout, sections, hierarchy, CTA placement
+3. copywriting draft: written to fit the structure, mindful of spacing and hierarchy
+4. wireframe refinement: adjust layout if needed based on copy
+5. design -->

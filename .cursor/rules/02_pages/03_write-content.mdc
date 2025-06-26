@@ -3,95 +3,92 @@ description:
 globs: 
 alwaysApply: false
 ---
-# Rule: Generating High-Converting Web Copy
+# Rule: Evidence-Based Web Copy Generation via Interactive Interview
 
-## Goal
+## Purpose
+Guide the AI to generate high-conversion, user-centered web copy by:
+- Conducting an interactive interview to gather all necessary context
+- Integrating best practices and research from @copy_ctas.md, @copy_headlines.md, and @copy_best_practices.md
+- Producing a markdown file with copy, rationale, research citations, and actionable structure
 
-To guide an AI assistant in creating persuasive, conversion-focused web copy using proven copywriting formulas, psychological triggers, and best practices. The copy should be tailored to specific user personas and page objectives, following established frameworks like PAS (Problem, Agitate, Solution) and AIDA (Attention, Interest, Desire, Action) while maintaining a conversational, benefit-driven tone.
+## Step-by-Step Process
 
-The copy must align with the page's conversion goals and speak directly to the target audience's pain points, desires, and motivations to drive specific actions.
+### 1. Initiate Interactive Interview
+Ask the user a series of qualifying questions to gather:
+- Page objective(s) and success metrics
+- Target user persona(s) and journey stage
+- Page type and context (landing, product, about, etc.)
+- Traffic source and user mindset
+- Industry/niche and any regulatory or trust requirements
+- Product/service details, benefits, and differentiators
+- Brand personality, tone, and constraints
+- Content assets available (testimonials, reviews, etc.)
+- Any technical, SEO, or accessibility needs
 
-## Process
+**Example Questions:**
+- What is the primary goal of this page? (e.g., lead, sale, info)
+- Who is your main user? (Describe as: [Name] is a [descriptor] who needs [need] because [why])
+- What type of page is this? (homepage, product, etc.)
+- How will users find this page? (ads, search, email, etc.)
+- What industry are you in? Any special compliance or trust needs?
+- What makes your offering unique?
+- What content/assets do you have or need?
+- Are there brand, technical, or SEO constraints?
 
-1. **Receive Initial Request:** The user provides a brief description of the web page or section requiring copy.
-    
-2. **Ask Clarifying Questions:** Before writing copy, the AI _must_ gather essential information about the target audience, page objectives, and context.
-    
-3. **Define User Persona:** Establish a clear user persona in the format: "[Name] is a [occupation/descriptor], that wants [thing/service/product], so he/she can [outcome]."
-    
-4. **Determine Page Structure:** Understand the page layout through text description or wireframe analysis.
-    
-5. **Select Copywriting Framework:** Choose appropriate formula(s) based on page type and goals (PAS, AIDA, Before/After/Bridge, etc.).
-    
-6. **Generate Copy:** Create persuasive copy following established best practices and the selected framework.
-    
-7. **Optimize for Conversion:** Ensure copy includes power words, social proof elements, urgency/scarcity, and clear calls-to-action.
-    
+### 2. Synthesize User Input
+- Summarize the answers in a structured format
+- Define the primary user persona and journey context
+- Clarify the main conversion goal and any secondary objectives
 
-## Clarifying Questions
+### 3. Research & Best Practice Integration
+- Reference @copy_ctas.md, @copy_headlines.md, and @copy_best_practices.md for:
+  - Page-type and industry-specific copy structures
+  - Universal conversion and copywriting principles
+  - Evidence-based headline, CTA, and body copy strategies
+- Explicitly cite research or best practice sources for each major copy decision
+- If research is lacking, default to universal copy principles and note this
 
-The AI should adapt questions based on the request, covering these key areas:
+### 4. Generate Copy Structure (Markdown)
+- Output a clear, section-by-section markdown copy structure:
+  - Headline(s)
+  - Subheadline(s)
+  - Body/feature/benefit copy
+  - Social proof/trust copy
+  - CTAs (with options)
+- For each section, include:
+  - Purpose and rationale
+  - Key copy and variations (as appropriate)
+  - Research/best practice citations
+  - SEO/accessibility notes
+- Use evidence-based recommendations for copy length, tone, CTA language, etc.
+- If possible, provide 1-2 alternative headline and CTA options
 
-### Primary Objectives
+### 5. Annotate and Explain
+- For each major section/element, briefly explain:
+  - Why it is included and written as shown
+  - What research or best practice supports it
+  - How it addresses the user’s goals and context
+- Highlight any areas where user input or research was especially influential
 
-- **Main Goal:** "What is the primary goal of this page?" (e.g., generate leads, drive sales, increase signups, educate users)
-- **Secondary Goal:** "Is there a secondary objective we should consider?"
-- **Success Metric:** "How will you measure success for this page?"
+### 6. Output Testing & Next Steps
+- Suggest A/B testing opportunities for high-impact elements (e.g., headline, CTA, offer)
+- Recommend next steps for moving from copy draft to implementation
 
-### Target Audience
+## Output Requirements
+- Deliver a markdown file with:
+  - Section-by-section copy structure
+  - Rationale and research citations inline
+  - User persona and context summary at the top
+  - Clear, actionable copy for designers/developers
+- Be concise, evidence-driven, and user-focused
+- Always prioritize user needs, conversion, and accessibility
 
-- **User Persona:** "Who is your ideal visitor? Please describe them as: [Name] is a [occupation/descriptor], that wants [thing/service/product], so he/she can [outcome]."
-- **Pain Points:** "What are the top 2-3 problems or frustrations your audience faces?"
-- **Objections:** "What concerns or objections might prevent them from taking action?"
-- **Current Situation:** "Where is your audience right now vs. where they want to be?"
-
-### Page Context
-
-- **Page Type:** "What type of page is this?" (landing page, homepage, product page, about page, etc.)
-- **Traffic Source:** "How will people find this page?" (ads, organic search, email, social media)
-- **Page Structure:** "Can you describe the page layout/wireframe or provide a screenshot?"
-- **Key Sections:** "What are the main sections or components on the page?"
-
-### Product/Service Details
-
-- **Offering:** "What exactly are you offering?" (product, service, free resource, etc.)
-- **Unique Value:** "What makes your offering different from competitors?"
-- **Benefits:** "What are the top 3 benefits or outcomes users will experience?"
-- **Social Proof:** "Do you have testimonials, reviews, case studies, or credibility indicators to include?"
-
-### Brand & Tone
-
-- **Brand Voice:** "How would you describe your brand's personality?" (professional, friendly, edgy, authoritative, etc.)
-- **Tone Preference:** "What tone should the copy have?" (conversational, formal, urgent, reassuring)
-- **Existing Copy:** "Do you have any existing copy or messaging that works well?"
-
-## Copywriting Best Practices & Frameworks
-
-### Core Principles
-
-1. **Lead with Benefits, Not Features:** Focus on outcomes and transformations
-2. **Use "You" Language:** Write in second person to create direct connection
-3. **Create Urgency/Scarcity:** Include time-sensitive or limited offers when appropriate
-4. **Address Objections:** Anticipate and overcome common concerns
-5. **Include Social Proof:** Use testimonials, reviews, logos, statistics
-6. **Power Words:** Incorporate emotional triggers (exclusive, proven, guaranteed, instant, etc.)
-
-### Primary Frameworks
-
-#### PAS (Problem, Agitate, Solution)
-
-- **Problem:** Identify the audience's main pain point
-- **Agitate:** Amplify the consequences of not solving it
-- **Solution:** Present your offering as the resolution
-
-#### AIDA (Attention, Interest, Desire, Action)
-
-- **Attention:** Compelling headline that stops scrolling
-- **Interest:** Engage with relevant benefits and features
-- **Desire:** Build want through emotional triggers and social proof
-- **Action:** Clear, compelling call-to-action
-
-#### Before/After/Bridge (BAB)
+## Notes
+- Always use the most recent and relevant research from the supporting docs
+- If user input is incomplete, prompt for missing info before proceeding
+- If multiple best practices exist, briefly compare and recommend the best fit for the user’s context
+- Avoid visual design details unless research shows conversion impact
+- Focus on copy structure, hierarchy, and conversion-driving language
 
 - **Before:** Current frustrating situation
 - **After:** Desired ideal outcome
