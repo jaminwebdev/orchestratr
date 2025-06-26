@@ -3,95 +3,207 @@ description:
 globs: 
 alwaysApply: false
 ---
-# Rule: Combined Wireframe & Content Generation (Evidence-Based)
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Integrated Wireframe & Content Generation (Evidence-Based)
 
 ## Purpose
-Guide the AI to create a highly optimized, conversion-focused web page by:
-- Conducting an interactive interview to gather all necessary context
-- Referencing all supporting documentation in .cursor/rules/site/research_docs (wireframe_best_practices.md, wireframe_101.md, wireframe_examples.md, copy_best_practices.md, copy_ctas.md, copy_headlines.md)
-- Deciding on the optimal page structure/wireframe first, then writing evidence-based content for each section
-- Producing a single markdown file with annotated wireframe and content, ready for design/dev handoff
+Guide the AI to create conversion-optimized web pages through a unified process that:
+- Conducts a comprehensive interactive interview to gather context
+- Integrates research from wireframe docs (wireframe_best_practices.md, wireframe_101.md, wireframe_examples.md) and copy docs (copy_best_practices.md, copy_ctas.md, copy_headlines.md, copy_101.md)
+- Produces a cohesive wireframe-content deliverable optimized for conversion
+- Provides clear rationale backed by research and best practices
 
-## Step-by-Step Process
+## Integrated Process Flow
 
-### 1. Initiate Interactive Interview
-Ask the user a comprehensive set of qualifying questions, drawing from both @02_wireframe.mdc and @03_write-content.mdc:
-- Does a wireframe for this page already exist? If so, what is the file location?
-- What is the primary goal of this page? (e.g., lead, sale, info)
-- Who is your main user? (Describe as: [Name] is a [descriptor] who needs [need] because [why])
-- Are there secondary user groups?
-- What device(s) will users primarily use?
-- What type of page is this? (homepage, product, etc.)
-- How will users find this page? (ads, search, email, etc.)
-- What industry are you in? Any special compliance or trust needs?
-- What makes your offering unique?
-- What are the top 2-3 user pain points or objections?
-- What content/assets do you have or need? (images, testimonials, etc.)
-- Are there brand, technical, SEO, or accessibility constraints?
-- What is your brand personality and preferred tone?
-- What are the main sections/components you expect on the page?
-- Any integration, performance, or legal requirements?
+### Phase 1: Comprehensive Discovery Interview
 
-*If user input is incomplete, prompt for missing info before proceeding.*
+**Ask strategic questions in logical groupings:**
 
-### 2. Synthesize User Input
-- Summarize answers in a structured format
-- Define the primary user persona and journey context
-- Clarify the main conversion goal and any secondary objectives
-- Note whether a wireframe file is provided and, if so, its location
+#### Project Context & Goals
+- What is the primary goal of this page? (lead generation, sales, information, etc.)
+- What are your key success metrics? (conversion rate, engagement, etc.)
+- Does an existing wireframe exist? If yes, provide the file location.
+- What type of page is this? (homepage, product, landing, service, about, etc.)
 
-### 3. Research & Best Practice Integration
-- Reference all supporting docs in @/research_docs for:
-  - Page-type and industry-specific wireframe/copy structures
-  - Universal conversion, UX, and copywriting principles
-  - Evidence-based recommendations for element order, copy length, CTA placement, etc.
-- Explicitly cite research or best practice sources for each major decision
-- If research is lacking, default to universal principles and note this
+#### User & Audience Analysis
+- Who is your primary user? (Format: "[Name] is a [descriptor] who needs [need] because [why]")
+- Are there secondary user personas? Briefly describe.
+- What stage of the buyer's journey are they in? (awareness, consideration, decision)
+- How will users find this page? (paid ads, organic search, email, social, direct)
+- What device(s) do they primarily use? (mobile-first, desktop-primary, mixed)
 
-### 4. Decide on Page Structure (Wireframe)
-- If a wireframe file is provided, read and use its structure section-by-section
-- If not, create the optimal structure from scratch using best practices and user input
-- Output the wireframe in markdown (ASCII or text-based as appropriate)
-- For each section/element, include:
-  - Purpose and rationale
-  - Research/best practice citations
-  - Accessibility/mobile notes
-- Provide alternative layout options for critical sections if relevant
+#### Product/Service & Differentiation
+- What specific product/service does this page promote?
+- What makes your offering unique? (top 2-3 differentiators)
+- What are the main user pain points or objections you need to address?
+- What's the primary value proposition in one sentence?
 
-### 5. Write Content for Each Section
-- For each section of the wireframe, generate:
-  - Headline(s), subheadline(s), body/feature/benefit copy, social proof/trust copy, CTAs (with options)
-- For each content block, include:
-  - Purpose and rationale
-  - Key copy and variations (as appropriate)
-  - Research/best practice citations
-  - SEO/accessibility notes
-- Use evidence-based recommendations for copy length, tone, CTA language, etc.
-- Provide 1-2 alternative headline and CTA options where appropriate
+#### Content & Assets
+- What existing content assets do you have? (testimonials, case studies, product images, videos)
+- What tone/personality should the copy reflect? (professional, friendly, authoritative, etc.)
+- Are there any industry-specific compliance or trust requirements?
+- What SEO keywords or phrases should be incorporated?
 
-### 6. Annotate and Explain
-- For each major section/element, briefly explain:
-  - Why it is included and placed/written as shown
-  - What research or best practice supports it
-  - How it addresses the user's goals and context
-- Highlight any areas where user input or research was especially influential
+#### Technical & Brand Constraints
+- Are there brand guidelines, visual constraints, or technical limitations?
+- Any accessibility requirements or performance considerations?
+- Integration needs with other systems (CRM, analytics, etc.)?
 
-### 7. Output Testing & Next Steps
-- Suggest A/B testing opportunities for high-impact elements (e.g., headline, CTA, offer, hero section)
-- Recommend next steps for moving from wireframe/content draft to high-fidelity design and implementation
+### Phase 2: Strategic Synthesis & Research Integration
 
-## Output Requirements
-- Deliver a single markdown file with:
-  - Section-by-section wireframe structure (with rationale and citations)
-  - Content for each section (with rationale, citations, and alternatives)
-  - User persona and context summary at the top
-  - Clear, actionable layout for designers/developers
-- Be concise, evidence-driven, and user-focused
-- Always prioritize user needs, conversion, and accessibility
+**Synthesize user input into a structured brief:**
+- Primary user persona and context
+- Conversion goal hierarchy (primary + secondary)
+- Page type and user journey stage
+- Content strategy and messaging framework
+- Technical and brand requirements
 
-## Notes
-- Always use the most recent and relevant research from all supporting docs
-- If multiple best practices exist, briefly compare and recommend the best fit for the user's context
-- Avoid visual design details unless research shows conversion impact
-- Focus on structure, hierarchy, and conversion-driving content
+**Research Integration:**
+- Reference wireframe docs for structural best practices
+- Reference copy docs for messaging and conversion optimization
+- Cite specific research for major structural and content decisions
+- Note when recommendations are based on general principles vs. specific studies
 
+### Phase 3: Unified Structure & Content Generation
+
+#### If Existing Wireframe Provided:
+- Review and assess the existing wireframe structure
+- Suggest optimizations based on research and user context
+- Generate content that aligns with the wireframe sections
+- Annotate with rationale for any structural modifications
+
+#### If No Existing Wireframe:
+- Create optimal page structure based on page type, user journey, and research
+- Integrate content strategy into the structural decisions
+- Design with mobile-first principles and conversion optimization
+
+### Phase 4: Integrated Deliverable Creation
+
+**Generate a unified markdown document containing:**
+
+#### Executive Summary
+- User persona and context
+- Primary conversion goal and success metrics
+- Key strategic decisions and rationale
+
+#### Wireframe Structure with Integrated Content
+
+For each section, provide:
+- **Structure**: ASCII mockup or detailed layout description
+- **Content**: Headlines, copy, CTAs written for that section
+- **Rationale**: Why this section exists and is placed here
+- **Research Citations**: Specific references to supporting documentation
+- **Alternatives**: Key variations for testing (headlines, CTAs, layout options)
+
+**Example Section Format:**
+```
+## Section: Hero Area
+
+### Structure
++----------------------------------+
+|         [LOGO]    [NAVIGATION]   |
++----------------------------------+
+|                                  |
+|      [PRIMARY HEADLINE]         |
+|      Supporting subheadline      |
+|      Brief value proposition     |
+|        [PRIMARY CTA]             |
+|      [Hero Image/Video Area]     |
+|                                  |
++----------------------------------+
+
+### Content
+**Primary Headline:** "Transform Your Business in 30 Days"
+**Alternative Headlines:** 
+- "Get Results in 30 Days or Your Money Back"
+- "The Fastest Way to [Specific Outcome]"
+
+**Subheadline:** "Join 10,000+ companies who've streamlined their operations and increased productivity by 40%"
+
+**Primary CTA:** "Start Your Free Trial"
+**Alternative CTAs:** "Get Started Today" | "See How It Works"
+
+### Rationale
+- Hero follows F-pattern reading (wireframe_best_practices.md)
+- Headline uses benefit-focused approach (copy_headlines.md)
+- CTA uses action-oriented language (copy_ctas.md)
+- Above-fold placement ensures visibility (wireframe_101.md)
+
+### Mobile Considerations
+- Hero text scales responsively
+- CTA button minimum 44px touch target
+- Hero image optimized for mobile viewports
+```
+
+#### Conversion Optimization Integration
+- **CTA Strategy**: Primary and secondary CTA placement throughout
+- **Social Proof**: Strategic testimonial and trust signal placement
+- **User Flow**: Logical progression from awareness to conversion
+- **Friction Reduction**: Minimize cognitive load and decision points
+
+#### Testing & Optimization Recommendations
+- A/B testing opportunities for high-impact elements
+- Suggested variations for headlines, CTAs, and key sections
+- Performance tracking recommendations
+
+### Phase 5: Implementation Guidance
+
+**Provide actionable next steps:**
+- Priority order for implementation
+- Technical specifications for developers
+- Content guidelines for ongoing optimization
+- Success metrics and testing timeline
+
+## Design Principles Integration
+
+### Unified UX/Copy Approach
+- **Gestalt Principles**: Applied to both layout and content hierarchy
+- **Conversion Psychology**: Integrated into structural and copy decisions
+- **Accessibility**: Built into both wireframe and content recommendations
+- **Mobile Optimization**: Structure and content optimized for mobile-first experience
+
+### Research-Driven Decisions
+- **Wireframe Research**: Structure based on user behavior studies and conversion data
+- **Copy Research**: Content based on psychological triggers and conversion testing
+- **Industry Best Practices**: Sector-specific patterns and compliance requirements
+- **Cross-Functional Optimization**: Decisions that optimize both UX and conversion
+
+## Quality Assurance Checklist
+
+**Before delivering, ensure:**
+- [ ] All sections have both structure and content specified
+- [ ] Research citations support major decisions
+- [ ] Mobile experience is prioritized
+- [ ] Conversion goal is addressed throughout
+- [ ] Content aligns with user persona and journey stage
+- [ ] Alternative options provided for key elements
+- [ ] Testing recommendations are actionable
+- [ ] Technical requirements are noted
+
+## Output Format
+
+**Single Markdown File Structure:**
+1. Executive Summary (user context, goals, key decisions)
+2. Full Page Wireframe with Integrated Content (section by section)
+3. Conversion Optimization Strategy
+4. Testing & Optimization Recommendations
+5. Implementation Guidelines
+
+**File Naming Convention:** `[page-type]_[client-name]_wireframe-content_[date].md`
+
+## Success Metrics
+
+The deliverable should enable:
+- Immediate handoff to design/development teams
+- Clear understanding of conversion strategy
+- Actionable testing and optimization plan
+- Alignment between structure and content goals
+- Evidence-based rationale for all major decisions
+
+---
+
+**Remember:** This integrated approach creates synergy between structure and content, where each reinforces the other to drive conversion. Every structural decision should enhance the content strategy, and every content decision should leverage the optimal structure for maximum impact.
