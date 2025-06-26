@@ -1,5 +1,84 @@
 ---
-description:
-globs:
+description: 
+globs: 
 alwaysApply: false
 ---
+# Rule: Evidence-Based Sitemap Generation via Interactive Interview
+
+## Purpose
+Guide the AI to generate a comprehensive, research-backed website sitemap by:
+- Conducting an interactive interview to gather all necessary context
+- Integrating best practices and research from @sitemaps_best_practices.md in the .cursor/rules/site/research_docs folder
+- Producing a clear, annotated sitemap (in markdown or diagram format) with rationale, research citations, and actionable structure
+
+## Step-by-Step Process
+
+### 1. Initiate Interactive Interview
+Ask the user qualifying questions to gather:
+- Website/business objectives and primary success metrics
+- Target audience(s) and key user journeys
+- Website type (e.g., e-commerce, SaaS, content, corporate, etc.)
+- Industry/niche and any regulatory or accessibility requirements
+- Content types and major sections (products, blog, resources, etc.)
+- Geographic/language requirements (internationalization, localization)
+- Any known competitors or reference sites
+- Technical or platform constraints (CMS, headless, etc.)
+- Any special SEO, performance, or mobile-first needs
+
+**Example Questions:**
+- What is the main goal of your website? (e.g., sales, leads, education)
+- Who are your primary users? (Describe their needs and behaviors)
+- What type of site is this? (e-commerce, SaaS, blog, etc.)
+- What are the must-have sections or content types?
+- Are there any industry-specific or legal requirements?
+- Do you need support for multiple languages or regions?
+- Are there reference sites you admire or want to avoid?
+- Any technical, SEO, or accessibility constraints?
+
+### 2. Synthesize User Input
+- Summarize answers in a structured format
+- Define primary user journeys and business goals
+- Clarify any special requirements or constraints
+
+### 3. Research & Best Practice Integration
+- Reference @sitemaps_best_practices.md for:
+  - Information architecture and sitemap patterns by site type/industry
+  - SEO, accessibility, and mobile-first considerations
+  - Evidence-based recommendations for hierarchy, depth, and navigation
+- Explicitly cite research or best practice sources for major sitemap decisions
+- If research is lacking, default to universal IA/UX principles and note this
+
+### 4. Generate Sitemap Structure (Markdown/Diagram)
+- Output a clear, hierarchical sitemap in markdown (bulleted list or tree diagram)
+- For each major section, include:
+  - Purpose and rationale
+  - Key pages and relationships
+  - Research/best practice citations
+  - Notes on SEO, accessibility, or mobile considerations
+- Suggest alternative structures if multiple best practices exist
+
+### 5. Annotate and Explain
+- For each major section/branch, briefly explain:
+  - Why it is included and placed as shown
+  - What research or best practice supports it
+  - How it addresses user and business goals
+
+### 6. Output Testing & Next Steps
+- Suggest user testing or tree testing opportunities for navigation
+- Recommend next steps for moving from sitemap to wireframe or prototype
+
+## Output Requirements
+- Deliver a markdown file with:
+  - Hierarchical sitemap structure
+  - Rationale and research citations inline
+  - User/business context summary at the top
+  - Clear, actionable structure for designers/developers
+- Be concise, evidence-driven, and user-focused
+- Always prioritize user needs, SEO, and accessibility
+
+## Notes
+- Always use the most recent and relevant research from @sitemaps_best_practices.md
+- If user input is incomplete, prompt for missing info before proceeding
+- If multiple best practices exist, compare and recommend the best fit
+- Focus on structure, hierarchy, and discoverability—not visual design
+

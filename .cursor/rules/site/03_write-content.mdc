@@ -8,7 +8,7 @@ alwaysApply: false
 ## Purpose
 Guide the AI to generate high-conversion, user-centered web copy by:
 - Conducting an interactive interview to gather all necessary context
-- Integrating best practices and research from @copy_ctas.md, @copy_headlines.md, and @copy_best_practices.md in the .cursor/rules/site/research_docs directory
+- Integrating best practices and research from copy_101.md, copy_ctas.md, copy_headlines.md, and copy_best_practices.md in the .cursor/rules/site/research_docs directory
 - Taking any existing wireframe into account, following its structure if provided
 - Producing a markdown file with copy, rationale, research citations, and actionable structure
 
@@ -45,7 +45,7 @@ Ask the user a series of qualifying questions to gather:
 - Note whether a wireframe file is provided and, if so, its location
 
 ### 3. Research & Best Practice Integration
-- Reference @copy_ctas.md, @copy_headlines.md, and @copy_best_practices.md for:
+- Reference copy_101.md, copy_ctas.md, copy_headlines.md, and copy_best_practices.md from /rules/site/research_docs for:
   - Page-type and industry-specific copy structures
   - Universal conversion and copywriting principles
   - Evidence-based headline, CTA, and body copy strategies
