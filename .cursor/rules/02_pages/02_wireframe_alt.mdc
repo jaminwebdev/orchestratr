@@ -1,0 +1,252 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Creating Individual Page Wireframes
+
+## Goal
+
+To guide an AI assistant in creating detailed, user-centered wireframes for individual pages/screens. The wireframe should translate specific page requirements into concrete visual structures using either ASCII text format or actual lo-fi HTML wireframes.
+
+This wireframe will serve as a blueprint for that specific page's UI/UX design, development implementation, and stakeholder communication. It should be detailed enough for developers to understand functional requirements while being visually clear for stakeholders to provide feedback.
+
+## Process
+
+1. **Analyze Existing Documentation:** Review `master-product-brief.md` and `market-analysis.md` in the `/docs` folder to understand product vision, user personas, and feature requirements if those documents exist.
+2. **Reference Supporting Documentation:** Use `wireframe_best_practices.md`, `wireframe_101.md`, and `example_wireframes.md` from the .cursor/rules/02_pages/supporting_docs folder for industry standards, methodologies, and proven patterns.
+3. **Identify Page Context:** Understand where this page fits in the overall product flow and user journey.
+4. **Conduct Focused Page Discovery:** Use the targeted question framework below to gather page-specific requirements.
+5. **Validate Page Requirements:** Confirm user goals, content needs, and functionality before wireframe creation.
+6. **Generate Page Wireframe:** Create either ASCII text wireframe or HTML lo-fi wireframe based on complexity and preference.
+7. **Document Design Decisions:** Explain key layout and functionality decisions.
+8. **Save Wireframe:** Save as individual wireframe file with descriptive naming.
+
+## Focused Page Discovery Questions
+
+### 📄 Page Definition & Context
+- **Page Purpose:** What is the primary purpose and goal of this specific page?
+- **User Entry Points:** How do users typically arrive at this page?
+- **User Goals:** What are users trying to accomplish on this page?
+- **Success Metrics:** How will success be measured for this page?
+- **Page Type:** Is this a landing page, dashboard, form, list view, detail view, or other type?
+- **User Journey Context:** Where does this page fit in the overall user flow?
+- **Exit Actions:** What should users do next after completing tasks on this page?
+
+### 👤 User Context & Personas
+- **Primary User:** Which user persona is the primary audience for this page?
+- **Secondary Users:** Are there other user types who will use this page?
+- **User State:** Will users be logged in/out, first-time/returning, free/paid when viewing this page?
+- **Device Context:** What devices will primarily be used to view this page?
+- **User Mindset:** What is the user's likely emotional state and urgency level?
+- **Prior Knowledge:** What can we assume users know when they reach this page?
+
+### 🎯 Content & Information Requirements
+- **Primary Content:** What is the most important content that must be displayed?
+- **Secondary Content:** What supporting content should be included?
+- **Content Sources:** Where does the content come from (user input, database, API, static)?
+- **Content Variability:** How does content change (dynamic, personalized, time-sensitive)?
+- **Content Hierarchy:** How should content be prioritized visually?
+- **Content Constraints:** Are there character limits, image size restrictions, or format requirements?
+- **Empty States:** What should be shown when there's no content available?
+
+### 🎛️ Functionality & Interactive Elements
+- **Core Functions:** What are the primary functions/actions users can perform?
+- **Secondary Functions:** What additional actions should be available?
+- **Form Requirements:** Are there forms on this page? What fields and validation are needed?
+- **Interactive Elements:** What buttons, links, toggles, or other interactive elements are needed?
+- **Real-time Features:** Does anything on the page update in real-time?
+- **Permissions:** Do different user types see different functionality?
+- **Integration Points:** Are there third-party widgets or embedded content?
+
+### 📱 Layout & Visual Structure
+- **Layout Pattern:** What layout pattern best serves this page (single column, sidebar, grid, etc.)?
+- **Header Requirements:** What should be in the header (navigation, branding, user info)?
+- **Footer Requirements:** What footer elements are needed?
+- **Sidebar Needs:** Is a sidebar needed? What should it contain?
+- **Content Sections:** How should the main content be sectioned and organized?
+- **Visual Hierarchy:** What should draw the user's attention first, second, third?
+- **White Space Strategy:** How should spacing be used to improve readability?
+
+### 📐 Technical & Design Constraints
+- **Responsive Requirements:** How should this page adapt to different screen sizes?
+- **Performance Constraints:** Are there loading time or data usage considerations?
+- **Accessibility Needs:** What specific accessibility requirements apply to this page?
+- **Browser Support:** Are there specific browser compatibility requirements?
+- **Technical Limitations:** What technical constraints affect the design?
+- **Brand Guidelines:** What brand elements must be incorporated?
+- **Existing Components:** What existing design components should be reused?
+
+### 🔄 State Management & Flow
+- **Page States:** What are the different states this page can be in (loading, error, success, empty)?
+- **User Authentication:** How does the page change for logged in vs. logged out users?
+- **Loading Strategy:** What loads first, and what loads progressively?
+- **Error Handling:** What errors might occur and how should they be displayed?
+- **Success Feedback:** How should successful actions be communicated?
+- **Navigation Flow:** Where can users go from this page?
+
+### 📊 Data & Analytics
+- **Data Display:** What data needs to be shown and in what format?
+- **Data Sources:** Where does the data come from and how fresh does it need to be?
+- **Analytics Tracking:** What user interactions need to be tracked?
+- **Performance Metrics:** What page performance metrics are important?
+- **Conversion Goals:** What conversions or actions should this page drive?
+
+## Wireframe Output Options
+
+### Option A: ASCII Text Wireframe
+For simpler pages or quick conceptual wireframes:
+```
++--------------------------------------------------+
+|  [LOGO]              [NAV MENU]    [USER PROFILE] |
++--------------------------------------------------+
+|                                                  |
+|  PAGE TITLE                           [BUTTON]   |
+|  Subtitle or description text                    |
+|                                                  |
+|  +------------------+  +-------------------+     |
+|  |     SECTION 1    |  |    SECTION 2      |     |
+|  |  [Content here]  |  |  [Content here]   |     |
+|  |  [Content here]  |  |  [Content here]   |     |
+|  +------------------+  +-------------------+     |
+|                                                  |
++--------------------------------------------------+
+|  FOOTER CONTENT                                  |
++--------------------------------------------------+
+```
+
+### Option B: HTML Lo-Fi Wireframe
+For more complex pages or when interactive demonstration is helpful:
+- Clean, minimal HTML structure
+- Gray-scale color scheme
+- Basic CSS for layout
+- Placeholder content
+- Interactive elements (buttons, forms)
+- Responsive considerations
+
+## Individual Wireframe Documentation Structure
+
+```markdown
+# Page Wireframe: [Page Name]
+
+## Page Overview
+- **Page Type:** [Landing/Dashboard/Form/List/Detail/etc.]
+- **Primary User Persona:** [Target user]
+- **Page Purpose:** [What this page accomplishes]
+- **User Entry Points:** [How users arrive here]
+- **Success Criteria:** [How success is measured]
+
+## User Context
+- **User Goals:** [What users want to accomplish]
+- **User State:** [Authentication, subscription, etc.]
+- **Device Priority:** [Primary device/screen size]
+- **User Journey Position:** [Where this fits in overall flow]
+
+## Content Requirements
+- **Primary Content:** [Most important content]
+- **Secondary Content:** [Supporting content]
+- **Content Sources:** [Where content comes from]
+- **Dynamic Elements:** [What changes based on user/time/data]
+
+## Functionality Specifications
+- **Primary Actions:** [Main things users can do]
+- **Secondary Actions:** [Additional functionality]
+- **Form Requirements:** [If applicable]
+- **Interactive Elements:** [Buttons, links, etc.]
+- **Real-time Features:** [If applicable]
+
+## Layout Decisions
+- **Layout Pattern:** [Chosen layout and rationale]
+- **Visual Hierarchy:** [Priority order of elements]
+- **Responsive Strategy:** [How it adapts to different screens]
+- **Component Usage:** [What existing components are used]
+
+## Wireframe
+[ASCII wireframe or HTML wireframe artifact]
+
+## Design Annotations
+- **Key Design Decisions:** [Important choices and rationale]
+- **Accessibility Considerations:** [How accessibility is addressed]
+- **Performance Considerations:** [Loading strategy, optimization]
+- **Technical Notes:** [Implementation considerations]
+
+## States & Variations
+- **Default State:** [Normal page appearance]
+- **Loading State:** [What shows while loading]
+- **Error State:** [What shows when errors occur]
+- **Empty State:** [What shows when no content]
+- **Success State:** [What shows after successful actions]
+
+## Next Steps
+- **Development Notes:** [Key points for developers]
+- **Testing Considerations:** [What should be tested]
+- **Review Requirements:** [Who needs to review this]
+- **Dependencies:** [What's needed before this can be built]
+```
+
+## Quality Assurance Checklist
+
+### User Experience Validation
+- [ ] Page purpose is clear and aligns with user goals
+- [ ] Content hierarchy supports user task completion
+- [ ] Navigation is intuitive and provides clear paths forward
+- [ ] Interactive elements are appropriately placed and sized
+- [ ] Error and empty states are handled gracefully
+
+### Technical Feasibility
+- [ ] Layout is technically achievable within project constraints
+- [ ] Interactive elements align with technical capabilities
+- [ ] Performance considerations are addressed
+- [ ] Responsive behavior is clearly specified
+- [ ] Accessibility requirements are integrated
+
+### Design Consistency
+- [ ] Visual hierarchy follows established patterns
+- [ ] Component usage is consistent with design system
+- [ ] Layout patterns align with other pages in the product
+- [ ] Brand guidelines are incorporated appropriately
+
+### Business Alignment
+- [ ] Page supports business objectives from product brief
+- [ ] Key conversion opportunities are strategically placed
+- [ ] Competitive differentiation is reflected in design
+- [ ] Success metrics can be effectively measured
+
+## Best Practices for Page Wireframes
+
+1. **Focus on Function First:** Prioritize functionality over visual polish
+2. **Real Content Awareness:** Design around actual content, not Lorem ipsum
+3. **Mobile-First Approach:** Consider mobile constraints first
+4. **Progressive Enhancement:** Plan for different capability levels
+5. **Error Prevention:** Design to prevent user errors where possible
+6. **Feedback Loops:** Ensure users receive appropriate feedback for all actions
+7. **Accessibility Integration:** Build accessibility in from the wireframe stage
+8. **Component Reuse:** Leverage existing design system components where possible
+
+## Output Requirements
+
+- **Format:** Individual Markdown file with embedded wireframe
+- **Location:** `/docs/wireframes/` directory
+- **Filename:** `[page-name]-wireframe.md` (e.g., `dashboard-wireframe.md`)
+- **Wireframe Format:** ASCII text or HTML artifact based on complexity
+- **Length:** Focused documentation (typically 3-8 pages per wireframe)
+- **Audience:** Developers, designers, product managers, and stakeholders
+
+## Final Instructions
+
+1. **DO NOT** generate the wireframe immediately upon receiving this request
+2. **DO** first thoroughly review existing documentation in `/docs` folder
+3. **DO** reference supporting wireframe files for best practices and examples
+4. **DO** ask focused questions about the specific page being wireframed
+5. **DO** confirm the preferred wireframe output format (ASCII vs. HTML)
+6. **DO** validate that the page serves clear user and business goals
+7. **DO** ensure the wireframe is detailed enough for development while remaining lo-fi
+8. **DO** create wireframes that are specific to the page context rather than generic templates
+9. **DO** consider how this page integrates with the broader product ecosystem
+
+10. **DO** provide clear annotations explaining key design decisions

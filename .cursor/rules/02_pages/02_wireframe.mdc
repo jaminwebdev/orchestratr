@@ -3,91 +3,91 @@ description:
 globs: 
 alwaysApply: false
 ---
-# Rule: Generating User-Centered Wireframes
+# Rule: Evidence-Based Wireframe Generation via Interactive Interview
 
-## Goal
+## Purpose
+Guide the AI to generate high-conversion, user-centered wireframes by:
+- Conducting an interactive interview to gather all necessary context
+- Integrating best practices and research from /wireframe_best_practices.md, @wireframe_101.md, and @example_wireframes.md in the .cursor/rules/02_pages/supporting_docs folder.
+- Producing a markdown wireframe file with rationale, research citations, and actionable structure
 
-To guide an AI assistant in creating effective wireframes (visual mockups or detailed text-based layouts) that optimize user experience and conversion rates. Wireframes should be grounded in UX research, design principles, and user psychology while being tailored to specific user personas and page objectives.
+## Step-by-Step Process
 
-The wireframe must prioritize user needs, follow established design principles (Gestalt, proximity, hierarchy, etc.), and strategically place conversion elements to guide users toward desired actions.
+### 1. Initiate Interactive Interview
+Ask the user a series of qualifying questions to gather:
+- Page objective(s) and success metrics
+- Target user persona(s) and journey stage
+- Device context (mobile/desktop/tablet)
+- Page type (homepage, product, service, etc.)
+- Industry/niche and any regulatory or trust requirements
+- Content assets available (copy, images, testimonials, etc.)
+- Brand personality and constraints
+- Any technical, accessibility, or integration needs
 
-## Process
+**Example Questions:**
+- What is the primary goal of this page? (e.g., lead, sale, info)
+- Who is your main user? (Describe as: [Name] is a [descriptor] who needs [need] because [why])
+- What device(s) will users primarily use?
+- What type of page is this? (homepage, product, etc.)
+- What industry are you in? Any special compliance or trust needs?
+- What content/assets do you have or need?
+- Are there brand, technical, or accessibility constraints?
 
-1. **Receive Initial Request:** The user provides a brief description of the page or interface requiring a wireframe.
-    
-2. **Ask Clarifying Questions:** Before creating the wireframe, the AI _must_ gather comprehensive information about users, objectives, and context.
-    
-3. **Define User Persona:** Establish clear user persona(s) in the format: "[Name] is a [characteristics/descriptor] who needs [user need] because [why/insight]."
-    
-4. **Research Best Practices:** Search for current UX research and wireframe patterns specific to the page type, industry, or user behavior when applicable.
-    
-5. **Apply Design Principles:** Incorporate Gestalt principles, visual hierarchy, and UX best practices into the wireframe structure.
-    
-6. **Choose Output Format:** Create either a visual ASCII mockup or detailed text-based layout based on user preference.
-    
-7. **Optimize for Conversion:** Strategically place CTAs, reduce friction, and design clear user paths.
-    
-8. **Validate Against Persona:** Ensure the wireframe serves the defined user persona's needs and context.
-    
+### 2. Synthesize User Input
+- Summarize the answers in a structured format
+- Define the primary user persona and journey context
+- Clarify the main conversion goal and any secondary objectives
 
-## Clarifying Questions
+### 3. Research & Best Practice Integration
+- Reference @wireframe_best_practices.md, @wireframe_101.md, and @example_wireframes.md for:
+  - Page-type and industry-specific wireframe structures
+  - Universal conversion and UX principles
+  - Evidence-based element placement, CTA, trust, and form strategies
+- Explicitly cite research or best practice sources for each major design decision
+- If research is lacking, default to universal UX principles and note this
 
-The AI should adapt questions based on the request, covering these essential areas:
+### 4. Generate Wireframe Structure (Markdown)
+- Output a clear, section-by-section markdown wireframe:
+  - Header/nav
+  - Hero/above-the-fold
+  - Content/feature blocks
+  - Social proof/trust
+  - Forms/CTAs
+  - Footer
+- For each section, include:
+  - Purpose and rationale
+  - Key elements and layout (ASCII or text-based as appropriate)
+  - Research/best practice citations
+  - Accessibility/mobile notes
+- Use evidence-based recommendations for element order, copy length, CTA placement, etc.
+- If possible, provide 1-2 alternative layout options for critical sections
 
-### Primary Objectives & Goals
+### 5. Annotate and Explain
+- For each major section/element, briefly explain:
+  - Why it is included and placed as shown
+  - What research or best practice supports it
+  - How it addresses the user’s goals and context
+- Highlight any areas where user input or research was especially influential
 
-- **Main Purpose:** "What is the primary objective of this page/interface?" (lead generation, sales, information, engagement, etc.)
-- **Secondary Goals:** "Are there any secondary objectives we should consider?"
-- **Success Metrics:** "How will you measure success?" (conversions, time on page, engagement, etc.)
-- **Key Performance Indicators:** "What specific actions do you want users to take?"
+### 6. Output Testing & Next Steps
+- Suggest A/B testing opportunities for high-impact elements (e.g., CTA, form, hero copy)
+- Recommend next steps for moving from wireframe to high-fidelity design
 
-### User Context & Personas
+## Output Requirements
+- Deliver a markdown file with:
+  - Section-by-section wireframe structure
+  - Rationale and research citations inline
+  - User persona and context summary at the top
+  - Clear, actionable layout for designers/developers
+- Be concise, evidence-driven, and user-focused
+- Always prioritize user needs, conversion, and accessibility
 
-- **Primary User:** "Who is your main user? Please describe as: [Name] is a [characteristics/descriptor] who needs [user need] because [why/insight]."
-- **Secondary Users:** "Are there other important user groups to consider?"
-- **User Journey Stage:** "Where are users in their journey when they reach this page?" (awareness, consideration, decision, post-purchase)
-- **Device Context:** "What devices will users primarily use?" (mobile-first, desktop, tablet, mixed)
-- **Technical Proficiency:** "What's the technical comfort level of your users?"
-
-### Page Type & Context
-
-- **Page Type:** "What type of page is this?" (landing page, homepage, product page, checkout, dashboard, etc.)
-- **Traffic Source:** "How do users arrive at this page?" (ads, search, email, direct, referral)
-- **Content Volume:** "How much content needs to be included?" (minimal, moderate, content-heavy)
-- **Existing Constraints:** "Are there brand guidelines, technical limitations, or existing design systems to consider?"
-
-### Business Context
-
-- **Industry/Niche:** "What industry or market are you in?"
-- **Competitive Landscape:** "Who are your main competitors, and how do their pages perform?"
-- **Brand Personality:** "How would you describe your brand?" (professional, playful, premium, accessible, etc.)
-- **Trust Factors:** "What credibility elements are important for your audience?" (testimonials, certifications, security badges, etc.)
-
-### Content Requirements
-
-- **Key Messages:** "What are the 3 most important things users need to know?"
-- **Value Proposition:** "What's your unique value proposition or main differentiator?"
-- **Content Assets:** "What content do you have available?" (images, videos, testimonials, case studies, etc.)
-- **Form Requirements:** "Do you need to collect user information? What fields are essential vs. optional?"
-
-### Technical Considerations
-
-- **Integration Needs:** "Does this page need to integrate with other systems?" (CRM, payment, analytics, etc.)
-- **Performance Requirements:** "Are there specific loading time or performance targets?"
-- **Accessibility Needs:** "Are there specific accessibility requirements to consider?"
-
-## Research Integration
-
-### Best Practice Research Process
-
-1. **Identify Page Category:** Categorize the request (e.g., SaaS landing page, e-commerce product page, lead generation form)
-2. **Search Current Research:** Look for recent UX studies, conversion optimization data, and industry-specific patterns
-3. **Analyze Successful Examples:** Reference high-converting pages in similar industries or use cases
-4. **Apply Research Findings:** Incorporate proven patterns while adapting to specific user needs
-
-### Research Areas to Explore
-
-- **Conversion Rate Optimization:** Latest findings on CTA placement, form optimization, trust signals
+## Notes
+- Always use the most recent and relevant research from the supporting docs
+- If user input is incomplete, prompt for missing info before proceeding
+- If multiple best practices exist, briefly compare and recommend the best fit for the user’s context
+- Avoid visual design details (colors, fonts) unless research shows conversion impact
+- Focus on structure, hierarchy, and conversion-driving elements
 - **Mobile UX Patterns:** Current mobile-first design standards and touch interactions
 - **Industry-Specific Studies:** Sector-specific user behavior research when available
 - **Accessibility Standards:** Current WCAG guidelines and inclusive design practices
