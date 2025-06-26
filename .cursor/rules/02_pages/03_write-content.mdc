@@ -9,12 +9,14 @@ alwaysApply: false
 Guide the AI to generate high-conversion, user-centered web copy by:
 - Conducting an interactive interview to gather all necessary context
 - Integrating best practices and research from @copy_ctas.md, @copy_headlines.md, and @copy_best_practices.md
+- Taking any existing wireframe into account, following its structure if provided
 - Producing a markdown file with copy, rationale, research citations, and actionable structure
 
 ## Step-by-Step Process
 
 ### 1. Initiate Interactive Interview
 Ask the user a series of qualifying questions to gather:
+- Does a wireframe for this page already exist? If so, what is the file location?
 - Page objective(s) and success metrics
 - Target user persona(s) and journey stage
 - Page type and context (landing, product, about, etc.)
@@ -26,6 +28,7 @@ Ask the user a series of qualifying questions to gather:
 - Any technical, SEO, or accessibility needs
 
 **Example Questions:**
+- Does a wireframe exist for this page? If yes, please provide the file location. If not, I will create the structure for you.
 - What is the primary goal of this page? (e.g., lead, sale, info)
 - Who is your main user? (Describe as: [Name] is a [descriptor] who needs [need] because [why])
 - What type of page is this? (homepage, product, etc.)
@@ -39,6 +42,7 @@ Ask the user a series of qualifying questions to gather:
 - Summarize the answers in a structured format
 - Define the primary user persona and journey context
 - Clarify the main conversion goal and any secondary objectives
+- Note whether a wireframe file is provided and, if so, its location
 
 ### 3. Research & Best Practice Integration
 - Reference @copy_ctas.md, @copy_headlines.md, and @copy_best_practices.md for:
@@ -49,7 +53,8 @@ Ask the user a series of qualifying questions to gather:
 - If research is lacking, default to universal copy principles and note this
 
 ### 4. Generate Copy Structure (Markdown)
-- Output a clear, section-by-section markdown copy structure:
+- If a wireframe file is provided, read and follow its structure section-by-section, filling in content for each part as specified by the wireframe.
+- If no wireframe exists, create a clear, section-by-section markdown copy structure as before:
   - Headline(s)
   - Subheadline(s)
   - Body/feature/benefit copy
@@ -67,7 +72,7 @@ Ask the user a series of qualifying questions to gather:
 - For each major section/element, briefly explain:
   - Why it is included and written as shown
   - What research or best practice supports it
-  - How it addresses the user’s goals and context
+  - How it addresses the user's goals and context
 - Highlight any areas where user input or research was especially influential
 
 ### 6. Output Testing & Next Steps
@@ -76,7 +81,7 @@ Ask the user a series of qualifying questions to gather:
 
 ## Output Requirements
 - Deliver a markdown file with:
-  - Section-by-section copy structure
+  - Section-by-section copy structure (following the wireframe if provided)
   - Rationale and research citations inline
   - User persona and context summary at the top
   - Clear, actionable copy for designers/developers
@@ -86,7 +91,7 @@ Ask the user a series of qualifying questions to gather:
 ## Notes
 - Always use the most recent and relevant research from the supporting docs
 - If user input is incomplete, prompt for missing info before proceeding
-- If multiple best practices exist, briefly compare and recommend the best fit for the user’s context
+- If multiple best practices exist, briefly compare and recommend the best fit for the user's context
 - Avoid visual design details unless research shows conversion impact
 - Focus on copy structure, hierarchy, and conversion-driving language
 
