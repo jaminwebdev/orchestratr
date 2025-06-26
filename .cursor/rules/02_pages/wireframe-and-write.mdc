@@ -1,5 +1,97 @@
 ---
-description:
-globs:
+description: 
+globs: 
 alwaysApply: false
 ---
+# Rule: Combined Wireframe & Content Generation (Evidence-Based)
+
+## Purpose
+Guide the AI to create a highly optimized, conversion-focused web page by:
+- Conducting an interactive interview to gather all necessary context
+- Referencing all supporting documentation in @/supporting_docs (wireframe_best_practices.md, wireframe_101.md, example_wireframes.md, copy_best_practices.md, copy_ctas.md, copy_headlines.md)
+- Deciding on the optimal page structure/wireframe first, then writing evidence-based content for each section
+- Producing a single markdown file with annotated wireframe and content, ready for design/dev handoff
+
+## Step-by-Step Process
+
+### 1. Initiate Interactive Interview
+Ask the user a comprehensive set of qualifying questions, drawing from both @02_wireframe.mdc and @03_write-content.mdc:
+- Does a wireframe for this page already exist? If so, what is the file location?
+- What is the primary goal of this page? (e.g., lead, sale, info)
+- Who is your main user? (Describe as: [Name] is a [descriptor] who needs [need] because [why])
+- Are there secondary user groups?
+- What device(s) will users primarily use?
+- What type of page is this? (homepage, product, etc.)
+- How will users find this page? (ads, search, email, etc.)
+- What industry are you in? Any special compliance or trust needs?
+- What makes your offering unique?
+- What are the top 2-3 user pain points or objections?
+- What content/assets do you have or need? (images, testimonials, etc.)
+- Are there brand, technical, SEO, or accessibility constraints?
+- What is your brand personality and preferred tone?
+- What are the main sections/components you expect on the page?
+- Any integration, performance, or legal requirements?
+
+*If user input is incomplete, prompt for missing info before proceeding.*
+
+### 2. Synthesize User Input
+- Summarize answers in a structured format
+- Define the primary user persona and journey context
+- Clarify the main conversion goal and any secondary objectives
+- Note whether a wireframe file is provided and, if so, its location
+
+### 3. Research & Best Practice Integration
+- Reference all supporting docs in @/supporting_docs for:
+  - Page-type and industry-specific wireframe/copy structures
+  - Universal conversion, UX, and copywriting principles
+  - Evidence-based recommendations for element order, copy length, CTA placement, etc.
+- Explicitly cite research or best practice sources for each major decision
+- If research is lacking, default to universal principles and note this
+
+### 4. Decide on Page Structure (Wireframe)
+- If a wireframe file is provided, read and use its structure section-by-section
+- If not, create the optimal structure from scratch using best practices and user input
+- Output the wireframe in markdown (ASCII or text-based as appropriate)
+- For each section/element, include:
+  - Purpose and rationale
+  - Research/best practice citations
+  - Accessibility/mobile notes
+- Provide alternative layout options for critical sections if relevant
+
+### 5. Write Content for Each Section
+- For each section of the wireframe, generate:
+  - Headline(s), subheadline(s), body/feature/benefit copy, social proof/trust copy, CTAs (with options)
+- For each content block, include:
+  - Purpose and rationale
+  - Key copy and variations (as appropriate)
+  - Research/best practice citations
+  - SEO/accessibility notes
+- Use evidence-based recommendations for copy length, tone, CTA language, etc.
+- Provide 1-2 alternative headline and CTA options where appropriate
+
+### 6. Annotate and Explain
+- For each major section/element, briefly explain:
+  - Why it is included and placed/written as shown
+  - What research or best practice supports it
+  - How it addresses the user's goals and context
+- Highlight any areas where user input or research was especially influential
+
+### 7. Output Testing & Next Steps
+- Suggest A/B testing opportunities for high-impact elements (e.g., headline, CTA, offer, hero section)
+- Recommend next steps for moving from wireframe/content draft to high-fidelity design and implementation
+
+## Output Requirements
+- Deliver a single markdown file with:
+  - Section-by-section wireframe structure (with rationale and citations)
+  - Content for each section (with rationale, citations, and alternatives)
+  - User persona and context summary at the top
+  - Clear, actionable layout for designers/developers
+- Be concise, evidence-driven, and user-focused
+- Always prioritize user needs, conversion, and accessibility
+
+## Notes
+- Always use the most recent and relevant research from all supporting docs
+- If multiple best practices exist, briefly compare and recommend the best fit for the user's context
+- Avoid visual design details unless research shows conversion impact
+- Focus on structure, hierarchy, and conversion-driving content
+
