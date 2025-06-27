@@ -1,0 +1,276 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Universal Cursor Rule Blueprint for AI-Driven Documentation
+
+## Meta Structure
+
+```yaml
+---
+description: [Brief description of what this rule generates]
+globs: [File patterns this rule applies to, if any]
+alwaysApply: false
+---
+```
+
+## Core Rule Template
+
+```markdown
+# Rule: [Generating/Creating] [Document Type/Task Name]
+
+## Goal
+
+To guide an AI assistant in [generating/creating] a [comprehensive/detailed/strategic] [Document Type] in Markdown format that serves as [primary purpose and role in project]. This document should [synthesize insights from/build upon] [list of prerequisite documents] to create [specific output description] that [directly addresses/informs] [key stakeholders and use cases].
+
+The [document type] will serve as [foundation/reference/guide] for [list of downstream activities/decisions] and should be [accessibility requirement] to [target audience] - from [junior level] to [senior level stakeholders].
+
+## Process
+
+1. **Comprehensive Documentation Review:** Thoroughly analyze all existing documents in `/docs/`:
+   - [Extract specific insights from Document A]
+   - [Incorporate findings from Document B]
+   - [Validate assumptions from Document C]
+   - [Identify gaps between documented requirements and [this document] specifications]
+
+2. **Context Documentation Integration:** Review supporting materials in `/library_docs/`:
+   - [Reference industry best practices]
+   - [Incorporate methodology frameworks]
+   - [Apply proven templates and structures]
+   - [Validate against established standards]
+
+3. **Strategic [Document Type] Planning:** [Document-specific strategic considerations]:
+   - [Key strategic consideration 1]
+   - [Key strategic consideration 2]
+   - [Key strategic consideration 3]
+
+4. **Structured [Domain] Discovery:** Conduct comprehensive [domain] research through targeted questions
+5. **[Document Type] Development:** Create detailed, evidence-based [output] using the enhanced framework
+6. **Cross-Reference Validation:** Ensure [output] aligns with and enhances insights from previous documentation
+7. **Quality Assurance Review:** Validate [output] for completeness, actionability, and strategic alignment
+8. **Save Document:** Output as `[filename].md` in the `/docs/` directory with proper versioning
+
+## Enhanced [Domain] Discovery Framework
+
+### 🎯 [Primary Category Name]
+- **[Key Question Area]:** [Specific question about this area]
+- **[Key Question Area]:** [Specific question about this area]
+- **[Key Question Area]:** [Specific question about this area]
+- **[Key Question Area]:** [Specific question about this area]
+- **[Key Question Area]:** [Specific question about this area]
+
+### 🔍 [Secondary Category Name]
+- **[Key Question Area]:** [Specific question about this area]
+- **[Key Question Area]:** [Specific question about this area]
+- **[Key Question Area]:** [Specific question about this area]
+- **[Key Question Area]:** [Specific question about this area]
+
+### 💡 [Additional Category Name]
+- **[Key Question Area]:** [Specific question about this area]
+- **[Key Question Area]:** [Specific question about this area]
+- **[Key Question Area]:** [Specific question about this area]
+
+[Continue with additional discovery categories relevant to the document type]
+
+## Comprehensive [Document Type] Structure
+
+The generated [document type] should follow this detailed framework:
+
+```markdown
+# [Document Type]: [Product/Project Name]
+
+## Document Overview
+### Purpose and Scope
+### Relationship to [Related Documents]
+### [Document-Specific] Methodology
+### Last Updated and Version Control
+
+## Executive Summary
+### [Key Summary Point 1]
+### [Key Summary Point 2]
+### [Key Summary Point 3]
+### [Resource/Timeline/Strategic Implications]
+
+## [Primary Section 1]
+### [Subsection 1.1]
+- **[Element Name]:** [Detailed description]
+- **[Element Attribute]:** [Specific details]
+- **[Element Attribute]:** [Specific details]
+- **[Element Attribute]:** [Specific details]
+
+### [Subsection 1.2]
+### [Subsection 1.3]
+
+## [Primary Section 2]
+### [Subsection 2.1]
+### [Subsection 2.2]
+
+## [Primary Section 3]
+### [Subsection 3.1]
+### [Subsection 3.2]
+
+## [Cross-Reference Section]
+### By [Category 1]
+### By [Category 2]
+### By [Category 3]
+
+## [Analysis/Assessment Section]
+### [Risk/Opportunity/Competitive] Analysis
+### [Validation/Research/Data] Notes
+### [Dependencies/Assumptions/Limitations]
+
+## [Strategic/Implementation Section]
+### [Recommendations/Next Steps]
+### [Success Metrics/KPIs]
+### [Resource Requirements]
+### [Timeline Considerations]
+
+## [Supporting Information]
+### [Research Sources/References]
+### [Appendices/Additional Data]
+### [Methodology Notes]
+```
+
+## Quality Assurance Framework
+
+### [Document Type] Completeness Checks
+- [ ] [Each major component] has sufficient detail to guide [specific decisions]
+- [ ] [Key patterns/behaviors/requirements] are specific and actionable
+- [ ] [Critical elements] are clearly articulated with context
+- [ ] [Technical/operational/strategic] considerations are detailed and current
+- [ ] [Dependencies/relationships/integrations] are realistic and specific
+- [ ] [Usage scenarios/examples/cases] are concrete and detailed
+
+### Strategic Alignment Checks
+- [ ] [Document] aligns with [strategic foundation] defined in [prerequisite document]
+- [ ] [Key insights] from [prerequisite document] are represented
+- [ ] [Document] priorities match business objectives
+- [ ] [Competitive/market/user] insights inform [document] development
+- [ ] [Document] supports [product/business] positioning strategy
+
+### Actionability Checks
+- [ ] [Document] provides clear guidance for [next phase activities]
+- [ ] [Key decisions/preferences] are specific enough to inform [downstream work]
+- [ ] [Strategy/content/implementation] implications are clear
+- [ ] [Stakeholder/user/team] alignment is evident
+- [ ] [Technical/operational/resource] considerations are included
+
+### Research Quality Checks
+- [ ] [Document] is based on actual research data when available
+- [ ] Assumptions are clearly distinguished from validated insights
+- [ ] Sources are credible and current
+- [ ] [Sample sizes/data quality/research methods] are appropriate for confidence levels
+- [ ] Biases and limitations are acknowledged
+
+## Integration with Existing Documentation
+
+### [Prerequisite Document 1] Alignment
+- [Validate specific aspects from prerequisite document]
+- [Confirm findings/assumptions from prerequisite document]
+- [Ensure alignment with strategic direction from prerequisite document]
+- [Reference specific sections that informed this document development]
+
+### [Prerequisite Document 2] Integration
+- [Incorporate insights from prerequisite document]
+- [Validate characteristics against findings from prerequisite document]
+- [Ensure alignment with analysis from prerequisite document]
+- [Apply framework/methodology from prerequisite document]
+
+### Context Documentation Utilization
+- [Reference best practices from context documentation]
+- [Apply methodologies from context documentation]
+- [Incorporate industry standards from context documentation]
+- [Validate against benchmarks from context documentation]
+
+### Documentation Cross-References
+- Explicitly cite relevant sections from previous documents
+- Highlight where [this document] confirms or challenges previous assumptions
+- Identify areas where [this document] provides new insights not captured elsewhere
+- Create clear linkages for future document development
+
+## Best Practices for [Document Type]
+
+1. **[Practice 1]:** [Specific guidance for this document type]
+2. **[Practice 2]:** [Specific guidance for this document type]
+3. **[Practice 3]:** [Specific guidance for this document type]
+4. **[Practice 4]:** [Specific guidance for this document type]
+5. **[Practice 5]:** [Specific guidance for this document type]
+6. **[Practice 6]:** [Specific guidance for this document type]
+7. **[Practice 7]:** [Specific guidance for this document type]
+8. **[Practice 8]:** [Specific guidance for this document type]
+
+## Output Requirements
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/docs/`
+- **Filename:** `[specific-filename].md`
+- **Length:** [Appropriate length range] (typically X-Y pages)
+- **Audience:** [Target audience with role specifications]
+- **Dependencies:** Built upon [list prerequisite documents]
+- **Version Control:** Include creation date, version number, and update schedule
+
+## Final Instructions
+
+1. **DO NOT** generate [document type] immediately upon receiving this request
+2. **DO** first thoroughly review existing documentation in `/docs/` folder:
+   - Extract [specific insights] from [prerequisite documents]
+   - Incorporate [specific research] from [prerequisite documents]
+   - Identify any conflicts or gaps between documents
+3. **DO** review context documentation in `/library_docs/` for:
+   - Industry best practices and methodologies
+   - Template structures and frameworks
+   - Quality standards and benchmarks
+   - Validation criteria and checklists
+4. **DO** ask specific, targeted questions to fill critical information gaps
+5. **DO** offer the user choice between providing detailed input or allowing research-based generation
+6. **DO** ensure [document] is grounded in real research and [domain] insights, not assumptions
+7. **DO** create [document] that is specific enough to drive concrete [downstream activities]
+8. **DO** validate that [document] supports and enhances the [product/project] strategy outlined in previous documents
+9. **DO** reference specific insights from [prerequisite documents] when developing [this document]
+10. **DO** highlight any new insights or contradictions that emerge from [document type] development
+```
+
+## Key Blueprint Patterns
+
+### 1. **Hierarchical Document Dependencies**
+Each rule explicitly builds upon previous documentation, creating a sequential knowledge-building approach.
+
+### 2. **Dual Information Sources**
+- `/docs/` - Previously generated project documentation
+- `/library_docs/` - Supporting best practices and methodologies
+
+### 3. **Discovery-First Approach**
+Never generate immediately; always conduct thorough discovery through structured questioning.
+
+### 4. **Quality Assurance Framework**
+Multi-dimensional validation covering completeness, strategic alignment, actionability, and research quality.
+
+### 5. **Cross-Reference Integration**
+Explicit validation and integration with all prerequisite documentation.
+
+### 6. **Stakeholder-Agnostic Output**
+Documents designed to serve multiple audience levels and use cases.
+
+## Customization Variables
+
+When creating a new rule, customize these elements:
+
+- **Document Type:** (e.g., Technical Architecture, Content Strategy, Testing Plan)
+- **Domain Categories:** (e.g., for UX: Information Architecture, Interaction Design, Visual Design)
+- **Discovery Questions:** (Domain-specific question frameworks)
+- **Structure Sections:** (Document-specific content organization)
+- **Quality Checks:** (Domain-relevant validation criteria)
+- **Prerequisite Documents:** (Which documents this builds upon)
+- **Output Specifications:** (Filename, length, audience)
+
+## Usage Instructions
+
+1. **Copy the blueprint template**
+2. **Replace all bracketed placeholders** with domain-specific content
+3. **Customize discovery questions** for your specific domain
+4. **Adapt the document structure** to match your output requirements
+5. **Modify quality assurance checks** to reflect domain-specific criteria
+6. **Update integration requirements** based on prerequisite documents
+
+7. **Test with your AI agent** to ensure proper functionality

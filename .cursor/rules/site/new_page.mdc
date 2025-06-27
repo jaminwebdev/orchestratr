@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+- wireframe and write copy sequentially
+  - should reference originally generated docs for consistency
+  - should reference library_docs of course for making decisions and qualifying questions
+- should reference design docs and library_docs screenshots for consistency
+
