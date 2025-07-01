@@ -13,7 +13,7 @@ alwaysApply: false
 ## Purpose
 Guide the AI to create conversion-optimized web pages through a unified process that:
 - Conducts a comprehensive interactive interview to gather context
-- Integrates research from wireframe docs (wireframe_best_practices.md, wireframe_101.md, wireframe_examples.md) and copy docs (copy_best_practices.md, copy_ctas.md, copy_headlines.md, copy_101.md)
+- Integrates research from wireframe docs (wireframe_best_practices.md, wireframe_101.md, wireframe_examples.md) and copy docs (copy_best_practices.md, copy_ctas.md, copy_headlines.md)
 - Produces a cohesive wireframe-content deliverable optimized for conversion
 - Provides clear rationale backed by research and best practices
 

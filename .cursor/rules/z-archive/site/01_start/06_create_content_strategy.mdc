@@ -21,7 +21,6 @@ This document will serve as the definitive content creation and management guide
    - `ux-design-considerations.md` - Brand voice foundations, design-content integration, and user experience content requirements
 
 2. **Integrate Copywriting Best Practices:** Review and incorporate insights from `/research_docs/`:
-   - `copy_101.md` - Fundamental copywriting principles and techniques
    - `copy_best_practices.md` - Advanced copywriting strategies and optimization methods  
    - `copy_headlines.md` - Headline writing best practices and conversion optimization
 
@@ -397,7 +396,6 @@ The Content Strategy should explicitly reference and build upon previous documen
 - Ensuring content enhances rather than conflicts with established user experience priorities
 
 ### From Research Docs (`/research_docs/`):
-- Applying fundamental copywriting principles from `copy_101.md` to specific business context
 - Implementing advanced copywriting strategies from `copy_best_practices.md` for target audience
 - Utilizing headline optimization techniques from `copy_headlines.md` for conversion-critical pages
 - Adapting proven copywriting methods to unique user personas and business objectives
