@@ -3,6 +3,7 @@ description:
 globs: 
 alwaysApply: false
 ---
+- Do keyword research
 - wireframe and write copy sequentially
   - should reference originally generated docs for consistency
   - should reference library_docs of course for making decisions and qualifying questions

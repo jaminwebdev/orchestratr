@@ -1,0 +1,10 @@
+Make this into single rule with user feedback:
+https://www.youtube.com/watch?v=DxSDZwpgfRE
+
+- Ask perplexity MCP for programmatic keyword ideas based on site docs
+- Wait for user feedback to proceed with a given tactic/path
+- Perplexity will then expand on that more with combinations and tools/ideas to expand further
+    - it should return with ideas based around the path you chose and keywords can be pulled from that by the next mcp
+- use the dataforseo mcp to research the keywords and give ideas of potential search volume and keyword difficulty
+- With the key findings it returns, ask it to create a PRD to build programmatic page templates based on the chosen strategy. Use the information gathered to prioritize tool comparisons, relevant tools to the {your site} and a high priority keyword that we can create solid content around. 
+- use your model of choice to attack the PRD - also have it reference resource docs in a repo if they exist. Tools like Claude Code might be better for this as it has better context of the project vs Cursor which takes shortcuts to keep costs cheap. 
