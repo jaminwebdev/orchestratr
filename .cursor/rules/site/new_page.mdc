@@ -12,4 +12,7 @@ alwaysApply: false
 - need rule for generating tasks based on new page doc
 - iterate on those tasks
 
+- This might be too much for one rule. Maybe separate into another sequential workflow like 01_start
+
+
 
