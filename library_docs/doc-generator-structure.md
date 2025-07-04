@@ -28,12 +28,61 @@ Example:
 ## Process
 
 1. **Receive Initial Prompt:** The user provides a brief description or request for a new app/product idea.
-2. **Conduct Structured Discovery:** Use the comprehensive question framework below to gather all necessary information through multiple rounds of clarifying questions.
-3. **Validate Understanding:** Summarize key findings and confirm alignment before proceeding.
-4. **Generate Comprehensive Product Brief:** Create a detailed brief using the enhanced structure outlined below.
-5. **Review and Refine:** Ensure completeness, clarity, and actionability.
-6. **Save Product Brief:** Save as `master-product-brief.md` in the `/docs` directory.
+2. **Analyze Existing Documentation:** Thoroughly review existing docss in the `/docs` folder to understand the website purpose, initial target audience assumptions, and business objectives.
+3. **Conduct Structured Discovery:** Use the comprehensive question framework below to gather all necessary information through multiple rounds of clarifying questions.
+4. **Validate Understanding:** Summarize key findings and confirm alignment before proceeding.
+5. **Generate Comprehensive Product Brief:** Create a detailed brief using the enhanced structure outlined below.
+6. **Review and Refine:** Ensure completeness, clarity, and actionability.
+7. **Save Product Brief:** Save as `master-product-brief.md` in the `/docs` directory.
 ```
+
+### 2.a (Optional) Required Previous Documents
+
+For subsequently generated docs, there may be prior docs that should be referenced when creating a new document. 
+
+If any categories or sections are deemed useful or critical, they should be noted in the list below the doc title. 
+
+Example:
+```text
+Before beginning this new document's generation, ensure these documents exist in the /docs/ directory, analyze them, and extract any key sections critical to the generation of the new document:
+
+**1. Website Brief (`website_brief.md`)**
+- Business objectives and conversion goals
+- Brand guidelines and design constraints
+- Technical requirements and platform specifications
+- Budget and timeline considerations
+
+**2. Audience Research (`audience_research.md`)**
+- Detailed user personas with behavioral patterns
+- User journey mapping and touchpoint analysis
+- Device preferences and technical capabilities
+- Pain points and motivation drivers
+
+**3. Sitemap Document (`sitemap_document.md`)**
+- Complete site structure and navigation hierarchy
+- Content organization and page relationships
+- SEO strategy and URL structure
+- User flow optimization decisions
+```
+
+### 2.b Reference Supporting Documnent Library
+
+Within `/library_docs`, there's supporting documentation for best practices for wireframing, copywriting, ux and design, and more. This documentation should be referenced when making decisions based around those topics.
+
+Example:
+```text
+
+## Reference Docs
+
+This documentation should be referenced when making ux, design, wireframing, writing and more.
+
+**Context Documentation Integration:** Review supporting materials in `/library_docs/`:
+   - [Reference industry best practices]
+   - [Incorporate methodology frameworks]
+   - [Apply proven templates and structures]
+   - [Validate against established standards]
+```
+
 ### 3. **Discovery Framework (Information Gathering)**
 
 - Organize questions by thematic categories (using emojis for visual hierarchy)
@@ -313,6 +362,9 @@ Example:
 6. **Actionable Outputs:** Generate documents that drive concrete next steps
 ```
 
+## Critical Considerations
+
+- The supporting docs in `/library_docs` are meant to act as reference for best practices and aid in decision making along with user input. Always reference these when appropriate.  
 
 ## Additional Considerations
 
