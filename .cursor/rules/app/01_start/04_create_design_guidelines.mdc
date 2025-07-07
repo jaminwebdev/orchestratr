@@ -3,3 +3,213 @@ description:
 globs:
 alwaysApply: false
 ---
+Of course. Here is the rule for generating the Design & UX Guidelines document.
+
+-----
+
+# Rule: Design & UX Guidelines Generation
+
+## Goal
+
+To guide an AI assistant in creating a comprehensive Design & UX Guidelines document. This document functions as the centralized source of truth for the product's visual identity, interaction patterns, and content strategy.
+
+Its purpose is to ensure all designers, developers, and content creators can build a cohesive, accessible, usable, and brand-aligned user experience. It bridges the gap between feature requirements and final implementation, ensuring consistency across the entire application.
+
+## Process
+
+1.  **Review Dependencies:** The process must begin with a deep analysis of the preceding documents:
+      * `/docs/01_product_brief.md`: To understand the high-level brand identity, mission, and target audience.
+      * `/docs/02_market_user_research.md`: To ensure design choices and voice/tone resonate with the user personas' needs, goals, and technical abilities.
+      * `/docs/03_feature_spec.md`: To identify all the necessary user flows and UI components that require design and content definition.
+2.  **Conduct Structured Discovery:** Use the discovery framework below to ask targeted questions that define the core pillars of the design system: visual, interaction, and content guidelines.
+3.  **Review Supporting Docs:** This step is crucial. Reference relevant files from the `/library_docs/` directory.
+4.  **Synthesize and Generate:** Organize the collected principles and specifications into a logical, easy-to-reference format. Generate the complete guidelines document using the `Document Structure` below.
+5.  **Quality Assurance:** Use the `Quality Assurance Framework` to ensure the guidelines are consistent, actionable, and meet accessibility standards.
+6.  **Save and Version:** Save the final document as `04_design_guidelines.md` in the `/docs/` directory.
+
+## Discovery Framework
+
+### 🎨 Brand Personality & Principles
+
+  * What are 3-5 keywords that describe the desired brand personality? (e.g., "Trustworthy," "Innovative," "Playful," "Simple").
+  * What are the top 3 UX principles that should guide every design decision? (e.g., "Clarity over choice," "Provide constant feedback," "Consistency is key").
+  * Are there any existing logos or brand assets that must be used?
+
+### ✍️ Content Strategy: Voice & Tone
+
+  * **Voice:** If the product were a person, how would it speak? Is it a formal expert, a friendly guide, a witty sidekick?
+  * **Tone:** How does the tone change in different contexts? Provide examples for:
+      * A success message (e.g., "Project created successfully\!")
+      * An error message (e.g., "Couldn't save your changes. Please check your connection.")
+      * An empty state (e.g., "Create your first project to get started.")
+  * **Writing Guidelines:** Are there specific rules for writing UI copy? (e.g., Use sentence case for all buttons and titles? Avoid jargon? Use active voice?).
+
+### 🖌️ (Visual Design)
+
+  * **Color Palette:** What are the specific hex codes for:
+      * `Primary Color` (for main actions, links)
+      * `Secondary Color` (for secondary actions)
+      * `Neutral Colors` (for text, backgrounds, borders - provide a scale from light to dark)
+      * `System Colors` (Success, Error, Warning, Info)
+  * **Typography:**
+      * What font family will be used for headings? For body text? (Reference `/library_docs/font_pairings_2.md` if needed).
+      * What is the typographic scale? Provide `font-size` and `font-weight` for `<h1>`, `<h2>`, `<h3>`, `<h4>`, body text, and captions.
+  * **Layout & Spacing:**
+      * What is the base unit for all spacing and padding (e.g., 8px)? All margins/paddings should be a multiple of this unit.
+      * What is the maximum width of the main content area on large screens?
+  * **Iconography:** What style of icons will be used (e.g., Line, Solid, Duotone)? Is there a preferred library (e.g., Material Icons, Font Awesome)?
+
+### ♿ Accessibility (A11y)
+
+  * What level of WCAG (Web Content Accessibility Guidelines) are we required to meet (typically AA)?
+  * How will we handle keyboard focus states for all interactive elements (links, buttons, inputs)? (e.g., "A 2px solid blue outline").
+  * How will we ensure all important images have descriptive alt text?
+
+### 📱 Responsive Design
+
+  * What are the primary breakpoints for the design? (e.g., `mobile: < 768px`, `tablet: 768px - 1024px`, `desktop: > 1024px`).
+  * Will the design approach be mobile-first or desktop-first?
+  * How should primary navigation behave on mobile screens? (e.g., "Collapses into a hamburger menu").
+
+## Document Structure
+
+```markdown
+# Design & UX Guidelines: [Product Name]
+
+_Version: 1.0_
+_Date: [Date]_
+_Author(s): [Name(s)]_
+_Status: Draft | In Review | Approved_
+
+---
+
+## 1. Core Principles
+High-level principles that guide all design and content decisions.
+- **Brand Personality:** [e.g., Trustworthy, Simple, Empowering]
+- **UX Principles:**
+    - 1. **Clarity First:** Never sacrifice clarity for aesthetic appeal.
+    - 2. **Consistency is King:** Similar elements should look and behave in similar ways.
+    - 3. **Provide Feedback:** The system should always inform the user what is happening.
+
+## 2. Content Strategy: Voice & Tone
+### 2.1. Voice
+Our brand voice is [e.g., a helpful and patient expert. We are knowledgeable but not arrogant. We use clear, simple language and avoid technical jargon.]
+
+### 2.2. Tone
+Our tone adapts to the user's context.
+
+| Context           | Tone Example                                             |
+| ----------------- | -------------------------------------------------------- |
+| **Welcome/Onboarding** | Friendly & Encouraging: "Let's get your first project set up!" |
+| **Success Message** | Positive & Affirming: "Great work! Your report is ready." |
+| **Error/Alert** | Clear & Helpful: "Upload failed. Please try a smaller file." |
+| **Empty State** | Action-Oriented: "Add a teammate to start collaborating." |
+
+### 2.3. UI Writing Rules
+- Use sentence case for all titles, buttons, and labels.
+- Use active voice whenever possible.
+- Be concise.
+
+## 3. Visual Identity
+### 3.1. Color Palette
+
+| Usage             | Name          | Hex       | Notes                               |
+| ----------------- | ------------- | --------- | ----------------------------------- |
+| **Primary** | `primary-blue`  | `#0D6EFD` | Main calls-to-action, links       |
+| **Secondary** | `secondary-gray`| `#6C757D` | Secondary buttons, less-used items  |
+| **Text** | `text-dark`     | `#212529` | Main body copy, headings          |
+| **Background** | `bg-light`      | `#F8F9FA` | Main page background              |
+| **Border** | `border-gray`   | `#DEE2E6` | Card borders, input borders       |
+| **Success** | `success-green` | `#198754` | Confirmation messages             |
+| **Error** | `error-red`     | `#DC3545` | Error messages, destructive actions |
+
+### 3.2. Typography
+- **Heading Font:** [e.g., Inter]
+- **Body Font:** [e.g., Inter]
+
+| Element      | Font Size | Font Weight |
+| ------------ | --------- | ----------- |
+| `<h1>`       | 32px      | 700 (Bold)  |
+| `<h2>`       | 28px      | 700 (Bold)  |
+| `<h3>`       | 24px      | 600 (Semi-Bold) |
+| Body         | 16px      | 400 (Regular) |
+| Caption/Small| 14px      | 400 (Regular) |
+
+### 3.3. Layout & Spacing
+- **Base Unit:** 8px. All margins, paddings, and gaps should be multiples of 8 (8px, 16px, 24px, 32px).
+- **Grid:** 12-column bootstrap-style grid.
+- **Max Content Width:** 1200px.
+
+## 4. UX Patterns & Components
+### 4.1. Navigation
+- **Desktop:** A persistent top navigation bar with primary links.
+- **Mobile:** The top navigation bar collapses into a hamburger menu.
+
+### 4.2. Buttons
+- **Primary:** Solid fill with `primary-blue`. Used for the main action on a page.
+- **Secondary:** Outlined with `secondary-gray`. Used for less important actions.
+- **Destructive:** Solid fill with `error-red`. Used for actions like "Delete".
+
+## 5. Accessibility (A11y)
+- **Target:** WCAG 2.1 Level AA.
+- **Color Contrast:** All text/background color combinations must pass AA contrast ratios.
+- **Keyboard Navigation:** All interactive elements must have a visible focus state (e.g., `2px solid #0D6EFD outline`).
+- **Images:** All `<img>` tags must have descriptive `alt` attributes. Decorative images should have `alt=""`.
+```
+
+## Quality Assurance Framework
+
+### Consistency Checks
+
+  - [ ] Do the chosen colors and fonts reflect the defined **Brand Personality**?
+  - [ ] Do the **Voice & Tone** examples align with the UX Principles (e.g., are error messages clear and helpful)?
+  - [ ] Is the **spacing system** based on the defined base unit?
+
+### Technical & Accessibility Checks
+
+  - [ ] Have all color combinations in the **Color Palette** been checked for WCAG AA contrast compliance?
+  - [ ] Is there a clearly defined **focus state** for interactive elements?
+  - [ ] Does the **typographic scale** provide a clear visual hierarchy?
+  - [ ] Are the guidelines specific enough for a developer to implement them without ambiguity (e.g., providing hex codes and pixel values)?
+
+## Integration with Other Documentation
+
+  * **Source Documents:** This document is a creative synthesis based on analytical inputs from:
+      * `/docs/01_product_brief.md`: For the brand's mission and strategic goals.
+      * `/docs/02_market_user_research.md`: To ensure the aesthetic and voice are appropriate for the target personas.
+      * `/docs/03_feature_spec.md`: For the specific UI components and flows that need to be styled.
+  * **As a Source:** This document is the **canonical guide for the product's look and feel**. It is a primary input for:
+      * **UI/UX Designers** creating wireframes and high-fidelity mockups.
+      * **Frontend Developers** translating mockups into a real component library and styling the application.
+      * **Content & Marketing Teams** to ensure a consistent voice across all user-facing communication (UI text, emails, etc.).
+
+## Best Practices
+
+1.  **Explain the "Why":** Briefly explain the rationale behind a decision (e.g., "We use a sans-serif font for body text to maximize readability on screens.").
+2.  **Provide Do's and Don'ts:** Where ambiguity is possible, show a correct example next to an incorrect one.
+3.  **Prioritize Clarity:** The primary goal of these guidelines is to enable others to work efficiently and consistently.
+4.  **Start Small, Evolve:** This document doesn't need to be exhaustive from day one. It can grow as the product evolves and new patterns are needed.
+5.  **Accessibility is Non-Negotiable:** Integrate accessibility into every relevant guideline, from color to interaction.
+
+## Output Requirements
+
+  - **Format:** Markdown (`.md`)
+  - **Location:** `/docs/`
+  - **Filename:** `04_design_guidelines.md`
+  - **Audience:** UI/UX Designers, Frontend Developers, Content Creators, and Product Managers.
+  - **Style:** Highly scannable and referenceable. Use tables, lists, and examples heavily.
+
+## Final Instructions
+
+1.  **DO NOT** create guidelines based on personal taste. Every decision should be justifiable and tied back to the product's principles and user research.
+2.  **DO** provide specific, objective values (hex codes, pixel sizes, font weights). Avoid subjective terms like "darker" or "bigger."
+3.  **DO** ensure all guidelines are internally consistent (e.g., the error color in the palette matches the error color for form validation).
+4.  **DO** make the document a practical tool, not a theoretical treatise.
+
+## Key Success Factors
+
+1.  **Consistency:** The guidelines empower any team member to produce work that looks, feels, and sounds like it belongs to the same, coherent product.
+2.  **Efficiency:** It dramatically speeds up design and development by providing a reusable kit of parts and defined patterns, reducing repetitive decision-making.
+3.  **Usability:** Because the guidelines are founded on UX principles and user research, they lead to a more intuitive and effective final product.
+4.  **Brand Integrity:** The final user experience becomes a true and consistent reflection of the intended brand personality.
+5.  **Scalability:** The framework is robust enough to accommodate new features and components over time without breaking.

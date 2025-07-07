@@ -1,0 +1,220 @@
+
+# Rule: Technical Architecture Generation
+
+## Goal
+
+To guide an AI assistant in creating a comprehensive Technical Architecture document. This document is the master engineering blueprint for the application, defining the technology stack, system design, data models, API contracts, and crucial non-functional requirements like security, performance, and scalability.
+
+Its purpose is to translate all functional requirements from the `/docs//docs/03_feature_spec.md` into a concrete, actionable implementation plan for the development team, ensuring the final product is well-engineered, robust, and maintainable.
+
+## Process
+
+1.  **Review Dependencies:** The process MUST begin with a meticulous review of all prior documentation to inform technical decisions:
+      * `/docs/01_product_brief.md`: For high-level goals, scope, and constraints (e.g., budget, target scale) that influence architectural choices.
+      * `/docs//docs/03_feature_spec.md`: This is the **most critical input**. Every functional requirement, data need, and third-party integration defined here must be explicitly supported by the architecture.
+      * `/docs/04_design_guidelines.md`: To inform the choice of frontend framework and component strategy.
+2.  **Conduct Structured Discovery:** Use the deep technical discovery framework below to elicit specific choices and rationale for every layer of the stack, from the database to the deployment pipeline.
+3.  **Review Supporting Docs:** Reference relevant files from the `/library_docs/` directory, such as `api_design_best_practices.md`, `coding_standards.md`, or infrastructure best practice guides.
+4.  **Structure and Generate:** Organize the technical specifications into a logical hierarchy. Use diagrams extensively to illustrate system flows. Generate the complete architecture document using the `Document Structure` template.
+5.  **Quality Assurance:** Use the `Quality Assurance Framework` to vet the architecture for completeness, feasibility, security, and alignment with product requirements.
+6.  **Save and Version:** Save the final document as `05_technical_architecture.md` in the `/docs/` directory.
+
+## Discovery Framework
+
+### 🏗️ High-Level Architecture & Stack
+
+  * **Architectural Style:** What architectural pattern will we use (e.g., Layered Monolith, Microservices, Serverless)? What is the primary justification for this choice?
+  * **Technology Stack Rationale:**
+      * **Frontend:** Which framework will be used (e.g., React, Vue, Svelte, Angular)? Why is it the best fit for this project's requirements and team skills?
+      * **Backend:** Which language and framework will be used (e.g., Node.js/Express, Python/Django, Go, Ruby on Rails)? Why?
+      * **Database:** What database is required (e.g., PostgreSQL, MySQL, MongoDB)? Justify the choice based on the data structure, query patterns, and scalability needs from the feature spec.
+  * **Hosting & Infrastructure:** Where will the application be hosted (e.g., AWS, Google Cloud, Azure, Vercel, Heroku)? What specific services will be used (e.g., EC2, S3, RDS)?
+
+### 🗃️ Data Model & Schema
+
+  * Based on the feature spec, what are the primary data **entities** (e.g., `User`, `Project`, `Task`, `Comment`)?
+  * What are the **relationships** between these entities (e.g., A `User` has many `Projects`; a `Project` has many `Tasks`).
+  * For each entity, what are the key **attributes** and their data types (e.g., `User.email` is a `String`, `Project.created_at` is a `Timestamp`)?
+
+### 📡 API Design & Integrations
+
+  * **API Paradigm:** Will the primary API be REST, GraphQL, or gRPC?
+  * **Key Endpoints:** What are the major API endpoints required to support the features? (e.g., `GET /api/v1/projects`, `POST /api/v1/projects/:id/tasks`).
+  * **Data Transfer Object (DTO) Shape:** What is the basic JSON structure for key resources?
+  * **Third-Party Integrations:** For each external API required (e.g., Stripe, SendGrid), what is the authentication method and what are the key endpoints we will consume?
+
+### 🔐 Security & Compliance
+
+  * **Authentication:** How will users be authenticated? (e.g., JWT tokens stored in cookies, OAuth 2.0 with Google/GitHub).
+  * **Authorization:** How will permissions be managed? (e.g., Role-Based Access Control [RBAC] with roles like `admin`, `member`, `guest`).
+  * **Data Protection:** How will sensitive data be protected at rest and in transit? (e.g., Password hashing with bcrypt, SSL/TLS everywhere).
+  * **Compliance:** Do any regulations like GDPR or HIPAA impact data storage, user privacy, or logging?
+
+### 🚀 Performance & DevOps
+
+  * **Performance Targets:** What are the specific performance goals? (e.g., API P95 response time \< 250ms, Lighthouse performance score \> 90).
+  * **Scalability Plan:** What is the strategy for scaling? (e.g., Horizontal scaling of web servers behind a load balancer, use of a CDN for static assets, database read replicas).
+  * **CI/CD Pipeline:** How will code be automatically tested and deployed? (e.g., GitHub Actions running tests on every push to `main` and deploying to production).
+  * **Monitoring & Logging:** What tools will be used for application monitoring, error tracking, and logging? (e.g., Datadog, Sentry, Grafana).
+  * **Disaster Recovery:** What is the backup strategy for the database (e.g., daily automated snapshots) and what is the recovery time objective (RTO)?
+
+## Document Structure
+
+````markdown
+# Technical Architecture: [Product Name]
+
+_Version: 1.0_
+_Date: [Current Date]_
+_Author(s): [Name(s)]_
+_Status: Draft | In Review | Approved_
+
+---
+
+## 1. Overview
+This document outlines the complete technical architecture for [Product Name]. It details the technology choices, system design, and non-functional requirements necessary to build a secure, scalable, and maintainable application that meets the requirements laid out in the `03_feature_spec.md`.
+
+## 2. System Architecture Diagram
+A high-level diagram illustrating the major components of the system and how they interact.
+_We recommend using Mermaid.js for diagrams._
+```mermaid
+graph TD
+    subgraph "User's Browser"
+        A[React Frontend on Vercel]
+    end
+    subgraph "AWS Cloud"
+        B[Load Balancer]
+        C[Node.js API Servers (EC2)]
+        D[PostgreSQL DB (RDS)]
+        E[S3 for File Storage]
+    end
+    subgraph "Third-Party Services"
+        F[Stripe API]
+        G[SendGrid API]
+    end
+    A -- HTTPS --> B
+    B --> C
+    C -- Connects to --> D
+    C -- Stores/Retrieves Files --> E
+    C -- Processes Payments --> F
+    C -- Sends Emails --> G
+```
+
+## 3. Technology Stack
+
+| Layer       | Technology       | Rationale                                                                |
+|-------------|------------------|--------------------------------------------------------------------------|
+| **Frontend** | React, Next.js   | Rich ecosystem, component-based, aligns with design system, SSR for SEO. |
+| **Backend** | Node.js, Express | Fast I/O for API, JavaScript consistency with frontend, strong npm ecosystem. |
+| **Database** | PostgreSQL (RDS) | Relational integrity for core data, mature, and scalable.              |
+| **Hosting** | AWS (EC2, RDS, S3)| Mature, scalable, wide range of services.                                |
+| **CI/CD** | GitHub Actions   | Tightly integrated with source control, flexible workflow automation.      |
+
+## 4. Data Model & Schema
+High-level definition of core database tables and their relationships.
+
+**`users` table:**
+```sql
+CREATE TABLE users (
+    id UUID PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    full_name VARCHAR(255),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+```
+**`projects` table:**
+```sql
+CREATE TABLE projects (
+    id UUID PRIMARY KEY,
+    owner_id UUID REFERENCES users(id),
+    name VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+```
+_[Continue for all major entities...]_
+
+## 5. API Specification
+- **Style:** RESTful API
+- **Base URL:** `/api/v1`
+- **Authentication:** All endpoints require a `Bearer <JWT>` token in the `Authorization` header, except `/auth/login` and `/auth/register`.
+
+### Key Endpoints:
+- `POST /auth/register` - Creates a new user.
+- `POST /auth/login` - Authenticates a user and returns a JWT.
+- `GET /projects` - Returns a list of projects for the authenticated user.
+- `POST /projects` - Creates a new project.
+- `GET /projects/:id` - Returns a single project by its ID.
+
+## 6. Security Plan
+- **Authentication:** JWTs with a short expiry (15 mins) and a long-lived refresh token.
+- **Authorization:** Role-Based Access Control (RBAC). API endpoints will check user roles before executing.
+- **Data Protection:** All traffic is forced to use HTTPS. Passwords are hashed using `bcrypt`. All secrets (API keys, DB credentials) are stored in a managed secrets manager (e.g., AWS Secrets Manager).
+
+## 7. Performance & Scalability
+- **Performance Targets:** P95 API response time < 200ms.
+- **Scalability:** The backend is stateless and can be horizontally scaled by adding more EC2 instances behind a load balancer. A CDN (CloudFront) will be used for all static assets. The database can be scaled up or use read replicas if needed.
+
+## 8. DevOps & Operations
+- **Environments:** `development`, `staging`, and `production`.
+- **Branching:** GitFlow (`main`, `develop`, feature branches).
+- **CI/CD:** GitHub Actions will run linting, unit tests, and integration tests on every PR. Merges to `main` will trigger a deployment to production.
+- **Monitoring:** Sentry for error tracking, Datadog for application performance monitoring.
+- **Disaster Recovery:** Automated daily snapshots of the PostgreSQL database, retained for 30 days.
+````
+
+## Quality Assurance Framework
+
+### System Design Checks
+
+  - [ ] Does the proposed architecture **fully support every feature** and user story defined in `/docs//docs/03_feature_spec.md`?
+  - [ ] Is the rationale for each **technology choice** clear and justified based on project needs (not just trends)?
+  - [ ] Is the **data model** normalized and designed to prevent data integrity issues?
+  - [ ] Is the plan for **scalability** realistic and aligned with the business goals in the product brief?
+
+### Non-Functional Requirement Checks
+
+  - [ ] Is the **security model** comprehensive, covering authentication, authorization, and data protection?
+  - [ ] Is the **CI/CD pipeline** clearly defined and does it promote automated, reliable deployments?
+  - [ ] Is there a clear plan for **monitoring, logging, and alerting** to ensure system health?
+  - [ ] Does the **disaster recovery plan** meet the business's tolerance for data loss?
+
+## Integration with Other Documentation
+
+  * **Source Documents:** This architecture is the technical answer to the requirements defined in:
+      * `/docs/01_product_brief.md`: For budget, timeline, and scale, which constrain technology choices.
+      * `/docs//docs/03_feature_spec.md`: The most critical input, defining the functional requirements the system must deliver.
+      * `/docs/04_design_guidelines.md`: Which informs the frontend technology stack.
+  * **As a Source:** This document is the **master blueprint for all engineering work**. It is the primary input for:
+      * `07_create_mvp_tasks.mdc`: The architecture directly defines the foundational epics and tasks for the development team (e.g., "Set up VPC and networking," "Build User authentication service," "Configure CI/CD pipeline").
+      * **Developer Onboarding:** New engineers will read this document to understand how the system works.
+
+## Best Practices
+
+1.  **Diagram Everything:** Use diagrams (like Mermaid.js) to make complex systems easy to understand at a glance.
+2.  **Justify Your Choices:** Don't just list technologies; explain *why* they were chosen over alternatives. This context is invaluable.
+3.  **Plan for Evolution:** Design systems that are easy to change and maintain. Avoid overly rigid or tightly coupled components.
+4.  **Embrace YAGNI:** (You Ain't Gonna Need It). Don't over-engineer a solution for a problem you don't have yet. Solve for today's requirements and the foreseeable future.
+5.  **Security is Not an Add-on:** It must be a foundational part of the design from day one.
+
+## Output Requirements
+
+  - **Format:** Markdown (`.md`), with embedded Mermaid.js for diagrams.
+  - **Location:** `/docs/`
+  - **Filename:** `05_technical_architecture.md`
+  - **Audience:** Primarily Software Engineers, DevOps Engineers, and technical leadership.
+  - **Style:** Precise, technical, and unambiguous.
+
+## Final Instructions
+
+1.  **DO NOT** make technology choices based on personal preference or "resume-driven development." Every choice must be objectively justified against project requirements.
+2.  **DO** use diagrams to visually represent the architecture, data flow, and infrastructure.
+3.  **DO** be explicit about API contracts and data schemas. This is where ambiguity causes the most bugs.
+4.  **DO** ensure the document clearly addresses the plan for security, scalability, and operations, as these are as important as the features themselves.
+
+## Key Success Factors
+
+1.  **Feasibility:** The architecture is realistic to implement given the team's skills, budget, and timeline.
+2.  **Robustness:** The system is designed to be secure, reliable, and performant under expected load.
+3.  **Scalability:** The architecture provides a clear path to handle future growth without requiring a fundamental rewrite.
+4.  **Clarity:** A new engineer can read the document and gain a clear understanding of how the system is built, enabling them to contribute effectively.
+5.  **Alignment:** The technical plan is perfectly aligned with, and fully capable of supporting, all product features and long-term business goals.

@@ -3,3 +3,231 @@ description:
 globs:
 alwaysApply: false
 ---
+
+# Rule: Product Brief Generation
+
+## Goal
+
+To guide an AI assistant in creating a detailed, actionable Product Brief in Markdown format. This document serves as the foundational "source of truth" for the entire project, defining the core vision, scope, and strategy.
+
+The brief must be comprehensive enough for all stakeholders—from developers and designers to senior leadership and marketing teams—to understand the product's purpose, requirements, and success criteria. The generated Product Brief will be referenced by all subsequent rules to ensure consistency across all documentation.
+
+## Process
+
+1.  **Receive Initial Prompt:** The user provides a high-level description or request for a new application or product idea.
+2.  **Conduct Structured Discovery:** Use the comprehensive question framework below to gather all necessary information. Ask clarifying questions until all sections can be confidently completed.
+3.  **Review Supporting Docs:** Reference relevant documents from the `/library_docs/` directory (e.g., business goals, brand identity guidelines) if provided.
+4.  **Validate Understanding:** Before generating the full document, summarize the core vision, target audience, and key features to confirm alignment with the user.
+5.  **Generate Comprehensive Product Brief:** Create a detailed brief using the `Document Structure` template outlined below.
+6.  **Quality Assurance:** Perform a full review using the `Quality Assurance Framework` to ensure the document is complete, clear, and actionable.
+7.  **Save and Version:** Save the final document as `01_product_brief.md` in the `/docs/` directory.
+
+## Discovery Framework
+
+### 🎯 Product Vision & Strategy
+
+  * **Core Vision:** What is the fundamental problem this product solves?
+  * **Value Proposition:** What is the single most important value this product provides that existing alternatives do not?
+  * **Success Definition:** What does success look like in 6 months? In 1 year? In 3 years?
+  * **Market Timing:** Why is now the right time to build this product?
+  * **Mission Alignment:** How does this product align with your broader business or personal goals?
+
+### 👥 Target Audience & User Research
+
+  * **Primary Users:** Who are the main, day-to-day users? Describe their demographics, roles, and technical proficiency.
+  * **Secondary Users:** Are there other user types (e.g., admins, managers, external stakeholders)?
+  * **User Segments:** How do different user groups vary in their needs or behaviors?
+  * **Pain Points:** What are the most significant frustrations or challenges your target users currently face related to this problem?
+  * **Current Solutions:** How do users currently solve this problem? What are the pros and cons of their current methods (including manual processes)?
+
+### 🏢 Market Analysis & Competitive Landscape
+
+  * **Market Size:** What is the total addressable market (TAM) and the serviceable available market (SAM)?
+  * **Direct Competitors:** Who are the top 3-5 direct competitors? What are their primary strengths and weaknesses?
+  * **Indirect Competitors:** What alternative solutions exist that aren't direct product competitors?
+  * **Competitive Advantage:** What is your sustainable competitive advantage or "unfair advantage"?
+  * **Market Trends:** What key industry trends support or threaten this product idea?
+
+### 🛠️ Product Requirements & Features
+
+  * **Core Features (MVP):** What are the absolute essential features required for the first launch to solve the core problem?
+  * **Feature Prioritization:** Beyond the MVP, what features are "should-haves" or "could-haves"? (Consider using the MoSCoW method: Must, Should, Could, Won't).
+  * **User Workflows:** Describe the key journey a user takes to get value. For example: "User signs up, creates a project, invites a team member, and assigns a task."
+  * **Integration Requirements:** Are there any essential third-party services, systems, or APIs that must be integrated (e.g., Stripe for payments, Google Login for auth)?
+  * **Data Requirements:** What key data needs to be collected, stored, and processed?
+
+### 📱 Platform & Technical Strategy
+
+  * **Platform Strategy:** Will this be a web app, a native mobile app (iOS/Android), a desktop app, or multi-platform? What is the primary platform?
+  * **Device Support:** Which specific devices and screen sizes are a priority?
+  * **Performance Requirements:** What are the user's expectations for speed and responsiveness?
+  * **Scalability Needs:** What level of user traffic and data volume should the system be prepared to handle at launch and in the first year?
+  * **Security Requirements:** Are there any specific security or data compliance standards that must be met (e.g., HIPAA, GDPR)?
+
+### 💰 Business Model & Monetization
+
+  * **Revenue Model:** How will the product generate revenue (e.g., SaaS subscriptions, one-time purchases, advertising, transaction fees)?
+  * **Pricing Strategy:** What is the proposed pricing model (e.g., tiered pricing, per-seat, usage-based)?
+  * **Free vs. Paid:** Will there be a free tier, a free trial, or a freemium model? What features differentiate the tiers?
+
+### 🚀 Launch & Go-to-Market
+
+  * **Launch Timeline:** Is there a target launch window or deadline?
+  * **Go-to-Market Strategy:** What is the initial plan for reaching your target audience?
+  * **Key Stakeholders:** Who are the main stakeholders and decision-makers for this project?
+
+### 🛡️ Risk Assessment & Constraints
+
+  * **Risks:** What are the biggest technical, market, or resource risks for this project?
+  * **Constraints:** Are there any known budget, resource, or technology constraints?
+
+## Document Structure
+
+```markdown
+# Product Brief: [Product Name]
+
+_Version: 1.0_
+_Date: [Date]_
+_Author(s): [Name(s)]_
+_Status: Draft | In Review | Approved_
+
+---
+
+## 1. Executive Summary
+
+A concise overview of the entire document.
+- **Product Vision:** A one-sentence statement of what the product aims to be.
+- **Mission Statement:** A brief paragraph describing the problem, the solution, and the ultimate goal.
+- **Key Value Proposition:** The primary reason users will choose this product over alternatives.
+- **Target Market:** A summary of the primary audience.
+- **High-Level Goals & Success Metrics:** The top 3-5 goals and the KPIs to measure them.
+
+## 2. The Problem & The Opportunity
+### 2.1. Problem Statement
+A detailed description of the pain points and challenges faced by the target users.
+### 2.2. Current Solutions & Their Flaws
+An analysis of how users solve the problem today and why those solutions are inadequate.
+### 2.3. Market Opportunity
+An overview of the market size, trends, and the specific opportunity this product addresses.
+
+## 3. The Solution: Product Vision & Strategy
+### 3.1. Product Vision
+A detailed explanation of the proposed solution and how it addresses the problem.
+### 3.2. Unique Value Proposition (UVP)
+What makes this product different and better? Detail the unique benefits.
+### 3.3. Strategic Fit
+How this product aligns with broader company objectives and long-term goals.
+
+## 4. Target Audience
+### 4.1. Primary User Personas
+Brief but clear descriptions of the main user archetypes.
+### 4.2. User Needs & Pain Points
+A list of the core needs and frustrations that the product will solve for these personas.
+
+## 5. Market & Competitive Analysis
+### 5.1. Competitive Landscape
+A summary of direct and indirect competitors, including their strengths and weaknesses.
+### 5.2. Competitive Advantage
+The product's key differentiators and sustainable advantages.
+
+## 6. Product Requirements & Scope
+### 6.1. Core Features (MVP)
+A prioritized list of features essential for the first version.
+- Feature 1: [Description]
+- Feature 2: [Description]
+### 6.2. Future Features (Post-MVP)
+A high-level list of features planned for future releases.
+### 6.3. Out of Scope (What We're Not Building)
+Clearly defined features and functionalities that will not be included in the initial scope.
+
+## 7. High-Level Technical Strategy
+### 7.1. Platform(s)
+The chosen platform(s) (Web, iOS, Android) and the rationale.
+### 7.2. Key Technology Considerations
+Initial thoughts on the tech stack, integrations, and scalability.
+
+## 8. Business & Go-to-Market
+### 8.1. Monetization Model
+How the product will generate revenue.
+### 8.2. Go-to-Market Strategy
+An initial plan for launching and marketing the product.
+
+## 9. Success Metrics
+### 9.1. Key Performance Indicators (KPIs)
+The specific, measurable metrics that will define success (e.g., MAU, conversion rate, retention rate).
+### 9.2. Measurement Plan
+How and when these KPIs will be tracked.
+
+## 10. Risks, Assumptions, and Constraints
+### 10.1. Key Risks
+A list of the top identified risks (market, technical, resource).
+### 10.2. Assumptions
+A list of the key assumptions that the project's success depends on.
+### 10.3. Constraints
+A list of any known budget, timeline, or resource limitations.
+
+## 11. Stakeholders
+A list of key stakeholders and their roles in the project.
+
+## 12. Next Steps
+Immediate, actionable next steps, such as "Begin Market & User Research."
+```
+
+## Quality Assurance Framework
+
+### Content & Clarity Checks
+
+  - [ ] Is the **Problem Statement** clear, specific, and backed by user context?
+  - [ ] Is the **Unique Value Proposition** truly unique and compelling?
+  - [ ] Are the **Target Audience** descriptions detailed enough to inform design and feature decisions?
+  - [ ] Are the **MVP Features** focused on solving the single most important problem?
+  - [ ] Is the "Out of Scope" section clear to prevent scope creep?
+  - [ ] Are the **Success Metrics** SMART (Specific, Measurable, Achievable, Relevant, Time-bound)?
+  - [ ] Are risks identified, and are there initial thoughts on mitigation?
+  - [ ] Is the document free of jargon and accessible to non-technical stakeholders?
+
+### Strategic Alignment Checks
+
+  - [ ] Does the product vision align with the stated company/business goals?
+  - [ ] Do the proposed features directly address the identified user pain points?
+  - [ ] Is the scope realistic given the stated constraints (budget, timeline)?
+
+## Integration with Other Documentation
+
+  * **As a Source:** This is the foundational document. It does not depend on other generated documents. It is the **primary input** for all subsequent documents, including:
+      * `02_market_user_research.mdc`: Validates the assumptions made in this brief.
+      * `03_feature_spec.mdc`: Breaks down the features defined here into detailed specifications.
+      * All other documents in the sequence.
+  * **Supporting Docs:** This rule should reference documents in the `/library_docs/` directory, such as brand guidelines, company mission statements, or existing market research, to inform its creation.
+
+## Best Practices
+
+1.  **Be Specific:** Avoid vague language. Use concrete examples and measurable criteria.
+2.  **Stay Focused on the "Why":** Continuously tie features and decisions back to the core problem you're solving.
+3.  **Validate Assumptions:** Clearly state all assumptions and create a plan to validate them through research.
+4.  **Keep Users Central:** Every decision should be justified by the value it provides to the user.
+5.  **Document Trade-offs:** If a key decision was made (e.g., choosing one platform over another), briefly explain why.
+6.  **Aim for Clarity over Length:** A shorter, clearer brief is more effective than a long, confusing one.
+
+## Output Requirements
+
+  - **Format:** Markdown (`.md`)
+  - **Location:** `/docs/`
+  - **Filename:** `01_product_brief.md`
+  - **Audience:** Accessible to both technical and non-technical stakeholders.
+  - **Style:** Clear, concise, and scannable. Use headers, lists, and bold text to improve readability.
+
+## Final Instructions
+
+1.  **DO NOT** generate the brief until all critical discovery questions have been answered. It is better to ask more questions than to proceed with incomplete information.
+2.  **DO** ask follow-up questions to clarify any ambiguous or incomplete user responses.
+3.  **DO** use the exact Markdown structure provided in the `Document Structure` section.
+4.  **DO** end the process by listing the immediate "Next Steps" to guide the user to the next phase of the project.
+
+## Key Success Factors
+
+1.  **Clarity & Alignment:** The final document creates a shared understanding and alignment across the entire team and all stakeholders.
+2.  **Actionability:** The brief is detailed and specific enough to directly inform the next stage (Market & User Research) without requiring further clarification.
+3.  **Focus:** It clearly defines the scope of the MVP, providing a strong defense against scope creep.
+4.  **Evidence-Based:** Key claims about user problems and market opportunities feel well-reasoned, even if they are assumptions to be validated later.
+5.  **Future-Oriented:** While focused on the MVP, it sets a clear direction for the product's future evolution.

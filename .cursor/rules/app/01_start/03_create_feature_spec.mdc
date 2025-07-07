@@ -3,3 +3,169 @@ description:
 globs:
 alwaysApply: false
 ---
+
+# Rule: Feature Specification Generation
+
+## Goal
+
+To guide an AI assistant in creating a detailed, unambiguous Feature Specification document in Markdown. This document translates the strategic "what" and "why" from the Product Brief and User Research into a tactical "how" for the engineering and design teams.
+
+It breaks down high-level features into epics, user stories, and specific acceptance criteria. This document is the primary blueprint for development, ensuring that the final product functionality precisely matches the validated user needs and the defined project scope.
+
+## Process
+
+1.  **Review Dependencies:** This process MUST begin with a thorough review of two key documents:
+      * `/docs/01_product_brief.md`: To understand the overall project scope, constraints, and the high-level list of features for the MVP.
+      * `/docs/02_market_user_research.md`: To connect every feature directly to a user persona and their validated needs and pain points.
+2.  **Conduct Structured Discovery:** Use the discovery framework below to deconstruct each high-level feature into detailed user stories, acceptance criteria, dependencies, and edge cases.
+3.  **Review Supporting Docs:** Reference relevant documents from the `/library_docs/` directory.
+4.  **Structure and Generate:** Organize the information into a hierarchical structure of Epics and User Stories. Generate the complete specification using the `Document Structure` template below.
+5.  **Quality Assurance:** Use the `Quality Assurance Framework` to meticulously check that every requirement is clear, testable, and traceable back to the source documents.
+6.  **Save and Version:** Save the final document as `03_feature_spec.md` in the `/docs/` directory.
+
+## Discovery Framework
+
+### ⚙️ Feature Breakdown & Prioritization
+
+  * From the Product Brief, let's list the major features or modules. We will treat these as **Epics**.
+  * For each Epic (e.g., "User Profile Management"), what are the individual, self-contained actions a user can take? These will be our **User Stories**.
+  * Let's confirm the priority for each feature using the MoSCoW method (Must-Have, Should-Have, Could-Have, Won't-Have for this release).
+
+### 📖 User Story Definition (Repeat for each story)
+
+  * **User Story:** In the format "As a [persona from research doc], I want to [action] so that [benefit]," what is the full user story?
+  * **Acceptance Criteria:** How do we know this is done? Let's list the specific pass/fail conditions. It's best to use a Gherkin-style format:
+      * `Given` [the context], `When` [I perform an action], `Then` [this outcome should occur].
+  * **User Flow:** Briefly describe the user's journey. What screen are they on before this action? What happens immediately after?
+  * **UI/UX Notes:** What are the critical UI elements needed to support this story? This is not a design, but a list of components (e.g., "A text input for 'email address'," "A button labeled 'Submit'," "A confirmation toast message").
+
+### 🔌 Dependencies & Constraints
+
+  * Does this story depend on another story being completed first?
+  * Are there any dependencies on external systems or APIs (e.g., Stripe, Google Maps)?
+  * Are there any known technical, business, or design constraints that apply to this feature?
+
+### ⚠️ Error Handling & Edge Cases
+
+  * What happens on the "unhappy path"? What if the user provides invalid data?
+  * What specific error message should be displayed to the user?
+  * What if a required backend service or API call fails?
+  * What are the edge cases to consider? (e.g., User has no data yet, user loses internet connection, user tries to perform an action they don't have permission for).
+
+## Document Structure
+
+```markdown
+# Feature Specification: [Product Name]
+
+_Version: 1.0_
+_Date: [Date]_
+_Author(s): [Name(s)]_
+_Status: Draft | In Review | Approved_
+
+---
+
+## 1. Overview
+This document details the functional requirements for the [Product Name] MVP. All features are derived from the `/docs/01_product_brief.md` and are justified by the findings in `/docs/02_market_user_research.md`.
+
+## 2. Prioritized Feature Summary (Epics)
+A summary of the major features (Epics) and their overall priority for the MVP release.
+
+| Epic                      | Priority   | Associated Persona(s) |
+| ------------------------- | ---------- | --------------------- |
+| **[Epic 1: User Onboarding]** | Must-Have  | [Persona Name]        |
+| **[Epic 2: Project Dashboard]** | Must-Have  | [Persona Name]        |
+| **[Epic 3: Profile Management]**| Should-Have| [Persona Name]        |
+
+---
+
+## 3. Detailed Feature Specifications
+
+### Epic 1: User Onboarding
+
+> **Description:** Enables new users to sign up, create an account, and complete initial setup.
+
+#### Story 1.1: New User Registration
+* **User Story:** "As a new visitor, I want to sign up for an account using my email and a password, so that I can access the product."
+* **Persona:** [Persona Name]
+* **Priority:** Must-Have
+* **Acceptance Criteria:**
+    * `Given` I am on the marketing homepage, `When` I click the "Sign Up" button, `Then` I am taken to the registration page.
+    * `Given` I am on the registration page, `When` I enter a valid email and a strong password and click "Submit", `Then` my account is created and I am logged in.
+    * `Given` I enter an invalid email format, `When` I click "Submit", `Then` I see an inline error message stating "Please enter a valid email."
+* **UI/UX Notes:**
+    * Requires input fields for "Email" and "Password".
+    * Requires a "Submit" button.
+    * Requires a link to the "Terms of Service".
+* **Dependencies:** None.
+* **Error Handling:**
+    * Display clear error messages for invalid email, weak password, or if the email already exists.
+
+#### Story 1.2: [Name of Next Story]
+* [Repeat structure...]
+
+### Epic 2: Project Dashboard
+> **Description:** The main hub where users can see an overview of their projects and data.
+
+#### Story 2.1: [Name of First Story in this Epic]
+* [Repeat structure...]
+
+---
+_[Continue with all Epics and Stories]_
+```
+
+## Quality Assurance Framework
+
+### Completeness & Traceability Checks
+
+  - [ ] Is every **MVP feature** listed in the `/docs/01_product_brief.md` represented by at least one Epic in this spec?
+  - [ ] Does every **User Story** link to a specific **Persona** from `/docs/02_market_user_research.md`?
+  - [ ] Is there a clear **benefit** ("so that...") defined for every user story?
+  - [ ] Are **dependencies** between stories clearly identified to inform development sequencing?
+
+### Clarity & Testability Checks
+
+  - [ ] Is each **User Story** small enough to be completed within a single development sprint?
+  - [ ] Is each **Acceptance Criterion** written as a testable, pass/fail statement? Avoid subjective language like "fast" or "user-friendly."
+  - [ ] Have **error states** and **edge cases** been considered for every story, not just the "happy path"?
+  - [ ] Is the spec detailed enough that a developer could build the feature and a QA engineer could write test cases without needing significant further clarification?
+
+## Integration with Other Documentation
+
+  * **Source Documents:** This document is a direct translation of higher-level documents. It **requires** input from:
+      * `/docs/01_product_brief.md`: For the list of features to build, scope, and constraints.
+      * `/docs/02_market_user_research.md`: For the user personas, needs, and context that justify *why* a feature is being built.
+  * **As a Source:** This specification is the **core blueprint for execution**. It is the primary input for:
+      * `04_create_design_guidelines.mdc`: Designers will use the user flows and UI notes to create wireframes and high-fidelity mockups.
+      * `05_create_architecture.mdc`: The technical team will use the requirements to design the database schema, APIs, and overall system architecture.
+      * `07_create_mvp_tasks.mdc`: The epics and stories will be directly imported/converted into tasks in a project management tool.
+
+## Best Practices
+
+1.  **INVEST in Good Stories:** User stories should be Independent, Negotiable, Valuable, Estimable, Small, and Testable.
+2.  **Specify the "What," Not the "How":** Focus on user needs and required outcomes. Allow the development team to determine the best implementation method.
+3.  **Use Visuals:** When a user flow is complex, supplement the description with a simple flowchart or diagram.
+4.  **Write for Clarity:** The goal is zero ambiguity. Be explicit. Define terms.
+5.  **It's a Conversation Starter:** A spec is a tool to facilitate discussion between product, design, and engineering. It should be treated as a living document during the planning phase.
+
+## Output Requirements
+
+  - **Format:** Markdown (`.md`)
+  - **Location:** `/docs/`
+  - **Filename:** `03_feature_spec.md`
+  - **Audience:** Primarily Product Managers, Engineers, and QA Testers. Also used by Designers for functional context.
+  - **Style:** Hierarchical, technical, and precise. Use code blocks for Gherkin syntax.
+
+## Final Instructions
+
+1.  **DO NOT** include features or requirements that are explicitly listed as "Out of Scope" in the Product Brief.
+2.  **DO** write every Acceptance Criterion as a binary (pass/fail) condition.
+3.  **DO** be ruthlessly detailed, especially regarding error handling and edge cases. Ambiguity here is expensive.
+4.  **DO** ensure that the benefit of every single story is crystal clear and tied to user value.
+
+## Key Success Factors
+
+1.  **Unambiguous Clarity:** A developer can read a user story and its criteria and know exactly what to build with minimal follow-up questions.
+2.  **Testability:** A QA engineer can use the acceptance criteria as a checklist to confirm the feature is working correctly.
+3.  **Traceability:** Every requirement in this document can be traced back to a specific user need in the research and a business goal in the brief.
+4.  **Completeness:** The spec provides a holistic view of the feature, considering not just the "happy path" but also failure states, empty states, and user errors.
+5.  **Velocity:** A well-written spec accelerates the entire development process by removing guesswork and aligning the team on a single source of truth for functionality.

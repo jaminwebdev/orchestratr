@@ -3,3 +3,194 @@ description:
 globs:
 alwaysApply: false
 ---
+
+# Rule: Market & User Research Generation
+
+## Goal
+
+To guide an AI assistant in creating a combined Market and User Research document in Markdown format. This document's primary purpose is to validate (or invalidate) the assumptions made in the `/docs/01_product_brief.md` and to build a deep, evidence-based understanding of the competitive landscape and the target users.
+
+This research will serve as a critical input for feature specification, design and UX decisions, and the go-to-market strategy. It ensures the product is built on a solid foundation of market reality and user empathy.
+
+## Process
+
+1.  **Review Dependencies:** The process must begin with a thorough review of the `/docs/01_product_brief.md`. Identify and list all key assumptions about the target market, user personas, pain points, and competitors.
+2.  **Conduct Structured Discovery:** Use the discovery framework below to gather information about research methodologies, data sources, and specific areas of investigation.
+3.  **Review Supporting Docs:** Reference relevant documents from the `/library_docs/` directory, such as `user_interview_best_practices.md`, `competitive_analysis_framework.md`, or `keyword_research_process.md`.
+4.  **Synthesize and Generate Document:** Analyze all inputs (Product Brief assumptions, user responses, library docs) to synthesize findings. Generate the research document using the detailed `Document Structure` provided below.
+5.  **Quality Assurance:** Use the `Quality Assurance Framework` to ensure the research is well-supported, the personas are detailed and realistic, and the strategic recommendations are logically derived from the findings.
+6.  **Save and Version:** Save the final document as `02_market_user_research.md` in the `/docs/` directory.
+
+## Discovery Framework
+
+### 🔍 Research Scope & Methodology
+
+  * **Primary Goal:** What is the single most important question we need this research to answer? (e.g., "Is there a real market need for this?" or "Which user segment should we prioritize?")
+  * **Existing Data:** What existing user data, analytics, or previous research can we leverage?
+  * **Research Methods:** What research methods will be used? (e.g., User Interviews, Surveys, Competitor Analysis, Industry Reports, Keyword Analysis).
+  * **Timeline & Ownership:** What is the timeline for this research phase, and who is responsible for gathering the data?
+
+### 🏢 Market Analysis
+
+  * **Market Data Sources:** Where can we find reliable data on market size, growth, and trends? (e.g., Gartner, Forrester, Statista, industry publications).
+  * **Competitor Identification:** Beyond the competitors listed in the brief, how will we find others? What tools will we use?
+  * **Competitive Analysis Criteria:** On what specific criteria will we compare competitors? (e.g., Pricing, Core Features, Target Audience, Marketing Strategy, User Reviews).
+  * **Positioning:** What market gaps or opportunities for differentiation are we hoping to find?
+
+### 👥 User Persona Development
+
+  * **Persona Count:** How many distinct user personas do we need to create to represent our target audience (typically 2-4)?
+  * **Recruitment:** How will we find and recruit people who fit our target user profiles for interviews or surveys?
+  * **Information Gathering:** For each potential persona, what specific information do we need to uncover?
+      * **Demographics:** What is their age, location, job title, and industry?
+      * **Goals & Motivations:** What are they trying to achieve? What drives their decisions?
+      * **Pain Points & Frustrations:** What are the specific obstacles and annoyances they face with their current solutions? Ask for stories.
+      * **Behaviors & Habits:** What does a typical day look like for them? What tools, software, or websites do they use regularly?
+      * **Context of Use:** Where and when would they use our product? (e.g., at a desk, on the go with a mobile device).
+
+### 💡 Synthesis & Validation
+
+  * **Key Findings:** After the research, what were the 3-5 most surprising or important findings?
+  * **Assumption Validation:** Which key assumptions from the Product Brief were validated by the research? Which were proven wrong?
+  * **Strategic Impact:** Based on the findings, what should we change about our product strategy, target audience, or positioning?
+
+## Document Structure
+
+```markdown
+# Market & User Research: [Product Name]
+
+_Version: 1.0_
+_Date: [Date]_
+_Author(s): [Name(s)]_
+_Status: Draft | In Review | Approved_
+
+---
+
+## 1. Executive Summary
+A high-level summary of the most critical findings and strategic recommendations.
+- **Primary Goal of Research:** [State the question the research set out to answer].
+- **Key Findings:** A bulleted list of the 3-5 most important insights.
+- **Summary of Personas:** A one-sentence description of each primary user persona.
+- **Market Viability:** A concluding statement on the market opportunity based on the research.
+- **Strategic Recommendations:** A summary of the key recommended actions.
+
+## 2. Research Methodology
+- **Objectives:** What we aimed to learn.
+- **Methods:** A description of the methods used (e.g., "Conducted 8 user interviews, analyzed 5 top competitors, and surveyed 100 potential users.").
+- **Timeline:** The period during which the research was conducted.
+- **Participants:** An overview of the demographics of the research participants.
+
+## 3. Market Analysis
+### 3.1. Market Size & Opportunity
+- An analysis of the Total Addressable Market (TAM), Serviceable Available Market (SAM), and Serviceable Obtainable Market (SOM).
+- Key market trends and growth projections.
+### 3.2. Competitive Landscape
+- A summary of the competitive environment (e.g., fragmented, dominated by a few players).
+- **Competitor Deep Dive:** For each top competitor:
+    - **Company A:** Overview, Strengths, Weaknesses, Pricing, Target Audience.
+    - **Company B:** Overview, Strengths, Weaknesses, Pricing, Target Audience.
+### 3.3. Competitive Feature Matrix
+A table comparing your proposed product's core features against competitors.
+
+| Feature         | Our Product (Proposed) | Competitor A | Competitor B | Competitor C |
+| --------------- | ---------------------- | ------------ | ------------ | ------------ |
+| **Core Feature 1** | Yes (Unique Angle)     | Yes          | No           | Yes          |
+| **Core Feature 2** | Yes                    | Yes          | Yes          | No           |
+| **Pricing Model** | Subscription           | Subscription | One-Time     | Freemium     |
+
+### 3.4. Positioning & Differentiation
+- Analysis of market gaps and areas of opportunity.
+- A proposed positioning statement: "For [Target Customer], who [Statement of Need/Opportunity], our product is a [Product Category] that [Statement of Benefit]."
+
+## 4. User Personas
+Detailed archetypes of your target users based on research.
+
+### 4.1. Persona 1: [Archetype Name, e.g., "The Overwhelmed Project Manager"]
+- **Photo:** [Link to or embed a representative, royalty-free stock photo]
+- **Quote:** A direct quote from a user interview that captures their core frustration.
+- **Bio:** A short paragraph describing their background and role.
+- **Demographics:**
+    - Age: [e.g., 35-45]
+    - Role: [e.g., Senior Project Manager]
+    - Industry: [e.g., Tech/SaaS]
+    - Tech Savviness: [e.g., High]
+- **Goals (What they want to achieve):**
+    - [Primary Goal 1]
+    - [Secondary Goal 2]
+- **Pain Points (What's stopping them):**
+    - [Primary Pain Point 1]
+    - [Secondary Pain Point 2]
+- **Behaviors & Tools:**
+    - [List of current tools, habits, and workflows]
+
+### 4.2. Persona 2: [Archetype Name]
+- [Repeat structure from Persona 1]
+
+## 5. Synthesis & Strategic Recommendations
+### 5.1. Validation of Product Brief Assumptions
+A clear assessment of the key assumptions from the Product Brief.
+- **Assumption:** "Users are willing to pay for this service." **Finding:** "Validated. 7 out of 8 interviewees currently pay for a less effective solution."
+- **Assumption:** "The main competitor is Company X." **Finding:** "Partially validated. Users more frequently mentioned Company Y as their primary tool."
+### 5.2. Key Insights & Surprises
+A narrative of the most impactful findings from the research.
+### 5.3. Recommended Actions
+A list of concrete, actionable recommendations based on the findings.
+- **Product:** "Prioritize Feature X, as it directly addresses the primary pain point of Persona 1."
+- **Marketing:** "Adjust messaging to focus on [Benefit Y], which resonated strongly in interviews."
+- **Design:** "The UI should be extremely simple, as Persona 2 has low tech savviness."
+```
+
+## Quality Assurance Framework
+
+### Research Rigor Checks
+
+  - [ ] Are the research **methods** clearly defined and appropriate for the goals?
+  - [ ] Is the **sample size** and participant profile for user research clearly stated?
+  - [ ] Is the competitive analysis based on specific, objective **criteria**?
+  - [ ] Is there a clear separation between research **observations** (what users said/did) and **interpretations** (what it means)?
+
+### Content & Clarity Checks
+
+  - [ ] Are the **personas** detailed, distinct, and based on real data, not stereotypes? Do they feel like real people?
+  - [ ] Does the **Competitive Feature Matrix** provide a clear at-a-glance summary?
+  - [ ] Are the **strategic recommendations** a direct and logical result of the stated findings?
+  - [ ] Does the document **explicitly confirm or challenge** the core assumptions from the Product Brief?
+
+## Integration with Other Documentation
+
+  * **Source Document:** This rule **must** begin by analyzing `/docs/01_product_brief.md`. Its primary function is to provide evidence that supports or refutes the brief's assumptions.
+  * **As a Source:** This research document is the **primary input** for:
+      * `03_feature_spec.mdc`: To ensure features are prioritized based on validated user needs and market gaps.
+      * `04_design_guidelines.mdc`: To inform user empathy, user journey mapping, and content strategy (voice/tone).
+      * Go-to-Market strategies and marketing copy.
+
+## Best Practices
+
+1.  **Separate Observation from Interpretation:** First, state what you saw or heard. Then, state what you think it means. (e.g., "Observation: 6 of 8 users mentioned 'too many notifications'. Interpretation: Users are feeling overwhelmed by their current tools.")
+2.  **Use Verbatim Quotes:** Include powerful, direct quotes from users. They build empathy more effectively than summaries.
+3.  **Visualize Data:** Use tables (like the feature matrix) and charts where possible to make data easier to digest.
+4.  **Focus on the "Why":** Dig deeper than just what users *say* they want. Understand their underlying motivations and goals.
+5.  **Personas are Tools for Empathy:** Create personas that the entire team can reference to ask, "What would [Persona Name] think of this feature?"
+
+## Output Requirements
+
+  - **Format:** Markdown (`.md`)
+  - **Location:** `/docs/`
+  - **Filename:** `02_market_user_research.md`
+  - **Audience:** Product managers, designers, engineers, marketers, and key stakeholders.
+  - **Style:** Data-driven but narrative. Tell the story of your market and users.
+
+## Final Instructions
+
+1.  **DO NOT** create personas or findings based on speculation. The document's value comes from being grounded in real research data.
+2.  **DO** be explicit about which assumptions from the product brief were validated, invalidated, or require further research. This is a core function of the document.
+3.  **DO** prioritize findings and recommendations that will have the biggest impact on the project's strategy and direction.
+4.  **DO** ensure the personas are distinct and represent meaningful segments of your target audience.
+
+## Key Success Factors
+
+1.  **Insightful:** The document provides non-obvious insights that can give the product a competitive advantage.
+2.  **Empathetic:** It creates a strong sense of empathy for the target user across the entire team.
+3.  **Actionable:** The findings translate directly into clear strategic recommendations for the product, design, and marketing teams.
+4.  **Validating:** It successfully serves its purpose by confirming or correcting the project's strategic direction at an early stage, saving time and resources.
+5.  **Clarity:** The difference between data, analysis, and recommendations is clear to all readers.

@@ -3,3 +3,158 @@ description:
 globs:
 alwaysApply: false
 ---
+
+
+# Rule: Success Metrics & Risk Management Generation
+
+## Goal
+
+To guide an AI assistant in creating a unified Success Metrics & Risk Management document. This document provides a clear, measurable definition of project success through Key Performance Indicators (KPIs) and establishes a proactive framework for identifying, assessing, and mitigating potential risks.
+
+Its purpose is to provide strategic clarity, enabling the team to focus on impactful outcomes, make data-driven decisions, and be prepared to navigate challenges effectively.
+
+## Process
+
+1.  **Review Dependencies:** This process must begin by synthesizing information from across all previous documents to form a holistic strategic view:
+      * `/docs/01_product_brief.md`: For the foundational business objectives and high-level success criteria.
+      * `/docs/02_market_user_research.md`: To define user-centric metrics (e.g., task success, engagement) based on persona goals.
+      * `/docs/03_feature_spec.md`: To define metrics for specific feature adoption and usage.
+      * `/docs/05_technical_architecture.md`: To identify potential technical risks associated with the chosen stack, infrastructure, and dependencies.
+2.  **Conduct Structured Discovery:** Use the discovery framework below to define specific metrics, set benchmarks, identify a full spectrum of risks, and formulate clear mitigation and contingency plans.
+3.  **Review Supporting Docs:** Reference relevant files from the `/library_docs/` directory, such as `kpi_selection_guide.md`, `risk_assessment_matrix.md`, or `agile_risk_management.md`.
+4.  **Structure and Generate:** Organize the information into two distinct, actionable sections: Success Metrics and the Risk Register. Generate the complete document using the `Document Structure` template.
+5.  **Quality Assurance:** Use the `Quality Assurance Framework` to ensure all metrics are SMART and the risk plan is comprehensive, prioritized, and actionable.
+6.  **Save and Version:** Save the final document as `06_success_metrics_risks.md` in the `/docs/` directory.
+
+## Discovery Framework
+
+### 📊 Success Metrics & KPIs
+
+  * **North Star Metric:** What is the single most important metric that represents the core value delivered to users? (e.g., For a collaboration tool, it might be "number of projects completed").
+  * **Business KPIs:** What are the top 3 high-level business metrics we need to track? (e.g., Monthly Recurring Revenue (MRR), Customer Acquisition Cost (CAC), Churn Rate).
+  * **User Engagement & Retention Metrics:**
+      * How will we measure user **Activation** (users experiencing the core value for the first time)? (e.g., Percentage of signups that create their first project).
+      * How will we measure user **Retention**? (e.g., Week 1, Month 1 retention rate).
+      * How will we measure user **Engagement**? (e.g., Daily Active Users (DAU)/Monthly Active Users (MAU) ratio, adoption rate of key features).
+  * **Product Health Metrics:** What technical metrics indicate the product is reliable and performant? (e.g., API uptime, P95 API response time, application error rate).
+  * **Targets & Benchmarks:** For each key metric, what is our target for 3 months and 6 months post-launch?
+  * **Measurement Tools:** What specific tools will be used to track these metrics? (e.g., Mixpanel for user funnels, Google Analytics for acquisition, Datadog for health metrics).
+
+### 🛡️ Risk Assessment & Mitigation
+
+  * **Risk Identification:** Let's brainstorm potential risks for each category:
+      * **Technical:** (e.g., A key third-party API has an outage, performance load is higher than anticipated, a security vulnerability is discovered).
+      * **Business/Market:** (e.g., A major competitor undercuts our pricing, user adoption is slower than projected, a negative PR event occurs).
+      * **Operational/Resource:** (e.g., A key developer leaves the project, the project timeline is significantly underestimated, critical bug delays launch).
+  * **Risk Analysis (for each risk):**
+      * What is the **Likelihood** this will happen? (Use a 1-5 scale).
+      * What is the **Impact** on the project if it happens? (Use a 1-5 scale).
+      * `Priority Score = Likelihood * Impact`. This helps us focus on what matters most.
+  * **Mitigation & Contingency (for high-priority risks):**
+      * **Mitigation Plan:** What will we do *proactively* to reduce the likelihood of this risk? (e.g., "To mitigate performance risk, conduct load testing up to 2x expected traffic pre-launch").
+      * **Contingency Plan:** What is our *reactive* plan if the risk occurs anyway? (e.g., "If the API has an outage, we will post a status banner in the app and have an on-call engineer ready to switch to a backup if needed").
+
+## Document Structure
+
+```markdown
+# Success Metrics & Risk Management: [Product Name]
+
+_Version: 1.0_
+_Date: [Date]_
+_Author(s): [Name(s)]_
+_Status: Draft | In Review | Approved_
+
+---
+
+## 1. Success Metrics Framework
+
+This section defines the quantitative measures of success for [Product Name]. Our goal is to focus on a handful of key metrics that reflect user value and business health.
+
+### 1.1. North Star Metric
+- **Metric:** [e.g., Weekly Active Projects]
+- **Definition:** The number of unique projects that have at least one user interaction in a 7-day period.
+- **Rationale:** This best represents our core value of helping users get work done.
+
+### 1.2. Key Performance Indicators (KPIs)
+
+| Category    | Metric                 | Definition                                      | Target (3 Months) | Target (6 Months) | Tool          |
+|-------------|------------------------|-------------------------------------------------|-------------------|-------------------|---------------|
+| **Business**| MRR                    | Monthly Recurring Revenue                       | $1,000            | $5,000            | Stripe        |
+| **Acquisition**| New Signups per Week   | Number of new user accounts created.            | 50                | 100               | Mixpanel      |
+| **Activation**| Activation Rate        | % of new users who create their first project.  | 40%               | 50%               | Mixpanel      |
+| **Retention** | Month 1 Retention      | % of new users who are still active after 30 days. | 20%               | 25%               | Mixpanel      |
+| **Health** | P95 API Response Time  | 95th percentile API response time.              | < 300ms           | < 250ms           | Datadog       |
+| **Health** | Application Uptime     | Percentage of time the application is available.| 99.9%             | 99.95%            | Datadog       |
+
+---
+
+## 2. Risk Management Register
+
+This register identifies, analyzes, and plans for potential risks. Risks are prioritized by `Score = Likelihood * Impact` (Max score: 25). Only risks with a score > 10 are detailed below.
+
+| ID | Risk Description | Category | L (1-5) | I (1-5) | Score | Mitigation Plan (Proactive) | Contingency Plan (Reactive) | Owner |
+|----|------------------|----------|---------|---------|-------|-----------------------------|-------------------------------|-------|
+| **R01**| A major competitor releases a competing feature set before our launch. | Business | 3 | 5 | 15 | Continuously monitor competitor announcements. Focus GTM messaging on our unique value proposition. | Prepare a PR/marketing campaign emphasizing our differentiators. Have a backlog of "fast-follow" features ready for consideration. | Product Lead |
+| **R02**| The primary third-party API for [Feature X] experiences a major outage. | Technical | 4 | 3 | 12 | Implement a robust caching layer for API responses. Choose an API provider with a strong uptime SLA. | The system will fall back to cached data. An alert will be sent to the on-call engineer. A status banner will be displayed to users in-app. | Tech Lead |
+| **R03**| Post-launch performance is significantly slower than benchmarked due to unexpected user behavior. | Technical | 3 | 4 | 12 | Conduct extensive load testing with varied user scenarios before launch. Optimize critical database queries. | On-call engineer will analyze performance dashboards to find bottlenecks. Have a plan to vertically scale the database instance or add more web servers if needed. | Tech Lead |
+| **R04**| User adoption is much lower than projected, causing us to miss business goals. | Business | 2 | 5 | 10 | Conduct user onboarding interviews and usability testing on the activation funnel. Launch a beta program to gather early feedback. | Execute a user feedback tour to understand barriers to adoption. Pivot marketing messaging or simplify the onboarding flow based on feedback. | Product Lead |
+
+```
+
+## Quality Assurance Framework
+
+### Metrics Checks
+
+  - [ ] Is every metric **SMART** (Specific, Measurable, Achievable, Relevant, Time-bound)?
+  - [ ] Is there a clear **North Star Metric** that aligns the team around a single purpose?
+  - [ ] Does the set of metrics provide a balanced view of **business, user, and technical** health?
+  - [ ] Is it clear which **tool** will be used to measure each metric?
+
+### Risk Management Checks
+
+  - [ ] Is the risk assessment **comprehensive**, covering technical, business, and operational domains?
+  - [ ] Is the **prioritization** of risks logical (based on likelihood and impact)?
+  - [ ] Are the **mitigation plans** proactive and concrete actions, not just vague intentions?
+  - [ ] Are the **contingency plans** realistic and actionable "break-glass" procedures?
+  - [ ] Is there a clear **owner** assigned to monitor each high-priority risk?
+
+## Integration with Other Documentation
+
+  * **Source Documents:** This document is a strategic overlay that synthesizes information from:
+      * `/docs/01_product_brief.md`: For the core business goals that the KPIs must track.
+      * `/docs/02_market_user_research.md`: To ensure engagement and satisfaction metrics are user-centric.
+      * `/docs/05_technical_architecture.md`: As a primary source for identifying technical and infrastructure-related risks.
+  * **As a Source:** This document guides ongoing strategic decisions and prioritization. It is a key input for:
+      * `07_create_mvp_tasks.mdc`: Will generate specific tasks like "Set up Mixpanel analytics for activation funnel" or "Implement database load testing script."
+      * **Project Management:** The risk register and KPIs are standing agenda items for weekly team meetings and monthly stakeholder reviews.
+
+## Best Practices
+
+1.  **Focus on Actionable Metrics:** Every metric should help the team make a decision. Avoid "vanity metrics" that look good but aren't useful.
+2.  **Less is More:** A handful of key metrics is more powerful than a dashboard cluttered with dozens of data points.
+3.  **Risk Management is Continuous:** The risk register should be a living document, reviewed and updated regularly throughout the project lifecycle.
+4.  **Be Specific:** A risk like "Server goes down" is not helpful. A risk like "Database write-latency increases under heavy load, causing timeouts" is specific and actionable.
+5.  **Assign Ownership:** A risk or metric without an owner will be ignored.
+
+## Output Requirements
+
+  - **Format:** Markdown (`.md`)
+  - **Location:** `/docs/`
+  - **Filename:** `06_success_metrics_risks.md`
+  - **Audience:** Project leadership (Product, Tech, Design leads), key stakeholders, and the entire project team.
+  - **Style:** Strategic, clear, and highly structured. Tables are essential for clarity.
+
+## Final Instructions
+
+1.  **DO NOT** define metrics that cannot be realistically measured with the chosen tools and resources.
+2.  **DO** prioritize the risk register. The team should focus its energy on the top 3-5 risks with the highest priority scores.
+3.  **DO** ensure that mitigation and contingency plans are concrete, actionable steps, not abstract ideas.
+4.  **DO** treat this as a living document. It should be updated as the project progresses and new information becomes available.
+
+## Key Success Factors
+
+1.  **Clarity of Purpose:** The entire team has a shared, quantitative understanding of what success looks like and what threats could derail it.
+2.  **Action-Oriented:** The document drives decisions. The team regularly discusses the metrics and actively works on mitigating the top risks.
+3.  **Proactive Culture:** The team shifts from being reactive to "firefighting" to proactively anticipating and addressing challenges before they become crises.
+4.  **Accountability:** Clear ownership of metrics and risks fosters a culture of responsibility and continuous improvement.
+5.  **Alignment:** The document ensures that daily work and strategic priorities are aligned with achieving the most important outcomes and defending against the most significant threats.

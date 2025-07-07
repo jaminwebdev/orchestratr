@@ -1,340 +1,83 @@
----
-description: 
-globs: 
-alwaysApply: false
----
-# Rule: Enhanced Task List Management and Iteration for Feature Implementation
+# Rule: Task Iteration and Execution
 
 ## Goal
 
-To guide an AI assistant in managing and iterating on a task list (in Markdown format) derived from either a Product Requirements Document (PRD) **or** from the foundational MVP task list (`/tasks/tasks-create-mvp.md`). The AI must ensure rigorous, quality-driven feature implementation by:
-
-- Following task dependencies and proper sequencing
-- Implementing comprehensive quality gates and validation checkpoints
-- Maintaining real-time progress tracking and documentation alignment
-- Conducting thorough pre-task analysis and post-task validation
-- Pausing for user approval with detailed completion reports
-
-This approach ensures controlled, transparent, traceable, and high-quality product development that aligns with established standards and architecture.
-
----
-
-## Enhanced Task Iteration Framework
-
-### Phase 1: Pre-Task Analysis & Preparation
-
-Before starting any sub-task, the AI must:
-
-#### 1.1 Comprehensive Context Review
-- **Review PRD Requirements:** Validate that the current task addresses specific PRD requirements
-- **Architecture Alignment:** Ensure implementation follows established patterns in `architecture.md.md`
-- **Design System & Security Compliance:** Verify adherence to `design-guidelines.md` standards
-- **User Flow Integration:** Confirm task fits within established `feature-spec.md` patterns
-
-#### 1.2 Technical Preparation
-- **Dependency Verification:** Confirm all prerequisite tasks are truly complete
-- **Environment Validation:** Ensure development environment meets task requirements
-- **Resource Availability:** Verify access to necessary tools, APIs, and data
-- **Integration Points:** Identify all systems that will be affected by this task
-
-#### 1.3 Quality Planning
-- **Testing Strategy:** Define specific testing approach for this task
-- **Acceptance Criteria:** Establish clear, measurable completion criteria
-- **Risk Assessment:** Identify potential issues and mitigation strategies
-- **Rollback Plan:** Define how to undo changes if problems arise
-
-### Phase 2: Implementation with Quality Gates
-
-#### 2.1 Structured Implementation Process
-- **Start Implementation:** Begin work following established coding standards
-- **Incremental Progress:** Implement in small, testable increments
-- **Continuous Validation:** Test each increment against acceptance criteria
-- **Documentation Updates:** Update relevant docs as implementation progresses
-
-#### 2.2 Quality Checkpoints During Implementation
-- **Code Quality:** Validate adherence to established patterns and standards
-- **Performance Impact:** Monitor and test performance implications
-- **Security Validation:** Verify security requirements are met
-- **Integration Testing:** Test all affected integration points
-- **User Experience:** Validate UX consistency and accessibility
-
-### Phase 3: Post-Task Validation & Reporting
-
-#### 3.1 Comprehensive Completion Validation
-- **Functional Testing:** Verify all functional requirements are met
-- **Non-Functional Testing:** Validate performance, security, and usability
-- **Integration Verification:** Confirm all system integrations work correctly
-- **Documentation Accuracy:** Ensure all documentation reflects current state
-- **Edge Case Coverage:** Test unusual scenarios and error conditions
-
-#### 3.2 Impact Assessment
-- **System Impact:** Evaluate effects on existing functionality
-- **Performance Metrics:** Measure and report performance changes
-- **Security Posture:** Assess any security implications
-- **User Experience:** Evaluate UX impact and consistency
-
-#### 3.3 Documentation Updates
-- **Code Documentation:** Update inline comments and technical docs
-- **API Documentation:** Refresh API specs if endpoints changed
-- **User Documentation:** Update user-facing documentation
-- **Architecture Documentation:** Reflect any architectural changes
-
----
-
-## Enhanced Task List Management Protocol
-
-### Real-Time Progress Tracking
-
-#### Task Status Management
-- **[ ]** Not Started
-- **[→]** In Progress (with timestamp)
-- **[✓]** Completed and Validated
-- **[!]** Blocked or Issues Identified
-- **[?]** Requires Clarification
-
-#### Progress Annotations
-```markdown
-- [✓] **1.1 Database Schema Design** *(Completed: 2024-01-15 14:30)*
-  - Created user_preferences table with proper indexing
-  - Validated schema against existing patterns
-  - Performance tested with sample data
-  - Security reviewed for data exposure risks
-  - **Files Modified:** `database/schema/user_preferences.sql`, `database/migrations/001_add_user_prefs.sql`
-```
-
-### Enhanced File Tracking System
-
-#### Comprehensive File Management
-```markdown
-### Relevant Files & Changes
-
-#### Files Created
-- `src/components/UserPreferences.tsx` - Main user preferences component with form validation
-- `src/components/UserPreferences.test.tsx` - Comprehensive unit tests (95% coverage)
-- `src/api/user-preferences.ts` - API endpoints for CRUD operations
-- `src/types/user-preferences.ts` - TypeScript interfaces and validation schemas
-- `src/hooks/useUserPreferences.ts` - Custom React hook for state management
-
-#### Files Modified
-- `src/components/Navigation.tsx` - Added preferences menu item (lines 45-48)
-- `src/api/routes.ts` - Added new preference routes (lines 23-26)
-- `database/schema.sql` - Added user_preferences table (lines 156-167)
-- `src/types/api-responses.ts` - Added preference response types (lines 89-102)
-
-#### Files Deleted
-- `src/components/LegacyPrefs.tsx` - Removed deprecated preference component
-- `src/utils/old-prefs-helper.ts` - Consolidated into new preference utilities
-
-#### Configuration Changes
-- `.env.example` - Added PREFERENCES_CACHE_TTL environment variable
-- `package.json` - Added yup validation library for form schemas
-```
-
-### Quality Assurance Tracking
-
-#### Test Coverage Requirements
-- **Unit Tests:** 80%+ coverage for new code
-- **Integration Tests:** All API endpoints tested
-- **E2E Tests:** Critical user flows validated
-- **Performance Tests:** Load testing for new features
-- **Security Tests:** Vulnerability scanning completed
-
-#### Documentation Requirements
-- **Technical Documentation:** Architecture changes documented
-- **API Documentation:** New endpoints properly documented
-- **User Documentation:** Help content updated
-- **Change Log:** All changes tracked for release notes
-
----
-
-## Enhanced Completion Reporting Protocol
-
-### Detailed Completion Report Template
-
-When a sub-task is completed, provide this comprehensive report:
-
-```markdown
-## Sub-Task Completion Report
-
-### Task: [Task Name and Number]
-**Status:** ✅ COMPLETED
-**Completion Time:** [Timestamp]
-**Estimated vs Actual:** [X hours estimated, Y hours actual]
-
-### Implementation Summary
-- **Primary Deliverable:** [What was built/implemented]
-- **Key Features:** [List of main features delivered]
-- **Technical Approach:** [Brief description of implementation strategy]
-
-### Quality Validation Results
-- **Functional Testing:** ✅ All acceptance criteria met
-- **Performance Testing:** ✅ Response times within requirements
-- **Security Testing:** ✅ No vulnerabilities identified
-- **Integration Testing:** ✅ All integrations working correctly
-- **Code Review:** ✅ Approved by [standards/patterns]
-
-### Files Impacted
-- **Created:** [X files] - [Brief description]
-- **Modified:** [Y files] - [Brief description]
-- **Deleted:** [Z files] - [Brief description]
-
-### Dependencies & Integration
-- **Completed Dependencies:** [List of dependencies satisfied]
-- **Enables Next Tasks:** [List of tasks now unblocked]
-- **Integration Points:** [Systems successfully integrated]
-
-### Issues & Resolutions
-- **Challenges Encountered:** [Any issues found and resolved]
-- **Technical Decisions:** [Key decisions made during implementation]
-- **Deviations from Plan:** [Any necessary changes to original approach]
-
-### Success Metrics
-- **Performance Metrics:** [Specific measurements if applicable]
-- **Test Coverage:** [Percentage and details]
-- **Quality Score:** [Based on established criteria]
-
-### Next Steps Preparation
-- **Immediate Blockers Removed:** [What's now ready for next tasks]
-- **Recommended Next Task:** [Suggestion for optimal flow]
-- **Potential Risks Ahead:** [Awareness of upcoming challenges]
-
-### Stakeholder Impact
-- **User Experience:** [How this affects end users]
-- **Developer Experience:** [How this affects future development]
-- **System Performance:** [Any performance implications]
-```
-
----
-
-## Risk Management & Contingency Planning
-
-### Proactive Risk Assessment
-
-#### Before Each Task
-- **Technical Risks:** Complexity, dependencies, unknowns
-- **Timeline Risks:** Effort estimation accuracy, resource availability
-- **Quality Risks:** Testing coverage, integration complexity
-- **Business Risks:** Scope creep, requirement changes
-
-#### Risk Mitigation Strategies
-- **Technical:** Proof of concepts, incremental implementation
-- **Timeline:** Buffer time, parallel task execution where possible
-- **Quality:** Comprehensive testing, code review checkpoints
-- **Business:** Regular stakeholder communication, scope validation
-
-### Issue Escalation Protocol
-
-#### Blocking Issues
-When a task cannot be completed due to:
-- **Missing Dependencies:** Clearly identify what's needed
-- **Technical Constraints:** Document limitations and alternatives
-- **Resource Limitations:** Specify additional resources required
-- **Requirement Ambiguity:** Highlight areas needing clarification
-
-#### Escalation Process
-1. **Document the Issue:** Clear description with context
-2. **Assess Impact:** Timeline and scope implications
-3. **Propose Solutions:** Multiple options with trade-offs
-4. **Seek Stakeholder Input:** Present options for decision
-5. **Update Task List:** Reflect new reality and dependencies
-
----
-
-## Enhanced User Interaction Protocol
-
-### Pre-Task Confirmation
-Before starting each sub-task, present:
-```markdown
-## Ready to Begin: [Task Name]
-
-### Context & Preparation
-- **Task Overview:** [Brief description]
-- **Dependencies Verified:** [List of completed prerequisites]
-- **Expected Deliverables:** [What will be produced]
-- **Estimated Effort:** [Time estimate]
-- **Risk Assessment:** [Potential challenges identified]
-
-### Quality Commitments
-- **Testing Strategy:** [How this will be tested]
-- **Documentation Updates:** [What docs will be updated]
-- **Integration Verification:** [How integrations will be validated]
-
-**Ready to proceed? (y/n)**
-```
-
-### Post-Task Approval Request
-After completing each sub-task:
-```markdown
-## Sub-Task Completed: [Task Name]
-
-[Comprehensive Completion Report as detailed above]
-
----
-
-### Updated Task List
-[Present updated task list with progress marked]
-
----
-
-### Validation Complete
-✅ All quality gates passed
-✅ Documentation updated
-✅ Integration verified
-✅ Ready for next phase
-
-**Approve to continue to next sub-task? (y/n)**
-```
-
----
-
-## Success Metrics & Continuous Improvement
-
-### Task Completion Metrics
-- **Completion Rate:** Percentage of tasks completed on first attempt
-- **Quality Score:** Based on test coverage, code review, and integration success
-- **Timeline Accuracy:** Estimated vs. actual completion times
-- **Defect Rate:** Issues discovered post-completion
-
-### Process Improvement
-- **Retrospective Analysis:** Learn from completed tasks
-- **Pattern Recognition:** Identify recurring challenges
-- **Process Refinement:** Continuously improve task breakdown and execution
-- **Knowledge Capture:** Document lessons learned for future features
-
----
-
-## Critical Success Factors
-
-### Non-Negotiable Requirements
-1. **Quality First:** Never compromise on testing, security, or performance
-2. **Documentation Integrity:** All changes must be properly documented
-3. **Architecture Alignment:** Maintain consistency with established patterns
-4. **User-Centric Approach:** Keep end-user impact in focus
-5. **Transparency:** Maintain clear communication about progress and issues
-
-### Validation Checkpoints
-- **Pre-Task:** Preparation and planning validated
-- **Mid-Task:** Progress and quality checkpoints
-- **Post-Task:** Comprehensive validation and approval
-- **Integration:** System-wide impact assessment
-
----
-
-## Summary & Key Principles
-
-### Core Workflow
-1. **Thorough Preparation:** Comprehensive analysis before starting
-2. **Quality-Driven Implementation:** Continuous validation during work
-3. **Comprehensive Reporting:** Detailed completion documentation
-4. **User Approval Gates:** Explicit permission before proceeding
-5. **Continuous Improvement:** Learning and refinement throughout
-
-### Fundamental Principles
-- **One Sub-Task Focus:** Complete attention to current task
-- **Quality Over Speed:** Thorough implementation preferred
-- **Transparency:** Clear communication about all aspects
-- **Alignment:** Consistent with overall product vision
-- **Accountability:** Measurable outcomes and validation
-
-
-This enhanced framework ensures that every task is completed with the highest quality standards while maintaining clear communication and alignment with broader product objectives.
+To guide an AI assistant in systematically executing a task list from a Markdown file (`tasks.md`). The AI's role is to update task progress, ensure every action is aligned with all project documentation, and pause at logical checkpoints for user review and version control.
+
+This rule turns the static task list into a dynamic, interactive development process, ensuring a controlled, transparent, and high-quality implementation.
+
+## Process
+
+1.  **Initialization:** The AI identifies the target task file (e.g., `/tasks/07_mvp_tasks.md` or `/features/feature-x/tasks.md`) and locates the first incomplete sub-task `[ ]`.
+2.  **Contextual Analysis:** Before acting, the AI reviews the current sub-task against the full context of the project by referencing:
+    * The relevant **Feature PRD** (if applicable).
+    * The six core documents in the `/docs/` folder to verify requirements and standards.
+3.  **Propose Changes (if necessary):** If the analysis reveals a problem (e.g., a missing dependency, an ambiguous requirement), the AI will **pause and propose a solution** (e.g., "I suggest adding a new sub-task to fetch API keys first. Is that correct?"). The AI will not proceed until the user approves the change.
+4.  **Execute Task:** The AI will perform the necessary actions to complete the single sub-task (e.g., writing or modifying code, creating a file).
+5.  **Update Progress:** Immediately after completion, the AI will update the task list file:
+    * Change the sub-task checkbox from `[ ]` to `[x]`.
+    * If all sub-tasks under a parent task are now complete, mark the parent task `[x]`.
+6.  **Checkpoint and Confirmation:** After saving the updated file, the AI will check its status:
+    * **If a parent task was just completed,** it is a **commit checkpoint**. The AI will pause and suggest committing the work:
+        > ✅ Parent task "2.0 User Onboarding" is complete. All related files have been updated. This is a good time to commit these changes to version control. Shall I proceed to the next task?
+    * **If it is not a checkpoint,** the AI will simply confirm completion and ask for permission to continue to the next sub-task:
+        > ✅ Sub-task 2.1 is complete. Ready to proceed to sub-task 2.2?
+
+## Dynamic Adjustments & Proposals
+
+This rule is not just for checking off boxes. If, during the "Contextual Analysis" phase, the AI discovers a conflict or a missing piece of logic, it should use the following protocol:
+
+1.  **Pause Execution:** Do not attempt the flawed task.
+2.  **State the Problem:** Clearly articulate the issue found (e.g., "The PRD requires a user's full name, but the database schema in `05_technical_architecture.md` only has a `username` field.").
+3.  **Propose a Solution:** Suggest a specific, actionable change (e.g., "I recommend adding a `full_name` column to the `users` table. This will require a new migration script. Should I add these tasks to the list?").
+4.  **Await Approval:** Do not modify any files or tasks until the user gives explicit approval.
+
+## Quality Assurance Framework
+
+The AI's execution of this rule will be validated against these criteria:
+
+- [ ] Does the AI correctly identify and reference the proper, up-to-date documentation before every action?
+- [ ] Is progress marked accurately and promptly in the task file?
+- [ ] Does the AI successfully identify logical checkpoints (i.e., completion of a parent task) and prompt the user to commit?
+- [ ] When a problem is found, does the AI propose a clear, actionable solution instead of proceeding?
+- [ ] Does the AI always await explicit user confirmation before continuing to the next task?
+
+## Integration with Other Documentation
+
+This rule is the "engine" of the development process. It continuously consumes the task list and is guided by the entire project's documentation set.
+
+* **Primary Input:** A `tasks.md` file from either `/tasks/` or a `/features/[feature-name]/` directory.
+* **Contextual Guardrails (Must be referenced continuously):**
+    * `01_product_brief.md`: To align with overall business goals.
+    * `02_market_user_research.md`: To ensure the implementation is user-centric.
+    * `03_feature_spec.md` or **Feature PRD**: For the specific acceptance criteria of the task.
+    * `04_design_guidelines.md`: To ensure visual and UX consistency.
+    * `05_technical_architecture.md`: For technical patterns, data models, and constraints.
+    * `06_success_metrics_risks.md`: To ensure necessary analytics and monitoring hooks are implemented.
+
+## Best Practices
+
+1.  **Work Sequentially:** Complete one sub-task at a time to ensure a methodical and predictable workflow.
+2.  **Communicate Clearly:** After every action, provide a concise summary of what was done and what the next step is.
+3.  **Propose, Don't Assume:** Never add, remove, or change a task without proposing it to the user and getting approval first.
+4.  **Embrace Checkpoints:** Use the completion of parent tasks as natural milestones for saving work and ensuring stability.
+
+## Output Requirements
+
+-   **Format:** A continuously updated Markdown file with checked boxes `[x]`.
+-   **Location:** The same `tasks.md` file that was provided as input.
+-   **Audience:** The user, who is acting as the project manager or lead developer, reviewing progress and making decisions.
+
+## Final Instructions
+
+1.  **DO NOT** proceed to the next task without explicit user confirmation (e.g., "yes", "go", "continue").
+2.  **DO** suggest a commit to version control every time a parent task is fully completed.
+3.  **DO** re-read all relevant documentation before starting *any* new task to ensure you have the latest context.
+4.  **DO NOT** execute multiple sub-tasks at once. The flow is always: **Analyze -> Execute -> Update -> Confirm.**
+
+## Key Success Factors
+
+1.  **Controlled Execution:** The process is predictable and prevents the AI from running ahead or making unapproved changes.
+2.  **Traceability:** Every action taken by the AI is a direct response to a specific task, which is traceable back to a requirement.
+3.  **Adaptability:** The framework allows for dynamic changes to the plan based on new insights discovered during development.
+4.  **Alignment:** Continuous referencing of the core documents ensures the final implementation is perfectly aligned with the project's foundation.
