@@ -1,0 +1,167 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
+# **Rule: Site Architecture & Content Planning Generation**
+
+### **1. Goal**
+
+To guide an AI assistant in creating the `03_create_architecture_content.md` document. This document acts as the official blueprint for the website, translating the strategic goals and keyword research into a logical sitemap and an actionable content plan.
+
+It is created for UX/UI designers, content writers, and developers. It will directly inform the wireframing process, all copywriting tasks, and the setup of the website's structure in the Content Management System (CMS).
+
+### **2. Process**
+
+1.  **Review Dependencies:** The agent **MUST** first ingest and analyze both `/docs/01_create_brief_audience.md` and `/docs/02_create_competitor_keyword_research.md`. The goals, user personas, keyword clusters, and audience questions are the raw materials for this step.
+2.  **Consult Library Docs:** Review `design_ux/sitemaps_best_practices.md` and the documents in the `copywriting/` directory to ground the process in established best practices.
+3.  **Conduct Structured Discovery:** Use the question framework below to work with the user to structure the information, define the content strategy, and outline page-level requirements.
+4.  **Generate Document:** Create the `Site Architecture & Content Planning` document using the specified structure.
+5.  **Quality Assurance:** Perform a validation check using the QA framework to ensure the blueprint is logical, complete, and strategically sound.
+6.  **Save and Version:** Save the final document as `03_create_architecture_content.md` in the `/docs` directory.
+
+### **3. Discovery Framework**
+
+#### 🗺️ **Site Structure & Sitemap**
+
+  * "Looking at the keyword clusters in `02_research`, let's group them into the main pages for our top-level navigation. What should the main items be? (e.g., Home, About, Services, Blog, Contact)."
+  * "Which keyword clusters should be nested as sub-pages? For example, should 'Service A' and 'Service B' live under 'Services'?"
+  * "What is the single most important path you want a user to take? (e.g., from the Homepage, through a Service page, to the Contact form)."
+  * "What utility links should be included in the footer? (e.g., Privacy Policy, Terms of Service, Careers)."
+
+#### ✍️ **Content Strategy & Voice**
+
+  * "If your brand were a person, what three words would describe its personality? (e.g., 'Expert,' 'Friendly,' 'Innovative')."
+  * "Based on that personality, what should the overall tone of voice be? (e.g., Formal and professional, casual and witty, inspirational and supportive)."
+  * "Are there specific taglines or key messages from the Product Brief we need to weave into the content?"
+  * "Beyond text, what other types of content will we need? (e.g., video, case studies, infographics, photo galleries)."
+
+#### 🧩 **Page-Level Content Requirements**
+
+  * "Let's outline the Homepage. What are the essential sections or 'blocks' of content it needs to have to guide the user?"
+  * "For a primary Service or Product page, what information is critical to include to persuade a user?"
+  * "What is the primary Call-to-Action (CTA) for the Homepage? What about for a blog post or a service page?"
+
+### **4. Document Structure**
+
+*(The generated document should follow this Markdown template.)*
+
+```markdown
+# Site Architecture & Content Plan: [Project Name]
+**Version:** 1.0
+**Date:** [Date of Creation]
+**Source Docs:** `/docs/01_create_brief_audience.md`, `/docs/02_create_competitor_keyword_research.md`
+
+## 1. Information Architecture (Sitemap)
+*A hierarchical representation of the website's structure, informed by keyword clusters.*
+
+- **1.0 Homepage** (Target Keyword: [Primary Brand Keyword])
+- **2.0 About Us** (Target Keyword: [e.g., about company name])
+    - 2.1 Our Team
+    - 2.2 Careers
+- **3.0 Services** (Target Keyword: [General services term])
+    - 3.1 Service A (Target Keyword: [Specific keyword for Service A])
+    - 3.2 Service B (Target Keyword: [Specific keyword for Service B])
+- **4.0 Blog** (Target Keyword: [e.g., industry blog, topics])
+    - 4.1 Category Page 1
+    - 4.2 Category Page 2
+- **5.0 Contact Us** (Target Keyword: [e.g., contact company name])
+- **6.0 Utility Navigation**
+    - 6.1 Privacy Policy
+    - 6.2 Terms of Service
+
+## 2. Core User Journey
+*The primary path a target user will take to achieve their main goal.*
+
+**Path:** Homepage → Services Page → Service Detail Page → Contact Form Submission → Thank You Page
+
+## 3. Content Strategy
+### Tone & Voice
+- **Personality:**
+- **Tone:**
+- **Key Messaging Points:**
+
+### Content Types
+- **Primary:** [e.g., Landing Pages, Blog Posts]
+- **Secondary:** [e.g., Video, Case Studies, FAQs]
+
+## 4. Page Content Blueprints
+*A template for the content modules required on key page types. This will guide wireframing and copywriting.*
+
+### **Template: Homepage**
+- **Page Title:**
+- **Target Keyword:**
+- **Page Goal:** [e.g., To clearly communicate the value proposition and direct users to key areas.]
+- **Required Sections/Modules:**
+    1.  **Hero Section:** (Headline, Sub-headline, Primary CTA)
+    2.  **Services Overview:** (Brief intro to each main service with links)
+    3.  **Value Proposition/Differentiators:** (Why choose us?)
+    4.  **Social Proof:** (Testimonials, client logos)
+    5.  **Secondary CTA:** (e.g., Sign up for newsletter)
+
+### **Template: Service Page**
+- **Page Title:**
+- **Target Keyword:**
+- **Page Goal:** [e.g., To detail the features and benefits of the service and generate a lead.]
+- **Required Sections/Modules:**
+    1.  **Service Headline:** (Clearly state the service)
+    2.  **Problem/Solution:** (Describe the pain point and how the service solves it)
+    3.  **Features & Benefits:**
+    4.  **Pricing/Plans:**
+    5.  **FAQ Section:**
+    6.  **Primary CTA:** (e.g., "Get a Quote", "Start Now")
+
+## 5. Next Steps
+- The **Sitemap** will serve as the foundation for the wireframes in the next step.
+- The **Page Content Blueprints** will guide both the wireframe layouts and the copywriting.
+- **Action Item:** Proceed to Step 4: Design & Content Creation.
+```
+
+### **5. Quality Assurance Framework**
+
+  - [ ] **Strategic Alignment:** Does the sitemap directly reflect the goals from `01_brief` and the keyword themes from `02_research`?
+  - [ ] **Logical Flow:** Is the sitemap hierarchy logical and easy for a user to understand?
+  - [ ] **Keyword Mapping:** Is a primary target keyword assigned to every significant page in the sitemap?
+  - [ ] **Actionable Blueprints:** Are the page blueprints detailed enough for a designer and writer to begin their work?
+  - [ ] **Consistent Voice:** Is the defined tone and voice consistent with the brand identity in the Product Brief?
+
+### **6. Supporting Library Documents**
+
+  - `design_ux/sitemaps_best_practices.md`: **(Primary)** Must be used to guide the creation of a logical and SEO-friendly sitemap.
+  - `copywriting/copy_101.md`: To inform the core messaging hierarchy.
+  - `copywriting/copy_best_practices.md`: To guide the Tone & Voice section.
+  - `copywriting/copy_ctas.md`: To help define the primary and secondary Calls-to-Action for page blueprints.
+  - `copywriting/copy_headline_formulas.md`: To assist in defining the purpose of hero sections and headlines.
+
+### **7. Integration with Other Documentation**
+
+  - **Input:** Heavily dependent on `/docs/01_create_brief_audience.md` and `/docs/02_create_competitor_keyword_research.md`.
+  - **Output:** This document is the primary blueprint for `04_create_design_content.md`.
+
+### **8. Best Practices**
+
+1.  **User-First Architecture:** Design the sitemap around user tasks and journeys, not just the company structure.
+2.  **Clarity Over Cleverness:** Navigation and page titles should be clear and descriptive.
+3.  **Content Before Design:** The page blueprints ensure that the design will serve the content, not the other way around.
+4.  **Scalability:** The architecture should be flexible enough to accommodate future growth and new content sections.
+
+### **9. Output Requirements**
+
+  - **Format:** Markdown (`.md`)
+  - **Location:** `/docs/`
+  - **Filename:** `03_create_architecture_content.md`
+
+### **10. Final Instructions**
+
+  - **DO NOT** create the sitemap without first analyzing the keyword clusters from `02_research`.
+  - **DO** ensure that every page in the main navigation has a clear purpose and maps to a user or business goal.
+  - **DO** use the page blueprints as the single source of truth for what content needs to be on a given page.
+  - **DO** confirm the primary user journey with the user to ensure it aligns with their business objectives.
+
+### **11. Key Success Factors**
+
+  - **The Bridge:** The document successfully bridges the gap between abstract strategy and concrete design/content tasks.
+  - **Clarity of Purpose:** Every page in the sitemap has a clear reason to exist.
+  - **Efficiency:** Provides a clear plan that prevents rework during the design and copywriting phases.
+  - **SEO Foundation:** The architecture is inherently optimized by being built upon the keyword strategy.

@@ -1,0 +1,145 @@
+# **Rule: Technical Implementation Planning**
+
+### **1. Goal**
+
+To guide an AI assistant in creating the `05_create_technical_plan.md` document. This document serves as the master technical blueprint for the project, detailing the technology stack, hosting infrastructure, CMS, third-party integrations, and plans for performance, security, and maintenance.
+
+It is written for the development team who will use it as their guide for building the application, and for project managers to understand technical dependencies and resource allocation.
+
+### **2. Process**
+
+1.  **Review Dependencies:** The agent **MUST** ingest and analyze all previous documents in the `/docs` directory. Specific attention should be paid to:
+      * `01_brief`: For project scope, scalability requirements, and budget constraints.
+      * `03_architecture`: Sitemap complexity influences the choice of CMS.
+      * `04_design`: Design complexity (e.g., interactions, animations) impacts front-end technology choices and performance considerations.
+2.  **Consult Knowledge Base:** The agent should rely on its internal knowledge of current web development best practices, security standards, and performance benchmarks (e.g., Google's Core Web Vitals). It should also reference `seo/on-page-seo.md` for technical SEO requirements.
+3.  **Conduct Structured Discovery:** Use the question framework below to gather the user's technical constraints, preferences, and existing infrastructure details.
+4.  **Generate Document:** Create the `Technical Implementation Plan` document, providing clear recommendations and rationale for each technical choice based on the project's unique needs.
+5.  **Quality Assurance:** Perform a validation check using the QA framework to ensure the plan is feasible, robust, and aligned with project goals.
+6.  **Save and Version:** Save the final document as `05_create_technical_plan.mdc` in the `/docs` directory.
+
+### **3. Discovery Framework**
+
+#### ⚙️ **Technology Stack & Hosting**
+
+  * "Does your team have any preferred or required technologies? (e.g., a specific JavaScript framework like React/Vue, or a backend language like PHP/Python)."
+  * "What is the expected traffic volume at launch and within the first year? This will help determine hosting and architecture needs."
+  * "Do you have an existing hosting provider, or do we need to select one? Are there any preferences (e.g., Vercel for frontend, AWS/Google Cloud for backend)?"
+  * "What is the technical expertise level of the team that will be maintaining the site?"
+
+#### 🗃️ **CMS & Content Management**
+
+  * "Describe the ideal content editing experience. Should non-technical users be able to change just text and images, or build entire page layouts?"
+  * "Are there any preferences for the CMS? (e.g., WordPress for its ecosystem, a Headless CMS like Contentful/Sanity for flexibility)."
+
+#### 🔗 **Integrations & Analytics**
+
+  * "Please list all third-party services that need to be integrated. (e.g., CRM like Salesforce, email marketing like Mailchimp, payment gateways like Stripe)."
+  * "Which analytics platform will be used? (e.g., Google Analytics 4, Plausible)."
+
+#### 🛡️ **Security & Maintenance**
+
+  * "Are there any specific data privacy or security regulations we must comply with (e.g., GDPR, CCPA, HIPAA)?"
+  * "What is the plan for ongoing maintenance, including backups and software updates?"
+
+### **4. Document Structure**
+
+*(The generated document should follow this Markdown template.)*
+
+```markdown
+# Technical Implementation Plan: [Project Name]
+**Version:** 1.0
+**Date:** [Date of Creation]
+**Source Docs:** `01_brief`, `02_research`, `03_architecture`, `04_design`
+
+## 1. Executive Summary
+*A high-level overview of the recommended technical approach chosen to meet the project's goals, balancing performance, scalability, and ease of maintenance.*
+
+## 2. Technology Stack
+| Layer | Recommended Technology | Rationale |
+|---|---|---|
+| **Frontend** | [e.g., Next.js (React)] | [e.g., For performance, SEO benefits of server-side rendering, and strong developer ecosystem.] |
+| **Backend** | [e.g., Headless CMS API] | [e.g., The project's needs are content-focused and do not require a custom backend.] |
+| **Database** | [e.g., PostgreSQL (via CMS)] | [e.g., Managed and scaled by the chosen Headless CMS provider.] |
+| **Styling** | [e.g., Tailwind CSS] | [e.g., For rapid UI development and maintaining consistency with the design system.] |
+
+## 3. Hosting & Deployment
+- **Hosting Provider(s):** [e.g., Vercel for Frontend, Sanity for CMS]
+- **Environment Plan:**
+    - **Development:** Local developer machines.
+    - **Staging:** Automatic preview deployments for every pull request.
+    - **Production:** Master branch auto-deploys to the live URL.
+- **Domain & DNS:** [e.g., Managed via Cloudflare]
+
+## 4. Content Management System (CMS)
+- **Chosen CMS:** [e.g., Sanity.io]
+- **Type:** Headless CMS
+- **Rationale:** [e.g., Offers complete design freedom for the frontend, a great real-time editing experience, and scales easily. Suits the need for custom content structures defined in `doc 03`.]
+
+## 5. Third-Party Integrations
+| Service | Purpose | Integration Method |
+|---|---|---|
+| [e.g., Google Analytics 4] | Website traffic analysis | Official Next.js GA library |
+| [e.g., Stripe] | Payment processing | React SDK / Serverless Functions |
+| [e.g., HubSpot] | Form submissions / CRM | REST API |
+
+## 6. Performance & Technical SEO
+- **Performance Budget:** Target a Google PageSpeed score of 90+ on mobile; Core Web Vitals must all be 'Good'.
+- **Image Optimization:** Automated image compression and format conversion (e.g., WebP) via hosting provider.
+- **Caching Strategy:** Incremental Static Regeneration (ISR) for a balance of fresh content and fast performance.
+- **Technical SEO:** Auto-generated sitemaps, structured data (Schema.org) for key pages, and server-side rendering will be implemented.
+
+## 7. Security & Maintenance
+- **Security Measures:** Standard HTTPS/SSL, Cross-Site Scripting (XSS) protection, environment variable management.
+- **Backup Strategy:** CMS data is backed up continuously by the provider. Code is versioned in Git.
+- **Update Plan:** Dependencies will be reviewed and updated quarterly.
+
+## 8. Next Steps
+- This technical plan provides the foundation for the final step of breaking down the work into actionable tasks.
+- **Action Item:** Proceed to Step 6: MVP Task Breakdown.
+```
+
+### **5. Quality Assurance Framework**
+
+  - [ ] **Feasibility:** Is the technical plan achievable within the project's known scope, timeline, and budget?
+  - [ ] **Requirement Coverage:** Does the plan account for all design, content, and functional requirements from the previous documents?
+  - [ ] **Scalability:** Is the architecture designed to handle the expected future growth in traffic and content?
+  - **Justification:** Is every major technical recommendation supported by a clear and logical rationale?
+  - [ ] **Maintainability:** Is the chosen stack and architecture suitable for the team that will be maintaining it long-term?
+
+### **6. Supporting Library Documents**
+
+  - `seo/on-page-seo.md`: To inform the "Performance & Technical SEO" section.
+  - **General Knowledge:** The agent should apply its understanding of modern web development best practices for all recommendations.
+
+### **7. Integration with Other Documentation**
+
+  - **Input:** This document is a synthesis of the requirements and constraints from all four preceding documents (`01` through `04`).
+  - **Output:** This document is the direct prerequisite for `06_create_mvp_tasks.mdc`. It defines the "how" so that the work can be tasked out.
+
+### **8. Best Practices**
+
+1.  **Right Tool for the Job:** Technology choices must be driven by project requirements, not just trends or developer preference.
+2.  **Plan for Change:** Architect the system in a way that is flexible and avoids vendor lock-in where possible.
+3.  **Prioritize Simplicity:** Choose the simplest solution that will meet the project's needs effectively. Avoid over-engineering.
+4.  **Security by Design:** Security should be a consideration from the beginning of the planning process, not an afterthought.
+
+### **9. Output Requirements**
+
+  - **Format:** Markdown (`.mdc`)
+  - **Location:** `/docs/`
+  - **Filename:** `05_create_technical_plan.mdc`
+
+### **10. Final Instructions**
+
+  - **DO** provide a clear rationale for every major technical recommendation, linking it back to a specific project goal or requirement.
+  - **DO NOT** recommend a technology without considering the maintenance overhead and the expertise of the team.
+  - **DO** ensure the plan includes considerations for non-functional requirements like performance, security, and scalability.
+  - **DO** ask clarifying questions if the user's requests seem to conflict with technical best practices.
+
+### **11. Key Success Factors**
+
+  - **Confidence:** The plan gives the development team a clear and confident path forward.
+  - **Feasibility:** The plan is realistic and achievable.
+  - **Alignment:** The technical solution is perfectly aligned with the strategic, content, and design goals of the project.
+  - **Future-Proofing:** The plan makes sensible choices that will not require a major re-architecture in the near future.

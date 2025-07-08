@@ -1,5 +1,88 @@
+# **Rule: Headline Generation**
+
+### **1. Goal**
+
+To guide an AI assistant to act as a creative copywriting partner, generating a diverse list of compelling headlines for a webpage or content section. The agent's role is to apply proven copywriting formulas to a user's core topic and benefit.
+
+The output is a categorized list of headline options, designed for a marketer or copywriter to brainstorm, test, and select from.
+
+### **2. Process**
+
+1.  **Consult Library Docs:** The agent **MUST** begin by reviewing `copywriting/copy_headline_formulas.md` and `copywriting/copy_headlines.md`. These documents provide the foundational formulas and examples that will be used for generation.
+2.  **Conduct Structured Discovery:** Use the simple question framework below to get the essential inputs from the user: keywords, purpose, and audience.
+3.  **Generate Headlines:** Apply a variety of formulas from the library docs to the user's input. The agent should generate multiple options for each formula to provide a robust list.
+4.  **Categorize and Present:** Group the generated headlines by the type of copywriting formula or psychological angle used (e.g., Benefit-Driven, Question-Based, How-To).
+5.  **Save Output:** Save the list of headlines as `headlines_[topic]_[date].mdc` in a `/brainstorming/` directory to keep these one-off creative sessions organized.
+
+### **3. Discovery Framework**
+
+  * "What is the **primary keyword or topic** this headline needs to include?"
+  * "What is the single biggest **benefit, promise, or outcome** for the user reading this section?"
+  * "(Optional) Who is the specific **audience**? (e.g., beginners, experts, busy professionals)."
+
+### **4. Document Structure (Output)**
+
+*(The generated document should follow this simple Markdown list format.)*
+
+```markdown
+# Headline Brainstorm: [User-Provided Topic]
+
+- **Primary Keyword:** [Keyword]
+- **Core Benefit/Promise:** [Benefit]
+
 ---
-description:
-globs:
-alwaysApply: false
----
+
+### Benefit-Driven Headlines
+*Focuses directly on the positive outcome for the user.*
+-
+-
+-
+
+### Question-Based Headlines
+*Engages the user by posing a question they want answered.*
+-
+-
+-
+
+### How-To / Guide Headlines
+*Frames the content as a direct solution or educational guide.*
+-
+-
+-
+
+### Intrigue / Curiosity Headlines
+*Makes the user curious to learn more.*
+-
+-
+-
+
+### Direct & Simple Headlines
+*Clear, straightforward, and no-frills.*
+-
+-
+-
+```
+
+### **5. Quality Assurance Framework**
+
+  - [ ] **Variety:** Does the output include headlines from at least 4-5 different categories/formulas?
+  - [ ] **Relevance:** Do all generated headlines naturally incorporate the user's keyword and reflect the core benefit?
+  - [ ] **Clarity:** Is the output easy to read and clearly categorized?
+  - [ ] **Actionability:** Is the list useful as a starting point for A/B testing or final selection?
+
+### **6. Supporting Library Documents**
+
+  - **(Primary)** `copywriting/copy_headline_formulas.md`: This is the rule's core instruction manual for different types of headlines to generate.
+  - **(Primary)** `copywriting/copy_headlines.md`: Provides concrete examples and inspiration.
+  - **(Secondary)** `copywriting/copy_101.md`: For overarching principles of effective copy.
+
+### **7. Integration with Other Documentation**
+
+This rule is mostly standalone but can be enhanced by optionally consulting `01_create_brief_audience.mdc` to better align the headline's tone with the established brand voice and target audience if more context is needed.
+
+### **8. Final Instructions**
+
+  - **DO** categorize the headlines by the copywriting formula used. This provides strategic context, not just a list of words.
+  - **DO** generate multiple options (at least 3-5) within each category.
+  - **DO NOT** just insert the keyword. Weave it into the headline in a natural and compelling way.
+  - **DO** focus on creativity and providing a wide range of angles for the user to consider.

@@ -1,0 +1,151 @@
+# **Rule: Design & Content Creation**
+
+### **1. Goal**
+
+To guide an AI assistant in creating the `04_create_design_content.md` document. This comprehensive document will contain the final website copy, visual wireframes for key pages, and the core elements of the visual design system. Its purpose is to create a complete and harmonious specification for how the website will look, feel, and communicate.
+
+This document is primarily for front-end developers who will build the interface and for key stakeholders who need to approve the final design and messaging before development begins.
+
+### **2. Process**
+
+1.  **Review Dependencies:** The agent **MUST** first ingest and analyze `/docs/03_create_architecture_content.md`. The sitemap and, most importantly, the **Page Content Blueprints** are the direct instruction set for this rule. It should also reference `/docs/01_create_brief_audience.md` for brand identity and audience context.
+2.  **Consult Library Docs:** Review all relevant documents in the `/library_docs/design_ux/` and `/library_docs/copywriting/` directories to load best practices for UI design, wireframing, and copywriting.
+3.  **Conduct Structured Discovery:** Use the question framework below to gather user preferences on visual aesthetics, design direction, and any final content details.
+4.  **Execute Phase 1: Content First:** Based on the Page Content Blueprints from `/docs/03_create_architecture_content.md` and user input, generate the **final, polished copy** for each key page (Headlines, body text, CTAs, etc.). Present this copy to the user for review and approval *before* creating wireframes.
+5.  **Execute Phase 2: Wireframing:** Once the copy for a page is approved, create a wireframe for that page. The wireframe must be structured according to the modules in the blueprint and **must incorporate the final copy** from the previous phase, not placeholder text.
+6.  **Execute Phase 3: Design System Definition:** Concurrently, define the core visual design system (colors, typography) based on user input.
+7.  **Generate Document:** Assemble the approved copy, wireframes, and design system elements into the `Design & Content Creation` document using the specified structure.
+8.  **Quality Assurance:** Perform a validation check using the QA framework.
+9.  **Save and Version:** Save the final document as `04_create_design_content.md` in the `/docs` directory.
+
+### **3. Discovery Framework**
+
+#### 🎨 **Visual & Design System**
+
+  * "Please provide your primary and secondary brand colors. Hex codes are preferred (e.g., `#1A2B3C`)."
+  * "Describe the desired aesthetic or feeling of the website in a few words (e.g., 'minimal and modern,' 'warm and trustworthy,' 'bold and energetic')."
+  * "Do you have any preferences for typography? For example, 'a clean sans-serif font for readability.' If you're unsure, I can recommend pairings based on the aesthetic."
+  * "Are there any websites you admire for their visual design that we can use as inspiration?"
+
+#### ✍️ **Content & Copy Refinement**
+
+  * "Looking at the Homepage blueprint, is there a specific, powerful testimonial we should feature in the 'Social Proof' section?"
+  * "For the Service/Product pages, are there any specific data points, statistics, or client results we can use to make the benefits more compelling?"
+
+### **4. Document Structure**
+
+*(The generated document should follow this Markdown template.)*
+
+```markdown
+# Design & Content Creation: [Project Name]
+**Version:** 1.0
+**Date:** [Date of Creation]
+**Source Docs:** `/docs/01_create_brief_audience.md`, `/docs/03_create_architecture_content.md`
+
+## 1. Core Design System
+### 1.1. Color Palette
+| Role | Color | Hex Code | Usage |
+|---|---|---|---|
+| Primary | | | Buttons, Links, Accents |
+| Secondary | | | Banners, Highlights |
+| Text | | | Headlines, Body Copy |
+| Background | | | Main background |
+| Neutral/Gray | | | Borders, Dividers |
+
+### 1.2. Typography
+| Element | Font Family | Weight | Size | Usage |
+|---|---|---|---|---|
+| Heading 1 (H1) | | Bold | 48px | Main page titles |
+| Heading 2 (H2) | | Bold | 36px | Section titles |
+| Body | | Regular | 16px | All paragraph text |
+| Button | | Medium | 16px | Call-to-action buttons |
+
+## 2. Final Website Copy
+### 2.1. Homepage Copy
+- **Headline:**
+- **Sub-headline:**
+- **Primary CTA Button Text:**
+- **Services Overview Section Copy:**
+- **Social Proof Section Copy:**
+
+### 2.2. Service Page Copy
+- **Headline:**
+- **Problem Statement Copy:**
+- **Features & Benefits Copy:**
+- **Primary CTA Button Text:**
+
+## 3. Page Wireframes
+### 3.1. Homepage Wireframe
+*This wireframe is based on the Homepage blueprint from `/docs/03_create_architecture_content.md` and uses the final copy from section 2.1.*
+
+| Section/Module | Content / Key Elements | Visual/Functional Notes |
+|---|---|---|
+| **Navigation** | Logo, Nav Links (Home, About, Services...), CTA Button | Sticky on scroll |
+| **Hero** | Headline, Sub-headline, Primary CTA Button | Full-width background image |
+| **Services** | Section Title, 3 cards (Icon, Service Name, Blurb) | Each card links to a service page |
+| **Social Proof** | Section Title, Testimonial Text, Customer Name | Rotator/carousel for multiple testimonials |
+| **Footer** | Logo, Utility Links, Social Media Icons | 4-column layout |
+
+### 3.2. Service Page Wireframe
+*This wireframe uses the final copy from section 2.2.*
+
+| Section/Module | Content / Key Elements | Visual/Functional Notes |
+|---|---|---|
+| **Navigation** | (Same as Homepage) | |
+| **Headline** | Page Title, Brief Intro | |
+| **Features** | 2-column grid: Icon + Feature Title on left, Benefit text on right | Repeat for 3-5 features |
+| **CTA Banner** | Compelling text, Primary CTA Button | Contrasting background color |
+| **Footer** | (Same as Homepage) | |
+
+## 4. Next Steps
+- The Design System and Wireframes provide the visual and structural specification for development.
+- The Final Copy is ready to be implemented in the CMS.
+- **Action Item:** Proceed to Step 5: Technical Implementation Planning.
+```
+
+### **5. Quality Assurance Framework**
+
+  - [ ] **Content-First Principle:** Do the wireframes correctly incorporate the *final, approved copy*?
+  - [ ] **Blueprint Adherence:** Does each wireframe include all the required modules specified in the `/docs/03_create_architecture_content.md` page blueprints?
+  - [ ] **Visual Consistency:** Is the defined color palette and typography used consistently across all wireframes?
+  - [ ] **Brand Alignment:** Does the overall design direction align with the brand identity and audience described in `doc 01`?
+  - [ ] **Copy Quality:** Is the final copy persuasive, error-free, and does it reflect the brand's tone of voice?
+  - [ ] **Accessibility Check:** Is there sufficient color contrast? Are fonts readable? (Consult `ux_and_design_101.md`).
+
+### **6. Supporting Library Documents**
+
+  - **(Primary) Wireframing:** `design_ux/wireframe_101.md`, `design_ux/wireframe_best_practices.md`, `design_ux/wireframe_examples.md`.
+  - **(Primary) Copywriting:** `copywriting/copy_101.md`, `copywriting/copy_best_practices.md`, `copywriting/copy_ctas.md`, `copywriting/copy_headline_formulas.md`.
+  - **(Primary) Design/UX:** `design_ux/ux_and_design_101.md`, `design_ux/font_pairings.md`.
+
+### **7. Integration with Other Documentation**
+
+  - **Input:** Critically dependent on `/docs/03_create_architecture_content.md` for the blueprints and structure. Relies on `/docs/01_create_brief_audience.md` for brand and audience context.
+  - **Output:** This document is the primary visual and content specification for developers and a key input for `05_create_technical_plan.md` and `06_create_mvp_tasks.md`.
+
+### **8. Best Practices**
+
+1.  **Content-First Wireframing:** Ensure design serves the message by finalizing copy before or during the layout process.
+2.  **Design for Harmony:** The copy, layout, and visual elements should all work together to achieve the page's goal.
+3.  **Mobile-First Thinking:** While wireframes may be for desktop, consider how the elements will reflow and remain effective on smaller screens.
+4.  **Clarity and Simplicity:** Avoid clutter. Every element on the page should have a clear purpose.
+
+### **9. Output Requirements**
+
+  - **Format:** Markdown (`.md`)
+  - **Location:** `/docs/`
+  - **Filename:** `04_create_design_content.md`
+
+### **10. Final Instructions**
+
+  - **DO NOT** use "lorem ipsum" or placeholder text. The agent must generate and use the approved final copy for all wireframes.
+  - **DO** present the final copy to the user for approval *before* proceeding to the wireframing stage.
+  - **DO** ensure the wireframes are a direct visual representation of the content blueprints from the previous step.
+  - **DO** reference the library documents for best practices on typography, layout, and copywriting.
+
+### **11. Key Success Factors**
+
+  - **Harmony:** The final document demonstrates a seamless integration of copy, layout, and visual style.
+  - **Clarity:** The wireframes and copy provide an unambiguous plan for developers.
+  - **Efficiency:** The "content-first" approach prevents costly redesigns and content rewrites during the development phase.
+  - **Strategic Execution:** The final design and content effectively execute the strategy laid out in the first three documents.

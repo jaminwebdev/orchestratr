@@ -1,5 +1,108 @@
+# **Rule: Page Analysis & Optimization**
+
+### **1. Goal**
+
+To guide an AI assistant in performing a comprehensive analysis of a live webpage. The agent will assess the page's copywriting, user experience (UX), and on-page SEO against the project's foundational documents and the best practices library.
+
+The output is a structured optimization report for marketers, designers, and developers, containing actionable recommendations to improve the page's effectiveness and user experience.
+
+### **2. Process**
+
+1.  **Review Dependencies:** Before analysis, the agent **MUST** review core project documents to understand the strategic context:
+      * `01_create_brief_audience.md` (to understand the target audience, brand voice, and project goals).
+      * `04_create_design_content.md` (to understand the intended design system and components).
+2.  **Consult Library Docs:** The agent must load all relevant best practices documents from the `/library_docs/copywriting/`, `/library_docs/design_ux/`, and `/library_docs/seo/` directories. These form the basis of the evaluation criteria.
+3.  **Conduct Structured Discovery:** Ask the user for the target URL and the specific goal of that page to focus the analysis.
+4.  **Fetch & Analyze Page:** The agent will fetch the content of the provided URL. It will then systematically compare the page's elements (headlines, CTAs, layout, etc.) against the principles from the library docs and the project's own strategic documents.
+5.  **Generate Analysis Report:** Structure the findings into a clear, categorized report, detailing observations and providing specific recommendations for improvement.
+6.  **Assemble and Save:** Format the final report in Markdown and save it as `analysis_[page-name]_[date].md` in a new `/audits/` directory.
+
+### **3. Discovery Framework**
+
+  * "Please provide the full URL of the page you want me to analyze."
+  * "What is the single most important goal of this page? (e.g., 'Get users to sign up for a trial,' 'Have users download a whitepaper,' 'Rank \#1 for a specific keyword')."
+  * "Are there any specific parts of the page you are already concerned about or would like me to focus on?"
+
+### **4. Document Structure (Output)**
+
+*(The generated report should follow this Markdown template.)*
+
+```markdown
+# Page Analysis Report: [Page URL]
+
+- **Analysis Date:** [Date of Analysis]
+- **Stated Page Goal:** [User-provided goal of the page]
+
 ---
-description:
-globs:
-alwaysApply: false
+
+## 1. Executive Summary
+*A high-level overview of the analysis. The most critical opportunities are listed first.*
+
+- **Overall Score:** [e.g., 7/10]
+- **Top Recommendation (Copywriting):** [e.g., The main headline is unclear. It should be rewritten to state the primary benefit.]
+- **Top Recommendation (UX/UI):** [e.g., The primary Call-to-Action button is below the fold on mobile and has low color contrast.]
+- **Top Recommendation (SEO):** [e.g., The page's meta description is truncated and doesn't include the primary keyword.]
+
 ---
+
+## 2. Copywriting & Messaging Analysis
+*Assessment based on best practices from the `/copywriting/` library.*
+
+### **Headline & Value Proposition**
+- **Observation:** [e.g., The main headline "A New Way to Work" is vague and doesn't convey a clear benefit.]
+- **Recommendation:** [e.g., Test a more benefit-driven headline like "Save 10 Hours Every Week on Team Admin Tasks." Reference: `copy_headline_formulas.md`.]
+
+### **Call-to-Action (CTA)**
+- **Observation:** [e.g., The button text "Submit" is generic and lacks motivational language.]
+- **Recommendation:** [e.g., Change the button text to be more specific and value-oriented, such as "Get Your Free Demo" or "Start My Free Trial." Reference: `copy_ctas.md`.]
+
+### **Tone of Voice & Readability**
+- **Observation:** [e.g., The tone is highly technical, which may not align with the target audience defined in `01_create_brief_audience.md`.]
+- **Recommendation:** [e.g., Simplify sentence structure and replace jargon with more user-friendly language.]
+
+---
+
+## 3. UX & UI Design Analysis
+*Assessment based on best practices from the `/design_ux/` library and `04_create_design_content.md`.*
+
+### **Visual Hierarchy & Layout**
+- **Observation:** [e.g., All sections have a similar font weight, making it difficult for users to scan and identify the most important information.]
+- **Recommendation:** [e.g., Increase the font size and weight of section headers. Use the primary brand color to highlight key statistics, as defined in the design system.]
+
+### **User Flow & Friction**
+- **Observation:** [e.g., The contact form has 10 fields, which may create high friction for a simple inquiry.]
+- **Recommendation:** [e.g., Reduce the form to the 3 most essential fields (Name, Email, Message) and ask for more information later in the process.]
+
+---
+
+## 4. On-Page SEO Analysis
+*Assessment based on best practices from `seo/on-page-seo.md`.*
+
+### **Meta Title & Description**
+- **Observation:** [e.g., The meta title is the same as the H1 headline.]
+- **Recommendation:** [e.g., Craft a unique meta title under 60 characters that includes the primary keyword and a compelling benefit to improve click-through rates from search results.]
+
+### **Image Alt Text**
+- **Observation:** [e.g., Three of the five images on the page are missing descriptive alt text.]
+- **Recommendation:** [e.g., Add descriptive alt text to all images to improve accessibility and provide context for search engines.]
+```
+
+### **5. Quality Assurance Framework**
+
+  - [ ] **Actionable Recommendations:** Are all recommendations specific and concrete, not vague?
+  - [ ] **Contextual Relevance:** Does the analysis correctly reference the project's unique audience, voice, and goals?
+  - [ ] **Grounded in Best Practices:** Does the advice clearly map back to established principles in the `/library_docs/`?
+  - [ ] **Goal-Oriented:** Is the analysis focused on helping the page better achieve its stated goal?
+
+### **6. Supporting Library Documents**
+
+  - **(Primary)** All `copywriting/` documents (`copy_101.md`, `copy_best_practices.md`, `copy_ctas.md`, `copy_headline_formulas.md`).
+  - **(Primary)** All `design_ux/` documents (`ux_and_design_101.md`, `ux_and_design_102.md`).
+  - **(Primary)** `seo/on-page-seo.md`.
+
+### **7. Final Instructions**
+
+  - **DO** provide "before and after" examples for suggestions where possible, especially for copy changes.
+  - **DO NOT** just list problems. For every observation, provide a clear, actionable recommendation.
+  - **DO** frame the analysis around the specific goal of the page provided by the user.
+  - **DO** use the project's foundational documents (`01_brief` and `04_design`) as the "source of truth" for what is "correct" for this specific website.

@@ -1,5 +1,102 @@
+
+# **Rule: Strategic Keyword Research**
+
+### **1. Goal**
+
+To guide an AI assistant in performing foundational keyword research for a specific topic, feature, or product described in a source document (like a PRD or brief). The objective is to identify, analyze, and categorize keyword opportunities.
+
+The output is a structured keyword strategy report designed for content strategists, SEO managers, and marketers to use for planning future content, such as blog posts, landing pages, or documentation.
+
+### **2. Process**
+
+1.  **Review Input Document:** The process begins with the agent ingesting and analyzing a user-provided document or a detailed text description of the research topic. This is the primary source of context.
+2.  **Consult Library Docs:** The agent **MUST** review `seo/keyword_research_process.md`, which defines the methodology for the research and analysis.
+3.  **Conduct Structured Discovery:** Use the question framework below to clarify the scope, audience, and intent of the research with the user.
+4.  **Generate & Analyze Keywords:** The agent will call a specialized tool, prioritizing the `dataforseo MCP` (or falling back to the `Perplexity MCP`), to generate a comprehensive list of keywords based on the source document and user input. It will then analyze these for estimated volume, difficulty, and user intent.
+5.  **Generate Report:** The agent will structure the findings into a strategic report, organizing keywords into thematic clusters and providing actionable content recommendations.
+6.  **Save Output:** Save the final report as `keyword-research_[topic]_[date].mdc` in the `/brainstorming/` directory.
+
+### **3. Discovery Framework**
+
+  * "Please provide the document (e.g., product brief, PRD) or a detailed description of the topic you want me to research."
+  * "Who is the primary audience for this topic? (e.g., technical experts, beginners, potential customers)."
+  * "Are there any 'seed' keywords or core concepts you already know are important?"
+  * "(Optional) Are there any known competitors whose content we should analyze for keyword ideas?"
+
+### **4. Document Structure (Output)**
+
+*(The generated report should follow this Markdown template.)*
+
+```markdown
+# Keyword Research Report: [Topic Name]
+
+- **Source Document/Topic:** [Name of user-provided doc or description]
+- **Target Audience:** [User-defined audience]
+- **Analysis Date:** [Date of Analysis]
+
 ---
-description:
-globs:
-alwaysApply: false
+
+## 1. Executive Summary & Strategic Recommendation
+*A high-level overview of the keyword landscape for this topic. The primary opportunity is to [e.g., build a content hub around 'Topic X' to capture informational intent, then channel users to our product page].*
+
+- **Total Search Opportunity:** [e.g., High / Medium / Low]
+- **Primary Keyword Theme:** [e.g., "Cloud security best practices"]
+- **Top Recommendation:** [e.g., Create a pillar page titled "The Ultimate Guide to Cloud Security" and support it with blog posts targeting the long-tail questions identified below.]
+
 ---
+
+## 2. Primary Keyword Clusters
+*High-value commercial and informational keywords, grouped by theme.*
+
+### **Theme: [e.g., 'Cloud Security Audits']**
+| Keyword | Est. Monthly Volume | SEO Difficulty | User Intent |
+|---|---|---|---|
+| | | | Commercial |
+| | | | Commercial |
+
+### **Theme: [e.g., 'How to Secure AWS']**
+| Keyword | Est. Monthly Volume | SEO Difficulty | User Intent |
+|---|---|---|---|
+| | | | Informational |
+| | | | Informational |
+
+---
+
+## 3. Long-Tail & Question-Based Keywords
+*Direct questions users are asking search engines. Ideal for blog posts, FAQs, and webinar topics.*
+
+- [Question 1, e.g., "what are common cloud security threats"]
+- [Question 2, e.g., "how much does a cloud security audit cost"]
+- [Question 3, e.g., "aws vs azure security features"]
+
+---
+
+## 4. Content Strategy Recommendations
+*Actionable ideas for content that can effectively target the keywords identified above.*
+
+- **Pillar Page:** Create a comprehensive guide on "[Primary Keyword Theme]." This page will serve as a central hub and target high-volume informational keywords.
+- **Blog Posts:**
+    - Write a detailed post answering the question: "[Question 1]".
+    - Create a comparison post: "[Question 3]".
+- **Landing Page:** Develop a dedicated landing page for "[Commercial Keyword]" to capture high-intent traffic.
+
+```
+
+### **5. Quality Assurance Framework**
+
+  - [ ] **Source Alignment:** Does the research clearly and accurately reflect the topic from the user-provided document?
+  - [ ] **Data-Driven:** Are the keywords accompanied by metrics like volume and difficulty?
+  - [ ] **Strategic Clustering:** Are keywords grouped into logical, thematic clusters rather than presented as one long list?
+  - [ ] **Actionable Insights:** Does the report provide concrete content recommendations, not just raw data?
+
+### **6. Supporting Library Documents**
+
+  - **(Primary)** `seo/keyword_research_process.md`: This document is the core methodological guide for the entire process.
+  - **(Secondary)** `seo/on-page-seo.md`: Provides context for *how* the identified keywords will eventually be used in content.
+
+### **7. Final Instructions**
+
+  - **DO** prioritize creating thematic keyword clusters, as this is essential for building topic authority.
+  - **DO NOT** just provide a data dump. The primary value is in the analysis and the strategic content recommendations.
+  - **DO** clearly identify the user intent (Informational, Commercial, Transactional) for primary keyword groups.
+  - **DO** use a specialized tool like the `dataforseo MCP` as the preferred source for quantitative keyword data.

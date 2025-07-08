@@ -1,18 +1,121 @@
+# **Rule: New Page Generation**
+
+### **1. Goal**
+
+To guide an AI assistant in a rapid, end-to-end process for creating a single new webpage. The rule combines discovery, keyword research, content writing, wireframing, and task generation into a single, efficient workflow.
+
+The output is a self-contained Markdown document with the final page copy, a wireframe, and an implementation task list, ready for a developer to build and integrate into the existing site.
+
+### **2. Process**
+
+1.  **Review Dependencies:** The agent **MUST** first review the core project documents to ensure consistency with the existing site:
+      * `01_create_brief_audience.md` (for overall brand voice and audience).
+      * `04_create_design_content.md` (for the established visual design system and components).
+      * `05_create_technical_plan.md` (for the current tech stack).
+2.  **Consult Library Docs:** Review relevant documents from all subdirectories (`/seo/`, `/copywriting/`, `/design_ux/`) to ground the output in best practices.
+3.  **Conduct Structured Discovery:** Use the comprehensive question framework below to gather all necessary information from the user in a single pass.
+4.  **Keyword Research (Conditional):**
+      * If the user provides target keywords, use them.
+      * If not, perform a targeted keyword research task (using the Perplexity or dataforseo MCP) based on the page's stated purpose.
+5.  **Generate Content & Wireframe:** Based on all inputs, generate the final page copy and a structural wireframe simultaneously.
+6.  **Generate Task List:** Create a concise, actionable checklist for a developer to implement the new page.
+7.  **Assemble and Save:** Combine the content, wireframe, and task list into a single Markdown file and save it as `[new-page-name].mdc` in the `/docs/new-pages/` directory.
+
+### **3. Discovery Framework**
+
+#### 🎯 **Purpose & Goal**
+
+  * What is the primary goal of this new page? (e.g., generate leads, inform users, announce a feature).
+  * Who is the specific target audience for this page?
+  * What is the single most important action a user should take after reading this page?
+  * Where will this page live in the current site architecture? (e.g., linked from the main navigation, from a blog post, etc.).
+
+#### 🔑 **SEO & Keywords**
+
+  * Do you have a primary keyword you want to target? If not, I will research one based on the page's purpose.
+  * What are some other related terms or questions a user might search for to find this page?
+
+#### ✍️ **Content & Messaging**
+
+  * What are the key messages, features, or pieces of information that **must** be on this page?
+  * Please provide any raw notes, data points, or links that should be incorporated into the content.
+  * What should the primary Call-to-Action (CTA) be? (e.g., "Sign Up Now," "Learn More," "Contact Us").
+
+### **4. Document Structure (Output)**
+
+*(The generated document should follow this Markdown template.)*
+
+```markdown
+# New Page: [Page Name]
+
+- **Goal:** [Primary goal of the page]
+- **Target Audience:** [Specific audience for this page]
+- **Primary Keyword:** [Target SEO keyword]
+
 ---
-description: 
-globs: 
-alwaysApply: false
+
+## 1. Final Page Content
+*This copy is ready to be used on the site and is written to align with the established brand voice.*
+
+### **Headline (H1):**
+[Compelling, keyword-optimized headline]
+
+### **Introductory Paragraph:**
+[Engaging opening paragraph that sets the stage.]
+
+### **Section 1: [Section Title]**
+[Body copy for the first section...]
+
+### **Section 2: [Section Title]**
+[Body copy for the second section...]
+
+### **Call-to-Action Section:**
+- **Headline:** [Action-oriented headline]
+- **Button Text:** [Primary CTA text]
+
 ---
-- Do keyword research
-- wireframe and write copy sequentially
-  - should reference originally generated docs for consistency
-  - should reference library_docs of course for making decisions and qualifying questions
-- should reference design docs and library_docs screenshots for consistency
-- spit out a new page doc
-- need rule for generating tasks based on new page doc
-- iterate on those tasks
 
-- This might be too much for one rule. Maybe separate into another sequential workflow like 01_start
+## 2. Wireframe
+*This wireframe is based on the existing design system and components from `04_create_design_content.md`.*
 
+| Section/Module | Content / Key Elements | Visual/Functional Notes |
+|---|---|---|
+| **Hero** | Headline (from above) | Use standard hero component |
+| **Section 1** | Content from Section 1 | Standard 2-column layout |
+| **Section 2** | Content from Section 2 | Full-width with background color |
+| **CTA Banner** | CTA Headline & Button | Use primary button style |
 
+---
 
+## 3. Implementation Task List
+
+- [ ] **CMS Setup:** Create a new page entry in the CMS with the specified fields.
+- [ ] **Component Development:** Build the frontend components for the page using the wireframe and final content.
+- [ ] **Content Population:** Populate the new page with the final content from this document.
+- [ ] **SEO & Metadata:** Configure the page's URL slug, meta title, and meta description.
+- [ ] **Linking:** Add links to the new page from relevant existing pages.
+- [ ] **Testing:** Perform a quality assurance check on multiple devices to ensure responsiveness and functionality.
+- [ ] **Deployment:** Deploy the new page to the staging and production environments.
+
+```
+
+### **5. Quality Assurance Framework**
+
+  - [ ] **Consistency:** Does the page's tone and design align with the existing site (`doc 01` & `doc 04`)?
+  - [ ] **Goal-Oriented:** Does the page have a clear purpose and a prominent Call-to-Action?
+  - [ ] **SEO Optimized:** Is the content optimized for the target keyword?
+  - [ ] **Actionable:** Is the task list clear and sufficient for a developer to begin work?
+
+### **6. Supporting Library Documents**
+
+In the `/library_docs/` directory: 
+  - **SEO:** `seo/keyword_research_process.md`, `seo/on-page-seo.md`
+  - **Copywriting:** `copywriting/copy_101.md`, `copywriting/copy_best_practices.md`, `copywriting/copy_ctas.md`, `copywriting/copy_headline_formulas.md`
+  - **Design/UX:** `design_ux/wireframe_best_practices.md`
+
+### **7. Final Instructions**
+
+  - **DO** ensure the new page's design and tone are consistent with the established Design System and Brand Voice.
+  - **DO NOT** create components that deviate from the existing design system without explicit user instruction.
+  - **DO** generate a complete, ready-to-use set of copy for the page.
+  - **DO** create a practical task list that a developer can immediately start working on.

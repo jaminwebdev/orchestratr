@@ -1,10 +1,126 @@
-Make this into single rule with user feedback:
-https://www.youtube.com/watch?v=DxSDZwpgfRE
+Of course. This is the most strategically complex rule, guiding a user from a high-level idea to a full-fledged engineering plan for a programmatic SEO initiative.
 
-- Ask perplexity MCP for programmatic keyword ideas based on site docs
-- Wait for user feedback to proceed with a given tactic/path
-- Perplexity will then expand on that more with combinations and tools/ideas to expand further
-    - it should return with ideas based around the path you chose and keywords can be pulled from that by the next mcp
-- use the dataforseo mcp to research the keywords and give ideas of potential search volume and keyword difficulty
-- With the key findings it returns, ask it to create a PRD to build programmatic page templates based on the chosen strategy. Use the information gathered to prioritize tool comparisons, relevant tools to the {your site} and a high priority keyword that we can create solid content around. 
-- use your model of choice to attack the PRD - also have it reference resource docs in a repo if they exist. Tools like Claude Code might be better for this as it has better context of the project vs Cursor which takes shortcuts to keep costs cheap. 
+Here is the rule for `programmatic-seo`.
+
+-----
+
+# **Rule: Programmatic SEO (pSEO) Strategy & Planning**
+
+### **1. Goal**
+
+To guide an AI assistant through the discovery, validation, research, and planning phases of a Programmatic SEO (pSEO) project. The process culminates in the creation of a comprehensive Product Requirements Document (PRD) that will serve as the blueprint for developing the necessary page templates.
+
+This rule is designed for a strategist, marketer, or founder looking to scale content and capture long-tail search traffic programmatically.
+
+### **2. Process**
+
+This is a sequential, multi-step process with a critical user validation checkpoint.
+
+1.  **Phase 1: Ideation & Discovery**
+
+      * a. **Review Dependencies:** The agent reviews `01_create_brief_audience.mdc` and `02_create_competitor_keyword_research.mdc` to understand the core business, audience, and market.
+      * b. **Conduct Discovery:** Ask the user to identify the core "entities" of their business (e.g., services, locations, features, competitors).
+      * c. **Generate Ideas:** Call the `Perplexity MCP` with a prompt like: *"Given a business that [business description], what are 3-5 potential programmatic SEO strategies? Frame them as 'X vs Y' or 'X for Y' permutations."*
+
+2.  **Phase 2: User Validation (Checkpoint)**
+
+      * a. The agent presents the generated pSEO strategies, explaining the permutation logic for each.
+      * b. The process **pauses**. The agent prompts: *"Please review these strategies. Which one would you like me to research further?"* and waits for a user selection.
+
+3.  **Phase 3: Keyword & Data Research**
+
+      * a. Once a strategy is chosen (e.g., "[Service] in [City]"), the agent uses the `dataforseo MCP` to research keyword patterns, volume, and difficulty for the selected permutation.
+      * b. The agent identifies the data required for this play (e.g., "A list of US cities and their states") and asks the user about its availability.
+
+4.  **Phase 4: PRD Generation**
+
+      * a. With the strategy validated and keyword potential confirmed, the agent generates a comprehensive PRD for the pSEO project.
+      * b. This PRD details the page template, URL structure, dynamic variables, content modules, and technical requirements.
+
+5.  **Phase 5: Save Output**
+
+      * The final PRD is saved as `pseo-prd_[strategy-name].mdc` in a new `/initiatives/` directory.
+
+### **3. Discovery Framework**
+
+  * **Phase 1 Question:** "To start, what are the core 'entities' of your business? Please list your main: 1. Services/Products, 2. Locations you serve, 3. Tools you integrate with, and 4. Competitors you compare against."
+  * **Phase 2 Prompt:** "Based on your business, here are three potential programmatic strategies. Please review them and tell me which one you'd like to pursue."
+  * **Phase 3 Question:** "For the chosen strategy, we will need a dataset of [e.g., all US cities with a population over 50,000]. Do you have access to this data, or should I investigate public sources?"
+
+### **4. Document Structure (Output PRD)**
+
+*(The generated PRD should follow this Markdown template.)*
+
+```markdown
+# Programmatic SEO PRD: [Strategy Name]
+
+## 1. Overview & Goal
+- **Strategy:** [e.g., Service in Location] - To programmatically generate a unique landing page for each major city we service.
+- **Goal:** To capture high-intent, long-tail local search traffic, increase qualified leads, and establish local market authority.
+
+## 2. Keyword Opportunity Analysis
+- **Keyword Pattern:** `[service name] in {{city_name}}`
+- **Estimated Total Volume:** [e.g., 50,000+ monthly searches across all targeted cities]
+- **Example Keywords:**
+    - "emergency plumbing in houston" (Volume: 1200, Difficulty: 25)
+    - "drain cleaning in phoenix" (Volume: 800, Difficulty: 22)
+
+## 3. Page Template Specification
+### 3.1. URL Structure
+- `/services/{{service_slug}}/{{city_slug}}`
+
+### 3.2. Page Variables (Data-Driven)
+| Variable | Example | Source |
+|---|---|---|
+| `{{service_name}}` | Emergency Plumbing | Services List |
+| `{{city_name}}` | Houston | Cities List |
+| `{{state_name}}` | Texas | Cities List |
+| `{{local_phone_number}}` | 832-555-1234 | Cities List |
+| `{{local_testimonial}}` | "They were lifesavers in Houston!" | Testimonials DB (filtered by city) |
+
+### 3.3. Dynamic Content Modules
+- **H1 Headline:** `{{service_name}}` in `{{city_name}}`, `{{state_name}}` - Call Us: `{{local_phone_number}}`
+- **Intro Paragraph:** "Looking for reliable `{{service_name}}` services in the `{{city_name}}` area? Our expert team is here to help..."
+- **Testimonial Section:** Dynamically inserts `{{local_testimonial}}` if available.
+- **Local FAQ:** What is the cost of `{{service_name}}` in `{{city_name}}`?
+
+### 3.4. Static Content Modules
+- **"Why Choose Us" Section:** (Same on all pages)
+- **Our Process Section:** (Same on all pages)
+- **Company-Wide Guarantees:** (Same on all pages)
+
+## 4. Data Requirements
+- **Source 1:** List of Services (Internal)
+- **Source 2:** List of Cities > 50k Population (Public Dataset)
+    - **Required Fields:** `city`, `state`, `slug`, `local_phone_number`
+- **Source 3:** Customer Testimonials (Internal Database)
+    - **Required Fields:** `text`, `author`, `city_tag`
+
+## 5. Technical Requirements
+- **Internal Linking:** All city pages for a given service should be linked from the main parent service page.
+- **Schema Markup:** Implement `LocalBusiness` schema on each page, dynamically populating the `address` and `telephone` fields.
+- **Sitemap:** Ensure a new sitemap is generated that includes all programmatic URLs.
+
+## 6. Next Steps
+- [ ] Create detailed engineering tasks based on this PRD.
+- [ ] Acquire and clean the required datasets.
+- [ ] Build and test the page template.
+```
+
+### **5. Quality Assurance Framework**
+
+  - [ ] **Validation Checkpoint:** Did the user explicitly select a strategy before the agent proceeded with research?
+  - [ ] **Keyword Viability:** Is there sufficient search volume for the chosen keyword pattern to justify the development effort?
+  - [ ] **Data Feasibility:** Is the data required for the page variables realistically attainable?
+  - [ ] **PRD Completeness:** Is the PRD detailed enough for a developer to build the template without significant clarification? It must specify variables, URL structure, and content modules.
+
+### **6. Supporting Library Documents**
+
+  - `seo/keyword_research_process.md`: To inform the methodology of Phase 3.
+  - All `copywriting/` documents: To guide the creation of the copy within the dynamic content modules.
+
+### **7. Final Instructions**
+
+  - **DO NOT** proceed to Phase 3 (Keyword Research) until the user has given explicit confirmation on a single strategy from Phase 2. This is a critical checkpoint.
+  - **DO** clearly distinguish between dynamic (variable-based) and static content in the PRD template.
+  - **DO** frame the final output as a formal Product Requirements Document (PRD), as it serves as the foundational plan for a new development initiative.

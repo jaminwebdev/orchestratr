@@ -1,5 +1,198 @@
----
-description:
-globs:
-alwaysApply: false
----
+# **Rule: Product Brief & Audience Research Generation**
+
+### **1. Goal**
+
+To guide an AI assistant in creating a detailed and actionable **Product Brief & Audience Research** document in Markdown format. This document serves as the foundational "source of truth" for the entire project, establishing a shared understanding of the project's vision, goals, scope, and target users.
+
+It is created for all project stakeholders, from leadership and marketing teams to designers and developers. Every subsequent document in this workflow will reference this brief to ensure strategic alignment.
+
+### **2. Process**
+
+1.  **Receive Initial Prompt:** The user provides a high-level description or concept for the new website or product.
+2.  **Conduct Structured Discovery:** Use the comprehensive question framework below to methodically gather all necessary information from the user.
+3.  **Consult Library Docs:** Review the specified supporting documents from the `/library_docs` directory to incorporate foundational best practices.
+4.  **Validate Understanding:** Before generation, provide a summary of the core vision, audience, and goals to the user for confirmation.
+5.  **Generate Document:** Create the `Product Brief & Audience Research` document using the specified structure.
+6.  **Quality Assurance:** Perform a validation check using the QA framework to ensure the document is complete, clear, and actionable.
+7.  **Save and Version:** Save the final document as `01_create_brief_audience.md` in the `/docs` directory.
+
+### **3. Discovery Framework**
+
+*(The agent should use these questions to gather all required information from the user.)*
+
+#### 🎯 **Product Vision & Strategy**
+
+  * **Core Purpose:** What is the fundamental problem this website solves or the primary goal it aims to achieve?
+  * **Value Proposition:** In one sentence, what is the unique value this site provides that alternatives do not?
+  * **Success Definition:** What does success look like in 6 months? In 1 year? (e.g., number of users, revenue, leads generated).
+  * **Mission Alignment:** How does this project support broader business objectives?
+
+#### 👥 **Target Audience & User Research**
+
+  * **Primary Audience:** Describe the ideal primary user. (Consider demographics, technical skills, motivations, and goals).
+  * **Secondary Audiences:** Are there other important user groups we should consider?
+  * **User Pain Points:** What specific frustrations or challenges do these users currently face that this website will address?
+  * **Current Solutions:** How do users currently solve this problem or get this information? What are they using now?
+  * **Usage Context:** Where and how will users interact with this site? (e.g., on a mobile device during a commute, on a desktop at work).
+
+#### 🏢 **Market & Initial Competitive Landscape**
+
+  * **Direct Competitors:** Who are the top 2-3 direct competitors? What do they do well and where do they fall short?
+  * **Indirect Competitors:** Are there alternative solutions that aren't direct competitors? (e.g., using a spreadsheet, a physical store).
+  * **Differentiation:** What will make this website a better choice than the competition?
+
+#### 🛠️ **Scope & Core Requirements**
+
+  * **Essential Features (MVP):** What are the absolute must-have features or content sections for the first launch?
+  * **Key User Actions:** What is the single most important action you want a user to take on the website?
+  * **"Out of Scope":** What specific features or functionality should be explicitly excluded from the initial launch?
+
+#### 💰 **Business Goals & Monetization**
+
+  * **Primary Business Goal:** Is the site meant to generate leads, sell products, build a community, provide information, or something else?
+  * **Revenue Model:** If applicable, how will the website generate revenue? (e.g., e-commerce, subscriptions, ads).
+
+#### 🛡️ **Constraints & Risks**
+
+  * **Timeline:** Are there any critical deadlines or a desired launch window?
+  * **Budget:** Are there known budgetary constraints that will influence the scope?
+  * **Risks:** What are the biggest potential risks to the success of this project? (e.g., market adoption, technical challenges).
+
+### **4. Document Structure**
+
+*(The generated document should follow this Markdown template.)*
+
+```markdown
+# Product Brief & Audience Research: [Project Name]
+**Version:** 1.0
+**Date:** [Date of Creation]
+
+## 1. Executive Summary
+*A brief, high-level overview of the entire project.*
+- **Product Vision:**
+- **Unique Value Proposition:**
+- **Primary Business Goals:**
+- **Key Success Metrics:**
+
+## 2. Project Overview
+### Problem Statement
+*What core problem are we solving for our users?*
+
+### Solution Overview
+*How will this website solve that problem?*
+
+### Strategic Alignment
+*How does this project align with our broader business goals?*
+
+## 3. Target Audience
+### Primary Audience Persona
+- **Description:**
+- **Needs & Goals:**
+- **Current Pain Points:**
+
+### Secondary Audience Persona(s)
+- **Description:**
+- **Needs & Goals:**
+
+## 4. Initial Market & Competitive Analysis
+### Market Landscape
+*Brief overview of the market this website operates in.*
+
+### Key Competitors
+| Competitor | Strengths | Weaknesses |
+| --- | --- | --- |
+| [Competitor 1] | | |
+| [Competitor 2] | | |
+| [Competitor 3] | | |
+
+### Key Differentiators
+*What gives us a competitive advantage?*
+
+## 5. Project Goals & Success Metrics
+| Goal | Key Performance Indicator (KPI) | Success Target (Year 1) |
+| --- | --- | --- |
+| [e.g., Generate Qualified Leads] | [e.g., # of Form Submissions] | [e.g., 500] |
+| | | |
+
+## 6. Scope & Requirements
+### In-Scope (Core MVP Features)
+-
+-
+-
+
+### Out-of-Scope
+-
+-
+-
+
+## 7. Risks & Constraints
+### Known Risks
+-
+-
+
+### Known Constraints
+- **Timeline:**
+- **Budget:**
+
+## 8. Next Steps
+- **Immediate Action Item:** Proceed to Step 2: Competitor & Keyword Research.
+- **Stakeholder Approval Needed:** [List stakeholders who need to sign off]
+```
+
+### **5. Quality Assurance Framework**
+
+*Before finalizing the document, ensure it meets the following criteria:*
+
+  - [ ] **Clarity:** Is the project vision and purpose clear to someone outside the project?
+  - [ ] **Completeness:** Is every section of the template filled out?
+  - [ ] **Audience Definition:** Is the primary audience persona detailed enough to be actionable for design and copy?
+  - [ ] **SMART Goals:** Are the success metrics Specific, Measurable, Achievable, Relevant, and Time-bound?
+  - [ ] **Scope Definition:** Is there a clear distinction between what is in and out of scope for the MVP?
+  - [ ] **Actionability:** Does the document provide a clear foundation for the next step (Competitor & Keyword Research)?
+  - [ ] **Assumption Listing:** Are all major assumptions stated clearly?
+
+### **6. Supporting Library Documents**
+
+*Consult these documents to inform the brief's creation:*
+
+  - `library_docs/web-page-process.md`: To understand the high-level lifecycle this brief initiates.
+  - `library_docs/copywriting/copy_101.md`: To help articulate the initial value proposition and messaging.
+  - `library_docs/design_ux/ux_and_design_101.md`: To frame initial thoughts on user needs and experience goals.
+
+### **7. Integration with Future Documentation**
+
+This document is the foundational input for all subsequent steps. It must be referenced by the AI agent when generating:
+
+  - `02_create_competitor_keyword_research.md`
+  - `03_create_architecture_content.md`
+  - `04_create_design_content.md`
+  - `05_create_technical_plan.md`
+  - `06_create_mvp_tasks.md`
+
+### **8. Best Practices**
+
+1.  **Keep Users Central:** Every decision documented should be justifiable in terms of user value.
+2.  **Validate Assumptions:** Clearly state all assumptions (e.g., "We assume our target audience prefers mobile Browse") and plans for validation.
+3.  **Be Specific:** Use concrete examples and measurable criteria, especially for goals and success metrics. Avoid vague language.
+4.  **Document Trade-offs:** If decisions were made to exclude certain features, briefly state the reasoning.
+
+### **9. Output Requirements**
+
+  - **Format:** Markdown (`.md`)
+  - **Location:** `/docs/`
+  - **Filename:** `01_create_brief_audience.md`
+  - **Audience:** Accessible to both technical and non-technical stakeholders.
+
+### **10. Final Instructions**
+
+  - **DO NOT** generate the final document until all critical discovery questions have been answered by the user.
+  - **DO** ask follow-up questions to clarify any ambiguous or incomplete responses.
+  - **DO** validate your understanding by summarizing key findings back to the user before writing the full brief.
+  - **DO** ensure the "Next Steps" section is clear and actionable.
+
+### **11. Key Success Factors**
+
+  - **Clarity and Alignment:** The document successfully creates a single, shared understanding of the project's foundation.
+  - **Evidence-Based:** Key decisions (especially around audience and problem statements) are clearly justified.
+  - **Actionable:** The brief is robust enough to directly inform the next stage of research and planning without requiring major revisions.
+  - **Focused Scope:** Provides a clear definition of the MVP to prevent scope creep.
