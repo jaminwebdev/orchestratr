@@ -1,0 +1,102 @@
+Of course. This is a fantastic and practical application of AI—using it to automate lead generation and qualification by performing expert analysis at scale. This rule will codify that workflow.
+
+Here is a new rule for your agent that accepts a business type and locality, finds prospects, and generates a qualified leads report with actionable insights for outreach.
+
+-----
+
+# **Rule: Automated Lead Generation & UX Audit**
+
+### **1. Goal**
+
+To guide an AI assistant in creating a qualified lead generation report. The agent will identify local businesses based on user-provided criteria, programmatically audit their websites against a predefined list of common UX and copywriting mistakes, and filter for prospects with significant, high-impact issues.
+
+The output is a structured report containing a list of qualified leads and, for each lead, a mini-audit with specific, actionable fixes. This report is designed to be used directly for targeted sales outreach, demonstrating immediate value to the prospect.
+
+### **2. Process**
+
+1.  **Consult Library Docs:** The agent **MUST** begin by ingesting and deeply understanding the `library_docs/top_20_ux_mistakes.md` document. This document is the core rubric for the entire audit process. It should also consult `copy_best_practices.md` and `ux_and_design_101.md` for context on how to propose fixes.
+2.  **Conduct Discovery:** Ask the user for the business type, target locality, and the desired number of leads to generate.
+3.  **Define Significance Model:** The agent will use a built-in heuristic to weigh the severity of the 20 mistakes.
+      * **High Significance:** Issues that directly impact conversions and user trust (e.g., no clear Call-to-Action, confusing navigation, unclear value proposition, not mobile-friendly).
+      * **Medium Significance:** Issues that create friction and frustration (e.g., hard-to-find contact info, poor readability, inconsistent branding).
+      * **Low Significance:** Minor aesthetic or technical issues (e.g., inconsistent footer links, non-optimal image formats).
+4.  **Initiate Search:** The agent will use a web search tool (e.g., Google Search) with a query like `"[business type] in [locality]"` to find a list of potential business websites.
+5.  **Iterate and Audit:** The agent will loop through the search results:
+      * a. For each website, it will access and analyze the content of the homepage.
+      * b. It will audit the page against the `top_20_ux_mistakes.md` checklist, noting each violation and its significance level.
+      * c. It will qualify a business as a lead if its website has a critical number of violations (e.g., **at least 3 significant issues, with one being of 'High' significance**).
+      * d. If a business is qualified, the agent will generate proposed fixes and add it to the report. It will continue until the desired number of leads is reached.
+6.  **Generate Final Report:** Once the target number of leads is found, the agent will compile all qualified prospects and their mini-audits into a single, structured document.
+7.  **Save Report:** Save the final document as `lead-report_[type]_[locality].mdc` in a new `/leads/` directory.
+
+### **3. Discovery Framework**
+
+  * "What type of business are we searching for? (e.g., 'Roofing Contractors', 'Family Law Firms', 'Boutique Coffee Shops')."
+  * "What is the target locality? Please be as specific as possible (e.g., 'Overland Park, KS', 'Johnson County, KS', 'Kansas City Metro Area')."
+  * "What is the target number of qualified leads you'd like me to find in this report?"
+
+### **4. Document Structure (Output)**
+
+*(The generated report should follow this Markdown template.)*
+
+```markdown
+# Lead Generation Report
+
+- **Search Query:** [business type] in [locality]
+- **Report Date:** July 3, 2024
+- **Qualified Leads Found:** [Number]
+
+---
+
+## 1. Lead: [Business Name]
+- **URL:** [website.com]
+- **Status:** Qualified Prospect
+
+### Identified Issues (4 Violations):
+| Significance | Issue | Details / Location |
+|---|---|---|
+| **High** | #1: No Clear Call-to-Action (CTA) | The homepage lacks a primary button in the main view. Users don't know what to do next. |
+| **High** | #3: Unclear Value Proposition | The headline is "Welcome to [Business Name]". It doesn't explain what the business does or for whom. |
+| **Medium** | #9: Contact Info Hard to Find | Phone number is only present in the footer, requiring a full scroll. |
+| **Low** | #18: Inconsistent Link Styling | Some links are blue and underlined, others are just bolded black text. |
+
+### Proposed Fixes & Outreach Angle:
+* **UX Fixes:**
+    1.  **Add a Primary CTA:** Introduce a prominent button in the hero section with clear, action-oriented text like "Get a Free Estimate Now."
+    2.  **Surface Contact Info:** Add the primary phone number to the top right corner of the main navigation bar.
+* **Copywriting Fixes:**
+    1.  **Rewrite Headline:** Change the headline to be benefit-driven, such as: "The Most Trusted Roofers in Overland Park - Guaranteed for 10 Years."
+* **Outreach Angle:** "I noticed your website could be generating more leads with a few quick adjustments to the homepage. For example, by clarifying your headline and adding a 'Get a Free Estimate' button, you could see a significant increase in customer inquiries."
+
+---
+
+## 2. Lead: [Business Name 2]
+- **URL:** [website2.com]
+- **Status:** Qualified Prospect
+
+### Identified Issues (3 Violations):
+...
+### Proposed Fixes & Outreach Angle:
+...
+```
+
+### **5. Quality Assurance Framework**
+
+  * [ ] **Relevance:** Are the businesses found relevant to the user's search query?
+  * [ ] **Accurate Audit:** Do the identified issues accurately reflect problems on the live website and map back to the `top_20_ux_mistakes.md` document?
+  * [ ] **Actionable Fixes:** Are the proposed solutions specific, concrete, and easy to understand?
+  * [ ] **Filtering Logic:** Did the agent correctly apply the "3-5 significant mistakes" filter to qualify leads?
+
+### **6. Supporting Library Documents**
+
+  * **(Primary)** `library_docs/top_20_ux_mistakes.md`: The core checklist for the audit.
+  * `library_docs/copywriting/copy_best_practices.md`: To inform the proposed copywriting fixes.
+  * `library_docs/design_ux/ux_and_design_101.md`: To inform the proposed UX fixes.
+
+### **7. Final Instructions**
+
+  * **DO** use a web search tool to find an initial list of businesses to analyze.
+  * **DO** clearly state the identified mistake and its significance level for each qualified lead.
+  * **DO** frame the "Proposed Fixes" section as helpful, actionable advice that can be used in an outreach email or call.
+  * **DO NOT** include businesses in the final report that do not meet the minimum threshold for significant errors.
+  * **DO** stop the process once the target number of qualified leads has been generated.
