@@ -1,0 +1,148 @@
+Of course. That's an excellent modification that makes the rule far more versatile. It can now function as a general-purpose competitor analysis tool even before your own strategy is formalized, and becomes even more powerful when your documents are available.
+
+I will rewrite the rule in its entirety to include this optional, conditional logic.
+
+-----
+
+# **Rule: Competitive Deep Dive & Strategic Analysis (V2)**
+
+### **1. Goal**
+
+To guide an AI assistant in performing a deep, multi-faceted analysis of a single competitor's website. This rule is flexible: it will always deconstruct the competitor's public strategy. **If our own business documents are available, it will perform a detailed strategic comparison; otherwise, it will provide an objective analysis** based on general best practices.
+
+The output is a comprehensive strategic report identifying the competitor's strengths and weaknesses, and, when possible, a direct comparison to our strategy to reveal actionable opportunities and threats.
+
+### **2. Process**
+
+1.  **Check for Internal Context (Optional):** The agent begins by checking for the existence of `00_create_business_model.mdc` or `01_create_brief_audience.mdc` in the `/docs/` directory. This step is optional and determines the depth of the final analysis.
+2.  **Consult Library Docs:** The agent will load the specified list of supporting documents (`wireframe_best_practices`, `common_ux_and_copy_mistakes`, etc.) to use as a universal rubric for the UX and copy audit.
+3.  **Conduct Discovery:** Ask the user to provide the URL of the competitor to be analyzed.
+4.  **Execute Phase 1: Competitor Data Extraction**
+      * The agent will perform a technical analysis of the competitor's URL to infer or identify:
+          * Top target keywords and general SEO footprint.
+          * A breakdown of their sitemap and information architecture.
+          * Their likely business model (e.g., SaaS, e-commerce, advertising, lead-gen).
+          * The general layout and content structure of their top navigation/priority pages.
+5.  **Execute Phase 2: Analysis & Synthesis (Conditional)**
+      * **If internal documents were found:** The agent will perform a deep *comparative* analysis, comparing the competitor's strategy directly against our own business model, value proposition, and audience.
+      * **If internal documents were NOT found:** The agent will perform an *objective* audit, evaluating the competitor's strengths and weaknesses solely against the best practices defined in the library documents.
+6.  **Generate Report:** Assemble the complete analysis into a structured Markdown report, including the optional comparative section if applicable.
+7.  **Save and Version:** Save the final document as `competitor-analysis_[competitor-name].mdc` in the `/analysis/` directory.
+
+### **3. Discovery Framework**
+
+  * "Please provide the full URL of the competitor's website you want me to analyze."
+  * "(Optional) What is the primary question you are trying to answer about this competitor? (e.g., 'How do they position their pricing?', 'What is their content strategy?', 'Is their user onboarding effective?')."
+
+### **4. Document Structure (Output)**
+
+*(The generated report will follow this Markdown template. Section 4 is conditional.)*
+
+```markdown
+# Competitor Analysis: [Competitor Name]
+- **URL:** [Competitor URL]
+- **Analysis Date:** [Date of Analysis]
+- **Analysis Type:** [Objective Audit | Comparative Analysis]
+
+---
+## 1. Executive Summary
+*A high-level overview of the key findings.*
+- **Competitor's Core Strategy:** [e.g., They target SMBs with a low-cost, self-service SaaS model, focusing on ease of use.]
+- **Primary Strength:** [e.g., Excellent SEO ranking for informational "how-to" keywords.]
+- **Primary Weakness:** [e.g., Confusing user interface for advanced features.]
+- **Key Takeaway:** [A summary of the most important lesson or opportunity learned from this analysis.]
+
+---
+## 2. Competitor Deconstruction
+*An objective breakdown of the competitor's online presence.*
+
+### 2.1. Inferred Business Model
+- **Revenue Streams:** [e.g., Tiered Subscription (SaaS)]
+- **Target Customer Segments:** [e.g., Freelancers, Small Businesses]
+- **Value Proposition:** [e.g., "The simplest way to manage your projects."]
+
+### 2.2. Target Keywords & SEO Footprint
+- **Top Informational Keywords:** [List of keywords]
+- **Top Commercial Keywords:** [List of keywords]
+
+### 2.3. Sitemap & Information Architecture
+- **Main Navigation:** [e.g., Features, Pricing, Blog, About Us]
+- **Overall Structure:** [e.g., A feature-centric architecture.]
+
+---
+## 3. Objective Audit (vs. Best Practices)
+*An audit of the competitor's site against established best practices from the library.*
+
+### 3.1 UX & Copywriting Strengths
+- [e.g., **(Copy)** Their headline is exceptionally clear and benefit-oriented, per `copy_best_practices_2`.]
+- [e.g., **(UX)** The sign-up process is very low-friction, a key principle from `ux_and_design_101`.]
+
+### 3.2 UX & Copywriting Weaknesses
+- [e.g., **(Copy)** Their feature descriptions are full of jargon, a common mistake noted in `common_ux_and_copy_mistakes`.]
+- [e.g., **(UX)** Their navigation menu has too many items, violating simplicity principles from `wireframe_best_practices`.]
+
+---
+***Note:** The following 'Strategic Comparison' section is only included because internal business documents were available for a direct comparison.*
+
+## 4. (Optional) Strategic Comparison (vs. Our Business)
+### 4.1. Business Model & Audience Comparison
+- **Our Model vs. Theirs:** [e.g., While they focus on a low-touch, high-volume model, our business model targets high-touch enterprise clients.]
+- **Audience Overlap:** [e.g., Minimal overlap in target customers.]
+
+### 4.2. Targeted Pain Points
+- [e.g., Their copy consistently targets the pain of disorganization for small teams, while our strategy focuses on compliance and security for large corporations.]
+
+---
+## 5. Identified Blind Spots & Strategic Opportunities
+*Actionable insights based on the analysis. The nature of these opportunities depends on whether a direct comparison was possible.*
+- **Market Gap:** [e.g., They have no content or features addressing the needs of regulated industries (e.g., healthcare, finance).]
+- **Content Opportunity:** [e.g., Create content that directly addresses the weaknesses found in their UX and copy, positioning our solution as the more user-friendly alternative.]
+```
+
+### **5. Quality Assurance Framework**
+
+  * [ ] **Conditional Logic:** Was the analysis type correctly identified and was Section 4 only included if internal documents were provided?
+  * [ ] **Comprehensive Deconstruction:** Did the agent analyze all requested components (keywords, sitemap, business model)?
+  * [ ] **Actionable Output:** Are the identified "Blind Spots & Opportunities" specific and actionable?
+  * [ ] **Library Integration:** Does the Objective Audit (Section 3) explicitly reference principles from the specified `/library_docs/`?
+
+### **6. Supporting Library Documents**
+
+  * `wireframe_best_practices.md`
+  * `wireframe_best_practices_2.md`
+  * `common_ux_and_copy_mistakes.md`
+  * `ux_and_design_101.md`
+  * `ux_and_design_102.md`
+  * `copy_best_practices_2.md`
+
+### **7. Integration with Other Documentation**
+
+  * **Input (Optional):** This rule can use `00_create_business_model.mdc` and/or `01_create_brief_audience.mdc` to provide a richer, comparative analysis. If they are not present, it functions independently.
+  * **Output:** The insights from this report can inform updates to our own documents, spark ideas for the `create-new-page` rule, or justify a new `programmatic-seo` initiative.
+
+### **8. Best Practices**
+
+1.  **Go Beyond the Surface:** Infer the *strategy* behind their decisions, not just what's on the page.
+2.  **Focus on "So What?":** For every piece of data, the analysis should answer "So what does this mean?".
+3.  **Identify Actionable Levers:** The most valuable output is a list of things we can *do* in response.
+4.  **Clearly State the Context:** The report should immediately clarify whether it's a direct comparison or an objective audit.
+
+### **9. Output Requirements**
+
+  - **Format:** Markdown (`.mdc`)
+  - **Location:** `/analysis/`
+  - **Filename:** `competitor-analysis_[competitor-name].mdc`
+
+### **10. Final Instructions**
+
+  - **DO** begin by checking for internal documents to determine the type of analysis to perform.
+  - **DO** structure the final report to clearly separate the objective deconstruction from the subjective or comparative analysis.
+  - **DO** explicitly reference the principles from the specified library documents when performing the audit.
+  - **DO** ensure the final "Opportunities" section is filled with actionable, strategic ideas.
+
+### **11. Key Success Factors**
+
+  - **Flexibility:** The rule operates effectively both with and without internal context, making it a versatile tool.
+  - **Strategic Insight:** The report delivers genuine "aha\!" moments, not just a data dump.
+  - **Actionability:** The findings directly translate into potential projects, marketing campaigns, or product roadmap adjustments.
+  - **360-Degree View:** The rule successfully combines SEO, business strategy, UX, and copywriting analysis into a single, cohesive report.
