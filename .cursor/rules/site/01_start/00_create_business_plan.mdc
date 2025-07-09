@@ -1,0 +1,137 @@
+# **Rule: Business Model Generation (Step 0) - V3 (Comprehensive)**
+
+### **1. Goal**
+
+To guide an AI assistant in creating a comprehensive, investor-grade `00_create_business_model.mdc` document. This rule is flexible and **can ingest existing market or competitor analysis documents** to accelerate the process and avoid redundant questions.
+
+This document serves as the foundational strategic blueprint for a new business venture, detailing the logic of how the organization will create, deliver, and capture value. It is intended for founders, entrepreneurs, and teams starting a new, complex project or seeking investment.
+
+### **2. Process**
+
+1.  **Initiate Session & Ingest Documents:** The user requests the creation of a business model. The agent's first question will be to ask if the user has any existing market research, competitive analysis, or similar strategy documents to provide.
+2.  **Conditional Analysis:**
+      * **If YES:** The agent ingests and analyzes the provided document(s).
+      * **If NO:** The agent proceeds with the full discovery framework.
+3.  **Conduct Adaptive Structured Discovery:** The agent now works through the question framework below. It will be **adaptive**:
+      * If an answer is likely present in the ingested document, the agent will state the finding and ask for confirmation or elaboration (e.g., *"The analysis you provided lists Competitors A and B. Is this correct, and what do you see as their primary weaknesses?"*).
+      * If an answer is not present, the agent will ask the question directly.
+4.  **Validate Understanding:** Periodically, the agent should summarize key findings to ensure alignment before proceeding to the next major section.
+5.  **Generate Document:** Once all discovery is complete, create the `Business Model` document using the specified 14-point structure.
+6.  **Quality Assurance:** Perform a validation check using the QA framework.
+7.  **Save and Version:** Save the final document as `00_create_business_model.mdc` in the `/docs/` directory.
+
+### **3. Discovery Framework**
+
+***Guiding Principle:** The agent should approach this framework adaptively. Before asking each question, first check if an ingested document contains the answer. If so, state the finding and ask a follow-up question. If not, ask the question as written.*
+
+#### **Initial Discovery Question:**
+
+  * "To begin, do you have any existing documents you can share, such as a market analysis, competitor research, or a pitch deck? Providing these can help speed up the process."
+
+#### **I. The Core Logic of Your Business**
+
+  * **Value Proposition:** What specific problem are you solving? What are your key products/services? What makes your offering uniquely valuable compared to alternatives?
+  * **Customer Segments:** Who are your most important customers? What are their characteristics?
+  * **Channels:** How will you reach customers (awareness, purchase, delivery, support)?
+  * **Customer Relationships:** What kind of relationship will you have (e.g., personal, self-service)? How will you acquire, retain, and grow your customer base?
+  * **Revenue Streams:** For what value are customers willing to pay? What is your pricing model and what are your primary revenue streams?
+
+#### **II. The Engine Room: Operations and Resources**
+
+  * **Key Activities:** What are the most critical actions your company must perform to operate?
+  * **Key Resources:** What are the most important assets required (physical, intellectual, human, financial)?
+  * **Key Partnerships:** Who are your key partners and suppliers? What do they provide?
+
+#### **III. The Financial Foundation**
+
+  * **Cost Structure:** What are the most significant costs? What are your major fixed and variable costs?
+  * **Financial Projections:** Can you provide a list of startup costs, funding sources, and revenue forecasts for the next 3-5 years?
+
+#### **IV. Strategic Outlook and Execution**
+
+  * **Market Analysis:**
+      * **(If doc provided):** "The analysis you provided gives a great overview of the market size and trends. Is there any additional context you'd like to add?"
+      * **(If no doc):** "Can you describe the industry you're entering, including its size, growth rate, and key trends?"
+      * **(If doc provided):** "Your document identifies [Competitor X, Y]. What do you believe is their biggest overlooked weakness we can exploit?"
+      * **(If no doc):** "Who are your main direct and indirect competitors, and what are their strengths and weaknesses?"
+  * **Organization and Management:** What is the company's legal structure? Who are the key team members?
+  * **Growth Strategy:** What are your long-term goals and how do you plan to scale?
+  * **Intellectual Property:** What is your strategy for protecting your brand and IP?
+
+### **4. Document Structure (Output)**
+
+*(The generated document follows the comprehensive 14-point Markdown template.)*
+
+```markdown
+# Business Model: [Company Name]
+**Version:** 1.0
+**Date:** [Date of Creation]
+
+## I. The Core Logic of Your Business
+### 1. Value Proposition
+### 2. Customer Segments
+### 3. Channels
+### 4. Customer Relationships
+### 5. Revenue Streams
+
+## II. The Engine Room: Operations and Resources
+### 6. Key Activities
+### 7. Key Resources
+### 8. Key Partnerships
+
+## III. The Financial Foundation
+### 9. Cost Structure
+### 10. Financial Projections
+
+## IV. Strategic Outlook and Execution
+### 11. Market Analysis
+### 12. Organization and Management
+### 13. Growth Strategy
+### 14. Intellectual Property
+```
+
+### **5. Quality Assurance Framework**
+
+  * [ ] **Comprehensiveness:** Are all 14 sections of the business model addressed?
+  * [ ] **Document Integration:** If a user document was provided, were its findings correctly integrated and referenced during the discovery process?
+  * [ ] **Viability:** Does the financial model appear logical (i.e., do the revenue streams have the potential to outweigh the cost structure)?
+  * [ ] **Internal Consistency:** Do the different parts of the model support each other? (e.g., Do the Key Activities directly enable the Value Proposition?).
+  * [ ] **Actionability:** Does the document provide a clear strategic blueprint for the business?
+
+### **6. Supporting Library Documents**
+
+This foundational rule primarily relies on user input rather than the existing `/library_docs/`, which are focused on the tactical implementation of a website.
+
+### **7. Integration with Other Documentation**
+
+  * **Input:** This rule has no preceding document dependencies but can **optionally ingest user-provided documents** (e.g., market analysis, competitor research).
+  * **Output:** `00_create_business_model.mdc` serves as the primary, optional input for the next step, `01_create_brief_audience.mdc`.
+
+### **8. Best Practices**
+
+1.  **Be Specific & Evidence-Based:** Use data and research to support claims about market size, customer needs, and financial projections whenever possible.
+2.  **Tell a Coherent Story:** All 14 sections should connect logically to tell a single, compelling story about how the business works.
+3.  **Focus on the "Why":** Beyond what you do, clearly articulate *why* it matters to your customers and *why* your approach is better than the alternatives.
+4.  **Adapt Questioning:** Do not ask for information that is clearly present in a user-provided document. Instead, confirm the information and ask for deeper insights.
+
+### **9. Output Requirements**
+
+  - **Format:** Markdown (`.mdc`)
+  - **Location:** `/docs/`
+  - **Filename:** `00_create_business_model.mdc`
+  - **Audience:** Founders, leadership, investors, and key partners.
+
+### **10. Final Instructions**
+
+  - **DO** start by asking the user if they have any existing documents to provide.
+  - **DO** validate your understanding of each major section with the user before proceeding, especially when synthesizing information from multiple sources.
+  - **DO NOT** proceed with generation until all discovery questions have been addressed.
+  - **DO** adapt your questioning based on the content of any provided documents to avoid redundancy.
+
+### **11. Key Success Factors**
+
+  - **Strategic Cohesion:** All parts of the business model connect and reinforce each other.
+  - **Clarity & Vision:** The document provides a clear, unambiguous vision for the entire business.
+  - **Credibility:** The plan is well-reasoned and grounded in realistic assumptions, making it credible to internal and external stakeholders.
+  - **Foundation for Action:** The document serves as a stable foundation upon which all other plans (product, marketing, technical) can be built.
+  - **Efficiency:** By ingesting existing work, the process respects the user's time and focuses on filling in the gaps.

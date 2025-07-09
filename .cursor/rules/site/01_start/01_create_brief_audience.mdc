@@ -9,7 +9,7 @@ It is created for all project stakeholders, from leadership and marketing teams 
 ### **2. Process**
 
 1.  **Receive Initial Prompt:** The user provides a high-level description or concept for the new website or product.
-2.  **Conduct Structured Discovery:** Use the comprehensive question framework below to methodically gather all necessary information from the user.
+2.  **Conduct Structured Discovery:** Ask the user if they have existing business plan documentation. If so, ingest said documentation and reference the information to answer any questions in the discovery phase. If any questions are left unanswered, ask the user for that information. If no business plan exists, proceed to use the comprehensive question framework below to methodically gather all necessary information from the user.
 3.  **Consult Library Docs:** Review the specified supporting documents from the `/library_docs` directory to incorporate foundational best practices.
 4.  **Validate Understanding:** Before generation, provide a summary of the core vision, audience, and goals to the user for confirmation.
 5.  **Generate Document:** Create the `Product Brief & Audience Research` document using the specified structure.
