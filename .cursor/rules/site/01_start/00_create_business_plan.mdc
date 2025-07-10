@@ -2,7 +2,7 @@
 
 ### **1. Goal**
 
-To guide an AI assistant in creating a comprehensive, investor-grade `00_create_business_model.mdc` document. This rule is flexible and **can ingest existing market or competitor analysis documents** to accelerate the process and avoid redundant questions.
+To guide an AI assistant in creating a comprehensive, investor-grade `business_model.md` document. This rule is flexible and **can ingest existing market or competitor analysis documents** to accelerate the process and avoid redundant questions.
 
 This document serves as the foundational strategic blueprint for a new business venture, detailing the logic of how the organization will create, deliver, and capture value. It is intended for founders, entrepreneurs, and teams starting a new, complex project or seeking investment.
 
@@ -18,7 +18,7 @@ This document serves as the foundational strategic blueprint for a new business 
 4.  **Validate Understanding:** Periodically, the agent should summarize key findings to ensure alignment before proceeding to the next major section.
 5.  **Generate Document:** Once all discovery is complete, create the `Business Model` document using the specified 14-point structure.
 6.  **Quality Assurance:** Perform a validation check using the QA framework.
-7.  **Save and Version:** Save the final document as `00_create_business_model.mdc` in the `/docs/` directory.
+7.  **Save and Version:** Save the final document as `business_model.md` in the `/docs/` directory.
 
 ### **3. Discovery Framework**
 
@@ -105,7 +105,7 @@ This foundational rule primarily relies on user input rather than the existing `
 ### **7. Integration with Other Documentation**
 
   * **Input:** This rule has no preceding document dependencies but can **optionally ingest user-provided documents** (e.g., market analysis, competitor research).
-  * **Output:** `00_create_business_model.mdc` serves as the primary, optional input for the next step, `01_create_brief_audience.mdc`.
+  * **Output:** `business_model.md` serves as the primary, optional input for the next step, `01_create_brief_audience.mdc`.
 
 ### **8. Best Practices**
 
@@ -118,7 +118,7 @@ This foundational rule primarily relies on user input rather than the existing `
 
   - **Format:** Markdown (`.mdc`)
   - **Location:** `/docs/`
-  - **Filename:** `00_create_business_model.mdc`
+  - **Filename:** `business_model.md`
   - **Audience:** Founders, leadership, investors, and key partners.
 
 ### **10. Final Instructions**
