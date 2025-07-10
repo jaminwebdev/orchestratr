@@ -2,21 +2,21 @@
 
 ### **1. Goal**
 
-To guide an AI assistant in creating the `04_create_design_content.md` document. This comprehensive document will contain the final website copy, visual wireframes for key pages, and the core elements of the visual design system. Its purpose is to create a complete and harmonious specification for how the website will look, feel, and communicate.
+To guide an AI assistant in creating the `design.md` document. This comprehensive document will contain the final website copy, visual wireframes for key pages, and the core elements of the visual design system. Its purpose is to create a complete and harmonious specification for how the website will look, feel, and communicate.
 
 This document is primarily for front-end developers who will build the interface and for key stakeholders who need to approve the final design and messaging before development begins.
 
 ### **2. Process**
 
-1.  **Review Dependencies:** The agent **MUST** first ingest and analyze `/docs/03_create_architecture_content.md`. The sitemap and, most importantly, the **Page Content Blueprints** are the direct instruction set for this rule. It should also reference `/docs/01_create_brief_audience.md` for brand identity and audience context.
+1.  **Review Dependencies:** The agent **MUST** first ingest and analyze `/docs/architecture_content.md`. The sitemap and, most importantly, the **Page Content Blueprints** are the direct instruction set for this rule. It should also reference `/docs/website_brief.md` for brand identity and audience context.
 2.  **Consult Library Docs:** Review all relevant documents in the `/library_docs/design_ux/` and `/library_docs/copywriting/` directories to load best practices for UI design, wireframing, and copywriting.
 3.  **Conduct Structured Discovery:** Use the question framework below to gather user preferences on visual aesthetics, design direction, and any final content details.
-4.  **Execute Phase 1: Content First:** Based on the Page Content Blueprints from `/docs/03_create_architecture_content.md` and user input, generate the **final, polished copy** for each key page (Headlines, body text, CTAs, etc.). Present this copy to the user for review and approval *before* creating wireframes.
+4.  **Execute Phase 1: Content First:** Based on the Page Content Blueprints from `/docs/architecture_content.md` and user input, generate the **final, polished copy** for each key page (Headlines, body text, CTAs, etc.). Present this copy to the user for review and approval *before* creating wireframes.
 5.  **Execute Phase 2: Wireframing:** Once the copy for a page is approved, create a wireframe for that page. The wireframe must be structured according to the modules in the blueprint and **must incorporate the final copy** from the previous phase, not placeholder text.
 6.  **Execute Phase 3: Design System Definition:** Concurrently, define the core visual design system (colors, typography) based on user input.
 7.  **Generate Document:** Assemble the approved copy, wireframes, and design system elements into the `Design & Content Creation` document using the specified structure.
 8.  **Quality Assurance:** Perform a validation check using the QA framework.
-9.  **Save and Version:** Save the final document as `04_create_design_content.md` in the `/docs` directory.
+9.  **Save and Version:** Save the final document as `design.md` in the `/docs` directory.
 
 ### **3. Discovery Framework**
 
@@ -40,7 +40,7 @@ This document is primarily for front-end developers who will build the interface
 # Design & Content Creation: [Project Name]
 **Version:** 1.0
 **Date:** [Date of Creation]
-**Source Docs:** `/docs/01_create_brief_audience.md`, `/docs/03_create_architecture_content.md`
+**Source Docs:** `/docs/website_brief.md`, `/docs/architecture_content.md`
 
 ## 1. Core Design System
 ### 1.1. Color Palette
@@ -76,7 +76,7 @@ This document is primarily for front-end developers who will build the interface
 
 ## 3. Page Wireframes
 ### 3.1. Homepage Wireframe
-*This wireframe is based on the Homepage blueprint from `/docs/03_create_architecture_content.md` and uses the final copy from section 2.1.*
+*This wireframe is based on the Homepage blueprint from `/docs/architecture_content.md` and uses the final copy from section 2.1.*
 
 | Section/Module | Content / Key Elements | Visual/Functional Notes |
 |---|---|---|
@@ -106,22 +106,50 @@ This document is primarily for front-end developers who will build the interface
 ### **5. Quality Assurance Framework**
 
   - [ ] **Content-First Principle:** Do the wireframes correctly incorporate the *final, approved copy*?
-  - [ ] **Blueprint Adherence:** Does each wireframe include all the required modules specified in the `/docs/03_create_architecture_content.md` page blueprints?
+  - [ ] **Blueprint Adherence:** Does each wireframe include all the required modules specified in the `/docs/architecture_content.md` page blueprints?
   - [ ] **Visual Consistency:** Is the defined color palette and typography used consistently across all wireframes?
-  - [ ] **Brand Alignment:** Does the overall design direction align with the brand identity and audience described in `doc 01`?
+  - [ ] **Brand Alignment:** Does the overall design direction align with the brand identity and audience described in `websit_brief`?
   - [ ] **Copy Quality:** Is the final copy persuasive, error-free, and does it reflect the brand's tone of voice?
   - [ ] **Accessibility Check:** Is there sufficient color contrast? Are fonts readable? (Consult `ux_and_design_101.md`).
 
 ### **6. Supporting Library Documents**
 
-  - **(Primary) Wireframing:** `design_ux/wireframe_101.md`, `design_ux/wireframe_best_practices.md`, `design_ux/wireframe_examples.md`.
-  - **(Primary) Copywriting:** `copywriting/copy_101.md`, `copywriting/copy_best_practices.md`, `copywriting/copy_ctas.md`, `copywriting/copy_headline_formulas.md`.
-  - **(Primary) Design/UX:** `design_ux/ux_and_design_101.md`, `design_ux/font_pairings.md`.
+```
+library_docs/
+│   ├── web-page-process.md              # Step-by-step guide for planning, designing, and launching web pages.
+│   ├── web-page-process_2.md            # Alternative or updated web page creation and optimization process.
+│
+├── copywriting/
+│   ├── copy_101.md                      # Foundational principles and techniques for effective copywriting.
+│   ├── copy_best_practices.md           # Key best practices for writing persuasive and clear copy.
+│   ├── copy_best_practices_2.md         # Expanded or alternative set of copywriting best practices.
+│   ├── copy_ctas.md                     # Guidance and examples for crafting compelling calls-to-action.
+│   ├── copy_headline_formulas.md        # Formulas and strategies for writing attention-grabbing headlines.
+│   ├── copy_headlines.md                # Examples and analysis of effective headlines.
+│   └── email_conversion_writing.md      # Best practices for writing emails.
+│
+├── design_ux/
+│   ├── font_pairings.md                 # Comprehensive guide to effective font pairings for web design.
+│   ├── font_pairings_2.md               # Additional or alternative font pairing recommendations.
+│   ├── sitemaps_best_practices.md       # Best practices for creating and organizing website sitemaps.
+│   ├── ux_and_copy_mistakes.md          # Mistakes and solutions to ux problems.
+│   ├── ux_and_design_101.md             # Introduction to UX and design fundamentals.
+│   ├── ux_and_design_102.md             # Intermediate/advanced concepts in UX and design.
+│   ├── ux_tips.md                       # Do's and don't for ux conversions.
+│   ├── wireframe_101.md                 # Basics of wireframing for web and app design.
+│   ├── wireframe_best_practices.md      # Best practices for creating effective wireframes.
+│   ├── wireframe_best_practices_2.md    # Additional or updated wireframing best practices.
+│   └── wireframe_examples.md            # Real-world examples of wireframes for reference.
+│
+└── seo/
+    ├── keyword_research_process.md      # Step-by-step process for conducting keyword research.
+    └── on-page-seo.md                   # Techniques and strategies for on-page SEO optimization.
+```
 
 ### **7. Integration with Other Documentation**
 
-  - **Input:** Critically dependent on `/docs/03_create_architecture_content.md` for the blueprints and structure. Relies on `/docs/01_create_brief_audience.md` for brand and audience context.
-  - **Output:** This document is the primary visual and content specification for developers and a key input for `05_create_technical_plan.md` and `06_create_mvp_tasks.md`.
+  - **Input:** Critically dependent on `/docs/architecture_content.md` for the blueprints and structure. Relies on `/docs/website_brief.md` for brand and audience context.
+  - **Output:** This document is the primary visual and content specification for developers and a key input for `05_create_technical_plan.mdc` and `06_create_mvp_tasks.mdc`.
 
 ### **8. Best Practices**
 
@@ -134,7 +162,7 @@ This document is primarily for front-end developers who will build the interface
 
   - **Format:** Markdown (`.md`)
   - **Location:** `/docs/`
-  - **Filename:** `04_create_design_content.md`
+  - **Filename:** `design.md`
 
 ### **10. Final Instructions**
 

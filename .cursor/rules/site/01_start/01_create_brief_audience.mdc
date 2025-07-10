@@ -14,7 +14,7 @@ It is created for all project stakeholders, from leadership and marketing teams 
 4.  **Validate Understanding:** Before generation, provide a summary of the core vision, audience, and goals to the user for confirmation.
 5.  **Generate Document:** Create the `Product Brief & Audience Research` document using the specified structure.
 6.  **Quality Assurance:** Perform a validation check using the QA framework to ensure the document is complete, clear, and actionable.
-7.  **Save and Version:** Save the final document as `01_create_brief_audience.md` in the `/docs` directory.
+7.  **Save and Version:** Save the final document as `website_brief.md` in the `/docs` directory.
 
 ### **3. Discovery Framework**
 
@@ -155,19 +155,47 @@ It is created for all project stakeholders, from leadership and marketing teams 
 
 *Consult these documents to inform the brief's creation:*
 
-  - `library_docs/web-page-process.md`: To understand the high-level lifecycle this brief initiates.
-  - `library_docs/copywriting/copy_101.md`: To help articulate the initial value proposition and messaging.
-  - `library_docs/design_ux/ux_and_design_101.md`: To frame initial thoughts on user needs and experience goals.
+```
+library_docs/
+│   ├── web-page-process.md              # Step-by-step guide for planning, designing, and launching web pages.
+│   ├── web-page-process_2.md            # Alternative or updated web page creation and optimization process.
+│
+├── copywriting/
+│   ├── copy_101.md                      # Foundational principles and techniques for effective copywriting.
+│   ├── copy_best_practices.md           # Key best practices for writing persuasive and clear copy.
+│   ├── copy_best_practices_2.md         # Expanded or alternative set of copywriting best practices.
+│   ├── copy_ctas.md                     # Guidance and examples for crafting compelling calls-to-action.
+│   ├── copy_headline_formulas.md        # Formulas and strategies for writing attention-grabbing headlines.
+│   ├── copy_headlines.md                # Examples and analysis of effective headlines.
+│   └── email_conversion_writing.md      # Best practices for writing emails.
+│
+├── design_ux/
+│   ├── font_pairings.md                 # Comprehensive guide to effective font pairings for web design.
+│   ├── font_pairings_2.md               # Additional or alternative font pairing recommendations.
+│   ├── sitemaps_best_practices.md       # Best practices for creating and organizing website sitemaps.
+│   ├── ux_and_copy_mistakes.md          # Mistakes and solutions to ux problems.
+│   ├── ux_and_design_101.md             # Introduction to UX and design fundamentals.
+│   ├── ux_and_design_102.md             # Intermediate/advanced concepts in UX and design.
+│   ├── ux_tips.md                       # Do's and don't for ux conversions.
+│   ├── wireframe_101.md                 # Basics of wireframing for web and app design.
+│   ├── wireframe_best_practices.md      # Best practices for creating effective wireframes.
+│   ├── wireframe_best_practices_2.md    # Additional or updated wireframing best practices.
+│   └── wireframe_examples.md            # Real-world examples of wireframes for reference.
+│
+└── seo/
+    ├── keyword_research_process.md      # Step-by-step process for conducting keyword research.
+    └── on-page-seo.md                   # Techniques and strategies for on-page SEO optimization.
+```
 
 ### **7. Integration with Future Documentation**
 
 This document is the foundational input for all subsequent steps. It must be referenced by the AI agent when generating:
 
-  - `02_create_competitor_keyword_research.md`
-  - `03_create_architecture_content.md`
-  - `04_create_design_content.md`
-  - `05_create_technical_plan.md`
-  - `06_create_mvp_tasks.md`
+  - `competitor_research.md`
+  - `architecture_content.md`
+  - `design.md`
+  - `technical_plan.md`
+  - `mvp_tasks.md`
 
 ### **8. Best Practices**
 
@@ -180,7 +208,7 @@ This document is the foundational input for all subsequent steps. It must be ref
 
   - **Format:** Markdown (`.md`)
   - **Location:** `/docs/`
-  - **Filename:** `01_create_brief_audience.md`
+  - **Filename:** `website_brief.md`
   - **Audience:** Accessible to both technical and non-technical stakeholders.
 
 ### **10. Final Instructions**

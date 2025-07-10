@@ -72,13 +72,41 @@ The output is a categorized list of headline options, designed for a marketer or
 
 ### **6. Supporting Library Documents**
 
-  - **(Primary)** `copywriting/copy_headline_formulas.md`: This is the rule's core instruction manual for different types of headlines to generate.
-  - **(Primary)** `copywriting/copy_headlines.md`: Provides concrete examples and inspiration.
-  - **(Secondary)** `copywriting/copy_101.md`: For overarching principles of effective copy.
+```
+library_docs/
+│   ├── web-page-process.md              # Step-by-step guide for planning, designing, and launching web pages.
+│   ├── web-page-process_2.md            # Alternative or updated web page creation and optimization process.
+│
+├── copywriting/
+│   ├── copy_101.md                      # Foundational principles and techniques for effective copywriting.
+│   ├── copy_best_practices.md           # Key best practices for writing persuasive and clear copy.
+│   ├── copy_best_practices_2.md         # Expanded or alternative set of copywriting best practices.
+│   ├── copy_ctas.md                     # Guidance and examples for crafting compelling calls-to-action.
+│   ├── copy_headline_formulas.md        # Formulas and strategies for writing attention-grabbing headlines.
+│   ├── copy_headlines.md                # Examples and analysis of effective headlines.
+│   └── email_conversion_writing.md      # Best practices for writing emails.
+│
+├── design_ux/
+│   ├── font_pairings.md                 # Comprehensive guide to effective font pairings for web design.
+│   ├── font_pairings_2.md               # Additional or alternative font pairing recommendations.
+│   ├── sitemaps_best_practices.md       # Best practices for creating and organizing website sitemaps.
+│   ├── ux_and_copy_mistakes.md          # Mistakes and solutions to ux problems.
+│   ├── ux_and_design_101.md             # Introduction to UX and design fundamentals.
+│   ├── ux_and_design_102.md             # Intermediate/advanced concepts in UX and design.
+│   ├── ux_tips.md                       # Do's and don't for ux conversions.
+│   ├── wireframe_101.md                 # Basics of wireframing for web and app design.
+│   ├── wireframe_best_practices.md      # Best practices for creating effective wireframes.
+│   ├── wireframe_best_practices_2.md    # Additional or updated wireframing best practices.
+│   └── wireframe_examples.md            # Real-world examples of wireframes for reference.
+│
+└── seo/
+    ├── keyword_research_process.md      # Step-by-step process for conducting keyword research.
+    └── on-page-seo.md                   # Techniques and strategies for on-page SEO optimization.
+```
 
 ### **7. Integration with Other Documentation**
 
-This rule is mostly standalone but can be enhanced by optionally consulting `01_create_brief_audience.mdc` to better align the headline's tone with the established brand voice and target audience if more context is needed.
+This rule is mostly standalone but can be enhanced by optionally consulting `website_brief.md` to better align the headline's tone with the established brand voice and target audience if more context is needed.
 
 ### **8. Final Instructions**
 

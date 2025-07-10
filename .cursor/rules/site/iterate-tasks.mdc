@@ -28,7 +28,7 @@ This rule turns a static task list into a dynamic, interactive development proce
 This rule is not just for checking off boxes. If, during the "Contextual Analysis" phase, the AI discovers a conflict or a missing piece of logic, it should use the following protocol:
 
 1.  **Pause Execution:** Do not attempt the flawed task.
-2.  **State the Problem:** Clearly articulate the issue found (e.g., "The wireframe in `04_create_design_content.mdc` requires a user's full name, but the CMS schema in `05_create_technical_plan.mdc` only has a `username` field.").
+2.  **State the Problem:** Clearly articulate the issue found (e.g., "The wireframe in `design.md` requires a user's full name, but the CMS schema in `technical_plan.md` only has a `username` field.").
 3.  **Propose a Solution:** Suggest a specific, actionable change (e.g., "I recommend adding a `full_name` field to the CMS user model. This will require a schema update. Should I add this task to the list?").
 4.  **Await Approval:** Do not modify any files or tasks until the user gives explicit approval.
 
@@ -48,10 +48,10 @@ This rule is the "engine" of the development process. It continuously consumes t
 
 * **Primary Input:** A task-oriented document, such as `/tasks/mvp_tasks.md`, a `[new-page-name].mdc` file, or a PRD from the `/initiatives/` directory.
 * **Contextual Guardrails (Must be referenced continuously):**
-    * `01_create_brief_audience.mdc`: To align with overall business goals and user needs.
-    * `03_create_architecture_content.mdc`: For sitemap and page-level content requirements.
-    * `04_create_design_content.mdc`: For visual, UX, and final copy consistency.
-    * `05_create_technical_plan.mdc`: For technical patterns, data models, and constraints.
+    * `website_brief.md`: To align with overall business goals and user needs.
+    * `architecture_content.md`: For sitemap and page-level content requirements.
+    * `design.md`: For visual, UX, and final copy consistency.
+    * `technical_plan.md`: For technical patterns, data models, and constraints.
     * The **source document** for the task list (e.g., the `pseo-prd...` file) for specific acceptance criteria.
 
 ## **Best Practices**

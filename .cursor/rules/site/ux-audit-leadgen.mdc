@@ -17,7 +17,7 @@ The output is a structured report containing a list of qualified leads and, for 
 4.  **Initiate Search:** The agent will use a web search tool (e.g., Google Search) with a query like `"[business type] in [locality]"` to find a list of potential business websites.
 5.  **Iterate and Audit:** The agent will loop through the search results:
       * a. For each website, it will access and analyze the content of the homepage, as well as key pages in the top navigation such as services or other links that appear relevant to the nature of the business (i.e. "films" and "photography" for a videography website, or "heating" and "cooling" for an HVAC website).
-      * b. It will audit the page against the `top_20_ux_mistakes.md` checklist, noting each violation and its significance level.
+      * b. It will audit the page against the `ux_and_copy_mistakes.md` checklist, noting each violation and its significance level.
       * c. It will qualify a business as a lead if its website has a critical number of violations (e.g., **at least 3 significant issues, with one being of 'High' significance**).
       * d. If a business is qualified, the agent will generate proposed fixes and add it to the report. It will continue until the desired number of leads is reached.
 6.  **Generate Final Report:** Once the target number of leads is found, the agent will compile all qualified prospects and their mini-audits into a single, structured document.
@@ -77,15 +77,43 @@ The output is a structured report containing a list of qualified leads and, for 
 ### **5. Quality Assurance Framework**
 
   * [ ] **Relevance:** Are the businesses found relevant to the user's search query?
-  * [ ] **Accurate Audit:** Do the identified issues accurately reflect problems on the live website and map back to the `top_20_ux_mistakes.md` document?
+  * [ ] **Accurate Audit:** Do the identified issues accurately reflect problems on the live website and map back to the `ux_and_copy_mistakes.md` document?
   * [ ] **Actionable Fixes:** Are the proposed solutions specific, concrete, and easy to understand?
   * [ ] **Filtering Logic:** Did the agent correctly apply the "3-5 significant mistakes" filter to qualify leads?
 
 ### **6. Supporting Library Documents**
 
-  * **(Primary)** `library_docs/top_20_ux_mistakes.md`: The core checklist for the audit.
-  * `library_docs/copywriting/copy_best_practices.md`: To inform the proposed copywriting fixes.
-  * `library_docs/design_ux/ux_and_design_101.md`: To inform the proposed UX fixes.
+```
+library_docs/
+│   ├── web-page-process.md              # Step-by-step guide for planning, designing, and launching web pages.
+│   ├── web-page-process_2.md            # Alternative or updated web page creation and optimization process.
+│
+├── copywriting/
+│   ├── copy_101.md                      # Foundational principles and techniques for effective copywriting.
+│   ├── copy_best_practices.md           # Key best practices for writing persuasive and clear copy.
+│   ├── copy_best_practices_2.md         # Expanded or alternative set of copywriting best practices.
+│   ├── copy_ctas.md                     # Guidance and examples for crafting compelling calls-to-action.
+│   ├── copy_headline_formulas.md        # Formulas and strategies for writing attention-grabbing headlines.
+│   ├── copy_headlines.md                # Examples and analysis of effective headlines.
+│   └── email_conversion_writing.md      # Best practices for writing emails.
+│
+├── design_ux/
+│   ├── font_pairings.md                 # Comprehensive guide to effective font pairings for web design.
+│   ├── font_pairings_2.md               # Additional or alternative font pairing recommendations.
+│   ├── sitemaps_best_practices.md       # Best practices for creating and organizing website sitemaps.
+│   ├── ux_and_copy_mistakes.md          # Mistakes and solutions to ux problems.
+│   ├── ux_and_design_101.md             # Introduction to UX and design fundamentals.
+│   ├── ux_and_design_102.md             # Intermediate/advanced concepts in UX and design.
+│   ├── ux_tips.md                       # Do's and don't for ux conversions.
+│   ├── wireframe_101.md                 # Basics of wireframing for web and app design.
+│   ├── wireframe_best_practices.md      # Best practices for creating effective wireframes.
+│   ├── wireframe_best_practices_2.md    # Additional or updated wireframing best practices.
+│   └── wireframe_examples.md            # Real-world examples of wireframes for reference.
+│
+└── seo/
+    ├── keyword_research_process.md      # Step-by-step process for conducting keyword research.
+    └── on-page-seo.md                   # Techniques and strategies for on-page SEO optimization.
+```
 
 ### **7. Final Instructions**
 

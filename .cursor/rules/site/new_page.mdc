@@ -9,9 +9,9 @@ The output is a self-contained Markdown document with the final page copy, a wir
 ### **2. Process**
 
 1.  **Review Dependencies:** The agent **MUST** first review the core project documents to ensure consistency with the existing site:
-      * `01_create_brief_audience.md` (for overall brand voice and audience).
-      * `04_create_design_content.md` (for the established visual design system and components).
-      * `05_create_technical_plan.md` (for the current tech stack).
+      * `website_brief.md` (for overall brand voice and audience).
+      * `design.md` (for the established visual design system and components).
+      * `technical_plan` (for the current tech stack).
 2.  **Consult Library Docs:** Review relevant documents from all subdirectories (`/seo/`, `/copywriting/`, `/design_ux/`) to ground the output in best practices.
 3.  **Conduct Structured Discovery:** Use the comprehensive question framework below to gather all necessary information from the user in a single pass.
 4.  **Keyword Research (Conditional):**
@@ -76,7 +76,7 @@ The output is a self-contained Markdown document with the final page copy, a wir
 ---
 
 ## 2. Wireframe
-*This wireframe is based on the existing design system and components from `04_create_design_content.md`.*
+*This wireframe is based on the existing design system and components from `design.md`.*
 
 | Section/Module | Content / Key Elements | Visual/Functional Notes |
 |---|---|---|
@@ -108,10 +108,37 @@ The output is a self-contained Markdown document with the final page copy, a wir
 
 ### **6. Supporting Library Documents**
 
-In the `/library_docs/` directory: 
-  - **SEO:** `seo/keyword_research_process.md`, `seo/on-page-seo.md`
-  - **Copywriting:** `copywriting/copy_101.md`, `copywriting/copy_best_practices.md`, `copywriting/copy_ctas.md`, `copywriting/copy_headline_formulas.md`
-  - **Design/UX:** `design_ux/wireframe_best_practices.md`
+```
+library_docs/
+│   ├── web-page-process.md              # Step-by-step guide for planning, designing, and launching web pages.
+│   ├── web-page-process_2.md            # Alternative or updated web page creation and optimization process.
+│
+├── copywriting/
+│   ├── copy_101.md                      # Foundational principles and techniques for effective copywriting.
+│   ├── copy_best_practices.md           # Key best practices for writing persuasive and clear copy.
+│   ├── copy_best_practices_2.md         # Expanded or alternative set of copywriting best practices.
+│   ├── copy_ctas.md                     # Guidance and examples for crafting compelling calls-to-action.
+│   ├── copy_headline_formulas.md        # Formulas and strategies for writing attention-grabbing headlines.
+│   ├── copy_headlines.md                # Examples and analysis of effective headlines.
+│   └── email_conversion_writing.md      # Best practices for writing emails.
+│
+├── design_ux/
+│   ├── font_pairings.md                 # Comprehensive guide to effective font pairings for web design.
+│   ├── font_pairings_2.md               # Additional or alternative font pairing recommendations.
+│   ├── sitemaps_best_practices.md       # Best practices for creating and organizing website sitemaps.
+│   ├── ux_and_copy_mistakes.md          # Mistakes and solutions to ux problems.
+│   ├── ux_and_design_101.md             # Introduction to UX and design fundamentals.
+│   ├── ux_and_design_102.md             # Intermediate/advanced concepts in UX and design.
+│   ├── ux_tips.md                       # Do's and don't for ux conversions.
+│   ├── wireframe_101.md                 # Basics of wireframing for web and app design.
+│   ├── wireframe_best_practices.md      # Best practices for creating effective wireframes.
+│   ├── wireframe_best_practices_2.md    # Additional or updated wireframing best practices.
+│   └── wireframe_examples.md            # Real-world examples of wireframes for reference.
+│
+└── seo/
+    ├── keyword_research_process.md      # Step-by-step process for conducting keyword research.
+    └── on-page-seo.md                   # Techniques and strategies for on-page SEO optimization.
+```
 
 ### **7. Final Instructions**
 

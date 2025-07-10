@@ -8,7 +8,7 @@ The generated task list must provide clear, actionable guidance for developers, 
 
 ### **2. Process**
 
-1.  **Comprehensive Document Analysis (Dependencies):** The process **MUST** begin with a thorough analysis of all five preceding documents in the `/docs/` folder (`/docs/01_create_brief_audience.md` through `/docs/05_create_technical_plan.md`).
+1.  **Comprehensive Document Analysis (Dependencies):** The process **MUST** begin with a thorough analysis of all five preceding documents in the `/docs/` folder (`/docs/website_brief.md` through `/docs/technical_plan.md`).
 2.  **Conduct Structured Discovery:** Use the clarifying questions below to resolve any ambiguities regarding scope, priority, and the technical environment.
 3.  **Generate High-Level Parent Tasks:** Synthesize all inputs to create 4-6 high-level parent tasks that represent the major epics of work.
 4.  **User Confirmation:** Present the high-level plan and pause for user review. Prompt with:
@@ -21,7 +21,7 @@ The generated task list must provide clear, actionable guidance for developers, 
 
 #### **Scope & Priority Clarification**
 
-  * "This task list will focus strictly on the **In-Scope (Core MVP Features)** defined in `/docs/01_create_brief_audience.md`. Is that correct?"
+  * "This task list will focus strictly on the **In-Scope (Core MVP Features)** defined in `/docs/website_brief.md`. Is that correct?"
   * "Are there any specific deadlines or sprint boundaries I should consider when structuring the tasks?"
   * "How many developers will be working on this? This will help in structuring tasks for potential parallel work."
 
@@ -39,8 +39,8 @@ The generated task list must provide clear, actionable guidance for developers, 
 # MVP Task Breakdown: [Project Name]
 
 ## 1. Overview
-- **Goal:** [A brief, one-sentence summary of the product's goal, derived from `/docs/01_create_brief_audience.md`.]
-- **Approach:** [A high-level summary of the technical strategy, derived from `/docs/05_create_technical_plan.md`.]
+- **Goal:** [A brief, one-sentence summary of the product's goal, derived from `/docs/website_brief.md`.]
+- **Approach:** [A high-level summary of the technical strategy, derived from `/docs/technical_plan.md`.]
 - **Key Dependencies:**
     - [List any blocking external dependencies, e.g., "Requires access keys for the Stripe API."]
     - [List any internal module dependencies, e.g., "Frontend components rely on the CMS schema being finalized."]
@@ -54,9 +54,9 @@ The generated task list must provide clear, actionable guidance for developers, 
 
 - [ ] **1.0 Parent Task: Foundational Setup & Configuration**
     - [ ] 1.1 Initialize project repository with the chosen stack (e.g., Next.js).
-    - [ ] 1.2 Configure CMS schema based on the content models in `05_create_technical_plan.mdc`.
+    - [ ] 1.2 Configure CMS schema based on the content models in `technical_plan.mdc`.
     - [ ] 1.3 Set up hosting environments (Staging, Production) on the selected provider.
-    - [ ] 1.4 Implement the core design system (colors, typography) from `04_create_design_content.mdc` as global styles.
+    - [ ] 1.4 Implement the core design system (colors, typography) from `design.mdc` as global styles.
 
 - [ ] **2.0 Parent Task: Build Homepage**
     - [ ] 2.1 Develop the reusable Navigation and Footer components from the wireframes.
@@ -72,7 +72,7 @@ The generated task list must provide clear, actionable guidance for developers, 
     - [ ] 3.4 Write unit and integration tests for the service page template and its components.
 
 - [ ] **4.0 Parent Task: Integrations & Deployment**
-    - [ ] 4.1 Implement the analytics tracking from `05_create_technical_plan.mdc`.
+    - [ ] 4.1 Implement the analytics tracking from `technical_plan.mdc`.
     - [ ] 4.2 Configure the production build pipeline, including all environment variables.
     - [ ] 4.3 Perform end-to-end testing on the staging environment.
     - [ ] 4.4 Prepare for launch (final DNS changes, domain verification).
@@ -80,15 +80,45 @@ The generated task list must provide clear, actionable guidance for developers, 
 
 ### **5. Quality Assurance Framework**
 
-  - [ ] Does the task list cover every **In-Scope (Core MVP Features)** item from `/docs/01_create_brief_audience.md`?
-  - [ ] Do the tasks accurately reflect the visual design and wireframes in `/docs/04_create_design_content.md`?
-  - [ ] Are all foundational tasks from `/docs/05_create_technical_plan.md` (like setup, CMS config, deployment) included?
+  - [ ] Does the task list cover every **In-Scope (Core MVP Features)** item from `/docs/website_brief.md`?
+  - [ ] Do the tasks accurately reflect the visual design and wireframes in `/docs/design.md`?
+  - [ ] Are all foundational tasks from `/docs/technical_plan.md` (like setup, CMS config, deployment) included?
   - [ ] Are tasks for implementing analytics and meeting technical SEO requirements from the technical plan present?
   - [ ] Are testing and security requirements integrated into the tasks, not just as a final step?
 
 ### **6. Integration with Other Documentation**
 
-This rule is the **culmination of the entire process**, synthesizing the five previous documents into an executable plan. It is not a source for future documents but rather the final output of the planning phase. Its integrity depends entirely on the quality of the preceding documents.
+```
+library_docs/
+│   ├── web-page-process.md              # Step-by-step guide for planning, designing, and launching web pages.
+│   ├── web-page-process_2.md            # Alternative or updated web page creation and optimization process.
+│
+├── copywriting/
+│   ├── copy_101.md                      # Foundational principles and techniques for effective copywriting.
+│   ├── copy_best_practices.md           # Key best practices for writing persuasive and clear copy.
+│   ├── copy_best_practices_2.md         # Expanded or alternative set of copywriting best practices.
+│   ├── copy_ctas.md                     # Guidance and examples for crafting compelling calls-to-action.
+│   ├── copy_headline_formulas.md        # Formulas and strategies for writing attention-grabbing headlines.
+│   ├── copy_headlines.md                # Examples and analysis of effective headlines.
+│   └── email_conversion_writing.md      # Best practices for writing emails.
+│
+├── design_ux/
+│   ├── font_pairings.md                 # Comprehensive guide to effective font pairings for web design.
+│   ├── font_pairings_2.md               # Additional or alternative font pairing recommendations.
+│   ├── sitemaps_best_practices.md       # Best practices for creating and organizing website sitemaps.
+│   ├── ux_and_copy_mistakes.md          # Mistakes and solutions to ux problems.
+│   ├── ux_and_design_101.md             # Introduction to UX and design fundamentals.
+│   ├── ux_and_design_102.md             # Intermediate/advanced concepts in UX and design.
+│   ├── ux_tips.md                       # Do's and don't for ux conversions.
+│   ├── wireframe_101.md                 # Basics of wireframing for web and app design.
+│   ├── wireframe_best_practices.md      # Best practices for creating effective wireframes.
+│   ├── wireframe_best_practices_2.md    # Additional or updated wireframing best practices.
+│   └── wireframe_examples.md            # Real-world examples of wireframes for reference.
+│
+└── seo/
+    ├── keyword_research_process.md      # Step-by-step process for conducting keyword research.
+    └── on-page-seo.md                   # Techniques and strategies for on-page SEO optimization.
+```
 
 ### **7. Best Practices**
 
@@ -110,7 +140,7 @@ This rule is the **culmination of the entire process**, synthesizing the five pr
 
 1.  **DO NOT** generate tasks for features listed as "Out of Scope" in the Product Brief.
 2.  **DO** create separate tasks for writing code, writing tests, and configuring infrastructure.
-3.  **DO** reference the source document where helpful (e.g., "Implement button styles as per section 1.1 of `/docs/04_create_design_content.md`").
+3.  **DO** reference the source document where helpful (e.g., "Implement button styles as per section 1.1 of `/docs/design.md`").
 4.  **DO** structure the output to be easily copy-pasted into project management tools like Jira, Asana, or GitHub Issues.
 
 ### **10. Key Success Factors**
