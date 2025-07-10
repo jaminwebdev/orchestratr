@@ -1,9 +1,3 @@
-Of course. This is a fantastic and practical application of AI—using it to automate lead generation and qualification by performing expert analysis at scale. This rule will codify that workflow.
-
-Here is a new rule for your agent that accepts a business type and locality, finds prospects, and generates a qualified leads report with actionable insights for outreach.
-
------
-
 # **Rule: Automated Lead Generation & UX Audit**
 
 ### **1. Goal**
@@ -14,7 +8,7 @@ The output is a structured report containing a list of qualified leads and, for 
 
 ### **2. Process**
 
-1.  **Consult Library Docs:** The agent **MUST** begin by ingesting and deeply understanding the `library_docs/top_20_ux_mistakes.md` document. This document is the core rubric for the entire audit process. It should also consult `copy_best_practices.md` and `ux_and_design_101.md` for context on how to propose fixes.
+1.  **Consult Library Docs:** The agent **MUST** begin by ingesting and deeply understanding the `library_docs/copywriting/ux_and_copy_mistakes.md`. This document is the core rubric for the entire audit process. It should also consult `library_docs/copywriting/copy_best_practices.md` and files within the `library_docs/design_ux/` for context on how to propose fixes.
 2.  **Conduct Discovery:** Ask the user for the business type, target locality, and the desired number of leads to generate.
 3.  **Define Significance Model:** The agent will use a built-in heuristic to weigh the severity of the 20 mistakes.
       * **High Significance:** Issues that directly impact conversions and user trust (e.g., no clear Call-to-Action, confusing navigation, unclear value proposition, not mobile-friendly).
@@ -22,7 +16,7 @@ The output is a structured report containing a list of qualified leads and, for 
       * **Low Significance:** Minor aesthetic or technical issues (e.g., inconsistent footer links, non-optimal image formats).
 4.  **Initiate Search:** The agent will use a web search tool (e.g., Google Search) with a query like `"[business type] in [locality]"` to find a list of potential business websites.
 5.  **Iterate and Audit:** The agent will loop through the search results:
-      * a. For each website, it will access and analyze the content of the homepage.
+      * a. For each website, it will access and analyze the content of the homepage, as well as key pages in the top navigation such as services or other links that appear relevant to the nature of the business (i.e. "films" and "photography" for a videography website, or "heating" and "cooling" for an HVAC website).
       * b. It will audit the page against the `top_20_ux_mistakes.md` checklist, noting each violation and its significance level.
       * c. It will qualify a business as a lead if its website has a critical number of violations (e.g., **at least 3 significant issues, with one being of 'High' significance**).
       * d. If a business is qualified, the agent will generate proposed fixes and add it to the report. It will continue until the desired number of leads is reached.
